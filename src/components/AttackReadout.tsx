@@ -26,13 +26,16 @@ export function AttackReadout({ attack, targetModels, targetTough }: Props) {
 
   return (
     <div class="flex flex-col gap-1.5 font-mono text-sm" aria-label="Attack summary">
-      <Line main={plural(attack.dice, attack.autoWound ? 'die' : 'attack').replace(/dies$/, 'dice')} />
+      <Line
+        main={plural(attack.dice, attack.autoHit ? 'hit' : attack.autoWound ? 'die' : 'attack').replace(/dies$/, 'dice')}
+        extra={attack.autoHit && attack.rollForSixes ? 'roll each to see which are 6s' : undefined}
+      />
       {attack.autoWound ? (
         <Line main={`Wound on ${attack.hitOn}+`} extra="no Defense roll" />
       ) : (
         <>
           <Line
-            main={attack.onlySixes ? 'Hit on 6s only' : `Hit on ${attack.hitOn}+`}
+            main={attack.autoHit ? 'All hit' : attack.onlySixes ? 'Hit on 6s only' : `Hit on ${attack.hitOn}+`}
             extra={[attack.onlySixes ? 'Fatigued, 6s trigger no rules' : null, ...hitExtras].filter(Boolean).join(', ')}
           />
           {attack.blast > 1 && <Line main={`Blast: hits ×${attack.blast}`} extra={`max ${plural(targetModels, 'hit')}`} />}

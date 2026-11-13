@@ -227,6 +227,12 @@ describe('spells', () => {
     expect(castBlocked(begin(), 'A:adept', 'Gauss Bots', 1)).toMatch(/this unit’s activation/)
   })
 
+  it('lets a caster keep casting after resolving spell hits', () => {
+    const state = recordAttack(cast(begin()), { attacker: 'A:lord', target: 'B:witch', weapon: 'Gauss Bots', mode: 'shooting', wounds: 1, spell: true })
+    expect(state.units['B:witch'].wounds).toBe(1)
+    expect(castBlocked(state, 'A:lord', 'Other Spell', 1)).toBeNull()
+  })
+
   it('takes helper tokens and nets friendly against enemy help', () => {
     const helpers = { 'A:adept': 1, 'B:witch': 2 }
     const state = cast(begin(), { helpers })

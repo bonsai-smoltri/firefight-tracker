@@ -32,6 +32,14 @@ export interface SpecialAttack {
   fixedRoll?: number
   /** Each success is a wound with no Defense roll (Ravage). */
   autoWound?: boolean
+  /** Every die is a hit with no hit roll (spells that deal "N hits"). */
+  autoHit?: boolean
+  /** Hits are still rolled to see whether "on 6s" rules trigger. */
+  rollForSixes?: boolean
+  /** A spell, for rules such as Shielded and Spell Resistance. */
+  spell?: boolean
+  /** Resolved as if the target was a unit of [1]. */
+  singleModel?: boolean
 }
 
 export interface ParsedUnit {

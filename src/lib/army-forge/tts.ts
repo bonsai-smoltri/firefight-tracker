@@ -39,6 +39,11 @@ function weapon(raw: Raw, unitName: string, warnings: string[]): ParsedWeapon | 
   }
 }
 
+function casterRating(rules: RuleRef[]): number | null {
+  const caster = rules.find((r) => r.name === 'Caster' || r.name === 'Caster Group')
+  return caster ? (caster.rating ?? 1) : null
+}
+
 /** Upgrade costs are listed per unit id; fall back to the first when none match. */
 function upgradeCost(raw: Raw, unitId: string | null): number {
   return array(raw.selectedUpgrades).reduce((total, selected) => {
@@ -99,7 +104,8 @@ function unit(raw: Raw, index: number, warnings: string[]): ParsedUnit | null {
     rules,
     weapons,
     joinedTo: str(raw.joinToUnit),
-    caster: rules.find((r) => r.name === 'Caster')?.rating ?? null,
+    // Caster Group(X) counts as Caster(X).
+    caster: casterRating(rules),
     armyId: str(raw.armyId) ?? '',
   }
 }

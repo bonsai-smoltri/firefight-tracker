@@ -21,7 +21,7 @@ import {
   winner,
 } from '../lib/battle'
 import type { ActivationAction, BattleState, Player, UnitKey, UnitState } from '../types/battle'
-import type { ParsedList, RuleRef } from '../types/list'
+import type { ParsedList, ParsedWeapon, RuleRef } from '../types/list'
 import ruleIndex from '../data/rule-index.json'
 import { movement, movementGrants, type Movement } from '../lib/movement'
 import { defaultContext, type GrantOption } from '../lib/rules/resolve'
@@ -34,7 +34,7 @@ interface Props {
   state: BattleState
   lists: Record<Player, ParsedList>
   onChange: (state: BattleState) => void
-  onAttack: (attacker: UnitKey, options?: { target?: UnitKey; strikeBack?: boolean }) => void
+  onAttack: (attacker: UnitKey, options?: { target?: UnitKey; strikeBack?: boolean; spell?: ParsedWeapon }) => void
   /** Back home with the battle still in progress. */
   onLeave: () => void
   onShowLog: () => void
@@ -203,6 +203,7 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShow
                                 ),
                               )
                             }
+                            onResolveHits={(spell) => onAttack(activeUnit.key, { spell })}
                             onClose={() => setCasting(false)}
                           />
                         )}

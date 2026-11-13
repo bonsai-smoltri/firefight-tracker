@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'preact/hooks'
 import { castBlocked, castSucceeds, castingModifier, isOut } from '../lib/battle'
 import { rollD6 } from '../lib/rules/dice'
+import { spellAttack } from '../lib/rules/spell-attacks'
 import { loadSpells } from '../lib/spells'
+import type { ParsedWeapon } from '../types/list'
 import type { BookSpell } from '../types/army-book'
 import type { BattleState, SpellCast, UnitKey } from '../types/battle'
 import { Stepper } from './Stepper'
@@ -13,15 +15,19 @@ interface Props {
   /** Spell Amplifier: +1 to casting rolls. */
   amplified: boolean
   onCast: (cast: SpellCast) => void
+  /** A successful spell that deals hits, to resolve on the attack screen. */
+  onResolveHits: (attack: ParsedWeapon) => void
   onClose: () => void
 }
 
 /** Pick a spell, add help from other casters, roll 4+, then record the result. */
-export function CastPanel({ state, caster, armyId, amplified, onCast, onClose }: Props) {
+export function CastPanel({ state, caster, armyId, amplified, onCast, onResolveHits, onClose }: Props) {
   const [spells, setSpells] = useState<BookSpell[] | null>(null)
   const [picked, setPicked] = useState<BookSpell | null>(null)
   const [helpers, setHelpers] = useState<Record<UnitKey, number>>({})
   const [face, setFace] = useState<number | null>(null)
+  /** Hits from the spell just cast, waiting to be resolved. */
+  const [resolve, setResolve] = useState<ParsedWeapon | null>(null)
 
   useEffect(() => {
     let live = true
@@ -37,6 +43,10 @@ export function CastPanel({ state, caster, armyId, amplified, onCast, onClose }:
   const finish = (succeeded: boolean) => {
     if (!picked) return
     onCast({ caster, spell: picked.name, cost: picked.threshold, helpers, succeeded })
+    if (succeeded) {
+      const attack = spellAttack(picked)
+      if (attack) setResolve(attack)
+    }
     setPicked(null)
     setHelpers({})
     setFace(null)
@@ -52,6 +62,22 @@ export function CastPanel({ state, caster, armyId, amplified, onCast, onClose }:
           Close
         </button>
       </div>
+
+      {resolve && (
+        <div class="flex flex-col gap-2 rounded-box bg-base-300 p-3">
+          <p class="text-sm">
+            <span class="font-medium">{resolve.name}</span> succeeded. {resolve.special?.when}
+          </p>
+          <div class="grid grid-cols-2 gap-2">
+            <button type="button" class="btn btn-primary h-11" onClick={() => onResolveHits(resolve)}>
+              Resolve hits
+            </button>
+            <button type="button" class="btn btn-ghost h-11" onClick={() => setResolve(null)}>
+              Skip
+            </button>
+          </div>
+        </div>
+      )}
 
       {spells === null && <span class="loading loading-spinner loading-sm" aria-label="Loading spells" />}
       {spells?.length === 0 && <p class="text-sm opacity-70">No spells found for this army.</p>}

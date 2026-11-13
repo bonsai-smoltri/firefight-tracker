@@ -114,6 +114,8 @@ export interface AttackRecord {
   wounds: number
   /** The target striking back at a charger. */
   strikeBack?: boolean
+  /** Hits from a spell, which isn't the caster attacking. */
+  spell?: boolean
 }
 
 export function recordAttack(state: BattleState, attack: AttackRecord): BattleState {
@@ -135,7 +137,7 @@ export function recordAttack(state: BattleState, attack: AttackRecord): BattleSt
       ...next,
       activation: {
         ...activation,
-        attacked: activation.attacked || (activation.unit === attack.attacker && !attack.strikeBack),
+        attacked: activation.attacked || (activation.unit === attack.attacker && !attack.strikeBack && !attack.spell),
         woundsTaken: { ...activation.woundsTaken, [attack.target]: (activation.woundsTaken[attack.target] ?? 0) + wounds },
         melee: isCharge
           ? (activation.melee ?? { charger: attack.attacker, target: attack.target, struckBack: false })

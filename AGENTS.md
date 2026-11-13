@@ -75,6 +75,8 @@ src/
     battle.ts          # battle state transitions
     movement.ts        # move distances and terrain notes from movement rules
     rules/special.ts   # attacks made by unit rules (Impact, Ravage, Takedown)
+    rules/spell-attacks.ts # damage spells ("takes N hits with ...") as attacks
+    spells.ts          # loads an army book's spells on demand
 ```
 
 Screens are switched by a `view` state in `app.tsx`; there is no router: home, calculator, battle
@@ -167,8 +169,9 @@ Mapping shapes beyond a plain part:
   text hashes.
 - Situations that are usually true start on (`targetAboveHalf`). In a battle, the attack screen
   fills target situations in from battle state.
-- Attacks in this app are never spells, so "not from spells" rules (Shielded, Spell Resistance)
-  always apply.
+- `fromSpell` conditions split rules that treat spells differently (Shielded, Spell Resistance,
+  Warding). Damage spells are attacks with `special.spell` set: they auto-hit, ignore the
+  caster's rules and cover, and only roll for 6s when the spell says so.
 
 Hazards:
 - Bane, Rending and Unstoppable ignore **Regeneration** only. Self-Repair and Protected are

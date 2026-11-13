@@ -39,6 +39,8 @@ interface TargetInfo {
 export function rollAttack(attack: ResolvedAttack, target: TargetInfo, roll: RollDie = rollD6): AttackRoll {
   const steps: RollStep[] = []
   const rollHits = (count: number, canSpawn: boolean) => {
+    // Spell hits that don't care about 6s aren't rolled at all.
+    if (attack.autoHit && !attack.rollForSixes) return { dice: [] as Die[], normal: count, six: 0, spawned: 0 }
     const dice: Die[] = []
     let normal = 0
     let six = 0
@@ -64,9 +66,9 @@ export function rollAttack(attack: ResolvedAttack, target: TargetInfo, roll: Rol
   let six = first.six
   const word = attack.autoWound ? 'wound' : 'hit'
   steps.push({
-    label: `${attack.autoWound ? 'Wound' : 'Hit'} on ${attack.hitOn}+`,
+    label: attack.autoHit ? (attack.rollForSixes ? 'Automatic hits, rolled for 6s' : 'Automatic hits') : `${attack.autoWound ? 'Wound' : 'Hit'} on ${attack.hitOn}+`,
     dice: first.dice,
-    result: plural(first.dice.filter((d) => d.success).length, word),
+    result: plural(attack.autoHit ? attack.dice : first.dice.filter((d) => d.success).length, word),
   })
   if (first.spawned > 0) {
     const extra = rollHits(first.spawned, false)

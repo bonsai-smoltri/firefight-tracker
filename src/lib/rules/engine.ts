@@ -69,6 +69,10 @@ export interface ResolvedAttack {
   parry: number
   /** Each success is a wound with no Defense roll (Ravage). */
   autoWound: boolean
+  /** Every die is a hit with no hit roll (spells). */
+  autoHit: boolean
+  /** Dice are rolled to find 6s; false for spell hits that don't need it. */
+  rollForSixes: boolean
   rules: RuleReport[]
   estimate: { hits: number; wounds: number }
 }
@@ -85,8 +89,9 @@ function conditionsMet(
   conditions: RuleConditions | undefined,
   mode: AttackMode,
   situation: Situation,
-  target: { defense: number; tough: number },
+  target: { defense: number; tough: number; spell: boolean },
 ) {
+  if (conditions?.fromSpell !== undefined && conditions.fromSpell !== target.spell) return false
   if (!conditions) return true
   if (conditions.mode && conditions.mode !== mode) return false
   if (conditions.situation?.some((key) => !situation[key])) return false
@@ -185,7 +190,7 @@ function collect(
     const active = parts.filter(
       (p) =>
         (!resolved.mode || resolved.mode === input.mode) &&
-        conditionsMet(p.conditions, input.mode, input.situation, { defense: targetDefense, tough: input.target.tough }),
+        conditionsMet(p.conditions, input.mode, input.situation, { defense: targetDefense, tough: input.target.tough, spell: input.weapon.special?.spell === true }),
     )
     const switchedOn = active.filter((p) => {
       const key = manualKey(mapping, p)
@@ -219,9 +224,13 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
   const { attacker, weapon, target, mode, situation, context } = input
   const reports: RuleReport[] = []
 
-  // Impact and Ravage dice aren't hit rolls, so the unit's rules and hit modifiers don't touch them.
-  const fixedRoll = weapon.special?.fixedRoll ?? null
-  const autoWound = weapon.special?.autoWound === true
+  // Impact and Ravage dice aren't hit rolls, and spell hits aren't rolled at all, so the unit's
+  // rules and hit modifiers don't touch them.
+  const special = weapon.special
+  const autoHit = special?.autoHit === true
+  const rollForSixes = !autoHit || special?.rollForSixes === true
+  const fixedRoll = autoHit ? 1 : (special?.fixedRoll ?? null)
+  const autoWound = special?.autoWound === true
   const attackerRules = [
     ...(fixedRoll === null ? resolveAll(attacker.rules, 'attacker', context) : []),
     ...(fixedRoll === null ? resolveAll(input.granted?.attacker ?? [], 'attacker', context, true) : []),
@@ -250,17 +259,20 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
     sum(att, (e) => e.hitModifier) + (ignoresNegative ? Math.max(0, defenderHitModifier) : defenderHitModifier)
   const onlySixes = fixedRoll === null && mode === 'melee' && situation.attackerFatigued
   const hitOn = fixedRoll ?? (onlySixes ? 6 : clampRoll(quality - hitModifier))
+  // Fatigued 6s, and spell hits nobody rolls, trigger no "on 6s" rules.
+  const noSixes = onlySixes || !rollForSixes
 
   const apReduction = ignoresNegative ? 0 : sum(def, (e) => e.apReduction)
   const ap = Math.max(0, sum(att, (e) => e.ap) - apReduction)
-  const apOnSix = onlySixes ? 0 : Math.max(0, ...values(att, (e) => e.apOnSix))
-  const cover = mode === 'shooting' && situation.targetInCover && !ignoresCover ? 1 : 0
+  const apOnSix = noSixes ? 0 : Math.max(0, ...values(att, (e) => e.apOnSix))
+  // Cover only counts against shooting, and spells aren't shooting.
+  const cover = mode === 'shooting' && !special?.spell && situation.targetInCover && !ignoresCover ? 1 : 0
   const rawDefenseModifier = sum(def, (e) => e.defenseModifier) + cover
   const defenseModifier = any(att, (e) => e.ignoresDefenseBonuses) ? Math.min(0, rawDefenseModifier) : rawDefenseModifier
   const blockOn = clampRoll(defense - defenseModifier + ap)
   const blockOnSix = apOnSix > 0 ? clampRoll(defense - defenseModifier + ap + apOnSix) : null
 
-  const extraAttackEffects = onlySixes ? [] : att.flatMap((c) => (c.effects.extraAttacks ? [c.effects.extraAttacks] : []))
+  const extraAttackEffects = noSixes ? [] : att.flatMap((c) => (c.effects.extraAttacks ? [c.effects.extraAttacks] : []))
   const extraAttacks = extraAttackEffects.length
     ? { count: Math.max(...extraAttackEffects.map((e) => e.count)), on: Math.min(...extraAttackEffects.map((e) => e.on)) }
     : null
@@ -274,7 +286,7 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
     dice: weapon.attacks * (input.weaponCount ?? weapon.count),
     hitOn,
     onlySixes,
-    extraHitsOnSix: onlySixes ? 0 : sum(att, (e) => e.extraHitsOnSix),
+    extraHitsOnSix: noSixes ? 0 : sum(att, (e) => e.extraHitsOnSix),
     extraAttacks,
     blast: Math.max(1, ...values(att, (e) => e.blast)),
     ap,
@@ -287,6 +299,8 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
     ignoreWoundsOn,
     parry: mode === 'melee' && !autoWound ? sum(def, (e) => e.parry) : 0,
     autoWound,
+    autoHit,
+    rollForSixes,
     rules: reports,
   }
   return { ...resolved, estimate: estimate(resolved, target, input.targetModels ?? target.size) }

@@ -72,6 +72,8 @@ export interface RuleConditions {
   targetDefense?: [number, number]
   /** Target's Tough must be at least this (e.g. 9 for "Tough(9) or higher"). */
   targetToughAtLeast?: number
+  /** True: only against spells. False: only against anything but spells. */
+  fromSpell?: boolean
 }
 
 export interface RuleEffects {

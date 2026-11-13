@@ -438,7 +438,7 @@ const MAPPINGS: RuleMapping[] = [
   { name: 'Guarded', reviewed: ['0b2feb14'], parts: atRange('defender', { defenseModifier: 1 }) },
   { name: 'Enhanced Guarded', reviewed: ['837d6471'], enhances: 'Guarded', parts: [defender({ defenseModifier: 1 })] },
   { name: 'Grounded Defense', reviewed: ['2d1e8216'], parts: [defender({ defenseModifier: 1 }, { situation: ['targetNearTerrain'] })] },
-  { name: 'Shielded', reviewed: ['77fb7f51'], parts: [defender({ defenseModifier: 1 })], note: 'Not against spells' },
+  { name: 'Shielded', reviewed: ['77fb7f51'], parts: [defender({ defenseModifier: 1 }, { fromSpell: false })] },
   { name: 'Enhanced Fortified', reviewed: ['33d5ab86'], enhances: 'Fortified', parts: [defender({ apReduction: 2 })] },
 
   // Faction Defense re-rolls.
@@ -454,9 +454,21 @@ const MAPPINGS: RuleMapping[] = [
   },
   { name: 'Reap', reviewed: ['8ec81803'], parts: [attacker({ rerollDefenseFrom: 4 }, SHAKEN_OR_FATIGUED)] },
 
-  // Faction wound ignoring. Attacks in this app are never spells.
-  { name: 'Spell Resistance', reviewed: ['742cc594'], parts: [defender({ ignoreWoundsOn: 6 })], note: '2+ against spells' },
-  { name: 'Warding', reviewed: ['d673f7f8'], parts: atRange('defender', { ignoreWoundsOn: 6 }), note: '2+ against spells' },
+  // Faction wound ignoring, with a better roll against spells.
+  {
+    name: 'Spell Resistance',
+    reviewed: ['742cc594'],
+    parts: [defender({ ignoreWoundsOn: 6 }, { fromSpell: false }), defender({ ignoreWoundsOn: 2 }, { fromSpell: true })],
+  },
+  {
+    name: 'Warding',
+    reviewed: ['d673f7f8'],
+    parts: [
+      defender({ ignoreWoundsOn: 6 }, { mode: 'shooting', situation: ['overNine'], fromSpell: false }),
+      defender({ ignoreWoundsOn: 6 }, { mode: 'melee', situation: ['charging', 'chargeOverSix'] }),
+      defender({ ignoreWoundsOn: 2 }, { fromSpell: true }),
+    ],
+  },
 
   { name: 'Predator Shooter', reviewed: ['7d0ef1ee'], parts: [attacker({ extraAttacks: { count: 1, on: 6 } }, { mode: 'shooting' })] },
 
@@ -549,7 +561,13 @@ const MAPPINGS: RuleMapping[] = [
   textOnly('Retaliate', ['0342b33a'], 'The attacker takes hits back per wound'),
   textOnly('Scourge', ['9e9b5a7c'], 'Affects melee results and morale, not wounds'),
 
-  { name: 'Enhanced Warding', reviewed: ['70b1e47e'], enhances: 'Warding', parts: [defender({ ignoreWoundsOn: 6 })] },
+  {
+    name: 'Enhanced Warding',
+    reviewed: ['70b1e47e'],
+    enhances: 'Warding',
+    // Replaces Warding, so it carries Warding's 2+ against spells too.
+    parts: [defender({ ignoreWoundsOn: 6 }, { fromSpell: false }), defender({ ignoreWoundsOn: 2 }, { fromSpell: true })],
+  },
 
   // Faction rules checked and found to change no attack numbers: movement, range, deployment,
   // morale and spells. Listing them keeps the sync report focused on rules nobody has read.

@@ -7,7 +7,7 @@ import { defaultContext, grantOptions, type GrantOption } from '../lib/rules/res
 import { specialAttacks } from '../lib/rules/special'
 import type { Side } from '../lib/storage'
 import type { BattleState, UnitKey } from '../types/battle'
-import type { ParsedList, ParsedUnit, RuleRef } from '../types/list'
+import type { ParsedList, ParsedUnit, ParsedWeapon, RuleRef } from '../types/list'
 import { SITUATION_DEFS, defaultSituation, type AttackMode, type RuleIndex, type Situation, type SituationKey } from '../types/rules'
 import { AttackReadout } from './AttackReadout'
 import { RollResult } from './RollResult'
@@ -25,6 +25,8 @@ export interface BattleAttack {
   /** Fixed target, e.g. the charger when striking back. */
   target?: UnitKey
   strikeBack?: boolean
+  /** A successful damage spell: the only attack offered. */
+  spell?: ParsedWeapon
   onApply: (record: AttackRecord) => void
   /** Offered once a charge has been fought and the target hasn't struck back. */
   onStrikeBack: () => void
@@ -48,7 +50,8 @@ function initialState(lists: Record<Side, ParsedList>, battle?: BattleAttack) {
   const enemies = Object.values(battle.state.units).filter((u) => u.player !== side && !isOut(u))
   const targetKey = battle.target ?? activation?.melee?.target ?? enemies[0]?.key
   const target = targetKey ? battle.state.units[targetKey] : undefined
-  const charging = !battle.strikeBack && activation?.unit === battle.attacker && activation.action === 'charge'
+  const charging =
+    !battle.strikeBack && !battle.spell && activation?.unit === battle.attacker && activation.action === 'charge'
   return {
     side,
     attackerId: attacker.unitId,
@@ -92,12 +95,15 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
   const targetState = battle?.state.units[targetKey]
 
   const weapons = useMemo(
-    () => [
-      ...attacker.weapons,
-      // Impact only happens when charging, so it's never part of a strike back.
-      ...specialAttacks(attacker).filter((w) => !(battle?.strikeBack && w.special?.fixedRoll === 2)),
-    ],
-    [attacker, battle?.strikeBack],
+    () =>
+      battle?.spell
+        ? [battle.spell]
+        : [
+            ...attacker.weapons,
+            // Impact only happens when charging, so it's never part of a strike back.
+            ...specialAttacks(attacker).filter((w) => !(battle?.strikeBack && w.special?.fixedRoll === 2)),
+          ],
+    [attacker, battle?.strikeBack, battle?.spell],
   )
   const weapon = weapons[weaponIndex] ?? weapons[0]
   const modes = weapon ? weaponModes(weapon) : []
@@ -105,7 +111,8 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
   const ruleTexts = useMemo(() => ({ ...lists.A.rules, ...lists.B.rules }), [lists])
 
   const targetLeft = targetState ? Math.max(1, modelsLeft(targetState)) : target.size
-  const models = Math.min(targetModels ?? targetLeft, target.size)
+  // "Resolved as if the target was a unit of [1]" spells pick out one model.
+  const models = weapons[weaponIndex]?.special?.singleModel ? 1 : Math.min(targetModels ?? targetLeft, target.size)
   const attackerLeft = attackerState ? modelsLeft(attackerState) : attacker.size
   const scaledCopies = weapon ? Math.max(1, Math.round((weapon.count * attackerLeft) / attacker.size)) : 0
   const copies = weaponCount ?? scaledCopies
@@ -214,6 +221,7 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
       mode,
       wounds: woundsToApply,
       strikeBack: battle.strikeBack,
+      spell: weapon.special?.spell,
     })
     setApplied(`${woundsToApply} wound${woundsToApply === 1 ? '' : 's'} applied to ${unitName(target)}`)
     setRoll(null)
@@ -229,7 +237,7 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
           <button type="button" class="btn btn-ghost h-11 min-h-11" onClick={onBack}>
             {backLabel}
           </button>
-          <h1 class="font-bold flex-1 text-center">{battle?.strikeBack ? 'Strike back' : 'Attack'}</h1>
+          <h1 class="font-bold flex-1 text-center">{battle?.spell ? battle.spell.name : battle?.strikeBack ? 'Strike back' : 'Attack'}</h1>
           <span class="w-20" aria-hidden="true" />
         </div>
       </header>
@@ -311,7 +319,7 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
             {weapon.count > 1 && (
               <Stepper label="Weapons attacking" value={copies} onChange={setWeaponCount} min={1} max={weapon.count} />
             )}
-            {target.size > 1 && (
+            {target.size > 1 && !weapon.special?.singleModel && (
               <Stepper label="Models in target" value={models} onChange={setTargetModels} min={1} max={target.size} />
             )}
           </div>

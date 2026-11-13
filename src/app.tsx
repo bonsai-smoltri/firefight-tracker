@@ -18,7 +18,7 @@ import {
   type Side,
 } from './lib/storage'
 import type { BattleState, UnitKey } from './types/battle'
-import type { ParsedList } from './types/list'
+import type { ParsedList, ParsedWeapon } from './types/list'
 
 type View =
   | { name: 'home' }
@@ -26,7 +26,7 @@ type View =
   | { name: 'setup' }
   | { name: 'battle' }
   | { name: 'battle-log' }
-  | { name: 'battle-attack'; attacker: UnitKey; target?: UnitKey; strikeBack?: boolean }
+  | { name: 'battle-attack'; attacker: UnitKey; target?: UnitKey; strikeBack?: boolean; spell?: ParsedWeapon }
   | { name: 'record'; record: BattleRecord }
 
 export function App() {
@@ -81,7 +81,7 @@ export function App() {
   if (view.name === 'battle-attack' && both && battle) {
     return (
       <AttackScreen
-        key={`${view.attacker}-${view.strikeBack ? 'back' : 'attack'}`}
+        key={`${view.attacker}-${view.spell?.name ?? (view.strikeBack ? 'back' : 'attack')}`}
         lists={both}
         backLabel="← Battle"
         onBack={() => setView({ name: 'battle' })}
@@ -90,6 +90,7 @@ export function App() {
           attacker: view.attacker,
           target: view.target,
           strikeBack: view.strikeBack,
+          spell: view.spell,
           onApply: (record) => setBattle(recordAttack(battle, record)),
           onStrikeBack: () => {
             const melee = battle.activation?.melee

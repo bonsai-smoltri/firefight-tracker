@@ -131,6 +131,12 @@ describe('parseTtsList — joins and odd data', () => {
     expect(parse(raw).units[0].caster).toBe(2)
   })
 
+  it('reads Caster Group(X) as Caster(X)', () => {
+    const raw = clone(robotLegions)
+    raw.units[0].rules.push({ id: 'cg', name: 'Caster Group', rating: 1, label: 'Caster Group(1)' })
+    expect(parse(raw).units[0].caster).toBe(1)
+  })
+
   it('warns when unit points disagree with the list total', () => {
     const raw = clone(robotLegions)
     raw.listPoints = 1
