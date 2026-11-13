@@ -117,6 +117,15 @@ All battle rules live in `lib/battle.ts` as pure `BattleState -> BattleState` fu
   Other casters' tokens add +1 (friendly) or -1 (enemy) each. A cast succeeds on 4+, with 6s
   always passing and 1s always failing. Spell effects are shown as text only.
 - Firefight has no joined Heroes (that's Grimdark Future), so `joinedTo` is parsed but unused.
+- In a battle the attack screen is three steps: an always-open target list, then weapons, then
+  the readout, scrolling to the next step on each tap. `lib/weapon-use.ts` decides shooting or
+  melee from the activation (Hold/Advance shoot, Charge and strike backs fight, Rush only with
+  Quick Shot), greys out weapons that don't fit, blocks Limited and once-per-game attacks after
+  their first activation, and badges weapons already applied this activation. Units use all
+  their weapons of the right type, so several weapons per activation is normal.
+- Undo: every change to the battle in progress goes through `changeBattle` in `app.tsx`, which
+  keeps the previous states (up to `MAX_UNDO`, saved alongside the battle). Don't call
+  `setBattle` directly for an in-progress change, or it can't be undone.
 - `archiveBattle` in `app.tsx` is the only place a battle leaves the active slot. Changing a list
   ends the battle, since it refers to the lists' units. The attack screen only
 shows situation toggles that some rule in play cares about (`attackControls`), plus Cover for

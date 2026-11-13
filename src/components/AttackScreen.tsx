@@ -1,10 +1,12 @@
-import { useMemo, useState } from 'preact/hooks'
+import { useMemo, useRef, useState } from 'preact/hooks'
 import ruleIndex from '../data/rule-index.json'
 import { atHalfOrLess, grantedByAuras, isOut, modelsLeft, unitKey, type AttackRecord } from '../lib/battle'
 import { rollAttack, type AttackRoll } from '../lib/rules/dice'
 import { attackControls, resolveAttack, weaponModes, type ResolvedAttack } from '../lib/rules/engine'
 import { defaultContext, grantOptions, type GrantOption } from '../lib/rules/resolve'
 import { specialAttacks } from '../lib/rules/special'
+import { movement } from '../lib/movement'
+import { attackPhase, weaponUse } from '../lib/weapon-use'
 import type { Side } from '../lib/storage'
 import type { BattleState, UnitKey } from '../types/battle'
 import type { ParsedList, ParsedUnit, ParsedWeapon, RuleRef } from '../types/list'
@@ -30,6 +32,8 @@ export interface BattleAttack {
   onApply: (record: AttackRecord) => void
   /** Offered once a charge has been fought and the target hasn't struck back. */
   onStrikeBack: () => void
+  /** Back to the charger's fight, which then ends the activation. */
+  onEndStrikeBack: () => void
   onEndActivation: () => void
 }
 
@@ -73,7 +77,10 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
   const [attackerSide, setAttackerSide] = useState<Side>(initial.side)
   const [attackerId, setAttackerId] = useState(initial.attackerId)
   const [targetId, setTargetId] = useState(initial.targetId)
-  const [weaponIndex, setWeaponIndex] = useState(0)
+  /** Null until a weapon is tapped, so the first usable one is picked by default. */
+  const [weaponPick, setWeaponIndex] = useState<number | null>(null)
+  const weaponSection = useRef<HTMLDivElement>(null)
+  const readoutSection = useRef<HTMLElement>(null)
   const [modeChoice, setModeChoice] = useState<AttackMode | null>(battle?.strikeBack ? 'melee' : null)
   const [weaponCount, setWeaponCount] = useState<number | null>(null)
   const [targetModels, setTargetModels] = useState<number | null>(null)
@@ -105,9 +112,22 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
           ],
     [attacker, battle?.strikeBack, battle?.spell],
   )
+  // In a battle the activation decides shooting or melee, and greys out weapons that don't fit.
+  const phase =
+    battle && !battle.spell
+      ? attackPhase(battle.state, {
+          strikeBack: battle.strikeBack,
+          canShootAfterRush: movement([...attacker.rules, ...grantedByAuras(battle.state, attackerKey)], context)
+            .canShootAfterRush,
+        })
+      : null
+  const uses = weapons.map((w) => (battle ? weaponUse(battle.state, attackerKey, w, battle.spell ? 'shooting' : phase) : null))
+  const firstUsable = Math.max(0, uses.findIndex((u) => !u?.disabled))
+  const weaponIndex = weaponPick ?? firstUsable
   const weapon = weapons[weaponIndex] ?? weapons[0]
   const modes = weapon ? weaponModes(weapon) : []
-  const mode = modeChoice && modes.includes(modeChoice) ? modeChoice : modes[0]
+  const mode = phase && modes.includes(phase) ? phase : modeChoice && modes.includes(modeChoice) ? modeChoice : modes[0]
+  const weaponDisabled = uses[weaponIndex]?.disabled ?? null
   const ruleTexts = useMemo(() => ({ ...lists.A.rules, ...lists.B.rules }), [lists])
 
   const targetLeft = targetState ? Math.max(1, modelsLeft(targetState)) : target.size
@@ -168,7 +188,7 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
   }
   const pickAttacker = (id: string) => {
     setAttackerId(id)
-    setWeaponIndex(0)
+    setWeaponIndex(null)
     setModeChoice(null)
     setWeaponCount(null)
     clearResult()
@@ -257,47 +277,73 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
               ⇄
             </button>
           )}
-          <UnitSelect
-            label={`Target · ${targetList.name}`}
-            units={targets}
-            unit={target}
-            onPick={pickTarget}
-            locked={!!battle?.target}
-            left={targetState ? modelsLeft(targetState) : null}
-          />
+          {!battle && (
+            <UnitSelect
+              label={`Target · ${targetList.name}`}
+              units={targets}
+              unit={target}
+              onPick={pickTarget}
+              locked={false}
+              left={null}
+            />
+          )}
         </div>
 
-        {weapons.length === 0 ? (
-          <p class="text-sm opacity-70">{unitName(attacker)} has no weapons.</p>
-        ) : (
-          <div class="flex flex-col gap-1" role="radiogroup" aria-label="Weapon">
-            {weapons.map((w, i) => (
-              <button
-                key={`${w.label}-${i}`}
-                type="button"
-                role="radio"
-                aria-checked={w === weapon}
-                class={`btn h-auto min-h-11 py-2 justify-start text-left font-normal ${w === weapon ? 'btn-primary' : 'btn-ghost border border-base-content/20'}`}
-                onClick={() => {
-                  setWeaponIndex(i)
-                  setModeChoice(battle?.strikeBack ? 'melee' : null)
-                  setWeaponCount(null)
-                  clearResult()
-                }}
-              >
-                <span class="flex flex-col items-start">
-                  <span>
-                    {w.count > 1 && `${w.count}× `}
-                    {w.label}
-                  </span>
-                  {w.special && <span class="text-xs opacity-70">{w.special.when}</span>}
-                </span>
-              </button>
-            ))}
-          </div>
+        {battle && (
+          <TargetList
+            title={`Target · ${targetList.name}`}
+            units={battle.target ? targets.filter((u) => u.id === target.id) : targets}
+            selected={target.id}
+            left={(u) => modelsLeft(battle.state.units[unitKey(targetSide, u.id)])}
+            onPick={(id) => {
+              pickTarget(id)
+              scrollTo(weaponSection.current)
+            }}
+          />
         )}
 
-        {modes.length > 1 && (
+        <div ref={weaponSection} class="flex flex-col gap-1 scroll-mt-16">
+          {battle && <h2 class="text-xs opacity-70">{phase === 'melee' ? 'Melee weapons' : phase === 'shooting' ? 'Ranged weapons' : 'Weapon'}</h2>}
+          {weapons.length === 0 ? (
+            <p class="text-sm opacity-70">{unitName(attacker)} has no weapons.</p>
+          ) : (
+            <div class="flex flex-col gap-1" role="radiogroup" aria-label="Weapon">
+              {weapons.map((w, i) => {
+                const use = uses[i]
+                const selected = i === weaponIndex
+                return (
+                  <button
+                    key={`${w.label}-${i}`}
+                    type="button"
+                    role="radio"
+                    aria-checked={selected}
+                    disabled={!!use?.disabled}
+                    class={`btn h-auto min-h-11 py-2 justify-start text-left font-normal ${selected && !use?.disabled ? 'btn-primary' : 'btn-ghost border border-base-content/20'}`}
+                    onClick={() => {
+                      setWeaponIndex(i)
+                      setModeChoice(battle?.strikeBack ? 'melee' : null)
+                      setWeaponCount(null)
+                      clearResult()
+                      scrollTo(readoutSection.current)
+                    }}
+                  >
+                    <span class="flex flex-col items-start flex-1 min-w-0">
+                      <span>
+                        {w.count > 1 && `${w.count}× `}
+                        {weaponLabel(w)}
+                      </span>
+                      {w.special && !w.special.spell && <span class="text-xs opacity-70">{w.special.when}</span>}
+                      {use?.disabled && <span class="text-xs">{use.disabled}</span>}
+                    </span>
+                    {!!use?.usedThisActivation && <span class="badge badge-secondary shrink-0">Used</span>}
+                  </button>
+                )
+              })}
+            </div>
+          )}
+        </div>
+
+        {!phase && modes.length > 1 && (
           <div class="join w-full" role="radiogroup" aria-label="Attack type">
             {modes.map((m) => (
               <button
@@ -356,17 +402,22 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
 
         {resolved && (
           <>
-            <section class="card bg-base-200">
+            <section ref={readoutSection} class="card bg-base-200 scroll-mt-16">
               <div class="card-body p-4 gap-3">
                 <AttackReadout attack={resolved} targetModels={models} targetTough={target.tough} />
-                <button type="button" class="btn btn-primary h-11" onClick={doRoll}>
+                {weaponDisabled && (
+                  <p role="status" class="text-sm">
+                    {weaponLabel(weapon)}: {weaponDisabled}
+                  </p>
+                )}
+                <button type="button" class="btn btn-primary h-11" disabled={!!weaponDisabled} onClick={doRoll}>
                   {currentRoll ? 'Roll again' : 'Roll'}
                 </button>
                 {currentRoll && <RollResult roll={currentRoll} />}
                 {battle && (
                   <div class="flex flex-col gap-2 border-t border-base-content/10 pt-3">
                     <Stepper label="Wounds dealt" value={woundsToApply} onChange={setWoundsToApply} min={0} />
-                    <button type="button" class="btn btn-secondary h-11" onClick={apply}>
+                    <button type="button" class="btn btn-secondary h-11" disabled={!!weaponDisabled} onClick={apply}>
                       Apply {woundsToApply} wound{woundsToApply === 1 ? '' : 's'} to {unitName(target)}
                     </button>
                     {applied && (
@@ -376,7 +427,7 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
                     )}
                   </div>
                 )}
-                {battle && <ActivationButtons battle={battle} />}
+                {battle && <ActivationButtons battle={battle} onBack={onBack} />}
               </div>
             </section>
             <RulesInPlay rules={resolved.rules} texts={ruleTexts} />
@@ -387,7 +438,23 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
   )
 }
 
-function ActivationButtons({ battle }: { battle: BattleAttack }) {
+function ActivationButtons({ battle, onBack }: { battle: BattleAttack; onBack: () => void }) {
+  // After a spell the caster usually still has its action to take, so go back rather than end.
+  if (battle.spell) {
+    return (
+      <button type="button" class="btn btn-outline h-11" onClick={onBack}>
+        Back to activation
+      </button>
+    )
+  }
+  // A strike back happens inside the charger's activation, which the charger then ends.
+  if (battle.strikeBack) {
+    return (
+      <button type="button" class="btn btn-outline h-11" onClick={battle.onEndStrikeBack}>
+        End strike back
+      </button>
+    )
+  }
   const melee = battle.state.activation?.melee
   const canStrikeBack = !battle.strikeBack && melee && !melee.struckBack && !isOut(battle.state.units[melee.target])
   return (
@@ -401,6 +468,59 @@ function ActivationButtons({ battle }: { battle: BattleAttack }) {
         End activation
       </button>
     </div>
+  )
+}
+
+/** Moves the next step into view, below the sticky header. */
+function scrollTo(element: HTMLElement | null) {
+  // Wait a frame so the section has re-rendered for the new choice.
+  requestAnimationFrame(() => element?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+}
+
+/** Melee weapons say so where ranged ones show their range, e.g. "Hand Weapon (Melee, A6)". */
+function weaponLabel(w: ParsedWeapon): string {
+  if (w.range > 0 || w.special) return w.label
+  return w.label.includes('(') ? w.label.replace('(', '(Melee, ') : `${w.label} (Melee)`
+}
+
+/** Every target listed at once, like an open dropdown that stays open. */
+function TargetList({
+  title,
+  units,
+  selected,
+  left,
+  onPick,
+}: {
+  title: string
+  units: ParsedUnit[]
+  selected: string
+  left: (unit: ParsedUnit) => number
+  onPick: (id: string) => void
+}) {
+  return (
+    <section class="flex flex-col gap-1" aria-label="Target">
+      <h2 class="text-xs opacity-70">{title}</h2>
+      <div class="flex flex-col divide-y divide-base-content/10 rounded-box border border-base-content/20 overflow-hidden" role="radiogroup">
+        {units.map((u) => {
+          const on = u.id === selected
+          return (
+            <button
+              key={u.id}
+              type="button"
+              role="radio"
+              aria-checked={on}
+              class={`flex items-center justify-between gap-2 px-3 min-h-11 py-2 text-left ${on ? 'bg-primary text-primary-content' : 'bg-base-200'}`}
+              onClick={() => onPick(u.id)}
+            >
+              <span class="min-w-0 truncate">{unitName(u)}</span>
+              <span class="text-xs shrink-0 opacity-80">
+                Q{u.quality}+ D{u.defense}+{u.tough > 1 ? ` · T${u.tough}` : ''} · {left(u)}/{u.size}
+              </span>
+            </button>
+          )
+        })}
+      </div>
+    </section>
   )
 }
 

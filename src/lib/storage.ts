@@ -134,3 +134,34 @@ export function saveHistory(records: BattleRecord[]): void {
     }
   }
 }
+
+const UNDO_KEY = 'firefight-undo'
+/** Kept small, as each step is a whole battle state. */
+export const MAX_UNDO = 20
+
+/** Earlier states of the battle in progress, oldest first. Steps from another battle are dropped. */
+export function loadUndo(battleId: string): BattleState[] {
+  try {
+    const parsed: unknown = JSON.parse(localStorage.getItem(UNDO_KEY) ?? '[]')
+    if (!Array.isArray(parsed)) return []
+    return parsed.filter((s): s is BattleState => isBattleState(s) && s.id === battleId).slice(-MAX_UNDO)
+  } catch (e) {
+    console.warn('Failed to load undo history:', e)
+    return []
+  }
+}
+
+export function saveUndo(states: BattleState[]): void {
+  try {
+    if (states.length) localStorage.setItem(UNDO_KEY, JSON.stringify(states.slice(-MAX_UNDO)))
+    else localStorage.removeItem(UNDO_KEY)
+  } catch (e) {
+    // Most likely the quota: undo is a convenience, so keep fewer steps rather than fail.
+    console.warn('Failed to save undo history, trimming:', e)
+    try {
+      localStorage.setItem(UNDO_KEY, JSON.stringify(states.slice(-5)))
+    } catch {
+      /* give up on persisting undo */
+    }
+  }
+}

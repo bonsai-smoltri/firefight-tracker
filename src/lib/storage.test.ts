@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest'
 import robotLegions from './army-forge/fixtures/robot-legions.json'
 import { parseTtsList } from './army-forge/tts'
 import { createBattle } from './battle'
-import { loadBattle, loadHistory, loadList, saveBattle, saveHistory, saveList } from './storage'
+import { MAX_UNDO, loadBattle, loadHistory, loadList, loadUndo, saveBattle, saveHistory, saveList, saveUndo } from './storage'
 
 const store = new Map<string, string>()
 globalThis.localStorage = {
@@ -47,6 +47,19 @@ describe('list storage', () => {
     saveHistory([{ savedAt: 2, winner: 'A', state }])
     store.set('firefight-history', JSON.stringify([...JSON.parse(store.get('firefight-history')!), { savedAt: 'bad' }]))
     expect(loadHistory()).toEqual([{ savedAt: 2, winner: 'A', state }])
+  })
+
+  it('keeps undo steps for the current battle only, up to the limit', () => {
+    const list = parseTtsList(robotLegions, 'id', 'now')
+    const battle = createBattle({ lists: { A: list, B: list }, firstPlayer: 'A', objectiveCount: 3, auras: [], now: 1 })
+    const other = { ...battle, id: 'other' }
+    saveUndo([other, ...Array.from({ length: MAX_UNDO + 5 }, (_, round) => ({ ...battle, round }))])
+    const steps = loadUndo(battle.id)
+    expect(steps).toHaveLength(MAX_UNDO)
+    expect(steps.every((s) => s.id === battle.id)).toBe(true)
+    expect(steps.at(-1)?.round).toBe(MAX_UNDO + 4)
+    saveUndo([])
+    expect(store.has('firefight-undo')).toBe(false)
   })
 
   it('drops unreadable JSON', () => {

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks'
+import { useEffect, useRef, useState } from 'preact/hooks'
 import { AttackScreen } from './components/AttackScreen'
 import { BattleLog } from './components/BattleLog'
 import { BattleScreen } from './components/BattleScreen'
@@ -11,9 +11,12 @@ import {
   loadBattle,
   loadHistory,
   loadList,
+  loadUndo,
+  MAX_UNDO,
   saveBattle,
   saveHistory,
   saveList,
+  saveUndo,
   type BattleRecord,
   type Side,
 } from './lib/storage'
@@ -26,7 +29,15 @@ type View =
   | { name: 'setup' }
   | { name: 'battle' }
   | { name: 'battle-log' }
-  | { name: 'battle-attack'; attacker: UnitKey; target?: UnitKey; strikeBack?: boolean; spell?: ParsedWeapon }
+  | {
+      name: 'battle-attack'
+      attacker: UnitKey
+      target?: UnitKey
+      strikeBack?: boolean
+      spell?: ParsedWeapon
+      /** Scroll position to return to; the page starts at the top otherwise. */
+      scrollY?: number
+    }
   | { name: 'record'; record: BattleRecord }
 
 export function App() {
@@ -36,7 +47,31 @@ export function App() {
   // A battle under way is where you want to land after the phone locks mid-game.
   const [view, setView] = useState<View>(() => (battle && lists.A && lists.B ? { name: 'battle' } : { name: 'home' }))
 
+  const [undoStack, setUndoStack] = useState<BattleState[]>(() => (battle ? loadUndo(battle.id) : []))
+
+  const chargerScroll = useRef(0)
+  // An attack page always opens at the top, where the target list is, unless it's being returned to.
+  useEffect(() => {
+    if (view.name !== 'battle-attack') return
+    const y = view.scrollY ?? 0
+    requestAnimationFrame(() => window.scrollTo({ top: y }))
+  }, [view])
+
   useEffect(() => saveBattle(battle), [battle])
+  useEffect(() => saveUndo(undoStack), [undoStack])
+
+  /** Every change to a battle in progress goes through here, so it can be undone. */
+  const changeBattle = (next: BattleState) => {
+    if (!battle || next === battle) return
+    setUndoStack((stack) => [...stack, battle].slice(-MAX_UNDO))
+    setBattle(next)
+  }
+  const undo = () => {
+    const previous = undoStack.at(-1)
+    if (!previous) return
+    setUndoStack(undoStack.slice(0, -1))
+    setBattle(previous)
+  }
 
   /** The only place a battle leaves the active slot, so it can't be archived twice. */
   const archiveBattle = () => {
@@ -48,6 +83,7 @@ export function App() {
       saveHistory(next)
     }
     setBattle(null)
+    setUndoStack([])
   }
 
   const setList = (side: Side, list: ParsedList | null) => {
@@ -91,14 +127,22 @@ export function App() {
           target: view.target,
           strikeBack: view.strikeBack,
           spell: view.spell,
-          onApply: (record) => setBattle(recordAttack(battle, record)),
+          onApply: (record) => changeBattle(recordAttack(battle, record)),
           onStrikeBack: () => {
             const melee = battle.activation?.melee
-            if (melee) setView({ name: 'battle-attack', attacker: melee.target, target: melee.charger, strikeBack: true })
+            if (!melee) return
+            // Remembered so ending the strike back lands back where the charger left off.
+            chargerScroll.current = window.scrollY
+            setView({ name: 'battle-attack', attacker: melee.target, target: melee.charger, strikeBack: true })
+          },
+          onEndStrikeBack: () => {
+            const melee = battle.activation?.melee
+            if (!melee) return setView({ name: 'battle' })
+            setView({ name: 'battle-attack', attacker: melee.charger, scrollY: chargerScroll.current })
           },
           onEndActivation: () => {
             // Morale tests this causes are asked for on the battle screen.
-            setBattle(endActivation(battle))
+            changeBattle(endActivation(battle))
             setView({ name: 'battle' })
           },
         }}
@@ -111,7 +155,8 @@ export function App() {
       <BattleScreen
         state={battle}
         lists={both}
-        onChange={setBattle}
+        onChange={changeBattle}
+        onUndo={undoStack.length > 0 ? undo : null}
         onAttack={(attacker, options) => setView({ name: 'battle-attack', attacker, ...options })}
         onLeave={() => setView({ name: 'home' })}
         onShowLog={() => setView({ name: 'battle-log' })}

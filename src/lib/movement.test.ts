@@ -56,7 +56,9 @@ describe('movement', () => {
     expect(move('Rapid Advance').moves.advance).toBe(10)
   })
 
-  it('notes Quick Shot', () => {
+  it('notes Quick Shot, including from its Aura', () => {
     expect(move('Quick Shot').canShootAfterRush).toBe(true)
+    expect(move('Quick Shot Aura').canShootAfterRush).toBe(true)
+    expect(move().canShootAfterRush).toBe(false)
   })
 })

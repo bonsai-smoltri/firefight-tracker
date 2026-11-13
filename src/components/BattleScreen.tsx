@@ -34,6 +34,8 @@ interface Props {
   state: BattleState
   lists: Record<Player, ParsedList>
   onChange: (state: BattleState) => void
+  /** Steps back to the state before the last change; null when there's nothing to undo. */
+  onUndo: (() => void) | null
   onAttack: (attacker: UnitKey, options?: { target?: UnitKey; strikeBack?: boolean; spell?: ParsedWeapon }) => void
   /** Back home with the battle still in progress. */
   onLeave: () => void
@@ -74,7 +76,7 @@ const DONE_LABEL: Record<ActivationAction, string> = {
   idle: 'Recovered',
 }
 
-export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShowLog, onFinish, onAbandon }: Props) {
+export function BattleScreen({ state, lists, onChange, onUndo, onAttack, onLeave, onShowLog, onFinish, onAbandon }: Props) {
   const [choosing, setChoosing] = useState<UnitKey | null>(null)
   const [casting, setCasting] = useState(false)
   useEffect(() => setCasting(false), [state.activation?.unit])
@@ -111,6 +113,16 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShow
               {state.complete ? 'Battle over' : over ? 'End of round' : `${state.listNames[state.turn]} to activate`}
             </div>
           </div>
+          <button
+            type="button"
+            class="btn btn-ghost h-11 min-h-11 gap-1"
+            disabled={!onUndo}
+            onClick={() => onUndo?.()}
+            aria-label="Undo last change"
+
+          >
+            <span aria-hidden="true">↶</span> Undo
+          </button>
           <details class="dropdown dropdown-end">
             <summary class="btn btn-ghost h-11 min-h-11" aria-label="Battle menu">
               ☰
@@ -215,7 +227,10 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShow
                           )}
                           {activation.action !== 'idle' &&
                             (activation.action !== 'rush' ||
-                              movement(parsedUnit(activeUnit)?.rules ?? [], context).canShootAfterRush) && (
+                              movement(
+                                [...(parsedUnit(activeUnit)?.rules ?? []), ...grantedByAuras(state, activeUnit.key)],
+                                context,
+                              ).canShootAfterRush) && (
                             <button type="button" class="btn btn-primary h-11" onClick={() => onAttack(activation.unit)}>
                               {activation.action === 'charge' ? 'Fight' : 'Shoot'}
                             </button>
