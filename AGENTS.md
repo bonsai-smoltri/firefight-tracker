@@ -61,7 +61,18 @@ src/
   components/
     ListSlot.tsx       # import by link or export file, list preview
     UnitSummary.tsx    # one unit's stats, weapons and rules
+    AttackScreen.tsx   # attacker/target/weapon pickers, situation toggles, readout, Roll
+    AttackReadout.tsx  # final roll numbers as plain lines, plus the expected wounds
+    RollResult.tsx     # each rolled step with its dice
+    RulesInPlay.tsx    # every rule's status for this attack, with its text
+    Stepper.tsx        # touch-sized +/- count, copied from hammer-math
 ```
+
+Screens are switched by a `view` state in `app.tsx`; there is no router. The attack screen only
+shows situation toggles that some rule in play cares about (`attackControls`), plus Cover for
+shooting and Charging/Fatigued for melee. Dice are rolled by `lib/rules/dice.ts` from the same
+`ResolvedAttack` the readout shows, and only when Roll is pressed; a roll is hidden as soon as any
+input changes.
 
 ### Rules engine
 

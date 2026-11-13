@@ -1,5 +1,13 @@
 import type { ParsedUnit, ParsedWeapon, RuleRef, RuleText } from '../../types/list.ts'
-import type { AttackMode, RuleConditions, RuleEffects, RulePart, Situation } from '../../types/rules.ts'
+import {
+  SITUATION_KEYS,
+  type AttackMode,
+  type RuleConditions,
+  type RuleEffects,
+  type RulePart,
+  type Situation,
+  type SituationKey,
+} from '../../types/rules.ts'
 import { hashText } from './hash.ts'
 import { resolveRule, type ResolveContext, type ResolvedRule } from './resolve.ts'
 
@@ -25,6 +33,8 @@ export interface AttackInput {
 export type RuleStatus = 'applied' | 'inactive' | 'replaced' | 'manual' | 'text' | 'grant' | 'unmapped' | 'unreviewed'
 
 export interface RuleReport {
+  /** Rule id from the list, for looking up its text. */
+  id: string
   label: string
   /** Mapped rule name, when it differs from the label (aliases and wrappers). */
   resolvedAs: string | null
@@ -44,6 +54,8 @@ export interface ResolvedAttack {
   extraAttacks: { count: number; on: number } | null
   blast: number
   ap: number
+  /** Target's Defense after rules such as Armor, before modifiers. */
+  defense: number
   /** Unmodified Defense roll needed to block. */
   blockOn: number
   /** Block roll against hits from unmodified 6s, when they carry extra AP. */
@@ -110,7 +122,7 @@ function collect(
 
   for (const { ref, owner, resolved } of owned) {
     const report = (status: RuleStatus, resolvedAs: string | null = null, note?: string) =>
-      reports.push({ label: ref.label, resolvedAs, owner, status, note })
+      reports.push({ id: ref.id, label: ref.label, resolvedAs, owner, status, note })
 
     if (resolved.kind === 'unmapped') {
       report('unmapped')
@@ -236,6 +248,7 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
     extraAttacks,
     blast: Math.max(1, ...values(att, (e) => e.blast)),
     ap,
+    defense,
     blockOn,
     blockOnSix,
     rerollDefenseFrom: rerolls.length ? Math.min(...rerolls) : null,
@@ -327,6 +340,35 @@ function estimate(attack: Omit<ResolvedAttack, 'estimate'>, target: ParsedUnit, 
   if (attack.ignoreWoundsOn !== null) wounds *= 1 - (7 - attack.ignoreWoundsOn) / 6
 
   return { hits, wounds }
+}
+
+const BASE_SITUATIONS: Record<AttackMode, SituationKey[]> = {
+  shooting: ['targetInCover'],
+  melee: ['charging', 'attackerFatigued'],
+}
+
+/** The situation toggles and manual rules that can change this attack, so the UI only shows those. */
+export function attackControls(
+  input: Pick<AttackInput, 'attacker' | 'weapon' | 'target' | 'mode' | 'context' | 'granted'>,
+): { situations: SituationKey[]; manual: string[] } {
+  const keys = new Set<SituationKey>(BASE_SITUATIONS[input.mode])
+  const manual = new Set<string>()
+  const sides: [RuleRef[], RulePart['side']][] = [
+    [[...input.attacker.rules, ...input.weapon.rules, ...(input.granted?.attacker ?? [])], 'attacker'],
+    [[...input.target.rules, ...(input.granted?.target ?? [])], 'defender'],
+  ]
+  for (const [refs, side] of sides) {
+    for (const ref of refs) {
+      const resolved = resolveRule(ref.name, ref.rating, input.context, ref.label)
+      if (resolved.kind !== 'mapped' || (resolved.mode && resolved.mode !== input.mode)) continue
+      for (const part of resolved.mapping.parts) {
+        if (part.side !== side || (part.conditions?.mode && part.conditions.mode !== input.mode)) continue
+        part.conditions?.situation?.forEach((key) => keys.add(key))
+        if (part.manual) manual.add(resolved.mapping.name)
+      }
+    }
+  }
+  return { situations: SITUATION_KEYS.filter((key) => keys.has(key)), manual: [...manual] }
 }
 
 /** Shooting for ranged weapons, melee for range 0; Assault weapons can do both. */

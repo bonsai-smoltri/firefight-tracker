@@ -1,15 +1,23 @@
 import { useState } from 'preact/hooks'
+import { AttackScreen } from './components/AttackScreen'
 import { ListSlot } from './components/ListSlot'
 import { clearList, loadList, saveList, type Side } from './lib/storage'
 import type { ParsedList } from './types/list'
 
+type View = 'home' | 'attack'
+
 export function App() {
   const [lists, setLists] = useState<Record<Side, ParsedList | null>>(() => ({ A: loadList('A'), B: loadList('B') }))
+  const [view, setView] = useState<View>('home')
 
   const setList = (side: Side, list: ParsedList | null) => {
     if (list) saveList(side, list)
     else clearList(side)
     setLists((current) => ({ ...current, [side]: list }))
+  }
+
+  if (view === 'attack' && lists.A && lists.B) {
+    return <AttackScreen lists={{ A: lists.A, B: lists.B }} onBack={() => setView('home')} />
   }
 
   return (
@@ -24,6 +32,9 @@ export function App() {
           onClear={() => setList(side, null)}
         />
       ))}
+      <button type="button" class="btn btn-primary h-11" disabled={!lists.A || !lists.B} onClick={() => setView('attack')}>
+        Attack calculator
+      </button>
     </main>
   )
 }

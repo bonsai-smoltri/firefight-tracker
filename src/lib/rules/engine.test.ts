@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { defenseFaces, resolveAttack, weaponModes } from './engine.ts'
+import { attackControls, defenseFaces, resolveAttack, weaponModes } from './engine.ts'
 import { attack, rule, unit, weapon } from './fixtures.ts'
 
 const gun = (attacks: number, ...rules: string[]) => weapon({ attacks, rules: rules.map(rule) })
@@ -233,6 +233,33 @@ describe('resolution', () => {
     expect(result.hitOn).toBe(4)
     expect(statusOf(result, 'Hero')).toBe('text')
     expect(statusOf(result, 'Mystery Rule')).toBe('unmapped')
+  })
+})
+
+describe('attackControls', () => {
+  const controls = (overrides: Parameters<typeof attack>[0]) => {
+    const { attacker, weapon: w, target, mode, context, granted } = attack(overrides)
+    return attackControls({ attacker, weapon: w, target, mode, context, granted })
+  }
+
+  it('always offers cover for shooting and charging and fatigue for melee', () => {
+    expect(controls({})).toEqual({ situations: ['targetInCover'], manual: [] })
+    expect(controls({ mode: 'melee' }).situations).toEqual(['charging', 'attackerFatigued'])
+  })
+
+  it('adds the toggles that rules in play care about, for this mode only', () => {
+    const target = unit({ rules: [rule('Stealth'), rule('Entrenched')] })
+    expect(controls({ target }).situations).toEqual(['overNine', 'overTwelve', 'targetInCover', 'targetStationary'])
+    expect(controls({ target, mode: 'melee' }).situations).toEqual(['charging', 'attackerFatigued'])
+    expect(controls({ attacker: unit({ rules: [rule('Brutal')] }), mode: 'melee' }).situations).toEqual([
+      'charging',
+      'chargeOverSix',
+      'attackerFatigued',
+    ])
+  })
+
+  it('lists manual rules', () => {
+    expect(controls({ target: unit({ rules: [rule('Protection Feat')] }) }).manual).toEqual(['Protection Feat'])
   })
 })
 
