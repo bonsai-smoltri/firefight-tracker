@@ -101,3 +101,30 @@ function resolve(
 export function defaultContext(index: RuleIndex): ResolveContext {
   return { mappings: RULE_MAPPINGS, aliasOf: aliasLookup(index) }
 }
+
+export interface GrantOption {
+  /** Rule label on the giver, e.g. "Stealth Buff". */
+  label: string
+  scope: Exclude<GrantScope, 'aura'>
+  /** The rule the receiving unit gets, e.g. Stealth. */
+  rule: { id: string; name: string; rating: number | null; label: string }
+}
+
+/**
+ * Buffs and Marks an army can hand out, deduplicated by rule. Debuffs are left out: their base
+ * rule usually reads the opposite way (Defense Debuff is -1 Defense), so applying the base rule
+ * would get the sign wrong.
+ */
+export function grantOptions(
+  refs: { name: string; rating: number | null; label: string }[],
+  context: ResolveContext,
+): GrantOption[] {
+  const options = new Map<string, GrantOption>()
+  for (const ref of refs) {
+    const resolved = resolveRule(ref.name, ref.rating, context, ref.label)
+    if (resolved.kind !== 'grant' || resolved.scope === 'debuff' || options.has(ref.name)) continue
+    const name = ref.name.replace(/ (Buff|Mark)$/, '')
+    options.set(ref.name, { label: ref.name, scope: resolved.scope, rule: { id: '', name, rating: ref.rating, label: ref.name } })
+  }
+  return [...options.values()]
+}

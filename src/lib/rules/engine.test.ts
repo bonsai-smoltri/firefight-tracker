@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { attackControls, defenseFaces, resolveAttack, weaponModes } from './engine.ts'
-import { attack, rule, unit, weapon } from './fixtures.ts'
+import { attack, rule, testContext, unit, weapon } from './fixtures.ts'
+import { grantOptions } from './resolve.ts'
 
 const gun = (attacks: number, ...rules: string[]) => weapon({ attacks, rules: rules.map(rule) })
 const statusOf = (result: ReturnType<typeof resolveAttack>, label: string) =>
@@ -226,6 +227,14 @@ describe('resolution', () => {
     )
     expect(result.blast).toBe(1)
     expect(statusOf(result, 'Blast(3)')).toBe('unreviewed')
+  })
+
+  it('lists the Buffs and Marks an army can give, without Debuffs or duplicates', () => {
+    const refs = ['Stealth Buff', 'Stealth Buff', 'Defense Debuff', 'Rending in Melee Buff', 'Hero', 'Mystery Buff'].map(rule)
+    expect(grantOptions(refs, testContext).map((o) => [o.label, o.rule.name])).toEqual([
+      ['Stealth Buff', 'Stealth'],
+      ['Rending in Melee Buff', 'Rending in Melee'],
+    ])
   })
 
   it('reports text-only and unmapped rules without changing the maths', () => {

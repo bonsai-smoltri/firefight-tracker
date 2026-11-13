@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'preact/hooks'
 import ruleIndex from '../data/rule-index.json'
+import { grantedByAuras, isOut, modelsLeft, unitKey, type AttackRecord } from '../lib/battle'
 import { rollAttack, type AttackRoll } from '../lib/rules/dice'
 import { attackControls, resolveAttack, weaponModes, type ResolvedAttack } from '../lib/rules/engine'
-import { defaultContext } from '../lib/rules/resolve'
+import { defaultContext, grantOptions, type GrantOption } from '../lib/rules/resolve'
 import type { Side } from '../lib/storage'
-import type { ParsedList, ParsedUnit } from '../types/list'
+import type { BattleState, UnitKey } from '../types/battle'
+import type { ParsedList, ParsedUnit, RuleRef } from '../types/list'
 import { SITUATION_DEFS, defaultSituation, type AttackMode, type RuleIndex, type Situation, type SituationKey } from '../types/rules'
 import { AttackReadout } from './AttackReadout'
 import { RollResult } from './RollResult'
@@ -15,34 +17,102 @@ const context = defaultContext(ruleIndex as RuleIndex)
 const other = (side: Side): Side => (side === 'A' ? 'B' : 'A')
 const unitName = (u: ParsedUnit) => u.customName ?? u.name
 
+/** Set when the attack is part of a battle: the attacker is fixed and wounds can be applied. */
+export interface BattleAttack {
+  state: BattleState
+  attacker: UnitKey
+  /** Fixed target, e.g. the charger when striking back. */
+  target?: UnitKey
+  strikeBack?: boolean
+  onApply: (record: AttackRecord) => void
+  /** Offered once a charge has been fought and the target hasn't struck back. */
+  onStrikeBack: () => void
+  onEndActivation: () => void
+}
+
 interface Props {
   lists: Record<Side, ParsedList>
   onBack: () => void
+  backLabel?: string
+  battle?: BattleAttack
 }
 
-export function AttackScreen({ lists, onBack }: Props) {
-  const [attackerSide, setAttackerSide] = useState<Side>('A')
-  const [attackerId, setAttackerId] = useState(lists.A.units[0].id)
-  const [targetId, setTargetId] = useState(lists.B.units[0].id)
+function initialState(lists: Record<Side, ParsedList>, battle?: BattleAttack) {
+  if (!battle) {
+    return { side: 'A' as Side, attackerId: lists.A.units[0].id, targetId: lists.B.units[0].id, situation: defaultSituation() }
+  }
+  const attacker = battle.state.units[battle.attacker]
+  const side = attacker.player
+  const activation = battle.state.activation
+  const enemies = Object.values(battle.state.units).filter((u) => u.player !== side && !isOut(u))
+  const targetKey = battle.target ?? activation?.melee?.target ?? enemies[0]?.key
+  const target = targetKey ? battle.state.units[targetKey] : undefined
+  const charging = !battle.strikeBack && activation?.unit === battle.attacker && activation.action === 'charge'
+  return {
+    side,
+    attackerId: attacker.unitId,
+    targetId: target?.unitId ?? lists[other(side)].units[0].id,
+    situation: {
+      ...defaultSituation(),
+      charging,
+      attackerFatigued: attacker.fatigued || (battle.strikeBack === true && attacker.shaken),
+      targetStationary: target ? !target.moved : false,
+    },
+  }
+}
+
+export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }: Props) {
+  const [initial] = useState(() => initialState(lists, battle))
+  const [attackerSide, setAttackerSide] = useState<Side>(initial.side)
+  const [attackerId, setAttackerId] = useState(initial.attackerId)
+  const [targetId, setTargetId] = useState(initial.targetId)
   const [weaponIndex, setWeaponIndex] = useState(0)
-  const [modeChoice, setModeChoice] = useState<AttackMode | null>(null)
+  const [modeChoice, setModeChoice] = useState<AttackMode | null>(battle?.strikeBack ? 'melee' : null)
   const [weaponCount, setWeaponCount] = useState<number | null>(null)
   const [targetModels, setTargetModels] = useState<number | null>(null)
-  const [situation, setSituation] = useState<Situation>(defaultSituation)
+  const [situation, setSituation] = useState<Situation>(initial.situation)
   const [manual, setManual] = useState<string[]>([])
+  const [grants, setGrants] = useState<string[]>([])
   const [roll, setRoll] = useState<{ for: ResolvedAttack; result: AttackRoll } | null>(null)
+  const [woundsToApply, setWoundsToApply] = useState(0)
+  const [applied, setApplied] = useState<string | null>(null)
 
   const attackerList = lists[attackerSide]
-  const targetList = lists[other(attackerSide)]
+  const targetSide = other(attackerSide)
+  const targetList = lists[targetSide]
   const attacker = attackerList.units.find((u) => u.id === attackerId) ?? attackerList.units[0]
   const target = targetList.units.find((u) => u.id === targetId) ?? targetList.units[0]
+  const attackerKey = unitKey(attackerSide, attacker.id)
+  const targetKey = unitKey(targetSide, target.id)
+  const attackerState = battle?.state.units[attackerKey]
+  const targetState = battle?.state.units[targetKey]
+
   const weapon = attacker.weapons[weaponIndex] ?? attacker.weapons[0]
   const modes = weapon ? weaponModes(weapon) : []
   const mode = modeChoice && modes.includes(modeChoice) ? modeChoice : modes[0]
   const ruleTexts = useMemo(() => ({ ...lists.A.rules, ...lists.B.rules }), [lists])
 
-  const models = targetModels ?? target.size
-  const copies = weaponCount ?? weapon?.count ?? 0
+  const targetLeft = targetState ? Math.max(1, modelsLeft(targetState)) : target.size
+  const models = Math.min(targetModels ?? targetLeft, target.size)
+  const attackerLeft = attackerState ? modelsLeft(attackerState) : attacker.size
+  const scaledCopies = weapon ? Math.max(1, Math.round((weapon.count * attackerLeft) / attacker.size)) : 0
+  const copies = weaponCount ?? scaledCopies
+
+  const grantChoices = useMemo(
+    () => ({
+      attacker: grantOptions(attackerList.units.flatMap((u) => u.rules), context),
+      target: grantOptions(targetList.units.flatMap((u) => u.rules), context).filter((g) => g.scope === 'buff'),
+    }),
+    [attackerList, targetList],
+  )
+  const granted = useMemo(() => {
+    const pick = (options: GrantOption[], key: string): RuleRef[] =>
+      options.filter((o) => grants.includes(`${key}:${o.label}`)).map((o) => o.rule)
+    return {
+      attacker: [...(battle ? grantedByAuras(battle.state, attackerKey) : []), ...pick(grantChoices.attacker, 'attacker')],
+      target: [...(battle ? grantedByAuras(battle.state, targetKey) : []), ...pick(grantChoices.target, 'target')],
+    }
+  }, [battle, attackerKey, targetKey, grantChoices, grants])
 
   const resolved = useMemo(
     () =>
@@ -58,24 +128,32 @@ export function AttackScreen({ lists, onBack }: Props) {
             targetModels: models,
             manual,
             ruleTexts,
+            granted,
           })
         : null,
-    [attacker, weapon, target, mode, situation, copies, models, manual, ruleTexts],
+    [attacker, weapon, target, mode, situation, copies, models, manual, ruleTexts, granted],
   )
   const controls = useMemo(
-    () => (weapon && mode ? attackControls({ attacker, weapon, target, mode, context }) : { situations: [], manual: [] }),
-    [attacker, weapon, target, mode],
+    () =>
+      weapon && mode ? attackControls({ attacker, weapon, target, mode, context, granted }) : { situations: [], manual: [] },
+    [attacker, weapon, target, mode, granted],
   )
 
+  const clearResult = () => {
+    setApplied(null)
+    setWoundsToApply(0)
+  }
   const pickAttacker = (id: string) => {
     setAttackerId(id)
     setWeaponIndex(0)
     setModeChoice(null)
     setWeaponCount(null)
+    clearResult()
   }
   const pickTarget = (id: string) => {
     setTargetId(id)
     setTargetModels(null)
+    clearResult()
   }
   const swap = () => {
     setAttackerSide(other(attackerSide))
@@ -91,28 +169,68 @@ export function AttackScreen({ lists, onBack }: Props) {
     if (key === 'chargeOverSix' && on) next.charging = true
     setSituation(next)
   }
+  const toggleGrant = (id: string) => setGrants(grants.includes(id) ? grants.filter((g) => g !== id) : [...grants, id])
 
   const currentRoll = roll && roll.for === resolved ? roll.result : null
+  const doRoll = () => {
+    if (!resolved) return
+    const result = rollAttack(resolved, { models, tough: target.tough })
+    setRoll({ for: resolved, result })
+    setWoundsToApply(result.wounds)
+    setApplied(null)
+  }
+  const apply = () => {
+    if (!battle || !weapon || !mode) return
+    battle.onApply({
+      attacker: attackerKey,
+      target: targetKey,
+      weapon: weapon.name,
+      mode,
+      wounds: woundsToApply,
+      strikeBack: battle.strikeBack,
+    })
+    setApplied(`${woundsToApply} wound${woundsToApply === 1 ? '' : 's'} applied to ${unitName(target)}`)
+    setRoll(null)
+    setWoundsToApply(0)
+  }
+
+  const targets = battle ? targetList.units.filter((u) => !isOut(battle.state.units[unitKey(targetSide, u.id)])) : targetList.units
 
   return (
     <div class="flex flex-col min-h-dvh">
       <header class="sticky top-0 z-10 bg-base-100 border-b border-base-content/10 pt-safe">
         <div class="flex items-center gap-2 px-2 h-14 max-w-xl mx-auto">
-          <button type="button" class="btn btn-ghost h-11 min-h-11" onClick={onBack} aria-label="Back to lists">
-            ← Lists
+          <button type="button" class="btn btn-ghost h-11 min-h-11" onClick={onBack}>
+            {backLabel}
           </button>
-          <h1 class="font-bold flex-1 text-center">Attack</h1>
+          <h1 class="font-bold flex-1 text-center">{battle?.strikeBack ? 'Strike back' : 'Attack'}</h1>
           <span class="w-20" aria-hidden="true" />
         </div>
       </header>
 
       <main class="flex flex-col gap-3 px-4 py-3 pb-safe max-w-xl mx-auto w-full">
         <div class="flex items-end gap-2">
-          <UnitSelect label={`Attacker · ${attackerList.name}`} list={attackerList} unit={attacker} onPick={pickAttacker} />
-          <button type="button" class="btn btn-ghost border border-base-content/20 h-11 min-h-11 w-11 p-0" onClick={swap} aria-label="Swap attacker and target">
-            ⇄
-          </button>
-          <UnitSelect label={`Target · ${targetList.name}`} list={targetList} unit={target} onPick={pickTarget} />
+          <UnitSelect
+            label={`Attacker · ${attackerList.name}`}
+            units={attackerList.units}
+            unit={attacker}
+            onPick={pickAttacker}
+            locked={!!battle}
+            left={attackerState ? modelsLeft(attackerState) : null}
+          />
+          {!battle && (
+            <button type="button" class="btn btn-ghost border border-base-content/20 h-11 min-h-11 w-11 p-0" onClick={swap} aria-label="Swap attacker and target">
+              ⇄
+            </button>
+          )}
+          <UnitSelect
+            label={`Target · ${targetList.name}`}
+            units={targets}
+            unit={target}
+            onPick={pickTarget}
+            locked={!!battle?.target}
+            left={targetState ? modelsLeft(targetState) : null}
+          />
         </div>
 
         {attacker.weapons.length === 0 ? (
@@ -128,8 +246,9 @@ export function AttackScreen({ lists, onBack }: Props) {
                 class={`btn h-auto min-h-11 py-2 justify-start text-left font-normal ${w === weapon ? 'btn-primary' : 'btn-ghost border border-base-content/20'}`}
                 onClick={() => {
                   setWeaponIndex(i)
-                  setModeChoice(null)
+                  setModeChoice(battle?.strikeBack ? 'melee' : null)
                   setWeaponCount(null)
+                  clearResult()
                 }}
               >
                 {w.count > 1 && `${w.count}× `}
@@ -156,7 +275,7 @@ export function AttackScreen({ lists, onBack }: Props) {
           </div>
         )}
 
-        {weapon && (
+        {weapon && (weapon.count > 1 || target.size > 1) && (
           <div class="flex flex-col gap-2">
             {weapon.count > 1 && (
               <Stepper label="Weapons attacking" value={copies} onChange={setWeaponCount} min={1} max={weapon.count} />
@@ -167,7 +286,7 @@ export function AttackScreen({ lists, onBack }: Props) {
           </div>
         )}
 
-        {controls.situations.length > 0 && (
+        {(controls.situations.length > 0 || controls.manual.length > 0) && (
           <div class="flex flex-wrap gap-2" aria-label="Situation">
             {SITUATION_DEFS.filter((d) => controls.situations.includes(d.key)).map((def) => (
               <Toggle key={def.key} label={def.label} hint={def.hint} on={situation[def.key]} onClick={() => toggle(def.key)} />
@@ -184,19 +303,41 @@ export function AttackScreen({ lists, onBack }: Props) {
           </div>
         )}
 
+        {(grantChoices.attacker.length > 0 || grantChoices.target.length > 0) && (
+          <details class="collapse collapse-arrow bg-base-200">
+            <summary class="collapse-title min-h-11 text-sm font-medium">
+              Buffs and Marks{grants.length > 0 && <span class="font-normal opacity-70"> · {grants.length} on</span>}
+            </summary>
+            <div class="collapse-content flex flex-col gap-2">
+              <GrantToggles title={`On ${unitName(attacker)}`} options={grantChoices.attacker} prefix="attacker" grants={grants} onToggle={toggleGrant} />
+              <GrantToggles title={`On ${unitName(target)}`} options={grantChoices.target} prefix="target" grants={grants} onToggle={toggleGrant} />
+            </div>
+          </details>
+        )}
+
         {resolved && (
           <>
             <section class="card bg-base-200">
               <div class="card-body p-4 gap-3">
                 <AttackReadout attack={resolved} targetModels={models} targetTough={target.tough} />
-                <button
-                  type="button"
-                  class="btn btn-primary h-11"
-                  onClick={() => setRoll({ for: resolved, result: rollAttack(resolved, { models, tough: target.tough }) })}
-                >
+                <button type="button" class="btn btn-primary h-11" onClick={doRoll}>
                   {currentRoll ? 'Roll again' : 'Roll'}
                 </button>
                 {currentRoll && <RollResult roll={currentRoll} />}
+                {battle && (
+                  <div class="flex flex-col gap-2 border-t border-base-content/10 pt-3">
+                    <Stepper label="Wounds dealt" value={woundsToApply} onChange={setWoundsToApply} min={0} />
+                    <button type="button" class="btn btn-secondary h-11" onClick={apply}>
+                      Apply {woundsToApply} wound{woundsToApply === 1 ? '' : 's'} to {unitName(target)}
+                    </button>
+                    {applied && (
+                      <p role="status" class="text-sm opacity-80">
+                        ✓ {applied}
+                      </p>
+                    )}
+                  </div>
+                )}
+                {battle && <ActivationButtons battle={battle} />}
               </div>
             </section>
             <RulesInPlay rules={resolved.rules} texts={ruleTexts} />
@@ -207,21 +348,85 @@ export function AttackScreen({ lists, onBack }: Props) {
   )
 }
 
-function UnitSelect({ label, list, unit, onPick }: { label: string; list: ParsedList; unit: ParsedUnit; onPick: (id: string) => void }) {
+function ActivationButtons({ battle }: { battle: BattleAttack }) {
+  const melee = battle.state.activation?.melee
+  const canStrikeBack = !battle.strikeBack && melee && !melee.struckBack && !isOut(battle.state.units[melee.target])
+  return (
+    <div class={`grid gap-2 ${canStrikeBack ? 'grid-cols-2' : 'grid-cols-1'}`}>
+      {canStrikeBack && (
+        <button type="button" class="btn btn-outline h-11" onClick={battle.onStrikeBack}>
+          Strike back
+        </button>
+      )}
+      <button type="button" class="btn btn-outline h-11" onClick={battle.onEndActivation}>
+        End activation
+      </button>
+    </div>
+  )
+}
+
+function UnitSelect({
+  label,
+  units,
+  unit,
+  onPick,
+  locked,
+  left,
+}: {
+  label: string
+  units: ParsedUnit[]
+  unit: ParsedUnit
+  onPick: (id: string) => void
+  locked: boolean
+  left: number | null
+}) {
   return (
     <label class="flex-1 min-w-0 flex flex-col gap-1">
       <span class="text-xs opacity-70 truncate">{label}</span>
-      <select class="select select-bordered h-11 w-full" value={unit.id} onChange={(e) => onPick((e.target as HTMLSelectElement).value)}>
-        {list.units.map((u) => (
+      <select
+        class="select select-bordered h-11 w-full"
+        value={unit.id}
+        disabled={locked}
+        onChange={(e) => onPick((e.target as HTMLSelectElement).value)}
+      >
+        {units.map((u) => (
           <option key={u.id} value={u.id}>
             {unitName(u)}
           </option>
         ))}
       </select>
       <span class="text-xs opacity-70">
-        Q{unit.quality}+ D{unit.defense}+{unit.tough > 1 ? ` · Tough ${unit.tough}` : ''} · {unit.size === 1 ? '1 model' : `${unit.size} models`}
+        Q{unit.quality}+ D{unit.defense}+{unit.tough > 1 ? ` · Tough ${unit.tough}` : ''} ·{' '}
+        {left !== null && left !== unit.size ? `${left}/${unit.size} models` : unit.size === 1 ? '1 model' : `${unit.size} models`}
       </span>
     </label>
+  )
+}
+
+function GrantToggles({
+  title,
+  options,
+  prefix,
+  grants,
+  onToggle,
+}: {
+  title: string
+  options: GrantOption[]
+  prefix: string
+  grants: string[]
+  onToggle: (id: string) => void
+}) {
+  if (options.length === 0) return null
+  return (
+    <div class="flex flex-col gap-1">
+      <span class="text-xs opacity-70">{title}</span>
+      <div class="flex flex-wrap gap-2">
+        {options.map((o) => {
+          const id = `${prefix}:${o.label}`
+          return <Toggle key={id} label={o.rule.name} hint={`Given by ${o.label}`} on={grants.includes(id)} onClick={() => onToggle(id)} />
+        })}
+      </div>
+    </div>
   )
 }
 

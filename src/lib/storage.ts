@@ -1,3 +1,4 @@
+import type { BattleState, Player } from '../types/battle'
 import type { ParsedList, ParsedUnit } from '../types/list'
 
 export type Side = 'A' | 'B'
@@ -57,4 +58,79 @@ export function loadList(side: Side): ParsedList | null {
 
 export function clearList(side: Side): void {
   localStorage.removeItem(LIST_KEYS[side])
+}
+
+const BATTLE_KEY = 'firefight-battle'
+const HISTORY_KEY = 'firefight-history'
+export const MAX_HISTORY = 20
+
+export function isBattleState(v: unknown): v is BattleState {
+  return (
+    isObject(v) &&
+    typeof v.id === 'string' &&
+    isNumber(v.round) &&
+    (v.turn === 'A' || v.turn === 'B') &&
+    isObject(v.units) &&
+    Object.values(v.units).every(
+      (u) => isObject(u) && typeof u.key === 'string' && isNumber(u.wounds) && isNumber(u.size) && isNumber(u.tough),
+    ) &&
+    Array.isArray(v.objectives) &&
+    Array.isArray(v.pendingMorale) &&
+    Array.isArray(v.log) &&
+    Array.isArray(v.auras) &&
+    isObject(v.listNames)
+  )
+}
+
+export function saveBattle(state: BattleState | null): void {
+  try {
+    if (state) localStorage.setItem(BATTLE_KEY, JSON.stringify(state))
+    else localStorage.removeItem(BATTLE_KEY)
+  } catch (e) {
+    console.warn('Failed to save battle:', e)
+  }
+}
+
+export function loadBattle(): BattleState | null {
+  try {
+    const data = localStorage.getItem(BATTLE_KEY)
+    if (!data) return null
+    const parsed: unknown = JSON.parse(data)
+    if (isBattleState(parsed)) return parsed
+    localStorage.removeItem(BATTLE_KEY)
+  } catch (e) {
+    console.warn('Failed to load battle:', e)
+  }
+  return null
+}
+
+export interface BattleRecord {
+  savedAt: number
+  winner: Player | 'draw' | null
+  state: BattleState
+}
+
+export function loadHistory(): BattleRecord[] {
+  try {
+    const parsed: unknown = JSON.parse(localStorage.getItem(HISTORY_KEY) ?? '[]')
+    if (!Array.isArray(parsed)) return []
+    return parsed.filter((r): r is BattleRecord => isObject(r) && isNumber(r.savedAt) && isBattleState(r.state)).slice(0, MAX_HISTORY)
+  } catch (e) {
+    console.warn('Failed to load battle history:', e)
+    return []
+  }
+}
+
+export function saveHistory(records: BattleRecord[]): void {
+  try {
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(records.slice(0, MAX_HISTORY)))
+  } catch (e) {
+    // Most likely the quota: keep the newest half rather than lose the battle just finished.
+    console.warn('Failed to save battle history, trimming:', e)
+    try {
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(records.slice(0, MAX_HISTORY / 2)))
+    } catch {
+      /* give up rather than break the app */
+    }
+  }
 }

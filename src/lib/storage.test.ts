@@ -1,7 +1,8 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import robotLegions from './army-forge/fixtures/robot-legions.json'
 import { parseTtsList } from './army-forge/tts'
-import { loadList, saveList } from './storage'
+import { createBattle } from './battle'
+import { loadBattle, loadHistory, loadList, saveBattle, saveHistory, saveList } from './storage'
 
 const store = new Map<string, string>()
 globalThis.localStorage = {
@@ -27,6 +28,25 @@ describe('list storage', () => {
     store.set('firefight-list-a', JSON.stringify({ name: 'old', units: [{ name: 'x' }] }))
     expect(loadList('A')).toBeNull()
     expect(store.has('firefight-list-a')).toBe(false)
+  })
+
+  it('round-trips the battle in progress and drops one that no longer fits', () => {
+    const list = parseTtsList(robotLegions, 'id', 'now')
+    const battle = createBattle({ lists: { A: list, B: list }, firstPlayer: 'A', objectiveCount: 3, auras: [], now: 1 })
+    saveBattle(battle)
+    expect(loadBattle()).toEqual(battle)
+    saveBattle(null)
+    expect(loadBattle()).toBeNull()
+    store.set('firefight-battle', JSON.stringify({ id: 'x', round: 1 }))
+    expect(loadBattle()).toBeNull()
+  })
+
+  it('keeps valid history records only', () => {
+    const list = parseTtsList(robotLegions, 'id', 'now')
+    const state = createBattle({ lists: { A: list, B: list }, firstPlayer: 'A', objectiveCount: 3, auras: [], now: 1 })
+    saveHistory([{ savedAt: 2, winner: 'A', state }])
+    store.set('firefight-history', JSON.stringify([...JSON.parse(store.get('firefight-history')!), { savedAt: 'bad' }]))
+    expect(loadHistory()).toEqual([{ savedAt: 2, winner: 'A', state }])
   })
 
   it('drops unreadable JSON', () => {

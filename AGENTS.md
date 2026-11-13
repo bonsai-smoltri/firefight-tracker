@@ -66,9 +66,40 @@ src/
     RollResult.tsx     # each rolled step with its dice
     RulesInPlay.tsx    # every rule's status for this attack, with its text
     Stepper.tsx        # touch-sized +/- count, copied from hammer-math
+    BattleSetup.tsx    # first player, objective count, Aura recipients
+    BattleScreen.tsx   # unit rows, activation panel, end of round, result
+    MoraleDialog.tsx   # Quality test with Passed/Failed and an optional Roll
+    BattleLog.tsx      # log grouped by round, shared by live and archived battles
+    HistoryList.tsx    # past battles on the home screen
+  lib/
+    battle.ts          # battle state transitions
 ```
 
-Screens are switched by a `view` state in `app.tsx`; there is no router. The attack screen only
+Screens are switched by a `view` state in `app.tsx`; there is no router: home, calculator, battle
+setup, battle, battle attack (the attack screen with a `battle` prop) and a history record. A battle
+under way is resumed straight into the battle screen on load.
+
+### Battle tracking
+
+All battle rules live in `lib/battle.ts` as pure `BattleState -> BattleState` functions, tested in
+`battle.test.ts`. Components only call them.
+
+- Units are keyed `${player}:${selectionId}`, because selection ids are only unique per list.
+- Wounds are one total per unit, filled one model at a time against Tough. `modelsLeft` and
+  `atHalfOrLess` derive from it (single-model units use their Tough).
+- Activation flow: `startActivation` → `recordAttack` (any number, including a strike back) →
+  `endActivation`, which queues morale tests in `pendingMorale`. The activation only finishes once
+  every test is resolved with `resolveMorale`. Shaken units fail automatically.
+- Melee: the first melee attack by a charging unit opens `activation.melee`. The loser is whoever
+  took more wounds this activation, counting the other side's Fear. Units in that melee don't take
+  the wounds test.
+- `endRound` only runs once every unit has activated. It clears Fatigue, adds spell tokens (max 6),
+  and gives first activation to whoever finished first. After round 4 it marks the battle complete.
+- Auras are assigned at setup (`AuraAssignment`) and reach the engine through `grantedByAuras`
+  while the holder is on the table. Buffs and Marks are per-attack toggles on the attack screen
+  (`grantOptions`). Debuffs aren't offered, because their base rule reads the opposite way.
+- `archiveBattle` in `app.tsx` is the only place a battle leaves the active slot. Changing a list
+  ends the battle, since it refers to the lists' units. The attack screen only
 shows situation toggles that some rule in play cares about (`attackControls`), plus Cover for
 shooting and Charging/Fatigued for melee. Dice are rolled by `lib/rules/dice.ts` from the same
 `ResolvedAttack` the readout shows, and only when Roll is pressed; a roll is hidden as soon as any
