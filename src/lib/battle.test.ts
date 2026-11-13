@@ -68,6 +68,7 @@ describe('activations', () => {
     state = endActivation(state)
     expect(state).toMatchObject({ turn: 'B', activation: null })
     state = endActivation(startActivation(state, 'B:vets', 'advance'))
+    expect(state.units['B:vets'].lastAction).toBe('advance')
     expect(state.finishedFirst).toBe('B')
     expect(state.turn).toBe('A')
     expect(state.units['B:vets'].moved).toBe(true)
@@ -172,7 +173,7 @@ describe('rounds', () => {
     state = playRound(state)
     state = endRound(state, ['A', null, 'B'])
     expect(state).toMatchObject({ round: 2, firstPlayer: 'B', turn: 'B', objectives: ['A', null, 'B'] })
-    expect(state.units['A:lord']).toMatchObject({ activated: false, spellTokens: 4 })
+    expect(state.units['A:lord']).toMatchObject({ activated: false, lastAction: null, spellTokens: 4 })
   })
 
   it('caps spell tokens at 6', () => {

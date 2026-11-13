@@ -1,4 +1,5 @@
-import { useState } from 'preact/hooks'
+import type { ComponentChildren } from 'preact'
+import { useEffect, useState } from 'preact/hooks'
 import {
   MAX_ROUNDS,
   MAX_SPELL_TOKENS,
@@ -6,6 +7,7 @@ import {
   cancelActivation,
   endActivation,
   endRound,
+  grantedByAuras,
   isOut,
   modelsLeft,
   resolveMorale,
@@ -19,7 +21,10 @@ import {
 } from '../lib/battle'
 import type { ActivationAction, BattleState, Player, UnitKey, UnitState } from '../types/battle'
 import type { ParsedList } from '../types/list'
-import { BattleLog } from './BattleLog'
+import ruleIndex from '../data/rule-index.json'
+import { movement, type Movement } from '../lib/movement'
+import { defaultContext } from '../lib/rules/resolve'
+import type { RuleIndex } from '../types/rules'
 import { MoraleDialog } from './MoraleDialog'
 import { Stepper } from './Stepper'
 
@@ -30,24 +35,52 @@ interface Props {
   onAttack: (attacker: UnitKey, options?: { target?: UnitKey; strikeBack?: boolean }) => void
   /** Back home with the battle still in progress. */
   onLeave: () => void
+  onShowLog: () => void
   /** Archive the battle to history. */
   onFinish: () => void
   onAbandon: () => void
 }
 
-const ACTIONS: { action: ActivationAction; label: string; hint: string }[] = [
-  { action: 'hold', label: 'Hold', hint: "0\", can shoot" },
-  { action: 'advance', label: 'Advance', hint: '6", can shoot after' },
-  { action: 'rush', label: 'Rush', hint: "12\", can't shoot" },
-  { action: 'charge', label: 'Charge', hint: '12" into melee' },
+const context = defaultContext(ruleIndex as RuleIndex)
+
+const ACTIONS: { action: ActivationAction; label: string }[] = [
+  { action: 'hold', label: 'Hold' },
+  { action: 'advance', label: 'Advance' },
+  { action: 'rush', label: 'Rush' },
+  { action: 'charge', label: 'Charge' },
 ]
 
-export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onFinish, onAbandon }: Props) {
+function actionHint(action: ActivationAction, move: Movement): string {
+  const inches = `${move.moves[action]}"`
+  switch (action) {
+    case 'hold':
+      return '0", can shoot'
+    case 'advance':
+      return `${inches}, can shoot after`
+    case 'rush':
+      return move.canShootAfterRush ? `${inches}, can shoot after` : `${inches}, can't shoot`
+    default:
+      return `${inches} into melee`
+  }
+}
+
+const DONE_LABEL: Record<ActivationAction, string> = {
+  hold: 'Held',
+  advance: 'Advanced',
+  rush: 'Rushed',
+  charge: 'Charged',
+  idle: 'Recovered',
+}
+
+export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShowLog, onFinish, onAbandon }: Props) {
   const [choosing, setChoosing] = useState<UnitKey | null>(null)
   const activation = state.activation
   const activeUnit = activation ? state.units[activation.unit] : null
   const morale = state.pendingMorale[0]
   const over = roundOver(state)
+  const [tab, setTab] = useState<Player>(state.turn)
+  // Follow the turn as it passes, so the army that activates next is the one on screen.
+  useEffect(() => setTab(state.turn), [state.turn, state.round])
 
   const parsedUnit = (u: UnitState) => lists[u.player].units.find((x) => x.id === u.unitId)
   const moraleReminders = (u: UnitState) =>
@@ -76,6 +109,11 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onFini
             </summary>
             <ul class="dropdown-content menu bg-base-200 rounded-box w-56 shadow p-0 divide-y divide-base-content/10 z-20">
               <li>
+                <button type="button" class="h-12 rounded-none" onClick={onShowLog}>
+                  Battle log ({state.log.length})
+                </button>
+              </li>
+              <li>
                 <button type="button" class="h-12 rounded-none" onClick={onLeave}>
                   Back to lists
                 </button>
@@ -92,6 +130,27 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onFini
             </ul>
           </details>
         </div>
+        <div role="tablist" aria-label="Army" class="tabs tabs-border max-w-xl mx-auto px-2">
+          {PLAYERS.map((player) => {
+            const left = unitsLeftToActivate(state, player).length
+            const toActivate = state.turn === player && !over && !state.complete
+            return (
+              <button
+                key={player}
+                type="button"
+                role="tab"
+                aria-selected={tab === player}
+                class={`tab flex-1 h-11 min-w-0 ${tab === player ? 'tab-active font-semibold' : ''}`}
+                onClick={() => setTab(player)}
+              >
+                <span class="truncate">{state.listNames[player]}</span>
+                <span class="text-xs font-normal opacity-70 shrink-0">
+                  &nbsp;· {left} left{toActivate ? ' ●' : ''}
+                </span>
+              </button>
+            )
+          })}
+        </div>
       </header>
 
       <main class="flex flex-col gap-3 px-4 py-3 pb-safe max-w-xl mx-auto w-full">
@@ -99,54 +158,15 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onFini
 
         {!state.complete && over && <RoundEnd state={state} onEnd={(objectives) => onChange(endRound(state, objectives))} />}
 
-        {activation && activeUnit && (
-          <section class="card bg-base-200 border border-primary/40" aria-label="Current activation">
-            <div class="card-body p-4 gap-3">
-              <div>
-                <h2 class="font-bold">{activeUnit.name}</h2>
-                <p class="text-sm opacity-70">{ACTIONS.find((a) => a.action === activation.action)?.label ?? 'Idle'}</p>
-              </div>
-              <div class="grid grid-cols-2 gap-2">
-                {activation.action !== 'idle' && activation.action !== 'rush' && (
-                  <button type="button" class="btn btn-primary h-11" onClick={() => onAttack(activation.unit)}>
-                    {activation.action === 'charge' ? 'Fight' : 'Shoot'}
-                  </button>
-                )}
-                {activation.melee && !isOut(state.units[activation.melee.target]) && (
-                  <button
-                    type="button"
-                    class={`btn h-11 ${activation.melee.struckBack ? 'btn-ghost border border-base-content/20' : 'btn-secondary'}`}
-                    onClick={() => onAttack(activation.melee!.target, { target: activation.melee!.charger, strikeBack: true })}
-                  >
-                    Strike back
-                  </button>
-                )}
-                <button type="button" class="btn btn-outline h-11" onClick={() => onChange(endActivation(state))}>
-                  End activation
-                </button>
-                {Object.keys(activation.woundsTaken).length === 0 && (
-                  <button type="button" class="btn btn-ghost h-11" onClick={() => onChange(cancelActivation(state))}>
-                    Cancel
-                  </button>
-                )}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {PLAYERS.map((player) => (
-          <section key={player} aria-label={state.listNames[player]} class="flex flex-col gap-2">
-            <h2 class={`text-sm font-semibold pt-2 ${state.turn === player && !over ? '' : 'opacity-60'}`}>
-              {state.listNames[player]}
-              {state.turn === player && !over && !state.complete && ' · to activate'}
-              <span class="font-normal opacity-70"> · {unitsLeftToActivate(state, player).length} left</span>
-            </h2>
+        {[tab].map((player) => (
+          <section key={player} role="tabpanel" aria-label={state.listNames[player]} class="flex flex-col gap-2">
             {Object.values(state.units)
               .filter((u) => u.player === player)
               .map((u) => (
                 <UnitRow
                   key={u.key}
                   unit={u}
+                  move={movement([...(parsedUnit(u)?.rules ?? []), ...grantedByAuras(state, u.key)], context)}
                   canActivate={!activation && !u.activated && !isOut(u) && !state.complete}
                   isActive={activation?.unit === u.key}
                   choosing={choosing === u.key}
@@ -155,12 +175,42 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onFini
                   onWounds={(w) => onChange(setWounds(state, u.key, w))}
                   onShaken={(s) => onChange(setShaken(state, u.key, s))}
                   onTokens={(t) => onChange(setSpellTokens(state, u.key, t))}
-                />
+                >
+                  {activation && activeUnit?.key === u.key && (
+                      <div class="flex flex-col gap-2" aria-label="Current activation">
+                        <p class="text-sm opacity-70">{ACTIONS.find((a) => a.action === activation.action)?.label ?? 'Idle'}</p>
+                        <div class="grid grid-cols-2 gap-2">
+                          {activation.action !== 'idle' &&
+                            (activation.action !== 'rush' ||
+                              movement(parsedUnit(activeUnit)?.rules ?? [], context).canShootAfterRush) && (
+                            <button type="button" class="btn btn-primary h-11" onClick={() => onAttack(activation.unit)}>
+                              {activation.action === 'charge' ? 'Fight' : 'Shoot'}
+                            </button>
+                          )}
+                          {activation.melee && !isOut(state.units[activation.melee.target]) && (
+                            <button
+                              type="button"
+                              class={`btn h-11 ${activation.melee.struckBack ? 'btn-ghost border border-base-content/20' : 'btn-secondary'}`}
+                              onClick={() => onAttack(activation.melee!.target, { target: activation.melee!.charger, strikeBack: true })}
+                            >
+                              Strike back
+                            </button>
+                          )}
+                          <button type="button" class="btn btn-outline h-11" onClick={() => onChange(endActivation(state))}>
+                            End activation
+                          </button>
+                          {Object.keys(activation.woundsTaken).length === 0 && (
+                            <button type="button" class="btn btn-ghost h-11" onClick={() => onChange(cancelActivation(state))}>
+                              Cancel
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                  )}
+                </UnitRow>
               ))}
           </section>
         ))}
-
-        <BattleLog state={state} />
       </main>
 
       {morale && (
@@ -178,6 +228,7 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onFini
 
 function UnitRow({
   unit,
+  move,
   canActivate,
   isActive,
   choosing,
@@ -186,8 +237,12 @@ function UnitRow({
   onWounds,
   onShaken,
   onTokens,
+  children,
 }: {
+  /** Activation controls, shown where the action buttons were. */
+  children?: ComponentChildren
   unit: UnitState
+  move: Movement
   canActivate: boolean
   isActive: boolean
   choosing: boolean
@@ -209,7 +264,9 @@ function UnitRow({
               <span class="badge badge-neutral">
                 {modelsLeft(unit)}/{unit.size} model{unit.size === 1 ? '' : 's'}
               </span>
-              {unit.activated && <span class="badge badge-outline">Activated</span>}
+              {unit.activated && (
+                <span class="badge badge-secondary">{unit.lastAction ? DONE_LABEL[unit.lastAction] : 'Activated'}</span>
+              )}
               {unit.shaken && <span class="badge badge-outline">Shaken</span>}
               {unit.fatigued && <span class="badge badge-outline">Fatigued</span>}
               {unit.routed && <span class="badge badge-outline">Routed</span>}
@@ -223,6 +280,8 @@ function UnitRow({
           )}
         </div>
 
+        {children}
+
         {choosing && (
           <div class="grid grid-cols-2 gap-2" role="group" aria-label={`Action for ${unit.name}`}>
             {unit.shaken ? (
@@ -230,13 +289,22 @@ function UnitRow({
                 Stay idle to recover
               </button>
             ) : (
-              ACTIONS.map((a) => (
+              ACTIONS.filter((a) => !move.blocked.includes(a.action)).map((a) => (
                 <button key={a.action} type="button" class="btn h-auto min-h-11 py-1 flex-col gap-0" onClick={() => onActivate(a.action)}>
                   <span>{a.label}</span>
-                  <span class="text-[10px] font-normal opacity-70">{a.hint}</span>
+                  <span class="text-[10px] font-normal opacity-70">{actionHint(a.action, move)}</span>
                 </button>
               ))
             )}
+          </div>
+        )}
+
+        {(choosing || isActive) && (
+          <div class="text-xs opacity-70 flex flex-col gap-0.5">
+            {move.sources.length > 0 && <span>Moves changed by {move.sources.join(', ')}</span>}
+            {move.notes.map((note) => (
+              <span key={note}>{note}</span>
+            ))}
           </div>
         )}
 

@@ -61,6 +61,7 @@ export function createBattle({ lists, firstPlayer, objectiveCount, auras, now = 
         shaken: false,
         fatigued: false,
         activated: false,
+        lastAction: null,
         moved: false,
         routed: false,
         caster: u.caster,
@@ -221,6 +222,7 @@ function finishActivation(state: BattleState): BattleState {
   const unit = state.units[activation.unit]
   let next = update(state, activation.unit, {
     activated: true,
+    lastAction: activation.action,
     shaken: activation.action === 'idle' ? false : unit.shaken,
   })
   next = { ...next, activation: null }
@@ -248,6 +250,7 @@ export function endRound(state: BattleState, objectives: (Player | null)[]): Bat
     unitStates[u.key] = {
       ...u,
       activated: false,
+      lastAction: null,
       fatigued: false,
       moved: false,
       spellTokens: Math.min(MAX_SPELL_TOKENS, u.spellTokens + (u.caster ?? 0)),

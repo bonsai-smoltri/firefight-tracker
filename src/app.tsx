@@ -25,6 +25,7 @@ type View =
   | { name: 'calculator' }
   | { name: 'setup' }
   | { name: 'battle' }
+  | { name: 'battle-log' }
   | { name: 'battle-attack'; attacker: UnitKey; target?: UnitKey; strikeBack?: boolean }
   | { name: 'record'; record: BattleRecord }
 
@@ -112,6 +113,7 @@ export function App() {
         onChange={setBattle}
         onAttack={(attacker, options) => setView({ name: 'battle-attack', attacker, ...options })}
         onLeave={() => setView({ name: 'home' })}
+        onShowLog={() => setView({ name: 'battle-log' })}
         onFinish={() => {
           archiveBattle()
           setView({ name: 'home' })
@@ -121,6 +123,20 @@ export function App() {
           setView({ name: 'home' })
         }}
       />
+    )
+  }
+
+  if (view.name === 'battle-log' && battle) {
+    return (
+      <main class="min-h-dvh pt-safe pb-safe px-4 max-w-xl mx-auto flex flex-col gap-4">
+        <div class="flex items-center gap-2 pt-4">
+          <button type="button" class="btn btn-ghost h-11 min-h-11" onClick={() => setView({ name: 'battle' })}>
+            ← Battle
+          </button>
+          <h1 class="text-base font-bold flex-1 min-w-0">Battle log · round {battle.round}</h1>
+        </div>
+        <BattleLog state={battle} open />
+      </main>
     )
   }
 

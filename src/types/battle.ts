@@ -20,6 +20,8 @@ export interface UnitState {
   shaken: boolean
   fatigued: boolean
   activated: boolean
+  /** Action taken this round, once its activation is done. Missing in battles saved before it existed. */
+  lastAction?: ActivationAction | null
   /** Moved this round, for rules such as Entrenched. */
   moved: boolean
   routed: boolean
