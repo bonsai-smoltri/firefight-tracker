@@ -2,494 +2,494 @@
   "gameSystem": 3,
   "syncedAt": "2026-11-13T01:02:03.677Z",
   "books": {
-    "w7qor7b2kuifcyvk": {
-      "name": "Alien Hives",
-      "version": "3.6.0"
-    },
-    "bF00yJmGNJ7VxfkN": {
-      "name": "Badland Nomads",
-      "version": "3.6.0"
-    },
-    "78qp9l5alslt6yj8": {
-      "name": "Battle Brothers",
-      "version": "3.6.0"
-    },
-    "NiptqIlNnPHx7x-X": {
-      "name": "Berserker Clans",
-      "version": "3.6.0"
-    },
-    "7oi8zeiqfamiur21": {
-      "name": "Blessed Sisters",
-      "version": "3.6.0"
-    },
-    "xnnqhh1775kvmz2r": {
-      "name": "Blood Brothers",
-      "version": "3.6.0"
-    },
-    "7ex2x15bpkmy1alv": {
-      "name": "Blood Prime Brothers",
-      "version": "3.6.0"
-    },
-    "mI0ZlbFpoT0VqC3M": {
-      "name": "Brute Coalitions",
-      "version": "3.6.0"
-    },
-    "r6hr29338u4micfw": {
-      "name": "Change Disciples",
-      "version": "3.6.0"
-    },
-    "_5ObRZWuPMwProbC": {
-      "name": "City Runners",
-      "version": "3.6.0"
-    },
-    "ewbra8nv3nq3k27p": {
-      "name": "Custodian Brothers",
-      "version": "3.6.0"
-    },
     "04z57ua0bwth37zh": {
       "name": "Daemons of Change",
-      "version": "3.6.0"
-    },
-    "9qvy1oufoangt2gl": {
-      "name": "Daemons of Lust",
-      "version": "3.6.0"
-    },
-    "fmuqw5lr5l6dq0mq": {
-      "name": "Daemons of Plague",
-      "version": "3.6.0"
-    },
-    "prsajf5ot936qznk": {
-      "name": "Daemons of War",
-      "version": "3.6.0"
-    },
-    "z8205ez2boggzs22": {
-      "name": "DAO Union",
-      "version": "3.6.0"
-    },
-    "xp5zwh73lg1uaym4": {
-      "name": "Dark Brothers",
-      "version": "3.6.0"
-    },
-    "q11la9v8h1heu9ja": {
-      "name": "Dark Elf Raiders",
-      "version": "3.6.0"
-    },
-    "gk7me4sgn9s740kw": {
-      "name": "Dark Prime Brothers",
-      "version": "3.6.0"
-    },
-    "fk1mkbp8apvltu0z": {
-      "name": "Dwarf Guilds",
-      "version": "3.6.0"
-    },
-    "nyh41t82jugcdq8m": {
-      "name": "Elven Jesters",
-      "version": "3.6.0"
-    },
-    "vux1Y5vvULmaxZ8P": {
-      "name": "Eternal Dynasty",
-      "version": "3.6.0"
-    },
-    "EvopgRFYuvvQTNZD": {
-      "name": "Gangs of New Eden",
-      "version": "3.6.0"
-    },
-    "k5T0f2XIfpmPO28h": {
-      "name": "Goblin Reclaimers",
-      "version": "3.6.0"
-    },
-    "7o6om21wxlvvy3hq": {
-      "name": "Havoc Brothers",
-      "version": "3.6.0"
-    },
-    "7i7blhft75q9zfdc": {
-      "name": "High Elf Fleets",
-      "version": "3.6.0"
-    },
-    "z65fgu0l29i4lnlu": {
-      "name": "Human Defense Force",
-      "version": "3.6.0"
-    },
-    "jpc0kyil0juwy602": {
-      "name": "Human Inquisition",
-      "version": "3.6.0"
-    },
-    "dnthspt7c0klhmt8": {
-      "name": "Infected Colonies",
-      "version": "3.6.0"
-    },
-    "BKi_hJaJflN8ZorH": {
-      "name": "Jackals",
-      "version": "3.6.0"
-    },
-    "w70ha3o85pa7nigq": {
-      "name": "Knight Brothers",
-      "version": "3.6.0"
-    },
-    "wopr4xvwa51xh3mc": {
-      "name": "Knight Prime Brothers",
-      "version": "3.6.0"
-    },
-    "drqw1iswxmuugp3d": {
-      "name": "Lust Disciples",
-      "version": "3.6.0"
-    },
-    "7el7k3hgy5pb9o9i": {
-      "name": "Machine Cults",
-      "version": "3.6.0"
-    },
-    "qLonG2G2KzkRQoGf": {
-      "name": "Mega-Corps",
-      "version": "3.6.0"
-    },
-    "cV1jqgtZj8sf57ld": {
-      "name": "Mercenaries",
       "version": "3.6.0"
     },
     "1wj1ysgxpuuz9bc7": {
       "name": "Orc Marauders",
       "version": "3.6.0"
     },
-    "jlray7cwf8mvw5sn": {
-      "name": "Plague Disciples",
-      "version": "3.6.0"
-    },
-    "oqnnu0gk8q6hyyny": {
-      "name": "Prime Brothers",
-      "version": "3.6.0"
-    },
-    "8P8zHTe_MQtawcCN": {
-      "name": "Psycho Cults",
-      "version": "3.6.0"
-    },
-    "hk70l4d471plza00": {
-      "name": "Ratmen Clans",
-      "version": "3.6.0"
-    },
-    "5wbcv465hacdwvkb": {
-      "name": "Rebel Guerrillas",
+    "31xjrm9ivdimkjxp": {
+      "name": "War Disciples",
       "version": "3.6.0"
     },
     "4k5amkxoybdiqotm": {
       "name": "Robot Legions",
       "version": "3.6.0"
     },
-    "U6hwlur14RpnInZr": {
-      "name": "Saurian Starhosts",
+    "5wbcv465hacdwvkb": {
+      "name": "Rebel Guerrillas",
       "version": "3.6.0"
     },
-    "ukrBO4ITaKUpUFeO": {
-      "name": "Security Forces",
+    "78qp9l5alslt6yj8": {
+      "name": "Battle Brothers",
       "version": "3.6.0"
     },
-    "o4D-c-28lvmybgc5": {
-      "name": "Shadow Leagues",
+    "7el7k3hgy5pb9o9i": {
+      "name": "Machine Cults",
+      "version": "3.6.0"
+    },
+    "7ex2x15bpkmy1alv": {
+      "name": "Blood Prime Brothers",
+      "version": "3.6.0"
+    },
+    "7i7blhft75q9zfdc": {
+      "name": "High Elf Fleets",
+      "version": "3.6.0"
+    },
+    "7o6om21wxlvvy3hq": {
+      "name": "Havoc Brothers",
+      "version": "3.6.0"
+    },
+    "7oi8zeiqfamiur21": {
+      "name": "Blessed Sisters",
+      "version": "3.6.0"
+    },
+    "8P8zHTe_MQtawcCN": {
+      "name": "Psycho Cults",
+      "version": "3.6.0"
+    },
+    "9qvy1oufoangt2gl": {
+      "name": "Daemons of Lust",
+      "version": "3.6.0"
+    },
+    "BKi_hJaJflN8ZorH": {
+      "name": "Jackals",
+      "version": "3.6.0"
+    },
+    "EvopgRFYuvvQTNZD": {
+      "name": "Gangs of New Eden",
       "version": "3.6.0"
     },
     "G5uvPlnfxPg3EcYG": {
       "name": "Shortling Federations",
       "version": "3.6.0"
     },
-    "zz3kp5ry7ks6mxcx": {
-      "name": "Soul-Snatcher Cults",
+    "NiptqIlNnPHx7x-X": {
+      "name": "Berserker Clans",
       "version": "3.6.0"
     },
-    "zpaY1LFqVk-ZJdvW": {
-      "name": "Voidspace Stalkers",
+    "U6hwlur14RpnInZr": {
+      "name": "Saurian Starhosts",
       "version": "3.6.0"
     },
-    "31xjrm9ivdimkjxp": {
-      "name": "War Disciples",
+    "_5ObRZWuPMwProbC": {
+      "name": "City Runners",
       "version": "3.6.0"
     },
-    "rvvb3kdn2x2pqkki": {
-      "name": "Watch Brothers",
+    "bF00yJmGNJ7VxfkN": {
+      "name": "Badland Nomads",
       "version": "3.6.0"
     },
-    "rl7ympklz4r0ls38": {
-      "name": "Watch Prime Brothers",
+    "cV1jqgtZj8sf57ld": {
+      "name": "Mercenaries",
       "version": "3.6.0"
     },
-    "yxjboa8oma9bbdck": {
-      "name": "Wolf Brothers",
+    "dnthspt7c0klhmt8": {
+      "name": "Infected Colonies",
+      "version": "3.6.0"
+    },
+    "drqw1iswxmuugp3d": {
+      "name": "Lust Disciples",
       "version": "3.6.0"
     },
     "e8mflytiz51kc4n6": {
       "name": "Wolf Prime Brothers",
       "version": "3.6.0"
     },
-    "tH3gqRwsigE87z5H": {
-      "name": "Worker Unions",
+    "ewbra8nv3nq3k27p": {
+      "name": "Custodian Brothers",
+      "version": "3.6.0"
+    },
+    "fk1mkbp8apvltu0z": {
+      "name": "Dwarf Guilds",
+      "version": "3.6.0"
+    },
+    "fmuqw5lr5l6dq0mq": {
+      "name": "Daemons of Plague",
+      "version": "3.6.0"
+    },
+    "gk7me4sgn9s740kw": {
+      "name": "Dark Prime Brothers",
+      "version": "3.6.0"
+    },
+    "hk70l4d471plza00": {
+      "name": "Ratmen Clans",
       "version": "3.6.0"
     },
     "i4ZEAmqeFSfAcw3f": {
       "name": "Wormhole Daemons",
+      "version": "3.6.0"
+    },
+    "jlray7cwf8mvw5sn": {
+      "name": "Plague Disciples",
+      "version": "3.6.0"
+    },
+    "jpc0kyil0juwy602": {
+      "name": "Human Inquisition",
+      "version": "3.6.0"
+    },
+    "k5T0f2XIfpmPO28h": {
+      "name": "Goblin Reclaimers",
+      "version": "3.6.0"
+    },
+    "mI0ZlbFpoT0VqC3M": {
+      "name": "Brute Coalitions",
+      "version": "3.6.0"
+    },
+    "nyh41t82jugcdq8m": {
+      "name": "Elven Jesters",
+      "version": "3.6.0"
+    },
+    "o4D-c-28lvmybgc5": {
+      "name": "Shadow Leagues",
+      "version": "3.6.0"
+    },
+    "oqnnu0gk8q6hyyny": {
+      "name": "Prime Brothers",
+      "version": "3.6.0"
+    },
+    "prsajf5ot936qznk": {
+      "name": "Daemons of War",
+      "version": "3.6.0"
+    },
+    "q11la9v8h1heu9ja": {
+      "name": "Dark Elf Raiders",
+      "version": "3.6.0"
+    },
+    "qLonG2G2KzkRQoGf": {
+      "name": "Mega-Corps",
+      "version": "3.6.0"
+    },
+    "r6hr29338u4micfw": {
+      "name": "Change Disciples",
+      "version": "3.6.0"
+    },
+    "rl7ympklz4r0ls38": {
+      "name": "Watch Prime Brothers",
+      "version": "3.6.0"
+    },
+    "rvvb3kdn2x2pqkki": {
+      "name": "Watch Brothers",
+      "version": "3.6.0"
+    },
+    "tH3gqRwsigE87z5H": {
+      "name": "Worker Unions",
+      "version": "3.6.0"
+    },
+    "ukrBO4ITaKUpUFeO": {
+      "name": "Security Forces",
+      "version": "3.6.0"
+    },
+    "vux1Y5vvULmaxZ8P": {
+      "name": "Eternal Dynasty",
+      "version": "3.6.0"
+    },
+    "w70ha3o85pa7nigq": {
+      "name": "Knight Brothers",
+      "version": "3.6.0"
+    },
+    "w7qor7b2kuifcyvk": {
+      "name": "Alien Hives",
+      "version": "3.6.0"
+    },
+    "wopr4xvwa51xh3mc": {
+      "name": "Knight Prime Brothers",
+      "version": "3.6.0"
+    },
+    "xnnqhh1775kvmz2r": {
+      "name": "Blood Brothers",
+      "version": "3.6.0"
+    },
+    "xp5zwh73lg1uaym4": {
+      "name": "Dark Brothers",
+      "version": "3.6.0"
+    },
+    "yxjboa8oma9bbdck": {
+      "name": "Wolf Brothers",
+      "version": "3.6.0"
+    },
+    "z65fgu0l29i4lnlu": {
+      "name": "Human Defense Force",
+      "version": "3.6.0"
+    },
+    "z8205ez2boggzs22": {
+      "name": "DAO Union",
+      "version": "3.6.0"
+    },
+    "zpaY1LFqVk-ZJdvW": {
+      "name": "Voidspace Stalkers",
+      "version": "3.6.0"
+    },
+    "zz3kp5ry7ks6mxcx": {
+      "name": "Soul-Snatcher Cults",
       "version": "3.6.0"
     }
   },
   "rules": {
     "3FeiOe3krHMa": {
       "name": "Aircraft",
-      "hash": "e4be00e8c77b",
+      "hash": "51ad1df9",
       "sources": [
         "core"
       ]
     },
     "6mJw5IdqSqNC": {
       "name": "Ambush",
-      "hash": "8ba35293d060",
+      "hash": "56065363",
       "sources": [
         "core",
-        "w7qor7b2kuifcyvk",
-        "bF00yJmGNJ7VxfkN",
-        "NiptqIlNnPHx7x-X",
-        "mI0ZlbFpoT0VqC3M",
-        "_5ObRZWuPMwProbC",
         "04z57ua0bwth37zh",
-        "9qvy1oufoangt2gl",
-        "fmuqw5lr5l6dq0mq",
-        "prsajf5ot936qznk",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "z65fgu0l29i4lnlu",
-        "jpc0kyil0juwy602",
-        "BKi_hJaJflN8ZorH",
-        "qLonG2G2KzkRQoGf",
-        "cV1jqgtZj8sf57ld",
         "1wj1ysgxpuuz9bc7",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "5wbcv465hacdwvkb",
         "4k5amkxoybdiqotm",
-        "ukrBO4ITaKUpUFeO",
-        "o4D-c-28lvmybgc5",
+        "5wbcv465hacdwvkb",
+        "8P8zHTe_MQtawcCN",
+        "9qvy1oufoangt2gl",
+        "BKi_hJaJflN8ZorH",
         "G5uvPlnfxPg3EcYG",
-        "zz3kp5ry7ks6mxcx",
+        "NiptqIlNnPHx7x-X",
+        "_5ObRZWuPMwProbC",
+        "bF00yJmGNJ7VxfkN",
+        "cV1jqgtZj8sf57ld",
+        "fk1mkbp8apvltu0z",
+        "fmuqw5lr5l6dq0mq",
+        "gk7me4sgn9s740kw",
+        "hk70l4d471plza00",
+        "jpc0kyil0juwy602",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m",
+        "o4D-c-28lvmybgc5",
+        "prsajf5ot936qznk",
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk",
+        "xp5zwh73lg1uaym4",
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22",
         "zpaY1LFqVk-ZJdvW",
-        "tH3gqRwsigE87z5H"
+        "zz3kp5ry7ks6mxcx"
       ]
     },
     "17crjK7P6_w6": {
       "name": "AP",
-      "hash": "16e803142aef",
+      "hash": "98c654a8",
       "sources": [
         "core"
       ]
     },
     "GRuFoZiyjY5f": {
       "name": "Artillery",
-      "hash": "1091bb91a3e0",
+      "hash": "cbd35bdf",
       "sources": [
         "core"
       ]
     },
     "FF5ddXgx75lI": {
       "name": "Assault",
-      "hash": "8a67106ccd2b",
+      "hash": "4e75bac8",
       "sources": [
         "core"
       ]
     },
     "Naqc5mga9Uha": {
       "name": "Bane",
-      "hash": "44015216e607",
+      "hash": "10f724cf",
       "sources": [
         "core",
-        "bF00yJmGNJ7VxfkN",
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "r6hr29338u4micfw",
         "04z57ua0bwth37zh",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
+        "1wj1ysgxpuuz9bc7",
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "8P8zHTe_MQtawcCN",
+        "U6hwlur14RpnInZr",
+        "bF00yJmGNJ7VxfkN",
+        "e8mflytiz51kc4n6",
         "gk7me4sgn9s740kw",
-        "z65fgu0l29i4lnlu",
+        "o4D-c-28lvmybgc5",
+        "oqnnu0gk8q6hyyny",
+        "r6hr29338u4micfw",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "ukrBO4ITaKUpUFeO",
         "w70ha3o85pa7nigq",
         "wopr4xvwa51xh3mc",
-        "1wj1ysgxpuuz9bc7",
-        "oqnnu0gk8q6hyyny",
-        "8P8zHTe_MQtawcCN",
-        "5wbcv465hacdwvkb",
-        "U6hwlur14RpnInZr",
-        "ukrBO4ITaKUpUFeO",
-        "o4D-c-28lvmybgc5",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
         "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22"
       ]
     },
     "ywXKQKPOLjTF": {
       "name": "Banner",
-      "hash": "2df1862598bc",
+      "hash": "2329d29a",
       "sources": [
         "core"
       ]
     },
     "w_vX0mi58KKt": {
       "name": "Blast",
-      "hash": "05fa33baee80",
+      "hash": "5c3bdffd",
       "sources": [
         "core"
       ]
     },
     "0bcGY4Xr4NE0": {
       "name": "Brace",
-      "hash": "fc9161e4effb",
+      "hash": "b3f29666",
       "sources": [
         "core"
       ]
     },
     "47CAqf7ySlfc": {
       "name": "Caster",
-      "hash": "bfd951e266fc",
+      "hash": "64d8c785",
       "sources": [
         "core",
-        "w7qor7b2kuifcyvk",
-        "7oi8zeiqfamiur21",
         "04z57ua0bwth37zh",
-        "vux1Y5vvULmaxZ8P",
         "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602",
+        "7oi8zeiqfamiur21",
         "U6hwlur14RpnInZr",
+        "jpc0kyil0juwy602",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk",
         "zz3kp5ry7ks6mxcx"
       ]
     },
     "c45Fw0D2oGOk": {
       "name": "Counter",
-      "hash": "81025452e53a",
+      "hash": "73431105",
       "sources": [
         "core",
+        "5wbcv465hacdwvkb",
         "9qvy1oufoangt2gl",
-        "z8205ez2boggzs22",
+        "U6hwlur14RpnInZr",
         "nyh41t82jugcdq8m",
         "vux1Y5vvULmaxZ8P",
-        "5wbcv465hacdwvkb",
-        "U6hwlur14RpnInZr",
+        "z8205ez2boggzs22",
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "_mrPya5SXSqW": {
       "name": "Deadly",
-      "hash": "e4502186171d",
+      "hash": "338cb921",
       "sources": [
         "core",
-        "_5ObRZWuPMwProbC",
-        "q11la9v8h1heu9ja",
-        "nyh41t82jugcdq8m",
-        "k5T0f2XIfpmPO28h",
-        "jpc0kyil0juwy602",
-        "dnthspt7c0klhmt8",
+        "5wbcv465hacdwvkb",
         "BKi_hJaJflN8ZorH",
+        "G5uvPlnfxPg3EcYG",
+        "_5ObRZWuPMwProbC",
+        "dnthspt7c0klhmt8",
+        "hk70l4d471plza00",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
+        "nyh41t82jugcdq8m",
+        "o4D-c-28lvmybgc5",
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf",
         "w70ha3o85pa7nigq",
         "wopr4xvwa51xh3mc",
-        "qLonG2G2KzkRQoGf",
-        "hk70l4d471plza00",
-        "5wbcv465hacdwvkb",
-        "o4D-c-28lvmybgc5",
-        "G5uvPlnfxPg3EcYG",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW"
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
       ]
     },
     "KdgwlPb8LuD2": {
       "name": "Fast",
-      "hash": "fe12cf4e8169",
+      "hash": "e39cc967",
       "sources": [
         "core"
       ]
     },
     "dIQ3SGl2J2Ew": {
       "name": "Fear",
-      "hash": "cd989332eca0",
+      "hash": "da7864cf",
       "sources": [
         "core",
-        "mI0ZlbFpoT0VqC3M",
         "04z57ua0bwth37zh",
-        "vux1Y5vvULmaxZ8P",
-        "o4D-c-28lvmybgc5"
+        "mI0ZlbFpoT0VqC3M",
+        "o4D-c-28lvmybgc5",
+        "vux1Y5vvULmaxZ8P"
       ]
     },
     "2atvlmICQSCV": {
       "name": "Fearless",
-      "hash": "51c8e4bc722b",
+      "hash": "f86161f7",
       "sources": [
         "core",
-        "mI0ZlbFpoT0VqC3M",
         "04z57ua0bwth37zh",
-        "z8205ez2boggzs22",
-        "vux1Y5vvULmaxZ8P",
+        "G5uvPlnfxPg3EcYG",
+        "mI0ZlbFpoT0VqC3M",
         "o4D-c-28lvmybgc5",
-        "G5uvPlnfxPg3EcYG"
+        "vux1Y5vvULmaxZ8P",
+        "z8205ez2boggzs22"
       ]
     },
     "-QJdqJEKjIpE": {
       "name": "Flying",
-      "hash": "7872cafd267c",
+      "hash": "c77360ae",
       "sources": [
         "core",
-        "vux1Y5vvULmaxZ8P",
-        "ukrBO4ITaKUpUFeO"
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P"
       ]
     },
     "JoOCVPx1xT1G": {
       "name": "Furious",
-      "hash": "778557affa4e",
+      "hash": "6c240596",
       "sources": [
         "core",
-        "w7qor7b2kuifcyvk",
-        "r6hr29338u4micfw",
-        "prsajf5ot936qznk",
-        "q11la9v8h1heu9ja",
+        "31xjrm9ivdimkjxp",
+        "5wbcv465hacdwvkb",
         "7o6om21wxlvvy3hq",
-        "jpc0kyil0juwy602",
+        "U6hwlur14RpnInZr",
         "drqw1iswxmuugp3d",
         "jlray7cwf8mvw5sn",
-        "5wbcv465hacdwvkb",
-        "U6hwlur14RpnInZr",
+        "jpc0kyil0juwy602",
+        "prsajf5ot936qznk",
+        "q11la9v8h1heu9ja",
+        "r6hr29338u4micfw",
+        "tH3gqRwsigE87z5H",
         "ukrBO4ITaKUpUFeO",
-        "31xjrm9ivdimkjxp",
-        "tH3gqRwsigE87z5H"
+        "w7qor7b2kuifcyvk"
       ]
     },
     "T08VkBuVmNZ_": {
       "name": "Hero",
-      "hash": "de70fb7ac929",
+      "hash": "4ec43b22",
       "sources": [
         "core",
-        "w7qor7b2kuifcyvk",
-        "7oi8zeiqfamiur21",
         "04z57ua0bwth37zh",
-        "fmuqw5lr5l6dq0mq",
-        "fk1mkbp8apvltu0z",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "BKi_hJaJflN8ZorH",
         "1wj1ysgxpuuz9bc7",
-        "hk70l4d471plza00",
         "4k5amkxoybdiqotm",
+        "7i7blhft75q9zfdc",
+        "7oi8zeiqfamiur21",
+        "BKi_hJaJflN8ZorH",
         "U6hwlur14RpnInZr",
+        "fk1mkbp8apvltu0z",
+        "fmuqw5lr5l6dq0mq",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk",
+        "z65fgu0l29i4lnlu",
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "HWtnPV9LQF1D": {
       "name": "Immobile",
-      "hash": "29e8a393dc6c",
+      "hash": "29746877",
       "sources": [
         "core"
       ]
     },
     "62-mYKVM9MLd": {
       "name": "Impact",
-      "hash": "ce8765fe3c76",
+      "hash": "ed8a2309",
       "sources": [
         "core",
         "U6hwlur14RpnInZr"
@@ -497,250 +497,250 @@
     },
     "8Ck9GAwUK824": {
       "name": "Indirect",
-      "hash": "0c2c03d57ce0",
+      "hash": "6f2a11e1",
       "sources": [
         "core",
         "04z57ua0bwth37zh",
-        "jpc0kyil0juwy602",
+        "4k5amkxoybdiqotm",
         "hk70l4d471plza00",
-        "4k5amkxoybdiqotm"
+        "jpc0kyil0juwy602"
       ]
     },
     "9042COVrLCsI": {
       "name": "Limited",
-      "hash": "7ba9963c0166",
+      "hash": "c029c210",
       "sources": [
         "core"
       ]
     },
     "qrG_DXJez5Dg": {
       "name": "Musician",
-      "hash": "10a57bf07500",
+      "hash": "d9cf9f6d",
       "sources": [
         "core"
       ]
     },
     "_T07iXWo4VwJ": {
       "name": "Parry",
-      "hash": "3e1671902c9e",
+      "hash": "e1c597c4",
       "sources": [
         "core"
       ]
     },
     "8KujvrTG8k9p": {
       "name": "Regeneration",
-      "hash": "bada686b3215",
+      "hash": "31eb04b2",
       "sources": [
         "core",
-        "w7qor7b2kuifcyvk",
-        "bF00yJmGNJ7VxfkN",
-        "78qp9l5alslt6yj8",
-        "NiptqIlNnPHx7x-X",
-        "7oi8zeiqfamiur21",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "r6hr29338u4micfw",
-        "_5ObRZWuPMwProbC",
-        "ewbra8nv3nq3k27p",
         "04z57ua0bwth37zh",
-        "9qvy1oufoangt2gl",
-        "fmuqw5lr5l6dq0mq",
-        "prsajf5ot936qznk",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "7o6om21wxlvvy3hq",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "jpc0kyil0juwy602",
-        "dnthspt7c0klhmt8",
-        "BKi_hJaJflN8ZorH",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "cV1jqgtZj8sf57ld",
         "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "5wbcv465hacdwvkb",
-        "4k5amkxoybdiqotm",
-        "U6hwlur14RpnInZr",
-        "o4D-c-28lvmybgc5",
-        "G5uvPlnfxPg3EcYG",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW",
         "31xjrm9ivdimkjxp",
-        "rvvb3kdn2x2pqkki",
+        "4k5amkxoybdiqotm",
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "7oi8zeiqfamiur21",
+        "8P8zHTe_MQtawcCN",
+        "9qvy1oufoangt2gl",
+        "BKi_hJaJflN8ZorH",
+        "G5uvPlnfxPg3EcYG",
+        "NiptqIlNnPHx7x-X",
+        "U6hwlur14RpnInZr",
+        "_5ObRZWuPMwProbC",
+        "bF00yJmGNJ7VxfkN",
+        "cV1jqgtZj8sf57ld",
+        "dnthspt7c0klhmt8",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "fmuqw5lr5l6dq0mq",
+        "gk7me4sgn9s740kw",
+        "hk70l4d471plza00",
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
+        "o4D-c-28lvmybgc5",
+        "oqnnu0gk8q6hyyny",
+        "prsajf5ot936qznk",
+        "q11la9v8h1heu9ja",
+        "r6hr29338u4micfw",
         "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "vux1Y5vvULmaxZ8P",
+        "w70ha3o85pa7nigq",
+        "w7qor7b2kuifcyvk",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
         "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22",
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
       ]
     },
     "H9E9PIWpGRdw": {
       "name": "Relentless",
-      "hash": "e730827302a1",
+      "hash": "73674c73",
       "sources": [
         "core",
-        "r6hr29338u4micfw",
-        "fmuqw5lr5l6dq0mq",
-        "7o6om21wxlvvy3hq",
-        "z65fgu0l29i4lnlu",
-        "jpc0kyil0juwy602",
-        "drqw1iswxmuugp3d",
-        "cV1jqgtZj8sf57ld",
-        "jlray7cwf8mvw5sn",
-        "8P8zHTe_MQtawcCN",
+        "31xjrm9ivdimkjxp",
         "4k5amkxoybdiqotm",
+        "7o6om21wxlvvy3hq",
+        "8P8zHTe_MQtawcCN",
+        "cV1jqgtZj8sf57ld",
+        "drqw1iswxmuugp3d",
+        "fmuqw5lr5l6dq0mq",
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602",
+        "r6hr29338u4micfw",
         "ukrBO4ITaKUpUFeO",
-        "31xjrm9ivdimkjxp"
+        "z65fgu0l29i4lnlu"
       ]
     },
     "Zx4mWN0SbmK8": {
       "name": "Reliable",
-      "hash": "6a16e43c8c4b",
+      "hash": "205ae791",
       "sources": [
         "core"
       ]
     },
     "cavWDboL4ubs": {
       "name": "Rending",
-      "hash": "0697703019f1",
+      "hash": "fb3af34e",
       "sources": [
         "core",
-        "fmuqw5lr5l6dq0mq",
-        "7el7k3hgy5pb9o9i",
         "1wj1ysgxpuuz9bc7",
-        "5wbcv465hacdwvkb",
         "4k5amkxoybdiqotm",
+        "5wbcv465hacdwvkb",
+        "7el7k3hgy5pb9o9i",
+        "G5uvPlnfxPg3EcYG",
         "U6hwlur14RpnInZr",
-        "G5uvPlnfxPg3EcYG"
+        "fmuqw5lr5l6dq0mq"
       ]
     },
     "FAMbscK5vhSu": {
       "name": "Scout",
-      "hash": "e7bbeef4187a",
+      "hash": "a3abaaf8",
       "sources": [
         "core",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "7o6om21wxlvvy3hq",
+        "31xjrm9ivdimkjxp",
         "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "8P8zHTe_MQtawcCN",
         "BKi_hJaJflN8ZorH",
+        "U6hwlur14RpnInZr",
         "drqw1iswxmuugp3d",
         "jlray7cwf8mvw5sn",
-        "8P8zHTe_MQtawcCN",
-        "U6hwlur14RpnInZr",
-        "31xjrm9ivdimkjxp"
+        "mI0ZlbFpoT0VqC3M",
+        "r6hr29338u4micfw"
       ]
     },
     "IEJp3a4vE0CB": {
       "name": "Shred",
-      "hash": "4f15bf357d27",
+      "hash": "260829ed",
       "sources": [
         "core",
         "78qp9l5alslt6yj8",
-        "7oi8zeiqfamiur21",
-        "xnnqhh1775kvmz2r",
         "7ex2x15bpkmy1alv",
-        "ewbra8nv3nq3k27p",
-        "9qvy1oufoangt2gl",
-        "7o6om21wxlvvy3hq",
         "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602",
-        "drqw1iswxmuugp3d",
-        "qLonG2G2KzkRQoGf",
-        "oqnnu0gk8q6hyyny",
-        "hk70l4d471plza00",
+        "7o6om21wxlvvy3hq",
+        "7oi8zeiqfamiur21",
+        "9qvy1oufoangt2gl",
         "U6hwlur14RpnInZr",
-        "o4D-c-28lvmybgc5"
+        "drqw1iswxmuugp3d",
+        "ewbra8nv3nq3k27p",
+        "hk70l4d471plza00",
+        "jpc0kyil0juwy602",
+        "o4D-c-28lvmybgc5",
+        "oqnnu0gk8q6hyyny",
+        "qLonG2G2KzkRQoGf",
+        "xnnqhh1775kvmz2r"
       ]
     },
     "Ldhtmr4H8b6G": {
       "name": "Slow",
-      "hash": "d6745c50a61b",
+      "hash": "12ad5d33",
       "sources": [
         "core",
-        "fk1mkbp8apvltu0z",
-        "4k5amkxoybdiqotm"
+        "4k5amkxoybdiqotm",
+        "fk1mkbp8apvltu0z"
       ]
     },
     "4Q1owB6yNFz1": {
       "name": "Spell Amplifier",
-      "hash": "ab999bef797e",
+      "hash": "3fa987ba",
       "sources": [
         "core"
       ]
     },
     "9jyvRoBODD-O": {
       "name": "Stealth",
-      "hash": "7b4965e1f00b",
+      "hash": "d23a93a8",
       "sources": [
         "core",
-        "w7qor7b2kuifcyvk",
+        "4k5amkxoybdiqotm",
+        "7i7blhft75q9zfdc",
+        "BKi_hJaJflN8ZorH",
         "bF00yJmGNJ7VxfkN",
         "ewbra8nv3nq3k27p",
-        "z8205ez2boggzs22",
-        "q11la9v8h1heu9ja",
         "fk1mkbp8apvltu0z",
-        "vux1Y5vvULmaxZ8P",
-        "7i7blhft75q9zfdc",
         "jpc0kyil0juwy602",
-        "BKi_hJaJflN8ZorH",
-        "4k5amkxoybdiqotm",
-        "o4D-c-28lvmybgc5"
+        "o4D-c-28lvmybgc5",
+        "q11la9v8h1heu9ja",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk",
+        "z8205ez2boggzs22"
       ]
     },
     "JSKVyurtWIyW": {
       "name": "Strider",
-      "hash": "b1ce520db24d",
+      "hash": "5c500e0b",
       "sources": [
         "core",
-        "9qvy1oufoangt2gl",
         "5wbcv465hacdwvkb",
+        "9qvy1oufoangt2gl",
         "tH3gqRwsigE87z5H"
       ]
     },
     "5v6oaGfrdf29": {
       "name": "Surge",
-      "hash": "0e55294f9cda",
+      "hash": "9203a390",
       "sources": [
         "core",
-        "NiptqIlNnPHx7x-X",
-        "k5T0f2XIfpmPO28h",
-        "jpc0kyil0juwy602",
-        "dnthspt7c0klhmt8",
-        "cV1jqgtZj8sf57ld",
-        "8P8zHTe_MQtawcCN",
         "5wbcv465hacdwvkb",
+        "8P8zHTe_MQtawcCN",
+        "NiptqIlNnPHx7x-X",
+        "cV1jqgtZj8sf57ld",
+        "dnthspt7c0klhmt8",
+        "e8mflytiz51kc4n6",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
         "ukrBO4ITaKUpUFeO",
-        "zz3kp5ry7ks6mxcx",
         "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
+        "zz3kp5ry7ks6mxcx"
       ]
     },
     "8Hjy54TYtwb7": {
       "name": "Takedown",
-      "hash": "ef51f3fff000",
+      "hash": "ba4e5d3f",
       "sources": [
         "core",
-        "nyh41t82jugcdq8m",
-        "jpc0kyil0juwy602",
-        "qLonG2G2KzkRQoGf",
-        "hk70l4d471plza00",
         "5wbcv465hacdwvkb",
+        "hk70l4d471plza00",
+        "jpc0kyil0juwy602",
+        "nyh41t82jugcdq8m",
         "o4D-c-28lvmybgc5",
+        "qLonG2G2KzkRQoGf",
         "zz3kp5ry7ks6mxcx"
       ]
     },
     "umbiz4tnEyF8": {
       "name": "Thrust",
-      "hash": "b9db293052b5",
+      "hash": "e5e1787d",
       "sources": [
         "core",
         "dnthspt7c0klhmt8",
@@ -749,1956 +749,320 @@
     },
     "a0YtInGiUDd6": {
       "name": "Tough",
-      "hash": "0b3caeeedd6d",
+      "hash": "0b2138df",
       "sources": [
         "core",
-        "bF00yJmGNJ7VxfkN",
+        "1wj1ysgxpuuz9bc7",
+        "31xjrm9ivdimkjxp",
         "78qp9l5alslt6yj8",
-        "NiptqIlNnPHx7x-X",
-        "xnnqhh1775kvmz2r",
+        "7el7k3hgy5pb9o9i",
         "7ex2x15bpkmy1alv",
-        "r6hr29338u4micfw",
-        "ewbra8nv3nq3k27p",
-        "9qvy1oufoangt2gl",
-        "fmuqw5lr5l6dq0mq",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
         "7o6om21wxlvvy3hq",
-        "dnthspt7c0klhmt8",
+        "9qvy1oufoangt2gl",
         "BKi_hJaJflN8ZorH",
+        "G5uvPlnfxPg3EcYG",
+        "NiptqIlNnPHx7x-X",
+        "bF00yJmGNJ7VxfkN",
+        "dnthspt7c0klhmt8",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "fmuqw5lr5l6dq0mq",
+        "gk7me4sgn9s740kw",
+        "jlray7cwf8mvw5sn",
+        "nyh41t82jugcdq8m",
+        "oqnnu0gk8q6hyyny",
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf",
+        "r6hr29338u4micfw",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "tH3gqRwsigE87z5H",
+        "vux1Y5vvULmaxZ8P",
         "w70ha3o85pa7nigq",
         "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "7el7k3hgy5pb9o9i",
-        "qLonG2G2KzkRQoGf",
-        "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "G5uvPlnfxPg3EcYG",
-        "zpaY1LFqVk-ZJdvW",
-        "31xjrm9ivdimkjxp",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
         "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6",
-        "tH3gqRwsigE87z5H"
+        "zpaY1LFqVk-ZJdvW"
       ]
     },
     "aogQZcOOQrDI": {
       "name": "Transport",
-      "hash": "ab619c76cd0e",
+      "hash": "69ddbecf",
       "sources": [
         "core"
       ]
     },
-    "efmjJPTe0Yzd": {
-      "name": "Anti-Cover",
-      "hash": "5539d648a2fa",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "bF00yJmGNJ7VxfkN",
-        "78qp9l5alslt6yj8",
-        "NiptqIlNnPHx7x-X",
-        "7oi8zeiqfamiur21",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "_5ObRZWuPMwProbC",
-        "ewbra8nv3nq3k27p",
-        "9qvy1oufoangt2gl",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "7o6om21wxlvvy3hq",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "jpc0kyil0juwy602",
-        "dnthspt7c0klhmt8",
-        "BKi_hJaJflN8ZorH",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "7el7k3hgy5pb9o9i",
-        "qLonG2G2KzkRQoGf",
-        "cV1jqgtZj8sf57ld",
-        "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "5wbcv465hacdwvkb",
-        "4k5amkxoybdiqotm",
-        "U6hwlur14RpnInZr",
-        "ukrBO4ITaKUpUFeO",
-        "o4D-c-28lvmybgc5",
-        "G5uvPlnfxPg3EcYG",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW",
-        "31xjrm9ivdimkjxp",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "CQes0mDvF4bV": {
-      "name": "AP",
-      "hash": "84810bfea237",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "bF00yJmGNJ7VxfkN",
-        "78qp9l5alslt6yj8",
-        "NiptqIlNnPHx7x-X",
-        "7oi8zeiqfamiur21",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "_5ObRZWuPMwProbC",
-        "ewbra8nv3nq3k27p",
-        "04z57ua0bwth37zh",
-        "9qvy1oufoangt2gl",
-        "fmuqw5lr5l6dq0mq",
-        "prsajf5ot936qznk",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "7o6om21wxlvvy3hq",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "jpc0kyil0juwy602",
-        "dnthspt7c0klhmt8",
-        "BKi_hJaJflN8ZorH",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "7el7k3hgy5pb9o9i",
-        "qLonG2G2KzkRQoGf",
-        "cV1jqgtZj8sf57ld",
-        "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "5wbcv465hacdwvkb",
-        "4k5amkxoybdiqotm",
-        "U6hwlur14RpnInZr",
-        "ukrBO4ITaKUpUFeO",
-        "o4D-c-28lvmybgc5",
-        "G5uvPlnfxPg3EcYG",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW",
-        "31xjrm9ivdimkjxp",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "nLQCr5OiSlYz": {
-      "name": "Caster Group",
-      "hash": "d96ed3e55fcf",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602"
-      ]
-    },
-    "s6MgSfmgylXU": {
-      "name": "Defense",
-      "hash": "507c9a28bbe0",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "bF00yJmGNJ7VxfkN",
-        "78qp9l5alslt6yj8",
-        "NiptqIlNnPHx7x-X",
-        "7oi8zeiqfamiur21",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "ewbra8nv3nq3k27p",
-        "04z57ua0bwth37zh",
-        "9qvy1oufoangt2gl",
-        "fmuqw5lr5l6dq0mq",
-        "prsajf5ot936qznk",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "7o6om21wxlvvy3hq",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "dnthspt7c0klhmt8",
-        "BKi_hJaJflN8ZorH",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "qLonG2G2KzkRQoGf",
-        "cV1jqgtZj8sf57ld",
-        "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "5wbcv465hacdwvkb",
-        "4k5amkxoybdiqotm",
-        "U6hwlur14RpnInZr",
-        "ukrBO4ITaKUpUFeO",
-        "G5uvPlnfxPg3EcYG",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW",
-        "31xjrm9ivdimkjxp",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "kiXI7plPE_mK": {
-      "name": "Enhanced Hive Bond",
-      "hash": "12f947a38577",
-      "sources": [
-        "w7qor7b2kuifcyvk"
-      ]
-    },
-    "Yt2R4sh8SXM0": {
-      "name": "Enhanced Hive Bond Aura",
-      "hash": "1146e63e3159",
-      "sources": [
-        "w7qor7b2kuifcyvk"
-      ]
-    },
-    "TbjUdR-OJZPw": {
-      "name": "Enhanced Valiant",
-      "hash": "6d41c94a5d2c",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "RHkw66BqDjUp": {
-      "name": "Fragment",
-      "hash": "c9d9ab410391",
-      "sources": [
-        "w7qor7b2kuifcyvk"
-      ]
-    },
-    "CK9TIa7vdehO": {
-      "name": "Furious Aura",
-      "hash": "c52473b42c1b",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "r6hr29338u4micfw",
-        "prsajf5ot936qznk",
-        "q11la9v8h1heu9ja",
-        "7o6om21wxlvvy3hq",
-        "jpc0kyil0juwy602",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "ukrBO4ITaKUpUFeO",
-        "31xjrm9ivdimkjxp",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "anyZ2FHtdAVO": {
-      "name": "Hit & Run Fighter",
-      "hash": "5e2db736d44d",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "_5ObRZWuPMwProbC",
-        "9qvy1oufoangt2gl",
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "cgCroTrOmiv-": {
-      "name": "Hive Bond",
-      "hash": "d101187f8bad",
-      "sources": [
-        "w7qor7b2kuifcyvk"
-      ]
-    },
-    "BOqSaZoY3ewJ": {
-      "name": "Imprecise",
-      "hash": "779222660909",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "QWzGAg9RpE2D": {
-      "name": "Increased Shooting Range Aura",
-      "hash": "31c12458db57",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "7oi8zeiqfamiur21",
-        "z8205ez2boggzs22",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "cV1jqgtZj8sf57ld"
-      ]
-    },
-    "djJahpu0Ciut": {
-      "name": "Infiltrate",
-      "hash": "04176c8e5187",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "q11la9v8h1heu9ja",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "jpc0kyil0juwy602",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "O2Cd7OibBBA5": {
-      "name": "No Retreat",
-      "hash": "04b40f85f08a",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "z65fgu0l29i4lnlu",
-        "dnthspt7c0klhmt8",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "4k5amkxoybdiqotm",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "s4lagBUlnsUE": {
-      "name": "Piercing Growth",
-      "hash": "3b4614e911fd",
-      "sources": [
-        "w7qor7b2kuifcyvk"
-      ]
-    },
-    "HMiVg3VVLQv3": {
-      "name": "Piercing Target",
-      "hash": "c256cf84d5d1",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "ewbra8nv3nq3k27p",
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "09SoiR1HuW7u": {
-      "name": "Precise",
-      "hash": "74a967fb0a9a",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "7ex2x15bpkmy1alv",
-        "z8205ez2boggzs22",
-        "gk7me4sgn9s740kw",
-        "BKi_hJaJflN8ZorH",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "8P8zHTe_MQtawcCN",
-        "5wbcv465hacdwvkb",
-        "U6hwlur14RpnInZr",
-        "rl7ympklz4r0ls38",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "1elLRhGK7ETb": {
-      "name": "Precision Debuff",
-      "hash": "57372b9e151a",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "o4D-c-28lvmybgc5"
-      ]
-    },
-    "aiYEmCuDPUcM": {
-      "name": "Predator",
-      "hash": "a0b38cc4799d",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "vux1Y5vvULmaxZ8P",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "3sXTViTVdDhn": {
-      "name": "Predator Aura",
-      "hash": "ff985230639b",
-      "sources": [
-        "w7qor7b2kuifcyvk"
-      ]
-    },
-    "1cykqbg4xn6o": {
-      "name": "Rapid Charge Aura",
-      "hash": "812af0acb420",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "prsajf5ot936qznk",
-        "vux1Y5vvULmaxZ8P",
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "V3YzPPkZm8at": {
-      "name": "Regeneration Aura",
-      "hash": "79d6163db1ce",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "78qp9l5alslt6yj8",
-        "7oi8zeiqfamiur21",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "ewbra8nv3nq3k27p",
-        "fmuqw5lr5l6dq0mq",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "k5T0f2XIfpmPO28h",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "jpc0kyil0juwy602",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "cV1jqgtZj8sf57ld",
-        "1wj1ysgxpuuz9bc7",
-        "oqnnu0gk8q6hyyny",
-        "5wbcv465hacdwvkb",
-        "G5uvPlnfxPg3EcYG",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "F_1wfmpAyYwT": {
-      "name": "Self-Destruct",
-      "hash": "54ab69e05f5d",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00"
-      ]
-    },
-    "WNMH1ZiQXSz-": {
-      "name": "Spell Conduit",
-      "hash": "923cc0cb8f97",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "7oi8zeiqfamiur21",
-        "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602",
-        "U6hwlur14RpnInZr",
-        "zz3kp5ry7ks6mxcx"
-      ]
-    },
-    "h-Cj1XrX00JE": {
-      "name": "Spell Resistance",
-      "hash": "27b49b053e0c",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh",
-        "prsajf5ot936qznk",
-        "7o6om21wxlvvy3hq",
-        "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602",
-        "drqw1iswxmuugp3d",
-        "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "cnKvLv8ErzIc": {
-      "name": "Stealth Buff",
-      "hash": "6e85d903e353",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "rqBYj1yANC3J": {
-      "name": "Unique Hero",
-      "hash": "ad2da4558e10",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "7oi8zeiqfamiur21",
-        "04z57ua0bwth37zh",
-        "fmuqw5lr5l6dq0mq",
-        "fk1mkbp8apvltu0z",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "BKi_hJaJflN8ZorH",
-        "1wj1ysgxpuuz9bc7",
-        "hk70l4d471plza00",
-        "4k5amkxoybdiqotm",
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "DEeVIJcfNfS6": {
-      "name": "Unpredictable Fighter",
-      "hash": "a4668c506a9e",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "bF00yJmGNJ7VxfkN",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "ewbra8nv3nq3k27p",
-        "9qvy1oufoangt2gl",
-        "q11la9v8h1heu9ja",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "7o6om21wxlvvy3hq",
-        "dnthspt7c0klhmt8",
-        "drqw1iswxmuugp3d",
-        "7el7k3hgy5pb9o9i",
-        "jlray7cwf8mvw5sn",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "U6hwlur14RpnInZr",
-        "ukrBO4ITaKUpUFeO",
-        "zpaY1LFqVk-ZJdvW",
-        "31xjrm9ivdimkjxp",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "QXyt-zV_bjpg": {
-      "name": "Unstoppable",
-      "hash": "a0c2e5329a73",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "78qp9l5alslt6yj8",
-        "NiptqIlNnPHx7x-X",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "ewbra8nv3nq3k27p",
-        "04z57ua0bwth37zh",
-        "9qvy1oufoangt2gl",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "vux1Y5vvULmaxZ8P",
-        "7o6om21wxlvvy3hq",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "dnthspt7c0klhmt8",
-        "BKi_hJaJflN8ZorH",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "qLonG2G2KzkRQoGf",
-        "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "5wbcv465hacdwvkb",
-        "4k5amkxoybdiqotm",
-        "U6hwlur14RpnInZr",
-        "o4D-c-28lvmybgc5",
-        "zz3kp5ry7ks6mxcx",
-        "31xjrm9ivdimkjxp",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "GgPKQ4tKFRIC": {
-      "name": "Unwieldy",
-      "hash": "a77991e0dbb3",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "mI0ZlbFpoT0VqC3M",
-        "fk1mkbp8apvltu0z",
-        "7i7blhft75q9zfdc"
-      ]
-    },
-    "LbpquFUyGSZ7": {
-      "name": "Valiant",
-      "hash": "d101187f8bad",
-      "sources": [
-        "w7qor7b2kuifcyvk",
-        "z65fgu0l29i4lnlu",
-        "cV1jqgtZj8sf57ld"
-      ]
-    },
     "gOFh4u_LGrwP": {
       "name": "Ambush Aura",
-      "hash": "b66a9bcd0be4",
+      "hash": "ba52eec5",
       "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "_5ObRZWuPMwProbC",
         "04z57ua0bwth37zh",
-        "9qvy1oufoangt2gl",
-        "fmuqw5lr5l6dq0mq",
-        "prsajf5ot936qznk",
-        "hk70l4d471plza00",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "haWppj0rUxS8": {
-      "name": "Badlands Hunter",
-      "hash": "04d35dc49cb9",
-      "sources": [
-        "bF00yJmGNJ7VxfkN"
-      ]
-    },
-    "ba6LlbpoLkSu": {
-      "name": "Bane when Shooting Aura",
-      "hash": "3d09db8309de",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "5wbcv465hacdwvkb",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "h9JsgD38BRjI": {
-      "name": "Bounding",
-      "hash": "1f165d483e3d",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "04z57ua0bwth37zh",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "jpc0kyil0juwy602",
-        "BKi_hJaJflN8ZorH",
-        "7el7k3hgy5pb9o9i",
-        "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "8P8zHTe_MQtawcCN",
-        "U6hwlur14RpnInZr",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW"
-      ]
-    },
-    "jQ4CmTsoXEnt": {
-      "name": "Defense Debuff",
-      "hash": "d2b3d5bd6cbc",
-      "sources": [
-        "bF00yJmGNJ7VxfkN"
-      ]
-    },
-    "xeJDKejG4QZN": {
-      "name": "Disintegrate",
-      "hash": "5c814864b3b6",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "ewbra8nv3nq3k27p",
-        "BKi_hJaJflN8ZorH"
-      ]
-    },
-    "8UUSt1RIIyEa": {
-      "name": "Enhanced Badlands Hunter",
-      "hash": "8b044ea736f3",
-      "sources": [
-        "bF00yJmGNJ7VxfkN"
-      ]
-    },
-    "LhOp-HCop4GL": {
-      "name": "Enhanced Badlands Hunter Aura",
-      "hash": "88175ef15d2a",
-      "sources": [
-        "bF00yJmGNJ7VxfkN"
-      ]
-    },
-    "5NeMSSj7-Pp5": {
-      "name": "Enhanced Violent",
-      "hash": "5ef82ca24407",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "prsajf5ot936qznk",
-        "dnthspt7c0klhmt8",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "TTL5RNmwotoh": {
-      "name": "Melee Slayer",
-      "hash": "209391a3481f",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "7ex2x15bpkmy1alv",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "7el7k3hgy5pb9o9i",
-        "oqnnu0gk8q6hyyny",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW",
-        "rl7ympklz4r0ls38",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "B5RGOPajK6Lr": {
-      "name": "Precision Fighter Aura",
-      "hash": "c9ab64c7dc31",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "NiptqIlNnPHx7x-X",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "jpc0kyil0juwy602",
-        "BKi_hJaJflN8ZorH",
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "C6MzEy1CnxTs": {
-      "name": "Repel Ambushers",
-      "hash": "900beafaed95",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "NiptqIlNnPHx7x-X",
-        "mI0ZlbFpoT0VqC3M",
-        "_5ObRZWuPMwProbC",
-        "prsajf5ot936qznk",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "z65fgu0l29i4lnlu",
-        "jpc0kyil0juwy602",
-        "BKi_hJaJflN8ZorH",
-        "qLonG2G2KzkRQoGf",
-        "cV1jqgtZj8sf57ld",
-        "1wj1ysgxpuuz9bc7",
-        "8P8zHTe_MQtawcCN",
         "4k5amkxoybdiqotm",
-        "ukrBO4ITaKUpUFeO",
-        "o4D-c-28lvmybgc5",
-        "G5uvPlnfxPg3EcYG",
-        "zz3kp5ry7ks6mxcx",
-        "zpaY1LFqVk-ZJdvW",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "8haZ36fXvnzn": {
-      "name": "Stealth Aura",
-      "hash": "02f130486395",
-      "sources": [
+        "9qvy1oufoangt2gl",
+        "_5ObRZWuPMwProbC",
         "bF00yJmGNJ7VxfkN",
-        "ewbra8nv3nq3k27p",
-        "z8205ez2boggzs22",
-        "fk1mkbp8apvltu0z",
-        "vux1Y5vvULmaxZ8P",
-        "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602",
-        "BKi_hJaJflN8ZorH",
-        "4k5amkxoybdiqotm",
-        "o4D-c-28lvmybgc5"
-      ]
-    },
-    "C5t3oLnEpNtX": {
-      "name": "Vengeance",
-      "hash": "ff09d5079f10",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "vux1Y5vvULmaxZ8P"
-      ]
-    },
-    "WHJ8A7LzHUR6": {
-      "name": "Violent",
-      "hash": "04d35dc49cb9",
-      "sources": [
-        "bF00yJmGNJ7VxfkN",
-        "prsajf5ot936qznk",
-        "dnthspt7c0klhmt8",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "74RjQ1k41DoO": {
-      "name": "Armor",
-      "hash": "9eae4dd0cd42",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "7oi8zeiqfamiur21",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "ewbra8nv3nq3k27p",
-        "prsajf5ot936qznk",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "k5T0f2XIfpmPO28h",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "qLonG2G2KzkRQoGf",
-        "cV1jqgtZj8sf57ld",
-        "1wj1ysgxpuuz9bc7",
-        "oqnnu0gk8q6hyyny",
-        "8P8zHTe_MQtawcCN",
-        "hk70l4d471plza00",
-        "5wbcv465hacdwvkb",
-        "4k5amkxoybdiqotm",
-        "U6hwlur14RpnInZr",
-        "ukrBO4ITaKUpUFeO",
-        "G5uvPlnfxPg3EcYG",
-        "zpaY1LFqVk-ZJdvW",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "XoDRL2xVEnVf": {
-      "name": "Bane in Melee Aura",
-      "hash": "2575ca9751c5",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "o4D-c-28lvmybgc5",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "741uN_Qma5mL": {
-      "name": "Battleborn",
-      "hash": "fa3dc55dc71b",
-      "sources": [
-        "78qp9l5alslt6yj8"
-      ]
-    },
-    "FRVSAjasmFSF": {
-      "name": "Bravery Aura",
-      "hash": "18b06e747954",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "7oi8zeiqfamiur21",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "k5T0f2XIfpmPO28h",
-        "jpc0kyil0juwy602",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "31xjrm9ivdimkjxp",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "O_sf2rsHA7rD": {
-      "name": "Evasive",
-      "hash": "e6cc10603098",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "jpc0kyil0juwy602",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "hk70l4d471plza00",
-        "U6hwlur14RpnInZr",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "1TMBPe40kx2b": {
-      "name": "Melee Shrouding",
-      "hash": "9d446cf99538",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "_5ObRZWuPMwProbC",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "7el7k3hgy5pb9o9i",
-        "oqnnu0gk8q6hyyny",
-        "ukrBO4ITaKUpUFeO",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "0dZak5jae8F0": {
-      "name": "Melee Shrouding Aura",
-      "hash": "b26554aceee9",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "_5ObRZWuPMwProbC",
-        "z8205ez2boggzs22",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "7el7k3hgy5pb9o9i",
-        "oqnnu0gk8q6hyyny",
-        "ukrBO4ITaKUpUFeO",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "mETdyZ__yMVj": {
-      "name": "Mend",
-      "hash": "90354125d86f",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "NiptqIlNnPHx7x-X",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "r6hr29338u4micfw",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "fk1mkbp8apvltu0z",
-        "7o6om21wxlvvy3hq",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "7el7k3hgy5pb9o9i",
-        "1wj1ysgxpuuz9bc7",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "31xjrm9ivdimkjxp",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "qsx__9Cz3au_": {
-      "name": "Rapid Rush",
-      "hash": "40dbf3b5c40a",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
         "fmuqw5lr5l6dq0mq",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "zpaY1LFqVk-ZJdvW",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "RDFhn43ktRx8": {
-      "name": "Rapid Rush Aura",
-      "hash": "ba19a7f9a520",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "zjzB46LX-QDg": {
-      "name": "Re-Deployment",
-      "hash": "fc0967b56688",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "NiptqIlNnPHx7x-X",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "k5T0f2XIfpmPO28h",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "zz3kp5ry7ks6mxcx",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "9o03izVMZ-Xl": {
-      "name": "Smash",
-      "hash": "dc78d5eaffb2",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "xp5zwh73lg1uaym4",
-        "w70ha3o85pa7nigq",
-        "ukrBO4ITaKUpUFeO",
-        "rvvb3kdn2x2pqkki",
-        "yxjboa8oma9bbdck"
-      ]
-    },
-    "j93FkLXMCk8v": {
-      "name": "Steadfast",
-      "hash": "fa3dc55dc71b",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "ewbra8nv3nq3k27p",
-        "fmuqw5lr5l6dq0mq",
-        "7o6om21wxlvvy3hq",
-        "drqw1iswxmuugp3d",
-        "qLonG2G2KzkRQoGf",
-        "jlray7cwf8mvw5sn",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "z4QuSO_AxqDr": {
-      "name": "Versatile Expert",
-      "hash": "a9cc455e64df",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "r6hr29338u4micfw",
-        "ewbra8nv3nq3k27p",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "vux1Y5vvULmaxZ8P",
-        "7o6om21wxlvvy3hq",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "oqnnu0gk8q6hyyny",
-        "31xjrm9ivdimkjxp",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "y47PXwakTSji": {
-      "name": "Versatile Reach",
-      "hash": "bf7cf306cc07",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "qLonG2G2KzkRQoGf",
-        "oqnnu0gk8q6hyyny",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "ayuikxkmDOmq": {
-      "name": "Versatile Reach Aura",
-      "hash": "ce6569b8ba65",
-      "sources": [
-        "78qp9l5alslt6yj8",
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "qLonG2G2KzkRQoGf",
-        "oqnnu0gk8q6hyyny",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "mxQ1fCGgPccn": {
-      "name": "Berserker",
-      "hash": "bea68ce56c69",
-      "sources": [
-        "NiptqIlNnPHx7x-X"
-      ]
-    },
-    "cU3RtuBXHyq4": {
-      "name": "Blast",
-      "hash": "331a23417f13",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "7oi8zeiqfamiur21",
-        "_5ObRZWuPMwProbC",
-        "prsajf5ot936qznk",
-        "fk1mkbp8apvltu0z",
-        "k5T0f2XIfpmPO28h",
-        "7i7blhft75q9zfdc",
-        "dnthspt7c0klhmt8",
-        "1wj1ysgxpuuz9bc7",
         "hk70l4d471plza00",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "MEAjk171GPmF": {
-      "name": "Brutal",
-      "hash": "bea68ce56c69",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "7oi8zeiqfamiur21",
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "2W8l0OXSjju6": {
-      "name": "Enhanced Berserker",
-      "hash": "519a34d3be38",
-      "sources": [
-        "NiptqIlNnPHx7x-X"
-      ]
-    },
-    "D-XBYhhRyp_N": {
-      "name": "Enhanced Berserker Aura",
-      "hash": "7e984bccd931",
-      "sources": [
-        "NiptqIlNnPHx7x-X"
-      ]
-    },
-    "Nbo5DTQufMoB": {
-      "name": "Enhanced Brutal",
-      "hash": "c010153bd93c",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "7oi8zeiqfamiur21",
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "r0MEI7V18zNs": {
-      "name": "Instinctive",
-      "hash": "d00583947dbd",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "k5T0f2XIfpmPO28h"
-      ]
-    },
-    "EgdF_3MSddXR": {
-      "name": "Melee Evasion",
-      "hash": "c8986fbff63b",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "9qvy1oufoangt2gl",
-        "prsajf5ot936qznk",
-        "k5T0f2XIfpmPO28h",
-        "drqw1iswxmuugp3d",
-        "hk70l4d471plza00",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "fOIa9S1t0q7S": {
-      "name": "Melee Evasion Aura",
-      "hash": "0d386cb07436",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "k5T0f2XIfpmPO28h",
-        "hk70l4d471plza00"
-      ]
-    },
-    "ad6BHtI2eeX0": {
-      "name": "Pierce",
-      "hash": "1610811f5ff5",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "7ex2x15bpkmy1alv",
-        "gk7me4sgn9s740kw",
-        "wopr4xvwa51xh3mc",
-        "1wj1ysgxpuuz9bc7",
-        "oqnnu0gk8q6hyyny",
-        "rl7ympklz4r0ls38",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "n3CNLjq67GHI": {
-      "name": "Piercing Fighting Mark",
-      "hash": "a2c74fe4dd93",
-      "sources": [
-        "NiptqIlNnPHx7x-X"
-      ]
-    },
-    "lJx5NP1KA3KU": {
-      "name": "Quick",
-      "hash": "5a17fcec9566",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "_5ObRZWuPMwProbC",
-        "k5T0f2XIfpmPO28h",
-        "zz3kp5ry7ks6mxcx",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "ykPufsAeq8Kw": {
-      "name": "Quick Shot",
-      "hash": "77183a3ab877",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "_5ObRZWuPMwProbC",
-        "9qvy1oufoangt2gl",
-        "k5T0f2XIfpmPO28h",
-        "drqw1iswxmuugp3d",
-        "zz3kp5ry7ks6mxcx",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "a9j1Pje6TLBi": {
-      "name": "Quick Shot Aura",
-      "hash": "4b8bf5077dfe",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "_5ObRZWuPMwProbC",
-        "k5T0f2XIfpmPO28h",
-        "zz3kp5ry7ks6mxcx",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "hnsVQyx3ylMf": {
-      "name": "Ravage",
-      "hash": "ca4126ff6826",
-      "sources": [
-        "NiptqIlNnPHx7x-X",
-        "7ex2x15bpkmy1alv",
-        "fmuqw5lr5l6dq0mq",
-        "prsajf5ot936qznk",
-        "gk7me4sgn9s740kw",
-        "w70ha3o85pa7nigq",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "hk70l4d471plza00",
-        "4k5amkxoybdiqotm",
-        "zpaY1LFqVk-ZJdvW",
-        "rl7ympklz4r0ls38",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "gnpURIvLqjw9": {
-      "name": "Devout",
-      "hash": "bea68ce56c69",
-      "sources": [
-        "7oi8zeiqfamiur21"
-      ]
-    },
-    "w7sENXkksVpG": {
-      "name": "Enhanced Devout",
-      "hash": "e8d4da772fb2",
-      "sources": [
-        "7oi8zeiqfamiur21"
-      ]
-    },
-    "j1_UP3V8iBI_": {
-      "name": "Enhanced Devout Aura",
-      "hash": "f9aa4ebdf5fe",
-      "sources": [
-        "7oi8zeiqfamiur21"
-      ]
-    },
-    "Q9DOQswzCth8": {
-      "name": "Fast Aura",
-      "hash": "cc39d2b99ebb",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "dnthspt7c0klhmt8"
-      ]
-    },
-    "IyLY1212wacW": {
-      "name": "Fortified",
-      "hash": "408f9465314a",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "mI0ZlbFpoT0VqC3M",
-        "ewbra8nv3nq3k27p",
-        "z8205ez2boggzs22",
-        "fk1mkbp8apvltu0z",
-        "vux1Y5vvULmaxZ8P",
-        "z65fgu0l29i4lnlu",
-        "jpc0kyil0juwy602",
-        "dnthspt7c0klhmt8",
-        "qLonG2G2KzkRQoGf",
-        "oqnnu0gk8q6hyyny",
-        "U6hwlur14RpnInZr",
-        "ukrBO4ITaKUpUFeO",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "B-9jnnFp54f9": {
-      "name": "Fortified Aura",
-      "hash": "6f41783d17ba",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "mI0ZlbFpoT0VqC3M",
-        "z8205ez2boggzs22",
-        "dnthspt7c0klhmt8",
-        "qLonG2G2KzkRQoGf"
-      ]
-    },
-    "BSztwuL4jI1R": {
-      "name": "Increased Shooting Range",
-      "hash": "83143e9b8e25",
-      "sources": [
-        "7oi8zeiqfamiur21"
-      ]
-    },
-    "DhLjIDRrWz6-": {
-      "name": "Piercing Charge",
-      "hash": "28238c0fc733",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "9qvy1oufoangt2gl",
-        "cV1jqgtZj8sf57ld",
-        "hk70l4d471plza00",
-        "4k5amkxoybdiqotm",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "dlk9Q7howUDr": {
-      "name": "Piercing Marksman",
-      "hash": "331638f90622",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "q11la9v8h1heu9ja",
-        "vux1Y5vvULmaxZ8P",
-        "cV1jqgtZj8sf57ld",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "1m7a9ADI-D_g": {
-      "name": "Piercing Marksman Aura",
-      "hash": "7e627cdf054d",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "q11la9v8h1heu9ja",
-        "vux1Y5vvULmaxZ8P",
-        "cV1jqgtZj8sf57ld",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "O_ZtH22AAORQ": {
-      "name": "Precision Target",
-      "hash": "500b5d0129bc",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "U6hwlur14RpnInZr",
-        "zpaY1LFqVk-ZJdvW"
-      ]
-    },
-    "97aE8SunQBTq": {
-      "name": "Purge",
-      "hash": "05b8ec5e1ede",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "prsajf5ot936qznk",
-        "o4D-c-28lvmybgc5",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "muH3OhuC6eK4": {
-      "name": "Shred in Melee Aura",
-      "hash": "bbbda36c2508",
-      "sources": [
-        "7oi8zeiqfamiur21",
-        "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602"
-      ]
-    },
-    "ypbYeykEKH3C": {
-      "name": "Bloodborn",
-      "hash": "a0b38cc4799d",
-      "sources": [
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv"
-      ]
-    },
-    "Hzn5j1NxKI8h": {
-      "name": "Enhanced Bloodborn",
-      "hash": "9feb66b954a1",
-      "sources": [
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv"
-      ]
-    },
-    "DHH5wUzR-hlM": {
-      "name": "Enhanced Bloodborn Aura",
-      "hash": "221a04520fdd",
-      "sources": [
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv"
-      ]
-    },
-    "ql-dzbuQgTT4": {
-      "name": "Enhanced Predator",
-      "hash": "327a6e3f1370",
-      "sources": [
-        "xnnqhh1775kvmz2r",
-        "7ex2x15bpkmy1alv",
-        "vux1Y5vvULmaxZ8P",
-        "8P8zHTe_MQtawcCN",
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "zCjAFXut7Gsg": {
-      "name": "Retaliate",
-      "hash": "efa6c7894ca9",
-      "sources": [
-        "7ex2x15bpkmy1alv",
-        "9qvy1oufoangt2gl",
-        "gk7me4sgn9s740kw",
-        "k5T0f2XIfpmPO28h",
-        "wopr4xvwa51xh3mc",
-        "oqnnu0gk8q6hyyny",
-        "rl7ympklz4r0ls38",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "YidAUK2jOH-4": {
-      "name": "Brute Courage",
-      "hash": "fa3dc55dc71b",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M"
-      ]
-    },
-    "C0UHMLhvoXXj": {
-      "name": "Fearless Aura",
-      "hash": "67d1a5fc7dff",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M",
-        "04z57ua0bwth37zh",
-        "vux1Y5vvULmaxZ8P",
-        "o4D-c-28lvmybgc5"
-      ]
-    },
-    "Ww4ehASqnek0": {
-      "name": "Scourge",
-      "hash": "79628b7dcf88",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "fk1mkbp8apvltu0z",
-        "7o6om21wxlvvy3hq",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "Tdyu4Tn-rFN6": {
-      "name": "Scout Aura",
-      "hash": "956abe577d66",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "7o6om21wxlvvy3hq",
-        "7i7blhft75q9zfdc",
-        "BKi_hJaJflN8ZorH",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "8P8zHTe_MQtawcCN",
-        "U6hwlur14RpnInZr",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "i40cKJoXJ7zm": {
-      "name": "Unpredictable",
-      "hash": "22c9b19875d2",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "dnthspt7c0klhmt8",
-        "BKi_hJaJflN8ZorH",
-        "7el7k3hgy5pb9o9i",
-        "1wj1ysgxpuuz9bc7",
-        "8P8zHTe_MQtawcCN"
-      ]
-    },
-    "8zBpM3Wjey08": {
-      "name": "Unpredictable Fighter Aura",
-      "hash": "e70a959de10b",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M",
-        "fk1mkbp8apvltu0z",
-        "nyh41t82jugcdq8m",
-        "7el7k3hgy5pb9o9i",
-        "8P8zHTe_MQtawcCN"
-      ]
-    },
-    "KTixuuQ9H7tU": {
-      "name": "Unstoppable when Shooting Aura",
-      "hash": "65b6e1644774",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M",
-        "9qvy1oufoangt2gl",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "arJNSXC8F_Oa": {
-      "name": "Unwieldy Debuff",
-      "hash": "1277d6b76e4e",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M"
-      ]
-    },
-    "eXtrmDIR9dEp": {
-      "name": "Versatile Defense",
-      "hash": "a1cff5af7648",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "7o6om21wxlvvy3hq",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "UQ7FtljwqNvy": {
-      "name": "Versatile Defense Aura",
-      "hash": "762c9e6daee2",
-      "sources": [
-        "mI0ZlbFpoT0VqC3M",
-        "r6hr29338u4micfw",
-        "7o6om21wxlvvy3hq",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "uHus35IJKri2": {
-      "name": "Bane when Shooting",
-      "hash": "f0146a003f44",
-      "sources": [
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh"
-      ]
-    },
-    "4mB0rwGnMVgJ": {
-      "name": "Changebound",
-      "hash": "97f6d3428e4d",
-      "sources": [
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh"
-      ]
-    },
-    "COaU7nmOC6VG": {
-      "name": "Enhanced Changebound",
-      "hash": "778b73f78f0e",
-      "sources": [
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh"
-      ]
-    },
-    "nU2aNk56ZJ8H": {
-      "name": "Enhanced Changebound Aura",
-      "hash": "ce5330393692",
-      "sources": [
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh"
-      ]
-    },
-    "95k3zdp_EzoN": {
-      "name": "Enhanced Screened",
-      "hash": "e844df12fcc4",
-      "sources": [
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh",
-        "7el7k3hgy5pb9o9i"
-      ]
-    },
-    "WcOMD7QgPYXZ": {
-      "name": "Lacerate",
-      "hash": "79d97727e9a8",
-      "sources": [
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh",
-        "q11la9v8h1heu9ja"
-      ]
-    },
-    "zGew9XZT2rUm": {
-      "name": "Relentless Aura",
-      "hash": "62bea382e4a2",
-      "sources": [
-        "r6hr29338u4micfw",
-        "fmuqw5lr5l6dq0mq",
-        "7o6om21wxlvvy3hq",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "8P8zHTe_MQtawcCN",
-        "4k5amkxoybdiqotm",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "_tP0jExjizvc": {
-      "name": "Screened",
-      "hash": "97f6d3428e4d",
-      "sources": [
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh",
-        "fmuqw5lr5l6dq0mq",
-        "7el7k3hgy5pb9o9i"
-      ]
-    },
-    "b7V48Z1W-EfP": {
-      "name": "Spell Resistance Aura",
-      "hash": "b941919ff5f1",
-      "sources": [
-        "r6hr29338u4micfw",
-        "04z57ua0bwth37zh",
-        "7o6om21wxlvvy3hq",
-        "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "ePlgVfji1dy6": {
-      "name": "Steadfast Aura",
-      "hash": "80a9a59deac8",
-      "sources": [
-        "r6hr29338u4micfw",
-        "ewbra8nv3nq3k27p",
-        "fmuqw5lr5l6dq0mq",
-        "7o6om21wxlvvy3hq",
-        "drqw1iswxmuugp3d",
-        "jlray7cwf8mvw5sn",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "kQVze0GRY3R9": {
-      "name": "Agile",
-      "hash": "54d6c3c32d26",
-      "sources": [
-        "_5ObRZWuPMwProbC",
-        "9qvy1oufoangt2gl",
-        "q11la9v8h1heu9ja",
-        "k5T0f2XIfpmPO28h",
-        "7i7blhft75q9zfdc",
-        "drqw1iswxmuugp3d",
-        "7el7k3hgy5pb9o9i",
-        "qLonG2G2KzkRQoGf",
-        "hk70l4d471plza00"
-      ]
-    },
-    "SKzm-kqi1h2Q": {
-      "name": "Delayed Action",
-      "hash": "19839fee702a",
-      "sources": [
-        "_5ObRZWuPMwProbC",
-        "jpc0kyil0juwy602",
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "8Ai6vFN7Ut6E": {
-      "name": "Enhanced Agile",
-      "hash": "d4f3003391b0",
-      "sources": [
-        "_5ObRZWuPMwProbC",
-        "9qvy1oufoangt2gl",
-        "drqw1iswxmuugp3d",
-        "hk70l4d471plza00"
-      ]
-    },
-    "Pa5Mr2ioVZIf": {
-      "name": "Enhanced Runner",
-      "hash": "04f667c349a5",
-      "sources": [
-        "_5ObRZWuPMwProbC"
-      ]
-    },
-    "Tmfov9Aj0X2h": {
-      "name": "Enhanced Runner Aura",
-      "hash": "f55bd331f196",
-      "sources": [
-        "_5ObRZWuPMwProbC"
-      ]
-    },
-    "JSnFcm3SCiMD": {
-      "name": "Fracture",
-      "hash": "ce798a0f276b",
-      "sources": [
-        "_5ObRZWuPMwProbC",
-        "7i7blhft75q9zfdc",
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "ozCLWcof36wD": {
-      "name": "Hit & Run",
-      "hash": "24aadf3d43a3",
-      "sources": [
-        "_5ObRZWuPMwProbC",
-        "ewbra8nv3nq3k27p",
-        "9qvy1oufoangt2gl",
-        "z8205ez2boggzs22",
-        "q11la9v8h1heu9ja",
-        "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602",
-        "1wj1ysgxpuuz9bc7",
-        "5wbcv465hacdwvkb"
-      ]
-    },
-    "uwrXuhqYepEd": {
-      "name": "Hit & Run Fighter Aura",
-      "hash": "625eece472eb",
-      "sources": [
-        "_5ObRZWuPMwProbC",
-        "9qvy1oufoangt2gl",
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "L_61KYvup31T": {
-      "name": "Precision Tag",
-      "hash": "63513b067a21",
-      "sources": [
-        "_5ObRZWuPMwProbC",
-        "BKi_hJaJflN8ZorH"
-      ]
-    },
-    "UlIf59PuvI53": {
-      "name": "Rapid Charge",
-      "hash": "8052ce872eff",
-      "sources": [
-        "_5ObRZWuPMwProbC"
-      ]
-    },
-    "8uW_NrYuSWW0": {
-      "name": "Rapid Charge Mark",
-      "hash": "48457700a874",
-      "sources": [
-        "_5ObRZWuPMwProbC"
-      ]
-    },
-    "Ywz0UdkamH-k": {
-      "name": "Runner",
-      "hash": "54d6c3c32d26",
-      "sources": [
-        "_5ObRZWuPMwProbC"
-      ]
-    },
-    "noS8F0WwHtHA": {
-      "name": "Dash",
-      "hash": "bdb467674e09",
-      "sources": [
-        "ewbra8nv3nq3k27p"
-      ]
-    },
-    "JKjtSSAto56J": {
-      "name": "Dash Aura",
-      "hash": "106d92b79c0a",
-      "sources": [
-        "ewbra8nv3nq3k27p"
-      ]
-    },
-    "-eXDDTCrrQ6n": {
-      "name": "Dodge",
-      "hash": "e02e14bd3085",
-      "sources": [
-        "ewbra8nv3nq3k27p",
-        "q11la9v8h1heu9ja",
-        "BKi_hJaJflN8ZorH",
-        "zpaY1LFqVk-ZJdvW"
-      ]
-    },
-    "YfecqBW3YoNG": {
-      "name": "Enhanced Fortified",
-      "hash": "88059d65fcb0",
-      "sources": [
-        "ewbra8nv3nq3k27p",
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "7-nw0-TRmYAv": {
-      "name": "Enhanced Guardian",
-      "hash": "e4662d1d9dd6",
-      "sources": [
-        "ewbra8nv3nq3k27p"
-      ]
-    },
-    "pxBAv9DNteCA": {
-      "name": "Enhanced Guardian Aura",
-      "hash": "b49e60cd70b4",
-      "sources": [
-        "ewbra8nv3nq3k27p"
-      ]
-    },
-    "D7ChSWl5R2We": {
-      "name": "Guardian",
-      "hash": "408f9465314a",
-      "sources": [
-        "ewbra8nv3nq3k27p"
-      ]
-    },
-    "rkGri9GAybaZ": {
-      "name": "Hit & Run Shooter",
-      "hash": "790bc923caf2",
-      "sources": [
-        "ewbra8nv3nq3k27p",
-        "z8205ez2boggzs22",
-        "7i7blhft75q9zfdc",
-        "dnthspt7c0klhmt8",
-        "7el7k3hgy5pb9o9i"
-      ]
-    },
-    "rVZfbTlIyt7L": {
-      "name": "Hit & Run Shooter Aura",
-      "hash": "2a76786de4ea",
-      "sources": [
-        "ewbra8nv3nq3k27p",
-        "z8205ez2boggzs22",
-        "7i7blhft75q9zfdc"
-      ]
-    },
-    "okU8qW-h2rau": {
-      "name": "Ranged Shrouding",
-      "hash": "2a99cf670542",
-      "sources": [
-        "ewbra8nv3nq3k27p",
-        "BKi_hJaJflN8ZorH",
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "oZewV0wGuebE": {
-      "name": "Ranged Shrouding Aura",
-      "hash": "59744049252b",
-      "sources": [
-        "ewbra8nv3nq3k27p",
-        "BKi_hJaJflN8ZorH",
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "lEFjh4V7XGVV": {
-      "name": "Shred when Shooting Aura",
-      "hash": "0f5c73dd62ec",
-      "sources": [
-        "ewbra8nv3nq3k27p",
-        "7i7blhft75q9zfdc",
-        "o4D-c-28lvmybgc5"
-      ]
-    },
-    "AB3FAl-SEUYP": {
-      "name": "Unstoppable in Melee Aura",
-      "hash": "7cee9bbbee5c",
-      "sources": [
-        "ewbra8nv3nq3k27p",
-        "04z57ua0bwth37zh",
-        "qLonG2G2KzkRQoGf"
+        "prsajf5ot936qznk"
       ]
     },
     "0TfnG5G4JEv0": {
       "name": "Anti-Regen",
-      "hash": "5e9062aaf31e",
+      "hash": "aad5689b",
       "sources": [
         "04z57ua0bwth37zh",
+        "4k5amkxoybdiqotm",
         "9qvy1oufoangt2gl",
         "fmuqw5lr5l6dq0mq",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "CQes0mDvF4bV": {
+      "name": "AP",
+      "hash": "3ad53794",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "1wj1ysgxpuuz9bc7",
+        "31xjrm9ivdimkjxp",
+        "4k5amkxoybdiqotm",
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7el7k3hgy5pb9o9i",
+        "7ex2x15bpkmy1alv",
+        "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "7oi8zeiqfamiur21",
+        "8P8zHTe_MQtawcCN",
+        "9qvy1oufoangt2gl",
+        "BKi_hJaJflN8ZorH",
+        "G5uvPlnfxPg3EcYG",
+        "NiptqIlNnPHx7x-X",
+        "U6hwlur14RpnInZr",
+        "_5ObRZWuPMwProbC",
+        "bF00yJmGNJ7VxfkN",
+        "cV1jqgtZj8sf57ld",
+        "dnthspt7c0klhmt8",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "fmuqw5lr5l6dq0mq",
+        "gk7me4sgn9s740kw",
+        "hk70l4d471plza00",
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m",
+        "o4D-c-28lvmybgc5",
+        "oqnnu0gk8q6hyyny",
         "prsajf5ot936qznk",
-        "4k5amkxoybdiqotm"
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf",
+        "r6hr29338u4micfw",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P",
+        "w70ha3o85pa7nigq",
+        "w7qor7b2kuifcyvk",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22",
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "uHus35IJKri2": {
+      "name": "Bane when Shooting",
+      "hash": "05f65980",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "h9JsgD38BRjI": {
+      "name": "Bounding",
+      "hash": "3f44ff2e",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "1wj1ysgxpuuz9bc7",
+        "7el7k3hgy5pb9o9i",
+        "8P8zHTe_MQtawcCN",
+        "BKi_hJaJflN8ZorH",
+        "U6hwlur14RpnInZr",
+        "bF00yJmGNJ7VxfkN",
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
+        "vux1Y5vvULmaxZ8P",
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
       ]
     },
     "fWjDp-LZmYln": {
       "name": "Bounding Aura",
-      "hash": "7d779ee767c2",
+      "hash": "9c7e9689",
       "sources": [
         "04z57ua0bwth37zh",
-        "jpc0kyil0juwy602",
-        "jlray7cwf8mvw5sn"
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602"
+      ]
+    },
+    "4mB0rwGnMVgJ": {
+      "name": "Changebound",
+      "hash": "d8d5e666",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "s6MgSfmgylXU": {
+      "name": "Defense",
+      "hash": "a500944d",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "1wj1ysgxpuuz9bc7",
+        "31xjrm9ivdimkjxp",
+        "4k5amkxoybdiqotm",
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "7oi8zeiqfamiur21",
+        "8P8zHTe_MQtawcCN",
+        "9qvy1oufoangt2gl",
+        "BKi_hJaJflN8ZorH",
+        "G5uvPlnfxPg3EcYG",
+        "NiptqIlNnPHx7x-X",
+        "U6hwlur14RpnInZr",
+        "bF00yJmGNJ7VxfkN",
+        "cV1jqgtZj8sf57ld",
+        "dnthspt7c0klhmt8",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "fmuqw5lr5l6dq0mq",
+        "gk7me4sgn9s740kw",
+        "hk70l4d471plza00",
+        "jlray7cwf8mvw5sn",
+        "k5T0f2XIfpmPO28h",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m",
+        "oqnnu0gk8q6hyyny",
+        "prsajf5ot936qznk",
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf",
+        "r6hr29338u4micfw",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P",
+        "w70ha3o85pa7nigq",
+        "w7qor7b2kuifcyvk",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22",
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "COaU7nmOC6VG": {
+      "name": "Enhanced Changebound",
+      "hash": "cb9724fe",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "nU2aNk56ZJ8H": {
+      "name": "Enhanced Changebound Aura",
+      "hash": "230b026b",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "95k3zdp_EzoN": {
+      "name": "Enhanced Screened",
+      "hash": "ab4e406a",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "7el7k3hgy5pb9o9i",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "C0UHMLhvoXXj": {
+      "name": "Fearless Aura",
+      "hash": "68ebba70",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "mI0ZlbFpoT0VqC3M",
+        "o4D-c-28lvmybgc5",
+        "vux1Y5vvULmaxZ8P"
       ]
     },
     "3RJ8ZvQphXk5": {
       "name": "Indirect when Shooting Aura",
-      "hash": "aa4ae97b78fd",
+      "hash": "09c7aca0",
       "sources": [
         "04z57ua0bwth37zh"
+      ]
+    },
+    "WcOMD7QgPYXZ": {
+      "name": "Lacerate",
+      "hash": "14bb56a6",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "q11la9v8h1heu9ja",
+        "r6hr29338u4micfw"
       ]
     },
     "AlIZbh-afBYi": {
       "name": "Protected",
-      "hash": "f99b22382ca9",
+      "hash": "0c9b390f",
       "sources": [
         "04z57ua0bwth37zh",
-        "fmuqw5lr5l6dq0mq",
-        "jpc0kyil0juwy602",
         "1wj1ysgxpuuz9bc7",
+        "4k5amkxoybdiqotm",
+        "fmuqw5lr5l6dq0mq",
         "jlray7cwf8mvw5sn",
-        "4k5amkxoybdiqotm"
+        "jpc0kyil0juwy602"
       ]
     },
     "fHq_KESyO1cU": {
       "name": "Protected Aura",
-      "hash": "1b441d4d5c7b",
+      "hash": "d1a64af9",
       "sources": [
         "04z57ua0bwth37zh"
       ]
     },
+    "_tP0jExjizvc": {
+      "name": "Screened",
+      "hash": "d8d5e666",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "7el7k3hgy5pb9o9i",
+        "fmuqw5lr5l6dq0mq",
+        "r6hr29338u4micfw"
+      ]
+    },
     "8HWdOwMYcI0p": {
       "name": "Sergeant",
-      "hash": "788dddd8d6c4",
+      "hash": "0d312afb",
       "sources": [
         "04z57ua0bwth37zh",
         "9qvy1oufoangt2gl",
@@ -2708,76 +1072,1889 @@
     },
     "sHIDSc5b37Jm": {
       "name": "Spell Accumulator",
-      "hash": "62aa655c2cb5",
+      "hash": "b7884eac",
       "sources": [
         "04z57ua0bwth37zh",
         "jpc0kyil0juwy602"
       ]
     },
+    "h-Cj1XrX00JE": {
+      "name": "Spell Resistance",
+      "hash": "742cc594",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "1wj1ysgxpuuz9bc7",
+        "31xjrm9ivdimkjxp",
+        "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602",
+        "mI0ZlbFpoT0VqC3M",
+        "prsajf5ot936qznk",
+        "r6hr29338u4micfw",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "b7V48Z1W-EfP": {
+      "name": "Spell Resistance Aura",
+      "hash": "20645b30",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "31xjrm9ivdimkjxp",
+        "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602",
+        "r6hr29338u4micfw"
+      ]
+    },
     "jaDijWTHmVNU": {
       "name": "Split",
-      "hash": "b3d7d5d61ab6",
+      "hash": "c3e539ff",
       "sources": [
         "04z57ua0bwth37zh"
       ]
     },
     "LtPyHi_-DHf4": {
       "name": "Teleport",
-      "hash": "9d95d1d47d46",
+      "hash": "d32f9dd6",
       "sources": [
         "04z57ua0bwth37zh",
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "7i7blhft75q9zfdc",
-        "jpc0kyil0juwy602",
-        "w70ha3o85pa7nigq",
         "7el7k3hgy5pb9o9i",
-        "U6hwlur14RpnInZr",
-        "o4D-c-28lvmybgc5",
+        "7i7blhft75q9zfdc",
         "G5uvPlnfxPg3EcYG",
+        "U6hwlur14RpnInZr",
+        "jpc0kyil0juwy602",
+        "nyh41t82jugcdq8m",
+        "o4D-c-28lvmybgc5",
+        "vux1Y5vvULmaxZ8P",
+        "w70ha3o85pa7nigq",
         "zz3kp5ry7ks6mxcx"
       ]
     },
     "nr0R125ptwEZ": {
       "name": "Teleport Aura",
-      "hash": "7fd95d5329ba",
+      "hash": "a3b89f0c",
       "sources": [
         "04z57ua0bwth37zh",
-        "nyh41t82jugcdq8m",
         "7el7k3hgy5pb9o9i",
-        "G5uvPlnfxPg3EcYG"
+        "G5uvPlnfxPg3EcYG",
+        "nyh41t82jugcdq8m"
+      ]
+    },
+    "rqBYj1yANC3J": {
+      "name": "Unique Hero",
+      "hash": "ccc5f686",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "1wj1ysgxpuuz9bc7",
+        "4k5amkxoybdiqotm",
+        "7i7blhft75q9zfdc",
+        "7oi8zeiqfamiur21",
+        "BKi_hJaJflN8ZorH",
+        "U6hwlur14RpnInZr",
+        "fk1mkbp8apvltu0z",
+        "fmuqw5lr5l6dq0mq",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk",
+        "z65fgu0l29i4lnlu"
+      ]
+    },
+    "QXyt-zV_bjpg": {
+      "name": "Unstoppable",
+      "hash": "289909f6",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "1wj1ysgxpuuz9bc7",
+        "31xjrm9ivdimkjxp",
+        "4k5amkxoybdiqotm",
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "9qvy1oufoangt2gl",
+        "BKi_hJaJflN8ZorH",
+        "NiptqIlNnPHx7x-X",
+        "U6hwlur14RpnInZr",
+        "dnthspt7c0klhmt8",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "gk7me4sgn9s740kw",
+        "jlray7cwf8mvw5sn",
+        "mI0ZlbFpoT0VqC3M",
+        "o4D-c-28lvmybgc5",
+        "oqnnu0gk8q6hyyny",
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf",
+        "r6hr29338u4micfw",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "vux1Y5vvULmaxZ8P",
+        "w70ha3o85pa7nigq",
+        "w7qor7b2kuifcyvk",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "AB3FAl-SEUYP": {
+      "name": "Unstoppable in Melee Aura",
+      "hash": "88e13993",
+      "sources": [
+        "04z57ua0bwth37zh",
+        "ewbra8nv3nq3k27p",
+        "qLonG2G2KzkRQoGf"
       ]
     },
     "r8OBuam8nRXP": {
       "name": "Vanguard",
-      "hash": "9ffb56174ddf",
+      "hash": "f7d5c829",
       "sources": [
         "04z57ua0bwth37zh",
-        "xp5zwh73lg1uaym4",
-        "q11la9v8h1heu9ja",
-        "k5T0f2XIfpmPO28h",
-        "dnthspt7c0klhmt8",
-        "hk70l4d471plza00",
         "5wbcv465hacdwvkb",
         "U6hwlur14RpnInZr",
+        "dnthspt7c0klhmt8",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h",
+        "q11la9v8h1heu9ja",
+        "tH3gqRwsigE87z5H",
         "ukrBO4ITaKUpUFeO",
-        "zz3kp5ry7ks6mxcx",
+        "xp5zwh73lg1uaym4",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "efmjJPTe0Yzd": {
+      "name": "Anti-Cover",
+      "hash": "c7954af3",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "31xjrm9ivdimkjxp",
+        "4k5amkxoybdiqotm",
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7el7k3hgy5pb9o9i",
+        "7ex2x15bpkmy1alv",
+        "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "7oi8zeiqfamiur21",
+        "8P8zHTe_MQtawcCN",
+        "9qvy1oufoangt2gl",
+        "BKi_hJaJflN8ZorH",
+        "G5uvPlnfxPg3EcYG",
+        "NiptqIlNnPHx7x-X",
+        "U6hwlur14RpnInZr",
+        "_5ObRZWuPMwProbC",
+        "bF00yJmGNJ7VxfkN",
+        "cV1jqgtZj8sf57ld",
+        "dnthspt7c0klhmt8",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "gk7me4sgn9s740kw",
+        "hk70l4d471plza00",
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m",
+        "o4D-c-28lvmybgc5",
+        "oqnnu0gk8q6hyyny",
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf",
+        "r6hr29338u4micfw",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P",
+        "w70ha3o85pa7nigq",
+        "w7qor7b2kuifcyvk",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22",
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "74RjQ1k41DoO": {
+      "name": "Armor",
+      "hash": "8e635239",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "4k5amkxoybdiqotm",
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "7i7blhft75q9zfdc",
+        "7oi8zeiqfamiur21",
+        "8P8zHTe_MQtawcCN",
+        "G5uvPlnfxPg3EcYG",
+        "U6hwlur14RpnInZr",
+        "cV1jqgtZj8sf57ld",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "gk7me4sgn9s740kw",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m",
+        "oqnnu0gk8q6hyyny",
+        "prsajf5ot936qznk",
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf",
+        "r6hr29338u4micfw",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22",
+        "zpaY1LFqVk-ZJdvW"
+      ]
+    },
+    "qNNjE6aa9YQ2": {
+      "name": "Bad Shot",
+      "hash": "f4f4b7dc",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "cU3RtuBXHyq4": {
+      "name": "Blast",
+      "hash": "567e8d36",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "31xjrm9ivdimkjxp",
+        "7i7blhft75q9zfdc",
+        "7oi8zeiqfamiur21",
+        "NiptqIlNnPHx7x-X",
+        "_5ObRZWuPMwProbC",
+        "dnthspt7c0klhmt8",
+        "fk1mkbp8apvltu0z",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "MEAjk171GPmF": {
+      "name": "Brutal",
+      "hash": "028f981a",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "7oi8zeiqfamiur21",
+        "NiptqIlNnPHx7x-X"
+      ]
+    },
+    "Hdm9ry6kJvzb": {
+      "name": "Crossing Strike",
+      "hash": "b0281fbb",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "U6hwlur14RpnInZr"
+      ]
+    },
+    "Nbo5DTQufMoB": {
+      "name": "Enhanced Brutal",
+      "hash": "593ae8fc",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "7oi8zeiqfamiur21",
+        "NiptqIlNnPHx7x-X"
+      ]
+    },
+    "vhXg_2pMyAzi": {
+      "name": "Enhanced Brutal Aura",
+      "hash": "ca1f6ac5",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "B1i8BBWNU3L0": {
+      "name": "Enhanced Ferocious",
+      "hash": "7b7d9c50",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "EYbEdB0ST9lf": {
+      "name": "Enhanced Ferocious Aura",
+      "hash": "3d9e0b5e",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "cygZBh3MtWs1": {
+      "name": "Ferocious",
+      "hash": "028f981a",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "ozCLWcof36wD": {
+      "name": "Hit & Run",
+      "hash": "ff79268c",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "5wbcv465hacdwvkb",
+        "7i7blhft75q9zfdc",
+        "9qvy1oufoangt2gl",
+        "_5ObRZWuPMwProbC",
+        "ewbra8nv3nq3k27p",
+        "jpc0kyil0juwy602",
+        "q11la9v8h1heu9ja",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "anyZ2FHtdAVO": {
+      "name": "Hit & Run Fighter",
+      "hash": "48c73cba",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "9qvy1oufoangt2gl",
+        "_5ObRZWuPMwProbC",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "uwrXuhqYepEd": {
+      "name": "Hit & Run Fighter Aura",
+      "hash": "7c87ed36",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "9qvy1oufoangt2gl",
+        "_5ObRZWuPMwProbC"
+      ]
+    },
+    "mETdyZ__yMVj": {
+      "name": "Mend",
+      "hash": "81891ed3",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "31xjrm9ivdimkjxp",
+        "78qp9l5alslt6yj8",
+        "7el7k3hgy5pb9o9i",
+        "7ex2x15bpkmy1alv",
+        "7o6om21wxlvvy3hq",
+        "NiptqIlNnPHx7x-X",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "fk1mkbp8apvltu0z",
+        "gk7me4sgn9s740kw",
+        "jlray7cwf8mvw5sn",
+        "oqnnu0gk8q6hyyny",
+        "r6hr29338u4micfw",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "tH3gqRwsigE87z5H",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "ad6BHtI2eeX0": {
+      "name": "Pierce",
+      "hash": "020d79c5",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "7ex2x15bpkmy1alv",
+        "NiptqIlNnPHx7x-X",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "wopr4xvwa51xh3mc"
+      ]
+    },
+    "wnrz_-SUmR8_": {
+      "name": "Piercing Fighter Aura",
+      "hash": "254f4e98",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "sngB_5QsJLaW": {
+      "name": "Precision Charge",
+      "hash": "3c622f90",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "DETPYoIhE98G": {
+      "name": "Precision Charge Aura",
+      "hash": "b34703aa",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "okU8qW-h2rau": {
+      "name": "Ranged Shrouding",
+      "hash": "60afb98b",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "BKi_hJaJflN8ZorH",
+        "ewbra8nv3nq3k27p"
+      ]
+    },
+    "oZewV0wGuebE": {
+      "name": "Ranged Shrouding Aura",
+      "hash": "c284f0ad",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "BKi_hJaJflN8ZorH",
+        "ewbra8nv3nq3k27p"
+      ]
+    },
+    "V3YzPPkZm8at": {
+      "name": "Regeneration Aura",
+      "hash": "fca59a24",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "7i7blhft75q9zfdc",
+        "7oi8zeiqfamiur21",
+        "G5uvPlnfxPg3EcYG",
+        "cV1jqgtZj8sf57ld",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "fmuqw5lr5l6dq0mq",
+        "gk7me4sgn9s740kw",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "w7qor7b2kuifcyvk",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "z65fgu0l29i4lnlu",
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "C6MzEy1CnxTs": {
+      "name": "Repel Ambushers",
+      "hash": "9d3951a5",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "4k5amkxoybdiqotm",
+        "8P8zHTe_MQtawcCN",
+        "BKi_hJaJflN8ZorH",
+        "G5uvPlnfxPg3EcYG",
+        "NiptqIlNnPHx7x-X",
+        "_5ObRZWuPMwProbC",
+        "bF00yJmGNJ7VxfkN",
+        "cV1jqgtZj8sf57ld",
+        "jpc0kyil0juwy602",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m",
+        "o4D-c-28lvmybgc5",
+        "prsajf5ot936qznk",
+        "qLonG2G2KzkRQoGf",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P",
+        "z65fgu0l29i4lnlu",
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "u2KyOrsBaOdU": {
+      "name": "Speed Feat",
+      "hash": "bc7d0403",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "UEYz0htkjsxv": {
+      "name": "Speed Feat Aura",
+      "hash": "626fc4ca",
+      "sources": [
+        "1wj1ysgxpuuz9bc7"
+      ]
+    },
+    "i40cKJoXJ7zm": {
+      "name": "Unpredictable",
+      "hash": "045abe85",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "7el7k3hgy5pb9o9i",
+        "8P8zHTe_MQtawcCN",
+        "BKi_hJaJflN8ZorH",
+        "dnthspt7c0klhmt8",
+        "fk1mkbp8apvltu0z",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m"
+      ]
+    },
+    "eOGs64JpVsP3": {
+      "name": "Unpredictable Shooter",
+      "hash": "4193e808",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "7i7blhft75q9zfdc",
+        "BKi_hJaJflN8ZorH",
+        "dnthspt7c0klhmt8",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h"
+      ]
+    },
+    "Ql2vwvAiWaor": {
+      "name": "Unpredictable Shooter Aura",
+      "hash": "5bec3bdf",
+      "sources": [
+        "1wj1ysgxpuuz9bc7",
+        "BKi_hJaJflN8ZorH",
+        "dnthspt7c0klhmt8"
+      ]
+    },
+    "FRVSAjasmFSF": {
+      "name": "Bravery Aura",
+      "hash": "a27a0972",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "7oi8zeiqfamiur21",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
+        "oqnnu0gk8q6hyyny",
+        "q11la9v8h1heu9ja",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "5NeMSSj7-Pp5": {
+      "name": "Enhanced Violent",
+      "hash": "ea1d9539",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "bF00yJmGNJ7VxfkN",
+        "dnthspt7c0klhmt8",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "5G44ZDmQG-N5": {
+      "name": "Enhanced Warbound",
+      "hash": "40f58141",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "dNOZEOSJ-DyX": {
+      "name": "Enhanced Warbound Aura",
+      "hash": "b4629083",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "CK9TIa7vdehO": {
+      "name": "Furious Aura",
+      "hash": "6b8d3770",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "jlray7cwf8mvw5sn",
+        "jpc0kyil0juwy602",
+        "prsajf5ot936qznk",
+        "q11la9v8h1heu9ja",
+        "r6hr29338u4micfw",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "EgdF_3MSddXR": {
+      "name": "Melee Evasion",
+      "hash": "dd06e6b5",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "9qvy1oufoangt2gl",
+        "NiptqIlNnPHx7x-X",
+        "drqw1iswxmuugp3d",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "DhLjIDRrWz6-": {
+      "name": "Piercing Charge",
+      "hash": "e671acd8",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "4k5amkxoybdiqotm",
+        "7oi8zeiqfamiur21",
+        "9qvy1oufoangt2gl",
+        "cV1jqgtZj8sf57ld",
+        "hk70l4d471plza00"
+      ]
+    },
+    "97aE8SunQBTq": {
+      "name": "Purge",
+      "hash": "a3c876ef",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "7oi8zeiqfamiur21",
+        "o4D-c-28lvmybgc5",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "zGew9XZT2rUm": {
+      "name": "Relentless Aura",
+      "hash": "c18d48e6",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "4k5amkxoybdiqotm",
+        "7o6om21wxlvvy3hq",
+        "8P8zHTe_MQtawcCN",
+        "drqw1iswxmuugp3d",
+        "fmuqw5lr5l6dq0mq",
+        "jlray7cwf8mvw5sn",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "Ww4ehASqnek0": {
+      "name": "Scourge",
+      "hash": "9e9b5a7c",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "fk1mkbp8apvltu0z",
+        "jlray7cwf8mvw5sn",
+        "mI0ZlbFpoT0VqC3M",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "Tdyu4Tn-rFN6": {
+      "name": "Scout Aura",
+      "hash": "41df0781",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "7i7blhft75q9zfdc",
+        "7o6om21wxlvvy3hq",
+        "8P8zHTe_MQtawcCN",
+        "BKi_hJaJflN8ZorH",
+        "U6hwlur14RpnInZr",
+        "drqw1iswxmuugp3d",
+        "jlray7cwf8mvw5sn",
+        "mI0ZlbFpoT0VqC3M",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "j93FkLXMCk8v": {
+      "name": "Steadfast",
+      "hash": "ebade725",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "78qp9l5alslt6yj8",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "ewbra8nv3nq3k27p",
+        "fmuqw5lr5l6dq0mq",
+        "jlray7cwf8mvw5sn",
+        "mI0ZlbFpoT0VqC3M",
+        "qLonG2G2KzkRQoGf",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "ePlgVfji1dy6": {
+      "name": "Steadfast Aura",
+      "hash": "37146454",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "ewbra8nv3nq3k27p",
+        "fmuqw5lr5l6dq0mq",
+        "jlray7cwf8mvw5sn",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "DEeVIJcfNfS6": {
+      "name": "Unpredictable Fighter",
+      "hash": "13668b76",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "7el7k3hgy5pb9o9i",
+        "7o6om21wxlvvy3hq",
+        "8P8zHTe_MQtawcCN",
+        "9qvy1oufoangt2gl",
+        "U6hwlur14RpnInZr",
+        "bF00yJmGNJ7VxfkN",
+        "dnthspt7c0klhmt8",
+        "drqw1iswxmuugp3d",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "hk70l4d471plza00",
+        "jlray7cwf8mvw5sn",
+        "k5T0f2XIfpmPO28h",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m",
+        "q11la9v8h1heu9ja",
+        "r6hr29338u4micfw",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk",
+        "zpaY1LFqVk-ZJdvW"
+      ]
+    },
+    "eXtrmDIR9dEp": {
+      "name": "Versatile Defense",
+      "hash": "e6ec4fc8",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "jlray7cwf8mvw5sn",
+        "mI0ZlbFpoT0VqC3M",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "UQ7FtljwqNvy": {
+      "name": "Versatile Defense Aura",
+      "hash": "8f83a378",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "jlray7cwf8mvw5sn",
+        "mI0ZlbFpoT0VqC3M",
+        "r6hr29338u4micfw"
+      ]
+    },
+    "z4QuSO_AxqDr": {
+      "name": "Versatile Expert",
+      "hash": "da56f862",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "7o6om21wxlvvy3hq",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "ewbra8nv3nq3k27p",
+        "gk7me4sgn9s740kw",
+        "jlray7cwf8mvw5sn",
+        "oqnnu0gk8q6hyyny",
+        "r6hr29338u4micfw",
+        "vux1Y5vvULmaxZ8P",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "WHJ8A7LzHUR6": {
+      "name": "Violent",
+      "hash": "f74b2fcd",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "bF00yJmGNJ7VxfkN",
+        "dnthspt7c0klhmt8",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "jbhpErfecvEY": {
+      "name": "Warbound",
+      "hash": "f74b2fcd",
+      "sources": [
+        "31xjrm9ivdimkjxp",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "CCShas9-9K4N": {
+      "name": "Ambushing Piercing Shot",
+      "hash": "193fc3fa",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "5wbcv465hacdwvkb",
+        "BKi_hJaJflN8ZorH",
+        "nyh41t82jugcdq8m"
+      ]
+    },
+    "2Cxml82Ma_3Y": {
+      "name": "Enhanced Protected",
+      "hash": "a4a8a9f2",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "fmuqw5lr5l6dq0mq",
+        "jlray7cwf8mvw5sn"
+      ]
+    },
+    "ZqewrI-hqAYi": {
+      "name": "Enhanced Self-Repair",
+      "hash": "31b0165e",
+      "sources": [
+        "4k5amkxoybdiqotm"
+      ]
+    },
+    "BOqSaZoY3ewJ": {
+      "name": "Imprecise",
+      "hash": "a43518d4",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "k5T0f2XIfpmPO28h",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "djJahpu0Ciut": {
+      "name": "Infiltrate",
+      "hash": "7d6c3ced",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "fk1mkbp8apvltu0z",
+        "jpc0kyil0juwy602",
+        "nyh41t82jugcdq8m",
+        "q11la9v8h1heu9ja",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "O2Cd7OibBBA5": {
+      "name": "No Retreat",
+      "hash": "cbd9c360",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "8P8zHTe_MQtawcCN",
+        "dnthspt7c0klhmt8",
+        "hk70l4d471plza00",
+        "tH3gqRwsigE87z5H",
+        "w7qor7b2kuifcyvk",
+        "z65fgu0l29i4lnlu"
+      ]
+    },
+    "QMU04E_1bAVC": {
+      "name": "No Retreat Aura",
+      "hash": "82904ec1",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "dnthspt7c0klhmt8",
         "tH3gqRwsigE87z5H"
+      ]
+    },
+    "L--qMjlm2g4Q": {
+      "name": "Piercing Charge Aura",
+      "hash": "5b4e1f10",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "9qvy1oufoangt2gl",
+        "cV1jqgtZj8sf57ld",
+        "hk70l4d471plza00"
+      ]
+    },
+    "TU7fkKrcAvop": {
+      "name": "Protection Feat",
+      "hash": "cd8b9c41",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "8P8zHTe_MQtawcCN",
+        "U6hwlur14RpnInZr"
+      ]
+    },
+    "CdIKErxgOpl3": {
+      "name": "Protection Feat Aura",
+      "hash": "b53ed218",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "8P8zHTe_MQtawcCN"
+      ]
+    },
+    "HmxkJq_My-Ub": {
+      "name": "Rapid Advance",
+      "hash": "2916d00c",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "qLonG2G2KzkRQoGf",
+        "vux1Y5vvULmaxZ8P",
+        "z65fgu0l29i4lnlu"
+      ]
+    },
+    "hnsVQyx3ylMf": {
+      "name": "Ravage",
+      "hash": "98cd7188",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "7ex2x15bpkmy1alv",
+        "NiptqIlNnPHx7x-X",
+        "e8mflytiz51kc4n6",
+        "fmuqw5lr5l6dq0mq",
+        "gk7me4sgn9s740kw",
+        "hk70l4d471plza00",
+        "oqnnu0gk8q6hyyny",
+        "prsajf5ot936qznk",
+        "rl7ympklz4r0ls38",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "zpaY1LFqVk-ZJdvW"
+      ]
+    },
+    "xfXomZDK5SVX": {
+      "name": "Reanimation",
+      "hash": "900e67d4",
+      "sources": [
+        "4k5amkxoybdiqotm"
+      ]
+    },
+    "l_KzjNPv-_5H": {
+      "name": "Reanimation Aura",
+      "hash": "8b407fcc",
+      "sources": [
+        "4k5amkxoybdiqotm"
+      ]
+    },
+    "nstknew-_RL_": {
+      "name": "Rending in Melee",
+      "hash": "607ce151",
+      "sources": [
+        "4k5amkxoybdiqotm"
+      ]
+    },
+    "Y_WeXWwLtX6z": {
+      "name": "Self-Repair",
+      "hash": "0c9b390f",
+      "sources": [
+        "4k5amkxoybdiqotm"
+      ]
+    },
+    "VI54cszY2BuG": {
+      "name": "Shatter",
+      "hash": "5169f502",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "BKi_hJaJflN8ZorH"
+      ]
+    },
+    "8haZ36fXvnzn": {
+      "name": "Stealth Aura",
+      "hash": "85dc7e36",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "7i7blhft75q9zfdc",
+        "BKi_hJaJflN8ZorH",
+        "bF00yJmGNJ7VxfkN",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "jpc0kyil0juwy602",
+        "o4D-c-28lvmybgc5",
+        "vux1Y5vvULmaxZ8P",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "cnKvLv8ErzIc": {
+      "name": "Stealth Buff",
+      "hash": "daeca842",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "leFm23MTiJxO": {
+      "name": "Swift",
+      "hash": "6f43ff1b",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "ZK3FxxpOGNMR": {
+      "name": "Unstoppable when Shooting",
+      "hash": "6f043c97",
+      "sources": [
+        "4k5amkxoybdiqotm"
+      ]
+    },
+    "KTixuuQ9H7tU": {
+      "name": "Unstoppable when Shooting Aura",
+      "hash": "58fe1c6d",
+      "sources": [
+        "4k5amkxoybdiqotm",
+        "9qvy1oufoangt2gl",
+        "mI0ZlbFpoT0VqC3M"
+      ]
+    },
+    "ba6LlbpoLkSu": {
+      "name": "Bane when Shooting Aura",
+      "hash": "23f3924a",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "bF00yJmGNJ7VxfkN",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "-6osYnOq7DGV": {
+      "name": "Counter in Melee",
+      "hash": "4a87ee3e",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "nyh41t82jugcdq8m",
+        "zpaY1LFqVk-ZJdvW"
+      ]
+    },
+    "g2ceRIgNr-GI": {
+      "name": "Enhanced Guerrilla",
+      "hash": "f7b738ec",
+      "sources": [
+        "5wbcv465hacdwvkb"
+      ]
+    },
+    "m4BLeFXB-kOb": {
+      "name": "Enhanced Guerrilla Aura",
+      "hash": "ae48c26c",
+      "sources": [
+        "5wbcv465hacdwvkb"
+      ]
+    },
+    "SHjROxMxvQFd": {
+      "name": "Guerrilla",
+      "hash": "ff79268c",
+      "sources": [
+        "5wbcv465hacdwvkb"
+      ]
+    },
+    "B9OEkYUQsxvt": {
+      "name": "Piercing Tag",
+      "hash": "184cf916",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "jpc0kyil0juwy602"
+      ]
+    },
+    "09SoiR1HuW7u": {
+      "name": "Precise",
+      "hash": "e7e62c7e",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "7ex2x15bpkmy1alv",
+        "8P8zHTe_MQtawcCN",
+        "BKi_hJaJflN8ZorH",
+        "U6hwlur14RpnInZr",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "w7qor7b2kuifcyvk",
+        "wopr4xvwa51xh3mc",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "rtRapnaM86LH": {
+      "name": "Reap",
+      "hash": "8ec81803",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "-05w6vRgH2k9": {
+      "name": "Rending in Melee Aura",
+      "hash": "23fa3eaf",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "fmuqw5lr5l6dq0mq"
+      ]
+    },
+    "wsqfB0fq69eG": {
+      "name": "Shielded",
+      "hash": "77fb7f51",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "8P8zHTe_MQtawcCN",
+        "BKi_hJaJflN8ZorH",
+        "nyh41t82jugcdq8m",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "ZW_Zv-kkBt2q": {
+      "name": "Shielded Aura",
+      "hash": "2a777e45",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "8P8zHTe_MQtawcCN",
+        "nyh41t82jugcdq8m",
+        "prsajf5ot936qznk"
+      ]
+    },
+    "VfLmwEDxxLao": {
+      "name": "Strider Aura",
+      "hash": "1113578c",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "9qvy1oufoangt2gl",
+        "tH3gqRwsigE87z5H"
+      ]
+    },
+    "eyMkgYDVrP7C": {
+      "name": "Takedown Strike",
+      "hash": "797635c1",
+      "sources": [
+        "5wbcv465hacdwvkb",
+        "hk70l4d471plza00",
+        "nyh41t82jugcdq8m",
+        "o4D-c-28lvmybgc5",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "XoDRL2xVEnVf": {
+      "name": "Bane in Melee Aura",
+      "hash": "7b8525de",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "o4D-c-28lvmybgc5",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "741uN_Qma5mL": {
+      "name": "Battleborn",
+      "hash": "ebade725",
+      "sources": [
+        "78qp9l5alslt6yj8"
+      ]
+    },
+    "O_sf2rsHA7rD": {
+      "name": "Evasive",
+      "hash": "19380472",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "U6hwlur14RpnInZr",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "hk70l4d471plza00",
+        "jpc0kyil0juwy602",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "1TMBPe40kx2b": {
+      "name": "Melee Shrouding",
+      "hash": "53d2a1e3",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7el7k3hgy5pb9o9i",
+        "7ex2x15bpkmy1alv",
+        "_5ObRZWuPMwProbC",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "q11la9v8h1heu9ja",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "ukrBO4ITaKUpUFeO",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "0dZak5jae8F0": {
+      "name": "Melee Shrouding Aura",
+      "hash": "d04f1626",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7el7k3hgy5pb9o9i",
+        "7ex2x15bpkmy1alv",
+        "_5ObRZWuPMwProbC",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "q11la9v8h1heu9ja",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "ukrBO4ITaKUpUFeO",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "qsx__9Cz3au_": {
+      "name": "Rapid Rush",
+      "hash": "7b1784d0",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "e8mflytiz51kc4n6",
+        "fmuqw5lr5l6dq0mq",
+        "gk7me4sgn9s740kw",
+        "jlray7cwf8mvw5sn",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "zpaY1LFqVk-ZJdvW"
+      ]
+    },
+    "RDFhn43ktRx8": {
+      "name": "Rapid Rush Aura",
+      "hash": "6baecd5d",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "zjzB46LX-QDg": {
+      "name": "Re-Deployment",
+      "hash": "c9bcabf6",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "NiptqIlNnPHx7x-X",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "k5T0f2XIfpmPO28h",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "9o03izVMZ-Xl": {
+      "name": "Smash",
+      "hash": "79089806",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "rvvb3kdn2x2pqkki",
+        "ukrBO4ITaKUpUFeO",
+        "w70ha3o85pa7nigq",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "y47PXwakTSji": {
+      "name": "Versatile Reach",
+      "hash": "d3751a12",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "qLonG2G2KzkRQoGf",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "ayuikxkmDOmq": {
+      "name": "Versatile Reach Aura",
+      "hash": "9a1e5dc9",
+      "sources": [
+        "78qp9l5alslt6yj8",
+        "7ex2x15bpkmy1alv",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "qLonG2G2KzkRQoGf",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki",
+        "w70ha3o85pa7nigq",
+        "wopr4xvwa51xh3mc",
+        "xnnqhh1775kvmz2r",
+        "xp5zwh73lg1uaym4",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "kQVze0GRY3R9": {
+      "name": "Agile",
+      "hash": "6c24d366",
+      "sources": [
+        "7el7k3hgy5pb9o9i",
+        "7i7blhft75q9zfdc",
+        "9qvy1oufoangt2gl",
+        "_5ObRZWuPMwProbC",
+        "drqw1iswxmuugp3d",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h",
+        "q11la9v8h1heu9ja",
+        "qLonG2G2KzkRQoGf"
+      ]
+    },
+    "paOPFddMOffa": {
+      "name": "Crossing Attack",
+      "hash": "4a756411",
+      "sources": [
+        "7el7k3hgy5pb9o9i",
+        "7i7blhft75q9zfdc",
+        "BKi_hJaJflN8ZorH"
+      ]
+    },
+    "8cqDBbHGSA4m": {
+      "name": "Demolish",
+      "hash": "d5a1dfbd",
+      "sources": [
+        "7el7k3hgy5pb9o9i",
+        "tH3gqRwsigE87z5H",
+        "zpaY1LFqVk-ZJdvW"
+      ]
+    },
+    "eYZyOr9wu0jr": {
+      "name": "Enhanced Machine-Fog",
+      "hash": "992c8086",
+      "sources": [
+        "7el7k3hgy5pb9o9i"
+      ]
+    },
+    "engi9zFdRht9": {
+      "name": "Enhanced Machine-Fog Aura",
+      "hash": "d3712c0b",
+      "sources": [
+        "7el7k3hgy5pb9o9i"
+      ]
+    },
+    "0Z-OGtDpajc3": {
+      "name": "Grounded Evasion",
+      "hash": "3036a245",
+      "sources": [
+        "7el7k3hgy5pb9o9i"
+      ]
+    },
+    "rkGri9GAybaZ": {
+      "name": "Hit & Run Shooter",
+      "hash": "59784caf",
+      "sources": [
+        "7el7k3hgy5pb9o9i",
+        "7i7blhft75q9zfdc",
+        "dnthspt7c0klhmt8",
+        "ewbra8nv3nq3k27p",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "S8IZt-d0Sgwk": {
+      "name": "Machine-Fog",
+      "hash": "d8d5e666",
+      "sources": [
+        "7el7k3hgy5pb9o9i"
+      ]
+    },
+    "TTL5RNmwotoh": {
+      "name": "Melee Slayer",
+      "hash": "7491f929",
+      "sources": [
+        "7el7k3hgy5pb9o9i",
+        "7ex2x15bpkmy1alv",
+        "bF00yJmGNJ7VxfkN",
+        "drqw1iswxmuugp3d",
+        "e8mflytiz51kc4n6",
+        "fk1mkbp8apvltu0z",
+        "gk7me4sgn9s740kw",
+        "oqnnu0gk8q6hyyny",
+        "q11la9v8h1heu9ja",
+        "rl7ympklz4r0ls38",
+        "wopr4xvwa51xh3mc",
+        "zpaY1LFqVk-ZJdvW",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "AfGDQgn8r8O1": {
+      "name": "Rending when Shooting Aura",
+      "hash": "43e07601",
+      "sources": [
+        "7el7k3hgy5pb9o9i",
+        "G5uvPlnfxPg3EcYG",
+        "U6hwlur14RpnInZr"
+      ]
+    },
+    "8zBpM3Wjey08": {
+      "name": "Unpredictable Fighter Aura",
+      "hash": "3dd2edf0",
+      "sources": [
+        "7el7k3hgy5pb9o9i",
+        "8P8zHTe_MQtawcCN",
+        "fk1mkbp8apvltu0z",
+        "mI0ZlbFpoT0VqC3M",
+        "nyh41t82jugcdq8m"
+      ]
+    },
+    "9Te72f48wJyw": {
+      "name": "Versatile Warrior",
+      "hash": "a1279cf8",
+      "sources": [
+        "7el7k3hgy5pb9o9i",
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki"
+      ]
+    },
+    "ypbYeykEKH3C": {
+      "name": "Bloodborn",
+      "hash": "d22d6e4f",
+      "sources": [
+        "7ex2x15bpkmy1alv",
+        "xnnqhh1775kvmz2r"
+      ]
+    },
+    "Hzn5j1NxKI8h": {
+      "name": "Enhanced Bloodborn",
+      "hash": "f8a1210a",
+      "sources": [
+        "7ex2x15bpkmy1alv",
+        "xnnqhh1775kvmz2r"
+      ]
+    },
+    "DHH5wUzR-hlM": {
+      "name": "Enhanced Bloodborn Aura",
+      "hash": "7cf38e9a",
+      "sources": [
+        "7ex2x15bpkmy1alv",
+        "xnnqhh1775kvmz2r"
+      ]
+    },
+    "ql-dzbuQgTT4": {
+      "name": "Enhanced Predator",
+      "hash": "c51fe6cc",
+      "sources": [
+        "7ex2x15bpkmy1alv",
+        "8P8zHTe_MQtawcCN",
+        "U6hwlur14RpnInZr",
+        "vux1Y5vvULmaxZ8P",
+        "xnnqhh1775kvmz2r"
+      ]
+    },
+    "aiYEmCuDPUcM": {
+      "name": "Predator",
+      "hash": "d22d6e4f",
+      "sources": [
+        "7ex2x15bpkmy1alv",
+        "8P8zHTe_MQtawcCN",
+        "U6hwlur14RpnInZr",
+        "hk70l4d471plza00",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk",
+        "xnnqhh1775kvmz2r"
+      ]
+    },
+    "zCjAFXut7Gsg": {
+      "name": "Retaliate",
+      "hash": "0342b33a",
+      "sources": [
+        "7ex2x15bpkmy1alv",
+        "9qvy1oufoangt2gl",
+        "e8mflytiz51kc4n6",
+        "gk7me4sgn9s740kw",
+        "k5T0f2XIfpmPO28h",
+        "oqnnu0gk8q6hyyny",
+        "rl7ympklz4r0ls38",
+        "wopr4xvwa51xh3mc"
+      ]
+    },
+    "nLQCr5OiSlYz": {
+      "name": "Caster Group",
+      "hash": "e6cc8a93",
+      "sources": [
+        "7i7blhft75q9zfdc",
+        "jpc0kyil0juwy602",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "NX1-Y1zS-oUD": {
+      "name": "Enhanced Extra Reach",
+      "hash": "f9d4f301",
+      "sources": [
+        "7i7blhft75q9zfdc"
+      ]
+    },
+    "6Nn0oPQN3TZc": {
+      "name": "Enhanced Highborn",
+      "hash": "96829545",
+      "sources": [
+        "7i7blhft75q9zfdc"
+      ]
+    },
+    "UVyi54SgbOoz": {
+      "name": "Enhanced Highborn Aura",
+      "hash": "49556954",
+      "sources": [
+        "7i7blhft75q9zfdc"
+      ]
+    },
+    "CJ2mI46Tp-al": {
+      "name": "Extra Reach",
+      "hash": "4bdac2f4",
+      "sources": [
+        "7i7blhft75q9zfdc"
+      ]
+    },
+    "JSnFcm3SCiMD": {
+      "name": "Fracture",
+      "hash": "46fed211",
+      "sources": [
+        "7i7blhft75q9zfdc",
+        "_5ObRZWuPMwProbC",
+        "z65fgu0l29i4lnlu"
+      ]
+    },
+    "5bc5xNmd5M14": {
+      "name": "Highborn",
+      "hash": "4bdac2f4",
+      "sources": [
+        "7i7blhft75q9zfdc"
+      ]
+    },
+    "rVZfbTlIyt7L": {
+      "name": "Hit & Run Shooter Aura",
+      "hash": "a7c694b1",
+      "sources": [
+        "7i7blhft75q9zfdc",
+        "ewbra8nv3nq3k27p",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "vbYCQfF82BLa": {
+      "name": "Piercing Spotter",
+      "hash": "03af18f9",
+      "sources": [
+        "7i7blhft75q9zfdc"
+      ]
+    },
+    "muH3OhuC6eK4": {
+      "name": "Shred in Melee Aura",
+      "hash": "d80dacfa",
+      "sources": [
+        "7i7blhft75q9zfdc",
+        "7oi8zeiqfamiur21",
+        "jpc0kyil0juwy602"
+      ]
+    },
+    "lEFjh4V7XGVV": {
+      "name": "Shred when Shooting Aura",
+      "hash": "02d8fb2e",
+      "sources": [
+        "7i7blhft75q9zfdc",
+        "ewbra8nv3nq3k27p",
+        "o4D-c-28lvmybgc5"
+      ]
+    },
+    "WNMH1ZiQXSz-": {
+      "name": "Spell Conduit",
+      "hash": "fe6086bf",
+      "sources": [
+        "7i7blhft75q9zfdc",
+        "7oi8zeiqfamiur21",
+        "U6hwlur14RpnInZr",
+        "jpc0kyil0juwy602",
+        "w7qor7b2kuifcyvk",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "GgPKQ4tKFRIC": {
+      "name": "Unwieldy",
+      "hash": "aefacc37",
+      "sources": [
+        "7i7blhft75q9zfdc",
+        "fk1mkbp8apvltu0z",
+        "mI0ZlbFpoT0VqC3M",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "ZqYITWnZUc45": {
+      "name": "Enhanced Havocbound",
+      "hash": "b8fa8b85",
+      "sources": [
+        "7o6om21wxlvvy3hq"
+      ]
+    },
+    "Zi1Zgge5ptMw": {
+      "name": "Enhanced Havocbound Aura",
+      "hash": "2d51b914",
+      "sources": [
+        "7o6om21wxlvvy3hq"
+      ]
+    },
+    "mJiexOF2tUvD": {
+      "name": "Enhanced Piercing Warrior",
+      "hash": "f90a6109",
+      "sources": [
+        "7o6om21wxlvvy3hq"
+      ]
+    },
+    "wjTOj41tskFD": {
+      "name": "Havocbound",
+      "hash": "db33d4ef",
+      "sources": [
+        "7o6om21wxlvvy3hq"
+      ]
+    },
+    "5grD2FDFdNSn": {
+      "name": "Piercing Warrior",
+      "hash": "db33d4ef",
+      "sources": [
+        "7o6om21wxlvvy3hq"
+      ]
+    },
+    "gnpURIvLqjw9": {
+      "name": "Devout",
+      "hash": "028f981a",
+      "sources": [
+        "7oi8zeiqfamiur21"
+      ]
+    },
+    "w7sENXkksVpG": {
+      "name": "Enhanced Devout",
+      "hash": "437a212e",
+      "sources": [
+        "7oi8zeiqfamiur21"
+      ]
+    },
+    "j1_UP3V8iBI_": {
+      "name": "Enhanced Devout Aura",
+      "hash": "87bd78c2",
+      "sources": [
+        "7oi8zeiqfamiur21"
+      ]
+    },
+    "Q9DOQswzCth8": {
+      "name": "Fast Aura",
+      "hash": "e16bc509",
+      "sources": [
+        "7oi8zeiqfamiur21",
+        "dnthspt7c0klhmt8"
+      ]
+    },
+    "IyLY1212wacW": {
+      "name": "Fortified",
+      "hash": "b7005f67",
+      "sources": [
+        "7oi8zeiqfamiur21",
+        "U6hwlur14RpnInZr",
+        "dnthspt7c0klhmt8",
+        "ewbra8nv3nq3k27p",
+        "fk1mkbp8apvltu0z",
+        "jpc0kyil0juwy602",
+        "mI0ZlbFpoT0VqC3M",
+        "oqnnu0gk8q6hyyny",
+        "qLonG2G2KzkRQoGf",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "vux1Y5vvULmaxZ8P",
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "B-9jnnFp54f9": {
+      "name": "Fortified Aura",
+      "hash": "b80747b7",
+      "sources": [
+        "7oi8zeiqfamiur21",
+        "dnthspt7c0klhmt8",
+        "mI0ZlbFpoT0VqC3M",
+        "qLonG2G2KzkRQoGf",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "BSztwuL4jI1R": {
+      "name": "Increased Shooting Range",
+      "hash": "6a8067b2",
+      "sources": [
+        "7oi8zeiqfamiur21"
+      ]
+    },
+    "QWzGAg9RpE2D": {
+      "name": "Increased Shooting Range Aura",
+      "hash": "d21c4f14",
+      "sources": [
+        "7oi8zeiqfamiur21",
+        "cV1jqgtZj8sf57ld",
+        "fk1mkbp8apvltu0z",
+        "nyh41t82jugcdq8m",
+        "w7qor7b2kuifcyvk",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "dlk9Q7howUDr": {
+      "name": "Piercing Marksman",
+      "hash": "749f800a",
+      "sources": [
+        "7oi8zeiqfamiur21",
+        "cV1jqgtZj8sf57ld",
+        "q11la9v8h1heu9ja",
+        "tH3gqRwsigE87z5H",
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "1m7a9ADI-D_g": {
+      "name": "Piercing Marksman Aura",
+      "hash": "b2245bce",
+      "sources": [
+        "7oi8zeiqfamiur21",
+        "cV1jqgtZj8sf57ld",
+        "q11la9v8h1heu9ja",
+        "tH3gqRwsigE87z5H",
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "O_ZtH22AAORQ": {
+      "name": "Precision Target",
+      "hash": "93f2af24",
+      "sources": [
+        "7oi8zeiqfamiur21",
+        "U6hwlur14RpnInZr",
+        "zpaY1LFqVk-ZJdvW"
+      ]
+    },
+    "VRSD2Brj6vAZ": {
+      "name": "Bane Mark",
+      "hash": "23935134",
+      "sources": [
+        "8P8zHTe_MQtawcCN"
+      ]
+    },
+    "W2-YAUebkXqF": {
+      "name": "Enhanced Psychotic",
+      "hash": "fdeca432",
+      "sources": [
+        "8P8zHTe_MQtawcCN"
+      ]
+    },
+    "9GgsgTE6NcOg": {
+      "name": "Enhanced Psychotic Aura",
+      "hash": "e779e743",
+      "sources": [
+        "8P8zHTe_MQtawcCN"
+      ]
+    },
+    "SqhSkyNcexeN": {
+      "name": "Psychotic",
+      "hash": "d22d6e4f",
+      "sources": [
+        "8P8zHTe_MQtawcCN"
+      ]
+    },
+    "1qiGNqpxKb24": {
+      "name": "Puncture",
+      "hash": "fbf08377",
+      "sources": [
+        "8P8zHTe_MQtawcCN",
+        "U6hwlur14RpnInZr",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "F_1wfmpAyYwT": {
+      "name": "Self-Destruct",
+      "hash": "aaea3ee2",
+      "sources": [
+        "8P8zHTe_MQtawcCN",
+        "hk70l4d471plza00",
+        "w7qor7b2kuifcyvk"
       ]
     },
     "Aw2kbPkBywee": {
       "name": "Counter in Melee Aura",
-      "hash": "35caca3fcdcc",
+      "hash": "75033e54",
       "sources": [
         "9qvy1oufoangt2gl",
-        "z8205ez2boggzs22",
+        "U6hwlur14RpnInZr",
         "vux1Y5vvULmaxZ8P",
-        "U6hwlur14RpnInZr"
+        "z8205ez2boggzs22"
+      ]
+    },
+    "8Ai6vFN7Ut6E": {
+      "name": "Enhanced Agile",
+      "hash": "8ea205ee",
+      "sources": [
+        "9qvy1oufoangt2gl",
+        "_5ObRZWuPMwProbC",
+        "drqw1iswxmuugp3d",
+        "hk70l4d471plza00"
       ]
     },
     "1PSCVoS08kVx": {
       "name": "Enhanced Lustbound",
-      "hash": "58df3aa43d28",
+      "hash": "8b7714ce",
       "sources": [
         "9qvy1oufoangt2gl",
         "drqw1iswxmuugp3d"
@@ -2785,7 +2962,7 @@
     },
     "o7GHhVCO4LB1": {
       "name": "Enhanced Lustbound Aura",
-      "hash": "33dd92ef4288",
+      "hash": "0f41bb1b",
       "sources": [
         "9qvy1oufoangt2gl",
         "drqw1iswxmuugp3d"
@@ -2793,7 +2970,7 @@
     },
     "yis0utoPMclv": {
       "name": "Lustbound",
-      "hash": "54d6c3c32d26",
+      "hash": "6c24d366",
       "sources": [
         "9qvy1oufoangt2gl",
         "drqw1iswxmuugp3d"
@@ -2801,51 +2978,589 @@
     },
     "7F4391rzKx2g": {
       "name": "Obliterate",
-      "hash": "49cc2ae9428b",
+      "hash": "c35c26b4",
       "sources": [
         "9qvy1oufoangt2gl",
         "drqw1iswxmuugp3d"
       ]
     },
-    "L--qMjlm2g4Q": {
-      "name": "Piercing Charge Aura",
-      "hash": "1463f3bcfdf5",
+    "ykPufsAeq8Kw": {
+      "name": "Quick Shot",
+      "hash": "dcf4a0e5",
       "sources": [
         "9qvy1oufoangt2gl",
-        "cV1jqgtZj8sf57ld",
-        "hk70l4d471plza00",
-        "4k5amkxoybdiqotm"
+        "NiptqIlNnPHx7x-X",
+        "_5ObRZWuPMwProbC",
+        "drqw1iswxmuugp3d",
+        "k5T0f2XIfpmPO28h",
+        "tH3gqRwsigE87z5H",
+        "zz3kp5ry7ks6mxcx"
       ]
     },
     "ZHykLbU6nUWl": {
       "name": "Spawn",
-      "hash": "8daad4e8a839",
+      "hash": "7bf3cc91",
       "sources": [
         "9qvy1oufoangt2gl"
       ]
     },
-    "VfLmwEDxxLao": {
-      "name": "Strider Aura",
-      "hash": "f12f31646f02",
+    "xeJDKejG4QZN": {
+      "name": "Disintegrate",
+      "hash": "56607cbe",
       "sources": [
-        "9qvy1oufoangt2gl",
-        "5wbcv465hacdwvkb",
-        "tH3gqRwsigE87z5H"
+        "BKi_hJaJflN8ZorH",
+        "bF00yJmGNJ7VxfkN",
+        "ewbra8nv3nq3k27p"
+      ]
+    },
+    "-eXDDTCrrQ6n": {
+      "name": "Dodge",
+      "hash": "71e40097",
+      "sources": [
+        "BKi_hJaJflN8ZorH",
+        "ewbra8nv3nq3k27p",
+        "q11la9v8h1heu9ja",
+        "zpaY1LFqVk-ZJdvW"
+      ]
+    },
+    "1BZ5wsWUjYCd": {
+      "name": "Enhanced Scrapper",
+      "hash": "ccb2d178",
+      "sources": [
+        "BKi_hJaJflN8ZorH"
+      ]
+    },
+    "sJXpQUJFLbVh": {
+      "name": "Enhanced Scrapper Aura",
+      "hash": "d3282175",
+      "sources": [
+        "BKi_hJaJflN8ZorH"
+      ]
+    },
+    "kFdn5NTc4iCO": {
+      "name": "Enhanced Vicious",
+      "hash": "f858c35c",
+      "sources": [
+        "BKi_hJaJflN8ZorH",
+        "k5T0f2XIfpmPO28h"
+      ]
+    },
+    "a6Ze2uaBlNHX": {
+      "name": "Mind Control",
+      "hash": "c5369d9d",
+      "sources": [
+        "BKi_hJaJflN8ZorH"
+      ]
+    },
+    "B5RGOPajK6Lr": {
+      "name": "Precision Fighter Aura",
+      "hash": "81d18cc4",
+      "sources": [
+        "BKi_hJaJflN8ZorH",
+        "G5uvPlnfxPg3EcYG",
+        "NiptqIlNnPHx7x-X",
+        "bF00yJmGNJ7VxfkN",
+        "jpc0kyil0juwy602",
+        "k5T0f2XIfpmPO28h",
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "L_61KYvup31T": {
+      "name": "Precision Tag",
+      "hash": "efba4648",
+      "sources": [
+        "BKi_hJaJflN8ZorH",
+        "_5ObRZWuPMwProbC"
+      ]
+    },
+    "tidpe1mTXb9W": {
+      "name": "Scrapper",
+      "hash": "9c47d601",
+      "sources": [
+        "BKi_hJaJflN8ZorH"
+      ]
+    },
+    "Lqk7bzR6k3xe": {
+      "name": "Vicious",
+      "hash": "9c47d601",
+      "sources": [
+        "BKi_hJaJflN8ZorH",
+        "k5T0f2XIfpmPO28h"
+      ]
+    },
+    "jdxaM66DHbMQ": {
+      "name": "Destructive",
+      "hash": "c530118e",
+      "sources": [
+        "G5uvPlnfxPg3EcYG",
+        "nyh41t82jugcdq8m",
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "UBOoMTJY8qfD": {
+      "name": "Enhanced Guarded",
+      "hash": "837d6471",
+      "sources": [
+        "G5uvPlnfxPg3EcYG",
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "-aKAI5i_wXbf": {
+      "name": "Enhanced Safety Gear",
+      "hash": "ab083589",
+      "sources": [
+        "G5uvPlnfxPg3EcYG"
+      ]
+    },
+    "h7dMwwRg46QD": {
+      "name": "Enhanced Safety Gear Aura",
+      "hash": "910346ec",
+      "sources": [
+        "G5uvPlnfxPg3EcYG"
+      ]
+    },
+    "zTfg9msVpfJ0": {
+      "name": "Guarded",
+      "hash": "0b2feb14",
+      "sources": [
+        "G5uvPlnfxPg3EcYG",
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "nFo2BlBRhMcH": {
+      "name": "Morale Debuff",
+      "hash": "df9d8f74",
+      "sources": [
+        "G5uvPlnfxPg3EcYG",
+        "z65fgu0l29i4lnlu"
+      ]
+    },
+    "p3ql9lJcL-vw": {
+      "name": "Precision Frenzy",
+      "hash": "77826904",
+      "sources": [
+        "G5uvPlnfxPg3EcYG",
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "2naIlnOv22Ls": {
+      "name": "Safety Gear",
+      "hash": "0b2feb14",
+      "sources": [
+        "G5uvPlnfxPg3EcYG"
+      ]
+    },
+    "mxQ1fCGgPccn": {
+      "name": "Berserker",
+      "hash": "028f981a",
+      "sources": [
+        "NiptqIlNnPHx7x-X"
+      ]
+    },
+    "2W8l0OXSjju6": {
+      "name": "Enhanced Berserker",
+      "hash": "48f57e58",
+      "sources": [
+        "NiptqIlNnPHx7x-X"
+      ]
+    },
+    "D-XBYhhRyp_N": {
+      "name": "Enhanced Berserker Aura",
+      "hash": "ac25655c",
+      "sources": [
+        "NiptqIlNnPHx7x-X"
+      ]
+    },
+    "r0MEI7V18zNs": {
+      "name": "Instinctive",
+      "hash": "f275f05f",
+      "sources": [
+        "NiptqIlNnPHx7x-X",
+        "k5T0f2XIfpmPO28h"
+      ]
+    },
+    "fOIa9S1t0q7S": {
+      "name": "Melee Evasion Aura",
+      "hash": "372490de",
+      "sources": [
+        "NiptqIlNnPHx7x-X",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h"
+      ]
+    },
+    "n3CNLjq67GHI": {
+      "name": "Piercing Fighting Mark",
+      "hash": "6464095f",
+      "sources": [
+        "NiptqIlNnPHx7x-X"
+      ]
+    },
+    "lJx5NP1KA3KU": {
+      "name": "Quick",
+      "hash": "314236a1",
+      "sources": [
+        "NiptqIlNnPHx7x-X",
+        "_5ObRZWuPMwProbC",
+        "k5T0f2XIfpmPO28h",
+        "tH3gqRwsigE87z5H",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "a9j1Pje6TLBi": {
+      "name": "Quick Shot Aura",
+      "hash": "6940478e",
+      "sources": [
+        "NiptqIlNnPHx7x-X",
+        "_5ObRZWuPMwProbC",
+        "k5T0f2XIfpmPO28h",
+        "tH3gqRwsigE87z5H",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "7QCXafSRhLAS": {
+      "name": "Enhanced Primal",
+      "hash": "47efbe68",
+      "sources": [
+        "U6hwlur14RpnInZr"
+      ]
+    },
+    "0B7GlGWBl7FF": {
+      "name": "Enhanced Primal Buff",
+      "hash": "182d538e",
+      "sources": [
+        "U6hwlur14RpnInZr"
+      ]
+    },
+    "bjt7_iCtmOK7": {
+      "name": "Good Shot",
+      "hash": "de2695ce",
+      "sources": [
+        "U6hwlur14RpnInZr",
+        "hk70l4d471plza00",
+        "k5T0f2XIfpmPO28h",
+        "z65fgu0l29i4lnlu",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "zVconc6Qb-g9": {
+      "name": "Heavy Impact",
+      "hash": "e5fdd6c3",
+      "sources": [
+        "U6hwlur14RpnInZr"
+      ]
+    },
+    "PBP94ujaST4y": {
+      "name": "Primal",
+      "hash": "d22d6e4f",
+      "sources": [
+        "U6hwlur14RpnInZr"
+      ]
+    },
+    "1cykqbg4xn6o": {
+      "name": "Rapid Charge Aura",
+      "hash": "a28dc12d",
+      "sources": [
+        "U6hwlur14RpnInZr",
+        "prsajf5ot936qznk",
+        "vux1Y5vvULmaxZ8P",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "SKzm-kqi1h2Q": {
+      "name": "Delayed Action",
+      "hash": "3bbb5a31",
+      "sources": [
+        "_5ObRZWuPMwProbC",
+        "jpc0kyil0juwy602",
+        "ukrBO4ITaKUpUFeO"
+      ]
+    },
+    "Pa5Mr2ioVZIf": {
+      "name": "Enhanced Runner",
+      "hash": "911ff2e4",
+      "sources": [
+        "_5ObRZWuPMwProbC"
+      ]
+    },
+    "Tmfov9Aj0X2h": {
+      "name": "Enhanced Runner Aura",
+      "hash": "fd0d9d13",
+      "sources": [
+        "_5ObRZWuPMwProbC"
+      ]
+    },
+    "UlIf59PuvI53": {
+      "name": "Rapid Charge",
+      "hash": "f6dcf878",
+      "sources": [
+        "_5ObRZWuPMwProbC"
+      ]
+    },
+    "8uW_NrYuSWW0": {
+      "name": "Rapid Charge Mark",
+      "hash": "0cb93dfe",
+      "sources": [
+        "_5ObRZWuPMwProbC"
+      ]
+    },
+    "Ywz0UdkamH-k": {
+      "name": "Runner",
+      "hash": "6c24d366",
+      "sources": [
+        "_5ObRZWuPMwProbC"
+      ]
+    },
+    "haWppj0rUxS8": {
+      "name": "Badlands Hunter",
+      "hash": "f74b2fcd",
+      "sources": [
+        "bF00yJmGNJ7VxfkN"
+      ]
+    },
+    "jQ4CmTsoXEnt": {
+      "name": "Defense Debuff",
+      "hash": "12c41792",
+      "sources": [
+        "bF00yJmGNJ7VxfkN"
+      ]
+    },
+    "8UUSt1RIIyEa": {
+      "name": "Enhanced Badlands Hunter",
+      "hash": "4d26f7c1",
+      "sources": [
+        "bF00yJmGNJ7VxfkN"
+      ]
+    },
+    "LhOp-HCop4GL": {
+      "name": "Enhanced Badlands Hunter Aura",
+      "hash": "467ceeee",
+      "sources": [
+        "bF00yJmGNJ7VxfkN"
+      ]
+    },
+    "C5t3oLnEpNtX": {
+      "name": "Vengeance",
+      "hash": "a09820dd",
+      "sources": [
+        "bF00yJmGNJ7VxfkN",
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "x0gFQEwammM_": {
+      "name": "Battle-Hardened",
+      "hash": "912185a2",
+      "sources": [
+        "cV1jqgtZj8sf57ld"
+      ]
+    },
+    "LbpquFUyGSZ7": {
+      "name": "Valiant",
+      "hash": "912185a2",
+      "sources": [
+        "cV1jqgtZj8sf57ld",
+        "w7qor7b2kuifcyvk",
+        "z65fgu0l29i4lnlu"
+      ]
+    },
+    "N0JRcI01vSBT": {
+      "name": "Deathstrike",
+      "hash": "fe4244be",
+      "sources": [
+        "dnthspt7c0klhmt8",
+        "k5T0f2XIfpmPO28h"
       ]
     },
     "pXs3r4mbwgGj": {
       "name": "Decimate",
-      "hash": "3cb50a88efcc",
+      "hash": "7cdb4414",
       "sources": [
-        "fmuqw5lr5l6dq0mq",
         "dnthspt7c0klhmt8",
-        "qLonG2G2KzkRQoGf",
-        "jlray7cwf8mvw5sn"
+        "fmuqw5lr5l6dq0mq",
+        "jlray7cwf8mvw5sn",
+        "qLonG2G2KzkRQoGf"
+      ]
+    },
+    "JQmfgK02rJLK": {
+      "name": "Enhanced Infected",
+      "hash": "379f5279",
+      "sources": [
+        "dnthspt7c0klhmt8"
+      ]
+    },
+    "FPA1mew5j78v": {
+      "name": "Enhanced Infected Aura",
+      "hash": "43559d1d",
+      "sources": [
+        "dnthspt7c0klhmt8"
+      ]
+    },
+    "jgyVEAzjbDDh": {
+      "name": "Infected",
+      "hash": "f74b2fcd",
+      "sources": [
+        "dnthspt7c0klhmt8"
+      ]
+    },
+    "W3hSISDGStUH": {
+      "name": "Precision Growth",
+      "hash": "9748da12",
+      "sources": [
+        "dnthspt7c0klhmt8"
+      ]
+    },
+    "38s_V6mXkYX-": {
+      "name": "Thrust in Melee Aura",
+      "hash": "fe895564",
+      "sources": [
+        "dnthspt7c0klhmt8"
+      ]
+    },
+    "X4RKFj6JEjzm": {
+      "name": "Enhanced Nimble",
+      "hash": "4c50d5db",
+      "sources": [
+        "e8mflytiz51kc4n6",
+        "nyh41t82jugcdq8m",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "MmLijhHpEF37": {
+      "name": "Enhanced Wolfborn",
+      "hash": "8934b89b",
+      "sources": [
+        "e8mflytiz51kc4n6",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "qlZWvJpEDLeD": {
+      "name": "Enhanced Wolfborn Aura",
+      "hash": "3101e0f8",
+      "sources": [
+        "e8mflytiz51kc4n6",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "D7SpkY7mQLAe": {
+      "name": "Nimble",
+      "hash": "ddfc49fa",
+      "sources": [
+        "e8mflytiz51kc4n6",
+        "nyh41t82jugcdq8m",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "vfW0pVMUrKQr": {
+      "name": "Wolfborn",
+      "hash": "ddfc49fa",
+      "sources": [
+        "e8mflytiz51kc4n6",
+        "yxjboa8oma9bbdck"
+      ]
+    },
+    "noS8F0WwHtHA": {
+      "name": "Dash",
+      "hash": "bb2a0547",
+      "sources": [
+        "ewbra8nv3nq3k27p"
+      ]
+    },
+    "JKjtSSAto56J": {
+      "name": "Dash Aura",
+      "hash": "7fdede11",
+      "sources": [
+        "ewbra8nv3nq3k27p"
+      ]
+    },
+    "YfecqBW3YoNG": {
+      "name": "Enhanced Fortified",
+      "hash": "33d5ab86",
+      "sources": [
+        "ewbra8nv3nq3k27p",
+        "ukrBO4ITaKUpUFeO"
+      ]
+    },
+    "7-nw0-TRmYAv": {
+      "name": "Enhanced Guardian",
+      "hash": "112921d8",
+      "sources": [
+        "ewbra8nv3nq3k27p"
+      ]
+    },
+    "pxBAv9DNteCA": {
+      "name": "Enhanced Guardian Aura",
+      "hash": "ce28b404",
+      "sources": [
+        "ewbra8nv3nq3k27p"
+      ]
+    },
+    "D7ChSWl5R2We": {
+      "name": "Guardian",
+      "hash": "b7005f67",
+      "sources": [
+        "ewbra8nv3nq3k27p"
+      ]
+    },
+    "HMiVg3VVLQv3": {
+      "name": "Piercing Target",
+      "hash": "34355952",
+      "sources": [
+        "ewbra8nv3nq3k27p",
+        "ukrBO4ITaKUpUFeO",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "d1E7eizUnPoz": {
+      "name": "Anti-Cover when Shooting",
+      "hash": "fbe08b2a",
+      "sources": [
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "HJtyt929ob_Q": {
+      "name": "Anti-Cover when Shooting Aura",
+      "hash": "3548639c",
+      "sources": [
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "rMKm6JKLIxgn": {
+      "name": "Enhanced Sturdy",
+      "hash": "8fa3a9c3",
+      "sources": [
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "BOSZqK98Ncka": {
+      "name": "Enhanced Sturdy Aura",
+      "hash": "3b46a5bc",
+      "sources": [
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "E5F5-E62wIqI": {
+      "name": "Infiltrate Aura",
+      "hash": "976d8615",
+      "sources": [
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "gD2_znglqhNw": {
+      "name": "Sturdy",
+      "hash": "0b2feb14",
+      "sources": [
+        "fk1mkbp8apvltu0z"
+      ]
+    },
+    "amQphBHWOeJs": {
+      "name": "Swift Aura",
+      "hash": "89ee99aa",
+      "sources": [
+        "fk1mkbp8apvltu0z"
       ]
     },
     "Bd9ny4MxTiHn": {
       "name": "Enhanced Plaguebound",
-      "hash": "fa91a2f81341",
+      "hash": "333670a2",
       "sources": [
         "fmuqw5lr5l6dq0mq",
         "jlray7cwf8mvw5sn"
@@ -2853,31 +3568,22 @@
     },
     "U9p9FtWR84GU": {
       "name": "Enhanced Plaguebound Aura",
-      "hash": "66e2801e7421",
+      "hash": "a021c2f1",
       "sources": [
         "fmuqw5lr5l6dq0mq",
         "jlray7cwf8mvw5sn"
       ]
     },
-    "2Cxml82Ma_3Y": {
-      "name": "Enhanced Protected",
-      "hash": "8aaf284bf875",
-      "sources": [
-        "fmuqw5lr5l6dq0mq",
-        "jlray7cwf8mvw5sn",
-        "4k5amkxoybdiqotm"
-      ]
-    },
     "hGd-1A2fPuyh": {
       "name": "Fortified Growth",
-      "hash": "1bf000ad4d8e",
+      "hash": "f9f5eecc",
       "sources": [
         "fmuqw5lr5l6dq0mq"
       ]
     },
     "O_wrvW7FiJWX": {
       "name": "Plaguebound",
-      "hash": "f99b22382ca9",
+      "hash": "0c9b390f",
       "sources": [
         "fmuqw5lr5l6dq0mq",
         "jlray7cwf8mvw5sn"
@@ -2885,936 +3591,614 @@
     },
     "kwB4FVytZQXE": {
       "name": "Precision Attacks Buff",
-      "hash": "473f6b0dcb4f",
+      "hash": "175f1a6b",
       "sources": [
         "fmuqw5lr5l6dq0mq"
       ]
     },
     "NrzX1LhdJpGR": {
       "name": "Ravage Aura",
-      "hash": "e8fc05b7caf7",
+      "hash": "b3ca63ac",
       "sources": [
         "fmuqw5lr5l6dq0mq"
-      ]
-    },
-    "-05w6vRgH2k9": {
-      "name": "Rending in Melee Aura",
-      "hash": "c436b4625a8d",
-      "sources": [
-        "fmuqw5lr5l6dq0mq",
-        "5wbcv465hacdwvkb"
       ]
     },
     "5_4ZsH9_q-tE": {
       "name": "Screened Aura",
-      "hash": "4a1977a5c92d",
+      "hash": "4b8df95a",
       "sources": [
         "fmuqw5lr5l6dq0mq"
       ]
     },
-    "n8vjv0oBZDAL": {
-      "name": "Defensive Frenzy",
-      "hash": "ff95cb0fe8c7",
-      "sources": [
-        "prsajf5ot936qznk"
-      ]
-    },
-    "5G44ZDmQG-N5": {
-      "name": "Enhanced Warbound",
-      "hash": "36191fb21bd3",
-      "sources": [
-        "prsajf5ot936qznk",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "dNOZEOSJ-DyX": {
-      "name": "Enhanced Warbound Aura",
-      "hash": "e8141c152e5b",
-      "sources": [
-        "prsajf5ot936qznk",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "wnrz_-SUmR8_": {
-      "name": "Piercing Fighter Aura",
-      "hash": "465b61d4fe3e",
-      "sources": [
-        "prsajf5ot936qznk",
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "GOPD6AVdvbFf": {
-      "name": "Piercing Shooter Aura",
-      "hash": "b2a0a6612527",
-      "sources": [
-        "prsajf5ot936qznk"
-      ]
-    },
-    "wsqfB0fq69eG": {
-      "name": "Shielded",
-      "hash": "5a46500675f7",
-      "sources": [
-        "prsajf5ot936qznk",
-        "nyh41t82jugcdq8m",
-        "BKi_hJaJflN8ZorH",
-        "8P8zHTe_MQtawcCN",
-        "5wbcv465hacdwvkb"
-      ]
-    },
-    "ZW_Zv-kkBt2q": {
-      "name": "Shielded Aura",
-      "hash": "81fa18e44eba",
-      "sources": [
-        "prsajf5ot936qznk",
-        "nyh41t82jugcdq8m",
-        "8P8zHTe_MQtawcCN",
-        "5wbcv465hacdwvkb"
-      ]
-    },
-    "jbhpErfecvEY": {
-      "name": "Warbound",
-      "hash": "04d35dc49cb9",
-      "sources": [
-        "prsajf5ot936qznk",
-        "31xjrm9ivdimkjxp"
-      ]
-    },
-    "rJSSHbaRMID4": {
-      "name": "Ambush Beacon",
-      "hash": "f211b221a40b",
-      "sources": [
-        "z8205ez2boggzs22",
-        "vux1Y5vvULmaxZ8P"
-      ]
-    },
-    "ySpZadCu08yk": {
-      "name": "Enhanced Precision Marksman",
-      "hash": "40444dda14cd",
-      "sources": [
-        "z8205ez2boggzs22",
-        "qLonG2G2KzkRQoGf"
-      ]
-    },
-    "dXr70idM6Vjk": {
-      "name": "Enhanced Targeting Visor",
-      "hash": "94656cb8ffb3",
-      "sources": [
-        "z8205ez2boggzs22"
-      ]
-    },
-    "R4q13TqqwTPC": {
-      "name": "Enhanced Targeting Visor Aura",
-      "hash": "e1e5c6c932b6",
-      "sources": [
-        "z8205ez2boggzs22"
-      ]
-    },
-    "bjt7_iCtmOK7": {
-      "name": "Good Shot",
-      "hash": "a31d44331048",
-      "sources": [
-        "z8205ez2boggzs22",
-        "k5T0f2XIfpmPO28h",
-        "z65fgu0l29i4lnlu",
-        "hk70l4d471plza00",
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "lwWYwB3HRTPi": {
-      "name": "Precision Marksman",
-      "hash": "fbf6aa6dd56a",
-      "sources": [
-        "z8205ez2boggzs22",
-        "qLonG2G2KzkRQoGf"
-      ]
-    },
-    "lOJdfdPgbhdT": {
-      "name": "Precision Spotter",
-      "hash": "7e234d0533bd",
-      "sources": [
-        "z8205ez2boggzs22"
-      ]
-    },
-    "1qiGNqpxKb24": {
-      "name": "Puncture",
-      "hash": "e23f08a98ce6",
-      "sources": [
-        "z8205ez2boggzs22",
-        "8P8zHTe_MQtawcCN",
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "fB2hm0la8zl1": {
-      "name": "Ranged Slayer",
-      "hash": "5b1503d974f3",
-      "sources": [
-        "z8205ez2boggzs22",
-        "qLonG2G2KzkRQoGf",
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "sScPMcGqrk5Q": {
-      "name": "Ranged Slayer Aura",
-      "hash": "e2382c67c240",
-      "sources": [
-        "z8205ez2boggzs22",
-        "qLonG2G2KzkRQoGf",
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "27DHOeVHMwrj": {
-      "name": "Slayer",
-      "hash": "dce00e91d11a",
-      "sources": [
-        "z8205ez2boggzs22",
-        "nyh41t82jugcdq8m",
-        "qLonG2G2KzkRQoGf",
-        "ukrBO4ITaKUpUFeO",
-        "zz3kp5ry7ks6mxcx",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "hjaNnUHsY3f5": {
-      "name": "Targeting Visor",
-      "hash": "fbf6aa6dd56a",
-      "sources": [
-        "z8205ez2boggzs22"
-      ]
-    },
     "QjUvdTBYv0Nd": {
       "name": "Darkborn",
-      "hash": "a32f5c2c3965",
+      "hash": "ef20e9bd",
       "sources": [
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw"
+        "gk7me4sgn9s740kw",
+        "xp5zwh73lg1uaym4"
       ]
     },
     "yaEXlHySt7no": {
       "name": "Enhanced Darkborn",
-      "hash": "aa86051d19fc",
+      "hash": "d4a7991f",
       "sources": [
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw"
+        "gk7me4sgn9s740kw",
+        "xp5zwh73lg1uaym4"
       ]
     },
     "wC-cYJcNqGqv": {
       "name": "Enhanced Darkborn Aura",
-      "hash": "8b1f266dc0ff",
+      "hash": "0c4e77bc",
       "sources": [
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw"
+        "gk7me4sgn9s740kw",
+        "xp5zwh73lg1uaym4"
       ]
     },
     "2hXA8X1Xlrmc": {
       "name": "Enhanced Shrouded",
-      "hash": "437504ec69f5",
+      "hash": "a8101107",
       "sources": [
-        "xp5zwh73lg1uaym4",
         "gk7me4sgn9s740kw",
         "o4D-c-28lvmybgc5",
+        "xp5zwh73lg1uaym4",
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "0Za4ptEWX5hx": {
       "name": "Rapid Ambush",
-      "hash": "b26ddfba7d61",
+      "hash": "48a904aa",
       "sources": [
-        "xp5zwh73lg1uaym4",
-        "gk7me4sgn9s740kw"
+        "gk7me4sgn9s740kw",
+        "xp5zwh73lg1uaym4"
       ]
     },
     "YMQxz2ssYCBj": {
       "name": "Shrouded",
-      "hash": "a32f5c2c3965",
+      "hash": "ef20e9bd",
       "sources": [
-        "xp5zwh73lg1uaym4",
         "gk7me4sgn9s740kw",
         "o4D-c-28lvmybgc5",
+        "xp5zwh73lg1uaym4",
         "zpaY1LFqVk-ZJdvW"
       ]
     },
-    "UrbEF2kpIjYH": {
-      "name": "Enhanced Harassing",
-      "hash": "0ee2999a3f69",
+    "o2l7F3ugQNly": {
+      "name": "Enhanced Scurry",
+      "hash": "b6b63050",
       "sources": [
-        "q11la9v8h1heu9ja"
-      ]
-    },
-    "RUS7R0SwaBUj": {
-      "name": "Enhanced Harassing Aura",
-      "hash": "67673ee3d8ac",
-      "sources": [
-        "q11la9v8h1heu9ja"
-      ]
-    },
-    "M8KFBuLeTrck": {
-      "name": "Enhanced Hit & Run",
-      "hash": "4f45c1e90e2a",
-      "sources": [
-        "q11la9v8h1heu9ja"
-      ]
-    },
-    "2xUH_d7T_Zfv": {
-      "name": "Harassing",
-      "hash": "24aadf3d43a3",
-      "sources": [
-        "q11la9v8h1heu9ja"
-      ]
-    },
-    "FZLk0-3ci6jI": {
-      "name": "Martial Prowess",
-      "hash": "963084e82250",
-      "sources": [
-        "q11la9v8h1heu9ja",
-        "jpc0kyil0juwy602"
-      ]
-    },
-    "R6Y4QHBq6wxZ": {
-      "name": "Piercing Frenzy",
-      "hash": "eee98805c151",
-      "sources": [
-        "q11la9v8h1heu9ja"
-      ]
-    },
-    "d1E7eizUnPoz": {
-      "name": "Anti-Cover when Shooting",
-      "hash": "16b2a0185d2f",
-      "sources": [
-        "fk1mkbp8apvltu0z"
-      ]
-    },
-    "HJtyt929ob_Q": {
-      "name": "Anti-Cover when Shooting Aura",
-      "hash": "826bd8e765d5",
-      "sources": [
-        "fk1mkbp8apvltu0z"
-      ]
-    },
-    "UBOoMTJY8qfD": {
-      "name": "Enhanced Guarded",
-      "hash": "5628af64794b",
-      "sources": [
-        "fk1mkbp8apvltu0z",
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "rMKm6JKLIxgn": {
-      "name": "Enhanced Sturdy",
-      "hash": "0365cea63b91",
-      "sources": [
-        "fk1mkbp8apvltu0z"
-      ]
-    },
-    "BOSZqK98Ncka": {
-      "name": "Enhanced Sturdy Aura",
-      "hash": "94f7fff142ec",
-      "sources": [
-        "fk1mkbp8apvltu0z"
-      ]
-    },
-    "zTfg9msVpfJ0": {
-      "name": "Guarded",
-      "hash": "45c063012cae",
-      "sources": [
-        "fk1mkbp8apvltu0z",
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "E5F5-E62wIqI": {
-      "name": "Infiltrate Aura",
-      "hash": "aabfeeb409df",
-      "sources": [
-        "fk1mkbp8apvltu0z"
-      ]
-    },
-    "p3ql9lJcL-vw": {
-      "name": "Precision Frenzy",
-      "hash": "9a4dcbcaa9ae",
-      "sources": [
-        "fk1mkbp8apvltu0z",
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "gD2_znglqhNw": {
-      "name": "Sturdy",
-      "hash": "45c063012cae",
-      "sources": [
-        "fk1mkbp8apvltu0z"
-      ]
-    },
-    "leFm23MTiJxO": {
-      "name": "Swift",
-      "hash": "ed1bf26b8a46",
-      "sources": [
-        "fk1mkbp8apvltu0z",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "amQphBHWOeJs": {
-      "name": "Swift Aura",
-      "hash": "2cd409931cd8",
-      "sources": [
-        "fk1mkbp8apvltu0z"
-      ]
-    },
-    "kpuEyaul7J3Z": {
-      "name": "Ambush Re-Deployment",
-      "hash": "be1141802cbb",
-      "sources": [
-        "nyh41t82jugcdq8m",
-        "o4D-c-28lvmybgc5"
-      ]
-    },
-    "CCShas9-9K4N": {
-      "name": "Ambushing Piercing Shot",
-      "hash": "0e3dac74d834",
-      "sources": [
-        "nyh41t82jugcdq8m",
-        "BKi_hJaJflN8ZorH",
-        "5wbcv465hacdwvkb",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "-6osYnOq7DGV": {
-      "name": "Counter in Melee",
-      "hash": "b233f4a2f6d1",
-      "sources": [
-        "nyh41t82jugcdq8m",
-        "5wbcv465hacdwvkb",
-        "zpaY1LFqVk-ZJdvW"
-      ]
-    },
-    "jdxaM66DHbMQ": {
-      "name": "Destructive",
-      "hash": "b296a1e2fe64",
-      "sources": [
-        "nyh41t82jugcdq8m",
-        "vux1Y5vvULmaxZ8P",
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "X4RKFj6JEjzm": {
-      "name": "Enhanced Nimble",
-      "hash": "3b82e9aceffe",
-      "sources": [
-        "nyh41t82jugcdq8m",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "fMa1N3Y3t1uj": {
-      "name": "Enhanced Rapid Blink",
-      "hash": "bca617dbf7e7",
-      "sources": [
-        "nyh41t82jugcdq8m"
-      ]
-    },
-    "zDNFCyPhKKOf": {
-      "name": "Enhanced Rapid Blink Aura",
-      "hash": "07c7c811828f",
-      "sources": [
-        "nyh41t82jugcdq8m"
-      ]
-    },
-    "LGezlmOLMTfl": {
-      "name": "Infiltrating Precision Strike",
-      "hash": "fab43a5b7bd8",
-      "sources": [
-        "nyh41t82jugcdq8m"
-      ]
-    },
-    "D7SpkY7mQLAe": {
-      "name": "Nimble",
-      "hash": "eb1f0c7fc5e7",
-      "sources": [
-        "nyh41t82jugcdq8m",
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "UJ6frPcu1X9m": {
-      "name": "Rapid Blink",
-      "hash": "eb1f0c7fc5e7",
-      "sources": [
-        "nyh41t82jugcdq8m"
-      ]
-    },
-    "rH1nxpq0qLmE": {
-      "name": "Takedown Shot",
-      "hash": "39e5a03a0bc2",
-      "sources": [
-        "nyh41t82jugcdq8m",
-        "jpc0kyil0juwy602",
-        "qLonG2G2KzkRQoGf",
         "hk70l4d471plza00"
       ]
     },
-    "eyMkgYDVrP7C": {
-      "name": "Takedown Strike",
-      "hash": "802936703595",
+    "QhQL5YYoO3jJ": {
+      "name": "Enhanced Scurry Aura",
+      "hash": "f0bb86e9",
       "sources": [
-        "nyh41t82jugcdq8m",
-        "hk70l4d471plza00",
-        "5wbcv465hacdwvkb",
-        "o4D-c-28lvmybgc5",
-        "zz3kp5ry7ks6mxcx"
+        "hk70l4d471plza00"
       ]
     },
-    "4NiNnvh-brLp": {
-      "name": "Anti-Cover Aura",
-      "hash": "826bd8e765d5",
+    "OOowoGdbpTCn": {
+      "name": "Evasive Aura",
+      "hash": "27fc560e",
       "sources": [
-        "vux1Y5vvULmaxZ8P"
-      ]
-    },
-    "nNh98rpX_sZv": {
-      "name": "Casting Buff",
-      "hash": "3f638642ef64",
-      "sources": [
-        "vux1Y5vvULmaxZ8P"
-      ]
-    },
-    "21dbpSjSDeOY": {
-      "name": "Clan Warrior",
-      "hash": "a0b38cc4799d",
-      "sources": [
-        "vux1Y5vvULmaxZ8P"
-      ]
-    },
-    "TYEJ10EP0Xq9": {
-      "name": "Enhanced Clan Warrior",
-      "hash": "1ce09d93305a",
-      "sources": [
-        "vux1Y5vvULmaxZ8P"
-      ]
-    },
-    "WdkGC1Q6_nHY": {
-      "name": "Enhanced Clan Warrior Aura",
-      "hash": "aae5ad130a33",
-      "sources": [
-        "vux1Y5vvULmaxZ8P"
-      ]
-    },
-    "Dpclj8rsDSRd": {
-      "name": "Precision Fighter",
-      "hash": "59c551c59e56",
-      "sources": [
-        "vux1Y5vvULmaxZ8P"
-      ]
-    },
-    "HmxkJq_My-Ub": {
-      "name": "Rapid Advance",
-      "hash": "f1c0774f5c70",
-      "sources": [
-        "vux1Y5vvULmaxZ8P",
-        "z65fgu0l29i4lnlu",
-        "qLonG2G2KzkRQoGf",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "Y37_ydVGvRqL": {
-      "name": "Rapid Advance Aura",
-      "hash": "95f237951e74",
-      "sources": [
-        "vux1Y5vvULmaxZ8P",
-        "qLonG2G2KzkRQoGf"
-      ]
-    },
-    "MK_o4HpuB-pL": {
-      "name": "Dangerous Terrain Debuff",
-      "hash": "f69ec53c6c0a",
-      "sources": [
-        "k5T0f2XIfpmPO28h"
-      ]
-    },
-    "N0JRcI01vSBT": {
-      "name": "Deathstrike",
-      "hash": "2d4f00ef7ff5",
-      "sources": [
-        "k5T0f2XIfpmPO28h",
-        "dnthspt7c0klhmt8"
-      ]
-    },
-    "pUt7fqbSTNWP": {
-      "name": "Enhanced Mischievous",
-      "hash": "ca3daa5e4e26",
-      "sources": [
-        "k5T0f2XIfpmPO28h"
-      ]
-    },
-    "sQQhss7F6nCs": {
-      "name": "Enhanced Mischievous Aura",
-      "hash": "86915c06b406",
-      "sources": [
-        "k5T0f2XIfpmPO28h"
-      ]
-    },
-    "kFdn5NTc4iCO": {
-      "name": "Enhanced Vicious",
-      "hash": "6e1eedc1c720",
-      "sources": [
-        "k5T0f2XIfpmPO28h",
-        "BKi_hJaJflN8ZorH"
+        "hk70l4d471plza00"
       ]
     },
     "gVRt_wk8DktW": {
       "name": "Hazardous",
-      "hash": "f3d808165d17",
+      "hash": "82ff4e1f",
       "sources": [
-        "k5T0f2XIfpmPO28h",
-        "hk70l4d471plza00"
-      ]
-    },
-    "rblJ2IkYaFon": {
-      "name": "Mischievous",
-      "hash": "6304d6baa602",
-      "sources": [
+        "hk70l4d471plza00",
         "k5T0f2XIfpmPO28h"
       ]
     },
-    "eOGs64JpVsP3": {
-      "name": "Unpredictable Shooter",
-      "hash": "d955cc5843aa",
+    "ovMK8gJ26T0s": {
+      "name": "Precision Shooter Aura",
+      "hash": "6f666e94",
       "sources": [
-        "k5T0f2XIfpmPO28h",
-        "7i7blhft75q9zfdc",
+        "hk70l4d471plza00",
+        "jpc0kyil0juwy602"
+      ]
+    },
+    "UlH7N0knz4eN": {
+      "name": "Predator Shooter",
+      "hash": "7d0ef1ee",
+      "sources": [
+        "hk70l4d471plza00"
+      ]
+    },
+    "zlKV_VK3wONR": {
+      "name": "Predator Shooter Aura",
+      "hash": "6d92a4d4",
+      "sources": [
+        "hk70l4d471plza00"
+      ]
+    },
+    "x7chGZmjk8Os": {
+      "name": "Quick Throw",
+      "hash": "7025a2e0",
+      "sources": [
+        "hk70l4d471plza00",
+        "jpc0kyil0juwy602"
+      ]
+    },
+    "e0u4Znq4Z82Q": {
+      "name": "Reinforcement",
+      "hash": "39e81039",
+      "sources": [
+        "hk70l4d471plza00"
+      ]
+    },
+    "NEYp25CGvZl3": {
+      "name": "Scurry",
+      "hash": "6c24d366",
+      "sources": [
+        "hk70l4d471plza00"
+      ]
+    },
+    "rH1nxpq0qLmE": {
+      "name": "Takedown Shot",
+      "hash": "ca0c733e",
+      "sources": [
+        "hk70l4d471plza00",
         "jpc0kyil0juwy602",
-        "dnthspt7c0klhmt8",
-        "BKi_hJaJflN8ZorH",
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "Lqk7bzR6k3xe": {
-      "name": "Vicious",
-      "hash": "6304d6baa602",
-      "sources": [
-        "k5T0f2XIfpmPO28h",
-        "BKi_hJaJflN8ZorH"
-      ]
-    },
-    "ZqYITWnZUc45": {
-      "name": "Enhanced Havocbound",
-      "hash": "c21a59be7841",
-      "sources": [
-        "7o6om21wxlvvy3hq"
-      ]
-    },
-    "Zi1Zgge5ptMw": {
-      "name": "Enhanced Havocbound Aura",
-      "hash": "824b49dbcd48",
-      "sources": [
-        "7o6om21wxlvvy3hq"
-      ]
-    },
-    "mJiexOF2tUvD": {
-      "name": "Enhanced Piercing Warrior",
-      "hash": "2b1512f06312",
-      "sources": [
-        "7o6om21wxlvvy3hq"
-      ]
-    },
-    "wjTOj41tskFD": {
-      "name": "Havocbound",
-      "hash": "7680ce0ef46e",
-      "sources": [
-        "7o6om21wxlvvy3hq"
-      ]
-    },
-    "5grD2FDFdNSn": {
-      "name": "Piercing Warrior",
-      "hash": "7680ce0ef46e",
-      "sources": [
-        "7o6om21wxlvvy3hq"
-      ]
-    },
-    "paOPFddMOffa": {
-      "name": "Crossing Attack",
-      "hash": "37e9dc8941cc",
-      "sources": [
-        "7i7blhft75q9zfdc",
-        "BKi_hJaJflN8ZorH",
-        "7el7k3hgy5pb9o9i"
-      ]
-    },
-    "NX1-Y1zS-oUD": {
-      "name": "Enhanced Extra Reach",
-      "hash": "478f85bb437a",
-      "sources": [
-        "7i7blhft75q9zfdc"
-      ]
-    },
-    "6Nn0oPQN3TZc": {
-      "name": "Enhanced Highborn",
-      "hash": "31cc25bfc56c",
-      "sources": [
-        "7i7blhft75q9zfdc"
-      ]
-    },
-    "UVyi54SgbOoz": {
-      "name": "Enhanced Highborn Aura",
-      "hash": "0b56f4a6f28d",
-      "sources": [
-        "7i7blhft75q9zfdc"
-      ]
-    },
-    "CJ2mI46Tp-al": {
-      "name": "Extra Reach",
-      "hash": "8040794d613a",
-      "sources": [
-        "7i7blhft75q9zfdc"
-      ]
-    },
-    "5bc5xNmd5M14": {
-      "name": "Highborn",
-      "hash": "8040794d613a",
-      "sources": [
-        "7i7blhft75q9zfdc"
-      ]
-    },
-    "vbYCQfF82BLa": {
-      "name": "Piercing Spotter",
-      "hash": "33b428414a22",
-      "sources": [
-        "7i7blhft75q9zfdc"
-      ]
-    },
-    "iWuTcXAw2-5s": {
-      "name": "Bane in Melee Buff",
-      "hash": "915568665ee8",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "FPlO2MymiMc0": {
-      "name": "Coordinate",
-      "hash": "d4705d8e5607",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "4NMqPbqMvE4C": {
-      "name": "Enhanced Hold the Line",
-      "hash": "70b3c92848c5",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "ozw_t3SA8IDu": {
-      "name": "Enhanced Hold the Line Aura",
-      "hash": "fe7ca869fd12",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "wHfLIdlnEQ1a": {
-      "name": "Entrenched",
-      "hash": "5e825ac91ba0",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "55Si47u6jTtb": {
-      "name": "Entrenched Buff",
-      "hash": "15a9e4370631",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "eU6uz90H82Sw": {
-      "name": "Extended Buff Range",
-      "hash": "db40325c5f16",
-      "sources": [
-        "z65fgu0l29i4lnlu",
-        "zpaY1LFqVk-ZJdvW"
-      ]
-    },
-    "Sdcb8VAeTxji": {
-      "name": "Hold the Line",
-      "hash": "d101187f8bad",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "nFo2BlBRhMcH": {
-      "name": "Morale Debuff",
-      "hash": "473090e85aaf",
-      "sources": [
-        "z65fgu0l29i4lnlu",
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "MfDT3coYRS45": {
-      "name": "No Retreat Buff",
-      "hash": "5eaa881408bd",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "FDI5sLTtr3gC": {
-      "name": "Precision Shooter Buff",
-      "hash": "a2949bab5649",
-      "sources": [
-        "z65fgu0l29i4lnlu"
-      ]
-    },
-    "xs0-u9qrV0xt": {
-      "name": "Rapid Advance Buff",
-      "hash": "94048cc622b8",
-      "sources": [
-        "z65fgu0l29i4lnlu"
+        "nyh41t82jugcdq8m",
+        "qLonG2G2KzkRQoGf"
       ]
     },
     "i8mWlZpqtiNO": {
       "name": "Defensive Growth",
-      "hash": "5a7fd18bf24b",
+      "hash": "72987b65",
       "sources": [
         "jpc0kyil0juwy602"
       ]
     },
     "IJvzf5jxvuP8": {
       "name": "Defensive Growth Aura",
-      "hash": "5460a06ddf6a",
+      "hash": "8b3527c9",
       "sources": [
         "jpc0kyil0juwy602"
       ]
     },
     "sGmLaPbLpSvT": {
       "name": "Inquisitorial Agent",
-      "hash": "963084e82250",
+      "hash": "dec0d580",
       "sources": [
         "jpc0kyil0juwy602"
       ]
     },
-    "B9OEkYUQsxvt": {
-      "name": "Piercing Tag",
-      "hash": "aaf72d2d888d",
+    "FZLk0-3ci6jI": {
+      "name": "Martial Prowess",
+      "hash": "dec0d580",
       "sources": [
         "jpc0kyil0juwy602",
-        "5wbcv465hacdwvkb"
-      ]
-    },
-    "ovMK8gJ26T0s": {
-      "name": "Precision Shooter Aura",
-      "hash": "e92d74e55303",
-      "sources": [
-        "jpc0kyil0juwy602",
-        "hk70l4d471plza00"
-      ]
-    },
-    "x7chGZmjk8Os": {
-      "name": "Quick Throw",
-      "hash": "0a70655ae7a1",
-      "sources": [
-        "jpc0kyil0juwy602",
-        "hk70l4d471plza00"
+        "q11la9v8h1heu9ja"
       ]
     },
     "oQeo-g4E0-SK": {
       "name": "Spell Drain",
-      "hash": "4e42a0b909ea",
+      "hash": "8c5ab5e0",
       "sources": [
         "jpc0kyil0juwy602"
       ]
     },
     "99DXMN96LnI8": {
       "name": "Surprise Attack",
-      "hash": "fa81cfdc2414",
+      "hash": "05562925",
       "sources": [
         "jpc0kyil0juwy602"
       ]
     },
-    "JQmfgK02rJLK": {
-      "name": "Enhanced Infected",
-      "hash": "2405d0f787ce",
+    "MK_o4HpuB-pL": {
+      "name": "Dangerous Terrain Debuff",
+      "hash": "cea280cd",
       "sources": [
-        "dnthspt7c0klhmt8"
+        "k5T0f2XIfpmPO28h"
       ]
     },
-    "FPA1mew5j78v": {
-      "name": "Enhanced Infected Aura",
-      "hash": "30eae86a36bd",
+    "pUt7fqbSTNWP": {
+      "name": "Enhanced Mischievous",
+      "hash": "0d1395bc",
       "sources": [
-        "dnthspt7c0klhmt8"
+        "k5T0f2XIfpmPO28h"
       ]
     },
-    "jgyVEAzjbDDh": {
-      "name": "Infected",
-      "hash": "04d35dc49cb9",
+    "sQQhss7F6nCs": {
+      "name": "Enhanced Mischievous Aura",
+      "hash": "67353f04",
       "sources": [
-        "dnthspt7c0klhmt8"
+        "k5T0f2XIfpmPO28h"
       ]
     },
-    "QMU04E_1bAVC": {
-      "name": "No Retreat Aura",
-      "hash": "1f456b7684eb",
+    "rblJ2IkYaFon": {
+      "name": "Mischievous",
+      "hash": "9c47d601",
       "sources": [
-        "dnthspt7c0klhmt8",
-        "4k5amkxoybdiqotm",
+        "k5T0f2XIfpmPO28h"
+      ]
+    },
+    "YidAUK2jOH-4": {
+      "name": "Brute Courage",
+      "hash": "ebade725",
+      "sources": [
+        "mI0ZlbFpoT0VqC3M"
+      ]
+    },
+    "arJNSXC8F_Oa": {
+      "name": "Unwieldy Debuff",
+      "hash": "12b56e9f",
+      "sources": [
+        "mI0ZlbFpoT0VqC3M"
+      ]
+    },
+    "kpuEyaul7J3Z": {
+      "name": "Ambush Re-Deployment",
+      "hash": "1ce316e7",
+      "sources": [
+        "nyh41t82jugcdq8m",
+        "o4D-c-28lvmybgc5"
+      ]
+    },
+    "fMa1N3Y3t1uj": {
+      "name": "Enhanced Rapid Blink",
+      "hash": "5493986b",
+      "sources": [
+        "nyh41t82jugcdq8m"
+      ]
+    },
+    "zDNFCyPhKKOf": {
+      "name": "Enhanced Rapid Blink Aura",
+      "hash": "a072fe3f",
+      "sources": [
+        "nyh41t82jugcdq8m"
+      ]
+    },
+    "LGezlmOLMTfl": {
+      "name": "Infiltrating Precision Strike",
+      "hash": "472d7b1a",
+      "sources": [
+        "nyh41t82jugcdq8m"
+      ]
+    },
+    "UJ6frPcu1X9m": {
+      "name": "Rapid Blink",
+      "hash": "ddfc49fa",
+      "sources": [
+        "nyh41t82jugcdq8m"
+      ]
+    },
+    "27DHOeVHMwrj": {
+      "name": "Slayer",
+      "hash": "a364bed4",
+      "sources": [
+        "nyh41t82jugcdq8m",
+        "qLonG2G2KzkRQoGf",
+        "tH3gqRwsigE87z5H",
+        "ukrBO4ITaKUpUFeO",
+        "z8205ez2boggzs22",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "DkFg1ochRDYR": {
+      "name": "Enhanced Shadow Operative",
+      "hash": "11efe847",
+      "sources": [
+        "o4D-c-28lvmybgc5"
+      ]
+    },
+    "DXab0T1mtWak": {
+      "name": "Enhanced Shadow Operative Aura",
+      "hash": "d09fda6e",
+      "sources": [
+        "o4D-c-28lvmybgc5"
+      ]
+    },
+    "1elLRhGK7ETb": {
+      "name": "Precision Debuff",
+      "hash": "152a2afd",
+      "sources": [
+        "o4D-c-28lvmybgc5",
+        "w7qor7b2kuifcyvk"
+      ]
+    },
+    "xgtq7JJUEwfA": {
+      "name": "Shadow Operative",
+      "hash": "ef20e9bd",
+      "sources": [
+        "o4D-c-28lvmybgc5"
+      ]
+    },
+    "CrwJ8yvfjSc6": {
+      "name": "Primeborn",
+      "hash": "b7005f67",
+      "sources": [
+        "oqnnu0gk8q6hyyny"
+      ]
+    },
+    "n8vjv0oBZDAL": {
+      "name": "Defensive Frenzy",
+      "hash": "21d55d0f",
+      "sources": [
+        "prsajf5ot936qznk"
+      ]
+    },
+    "GOPD6AVdvbFf": {
+      "name": "Piercing Shooter Aura",
+      "hash": "ac66ee80",
+      "sources": [
+        "prsajf5ot936qznk"
+      ]
+    },
+    "UrbEF2kpIjYH": {
+      "name": "Enhanced Harassing",
+      "hash": "fe48b2d4",
+      "sources": [
+        "q11la9v8h1heu9ja"
+      ]
+    },
+    "RUS7R0SwaBUj": {
+      "name": "Enhanced Harassing Aura",
+      "hash": "520b1b57",
+      "sources": [
+        "q11la9v8h1heu9ja"
+      ]
+    },
+    "M8KFBuLeTrck": {
+      "name": "Enhanced Hit & Run",
+      "hash": "504c10bc",
+      "sources": [
+        "q11la9v8h1heu9ja"
+      ]
+    },
+    "2xUH_d7T_Zfv": {
+      "name": "Harassing",
+      "hash": "ff79268c",
+      "sources": [
+        "q11la9v8h1heu9ja"
+      ]
+    },
+    "R6Y4QHBq6wxZ": {
+      "name": "Piercing Frenzy",
+      "hash": "b644ed76",
+      "sources": [
+        "q11la9v8h1heu9ja"
+      ]
+    },
+    "s5A-Pvdby0wT": {
+      "name": "Cyber-Eyes",
+      "hash": "76acbd2c",
+      "sources": [
+        "qLonG2G2KzkRQoGf"
+      ]
+    },
+    "zNOav_FqYQie": {
+      "name": "Enhanced Cyber-Eyes",
+      "hash": "89c528f6",
+      "sources": [
+        "qLonG2G2KzkRQoGf"
+      ]
+    },
+    "z3oY0tV1Ado8": {
+      "name": "Enhanced Cyber-Eyes Aura",
+      "hash": "4f01586b",
+      "sources": [
+        "qLonG2G2KzkRQoGf"
+      ]
+    },
+    "ySpZadCu08yk": {
+      "name": "Enhanced Precision Marksman",
+      "hash": "8ff0592e",
+      "sources": [
+        "qLonG2G2KzkRQoGf",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "SzljHEX27s-v": {
+      "name": "Increased Shooting Range Mark",
+      "hash": "429c3068",
+      "sources": [
+        "qLonG2G2KzkRQoGf"
+      ]
+    },
+    "lwWYwB3HRTPi": {
+      "name": "Precision Marksman",
+      "hash": "76acbd2c",
+      "sources": [
+        "qLonG2G2KzkRQoGf",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "fB2hm0la8zl1": {
+      "name": "Ranged Slayer",
+      "hash": "0a7d7b6a",
+      "sources": [
+        "qLonG2G2KzkRQoGf",
+        "ukrBO4ITaKUpUFeO",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "sScPMcGqrk5Q": {
+      "name": "Ranged Slayer Aura",
+      "hash": "0bc35f32",
+      "sources": [
+        "qLonG2G2KzkRQoGf",
+        "ukrBO4ITaKUpUFeO",
+        "z8205ez2boggzs22"
+      ]
+    },
+    "Y37_ydVGvRqL": {
+      "name": "Rapid Advance Aura",
+      "hash": "139a482b",
+      "sources": [
+        "qLonG2G2KzkRQoGf",
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "asZsQqR_73or": {
+      "name": "Enhanced Versatile Warrior",
+      "hash": "d4e4f4ad",
+      "sources": [
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki"
+      ]
+    },
+    "rIgfEKIxk1CA": {
+      "name": "Enhanced Watchborn",
+      "hash": "d4e4f4ad",
+      "sources": [
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki"
+      ]
+    },
+    "QteJvh1g5fgV": {
+      "name": "Enhanced Watchborn Aura",
+      "hash": "c6b6f2c7",
+      "sources": [
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki"
+      ]
+    },
+    "iZkU-vhbjhbb": {
+      "name": "Watchborn",
+      "hash": "a1279cf8",
+      "sources": [
+        "rl7ympklz4r0ls38",
+        "rvvb3kdn2x2pqkki"
+      ]
+    },
+    "5L4WYDhAN6bU": {
+      "name": "Grounded Defense",
+      "hash": "2d1e8216",
+      "sources": [
+        "tH3gqRwsigE87z5H",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "KT62C0Y4SbKS": {
+      "name": "Grounded Defense Aura",
+      "hash": "2074fdc3",
+      "sources": [
+        "tH3gqRwsigE87z5H",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "ZjmJUR3enJGu": {
+      "name": "Grounded Precision",
+      "hash": "b4b060b2",
+      "sources": [
+        "tH3gqRwsigE87z5H",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "E-2e-rVm1WAz": {
+      "name": "Grounded Precision Aura",
+      "hash": "0d32692f",
+      "sources": [
+        "tH3gqRwsigE87z5H",
+        "zz3kp5ry7ks6mxcx"
+      ]
+    },
+    "KTetx0KIX3i-": {
+      "name": "Slayer Mark",
+      "hash": "1381b9aa",
+      "sources": [
         "tH3gqRwsigE87z5H"
       ]
     },
-    "W3hSISDGStUH": {
-      "name": "Precision Growth",
-      "hash": "cc5fae7be79c",
+    "58bWJyFqRsC3": {
+      "name": "Union Assault",
+      "hash": "f7d5c829",
       "sources": [
-        "dnthspt7c0klhmt8"
+        "tH3gqRwsigE87z5H"
       ]
     },
-    "38s_V6mXkYX-": {
-      "name": "Thrust in Melee Aura",
-      "hash": "10626b1d90a9",
+    "jyVvnNyAKS-8": {
+      "name": "Ballistic Vest",
+      "hash": "b7005f67",
       "sources": [
-        "dnthspt7c0klhmt8"
+        "ukrBO4ITaKUpUFeO"
       ]
     },
-    "Ql2vwvAiWaor": {
-      "name": "Unpredictable Shooter Aura",
-      "hash": "44ec15ae46f8",
+    "7YG0M5UVIx2Y": {
+      "name": "Enhanced Ballistic Vest",
+      "hash": "21ab748c",
       "sources": [
-        "dnthspt7c0klhmt8",
-        "BKi_hJaJflN8ZorH",
-        "1wj1ysgxpuuz9bc7"
+        "ukrBO4ITaKUpUFeO"
       ]
     },
-    "1BZ5wsWUjYCd": {
-      "name": "Enhanced Scrapper",
-      "hash": "cd012a8070dd",
+    "r-B_Hmp8ksSB": {
+      "name": "Enhanced Ballistic Vest Aura",
+      "hash": "c76043e8",
       "sources": [
-        "BKi_hJaJflN8ZorH"
+        "ukrBO4ITaKUpUFeO"
       ]
     },
-    "sJXpQUJFLbVh": {
-      "name": "Enhanced Scrapper Aura",
-      "hash": "0dc8ee37290b",
+    "4ya_HznrredO": {
+      "name": "Flying Aura",
+      "hash": "59ee984c",
       "sources": [
-        "BKi_hJaJflN8ZorH"
+        "ukrBO4ITaKUpUFeO"
       ]
     },
-    "a6Ze2uaBlNHX": {
-      "name": "Mind Control",
-      "hash": "87635e24ae34",
+    "VrsRCvbVMmNX": {
+      "name": "Surge Mark",
+      "hash": "e6fe7c42",
       "sources": [
-        "BKi_hJaJflN8ZorH"
+        "ukrBO4ITaKUpUFeO"
       ]
     },
-    "tidpe1mTXb9W": {
-      "name": "Scrapper",
-      "hash": "6304d6baa602",
+    "rJSSHbaRMID4": {
+      "name": "Ambush Beacon",
+      "hash": "8758f91e",
       "sources": [
-        "BKi_hJaJflN8ZorH"
+        "vux1Y5vvULmaxZ8P",
+        "z8205ez2boggzs22"
       ]
     },
-    "VI54cszY2BuG": {
-      "name": "Shatter",
-      "hash": "719c5d8f3d6d",
+    "4NiNnvh-brLp": {
+      "name": "Anti-Cover Aura",
+      "hash": "3548639c",
       "sources": [
-        "BKi_hJaJflN8ZorH",
-        "4k5amkxoybdiqotm"
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "nNh98rpX_sZv": {
+      "name": "Casting Buff",
+      "hash": "12ae4dcc",
+      "sources": [
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "21dbpSjSDeOY": {
+      "name": "Clan Warrior",
+      "hash": "d22d6e4f",
+      "sources": [
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "TYEJ10EP0Xq9": {
+      "name": "Enhanced Clan Warrior",
+      "hash": "7945503a",
+      "sources": [
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "WdkGC1Q6_nHY": {
+      "name": "Enhanced Clan Warrior Aura",
+      "hash": "f3e01f7b",
+      "sources": [
+        "vux1Y5vvULmaxZ8P"
+      ]
+    },
+    "Dpclj8rsDSRd": {
+      "name": "Precision Fighter",
+      "hash": "8f0c45f2",
+      "sources": [
+        "vux1Y5vvULmaxZ8P"
       ]
     },
     "rUzMGpacephz": {
       "name": "Enhanced Knightborn",
-      "hash": "94ab8682d0bf",
+      "hash": "b194d2c4",
       "sources": [
         "w70ha3o85pa7nigq",
         "wopr4xvwa51xh3mc"
@@ -3822,7 +4206,7 @@
     },
     "wnEVftbtVtw5": {
       "name": "Enhanced Knightborn Aura",
-      "hash": "cfaabed2637a",
+      "hash": "19d71483",
       "sources": [
         "w70ha3o85pa7nigq",
         "wopr4xvwa51xh3mc"
@@ -3830,7 +4214,7 @@
     },
     "Anx9Iim2k-Ws": {
       "name": "Enhanced Warding",
-      "hash": "9cd08699ebf6",
+      "hash": "70b1e47e",
       "sources": [
         "w70ha3o85pa7nigq",
         "wopr4xvwa51xh3mc"
@@ -3838,7 +4222,7 @@
     },
     "Lz_ncVgCX5R8": {
       "name": "Knightborn",
-      "hash": "0f0c2d273ae7",
+      "hash": "d673f7f8",
       "sources": [
         "w70ha3o85pa7nigq",
         "wopr4xvwa51xh3mc"
@@ -3846,627 +4230,243 @@
     },
     "zu6H7MyN3f8U": {
       "name": "Warding",
-      "hash": "0f0c2d273ae7",
+      "hash": "d673f7f8",
       "sources": [
         "w70ha3o85pa7nigq",
         "wopr4xvwa51xh3mc"
       ]
     },
-    "8cqDBbHGSA4m": {
-      "name": "Demolish",
-      "hash": "835c923417c3",
+    "kiXI7plPE_mK": {
+      "name": "Enhanced Hive Bond",
+      "hash": "6c2a0bcb",
       "sources": [
-        "7el7k3hgy5pb9o9i",
-        "zpaY1LFqVk-ZJdvW",
-        "tH3gqRwsigE87z5H"
+        "w7qor7b2kuifcyvk"
       ]
     },
-    "eYZyOr9wu0jr": {
-      "name": "Enhanced Machine-Fog",
-      "hash": "0a31d3eb16b5",
+    "Yt2R4sh8SXM0": {
+      "name": "Enhanced Hive Bond Aura",
+      "hash": "4290006a",
       "sources": [
-        "7el7k3hgy5pb9o9i"
+        "w7qor7b2kuifcyvk"
       ]
     },
-    "engi9zFdRht9": {
-      "name": "Enhanced Machine-Fog Aura",
-      "hash": "ed54e7439573",
+    "TbjUdR-OJZPw": {
+      "name": "Enhanced Valiant",
+      "hash": "69caa6e7",
       "sources": [
-        "7el7k3hgy5pb9o9i"
+        "w7qor7b2kuifcyvk",
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "0Z-OGtDpajc3": {
-      "name": "Grounded Evasion",
-      "hash": "5a59df5400bb",
+    "RHkw66BqDjUp": {
+      "name": "Fragment",
+      "hash": "3b45f9f9",
       "sources": [
-        "7el7k3hgy5pb9o9i"
+        "w7qor7b2kuifcyvk"
       ]
     },
-    "S8IZt-d0Sgwk": {
-      "name": "Machine-Fog",
-      "hash": "97f6d3428e4d",
+    "cgCroTrOmiv-": {
+      "name": "Hive Bond",
+      "hash": "912185a2",
       "sources": [
-        "7el7k3hgy5pb9o9i"
+        "w7qor7b2kuifcyvk"
       ]
     },
-    "AfGDQgn8r8O1": {
-      "name": "Rending when Shooting Aura",
-      "hash": "0b099dc7c14d",
+    "s4lagBUlnsUE": {
+      "name": "Piercing Growth",
+      "hash": "de62e388",
       "sources": [
-        "7el7k3hgy5pb9o9i",
-        "U6hwlur14RpnInZr",
-        "G5uvPlnfxPg3EcYG"
+        "w7qor7b2kuifcyvk"
       ]
     },
-    "9Te72f48wJyw": {
-      "name": "Versatile Warrior",
-      "hash": "d0d6f54fd1aa",
+    "3sXTViTVdDhn": {
+      "name": "Predator Aura",
+      "hash": "148e01a8",
       "sources": [
-        "7el7k3hgy5pb9o9i",
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38"
+        "w7qor7b2kuifcyvk"
       ]
     },
-    "s5A-Pvdby0wT": {
-      "name": "Cyber-Eyes",
-      "hash": "fbf6aa6dd56a",
+    "iWuTcXAw2-5s": {
+      "name": "Bane in Melee Buff",
+      "hash": "e8e757c4",
       "sources": [
-        "qLonG2G2KzkRQoGf"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "zNOav_FqYQie": {
-      "name": "Enhanced Cyber-Eyes",
-      "hash": "8c693181b8b6",
+    "FPlO2MymiMc0": {
+      "name": "Coordinate",
+      "hash": "d79b988a",
       "sources": [
-        "qLonG2G2KzkRQoGf"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "z3oY0tV1Ado8": {
-      "name": "Enhanced Cyber-Eyes Aura",
-      "hash": "54c6dc2074c0",
+    "4NMqPbqMvE4C": {
+      "name": "Enhanced Hold the Line",
+      "hash": "03636a37",
       "sources": [
-        "qLonG2G2KzkRQoGf"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "SzljHEX27s-v": {
-      "name": "Increased Shooting Range Mark",
-      "hash": "516a20d56c09",
+    "ozw_t3SA8IDu": {
+      "name": "Enhanced Hold the Line Aura",
+      "hash": "4cf65d1b",
       "sources": [
-        "qLonG2G2KzkRQoGf"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "x0gFQEwammM_": {
-      "name": "Battle-Hardened",
-      "hash": "d101187f8bad",
+    "wHfLIdlnEQ1a": {
+      "name": "Entrenched",
+      "hash": "059a3d56",
       "sources": [
-        "cV1jqgtZj8sf57ld"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "qNNjE6aa9YQ2": {
-      "name": "Bad Shot",
-      "hash": "60fb9d8ec895",
+    "55Si47u6jTtb": {
+      "name": "Entrenched Buff",
+      "hash": "abb79687",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "Hdm9ry6kJvzb": {
-      "name": "Crossing Strike",
-      "hash": "3cf98de1c20f",
+    "eU6uz90H82Sw": {
+      "name": "Extended Buff Range",
+      "hash": "407d4d26",
       "sources": [
-        "1wj1ysgxpuuz9bc7",
-        "U6hwlur14RpnInZr"
+        "z65fgu0l29i4lnlu",
+        "zpaY1LFqVk-ZJdvW"
       ]
     },
-    "vhXg_2pMyAzi": {
-      "name": "Enhanced Brutal Aura",
-      "hash": "c33384855d0b",
+    "Sdcb8VAeTxji": {
+      "name": "Hold the Line",
+      "hash": "912185a2",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "B1i8BBWNU3L0": {
-      "name": "Enhanced Ferocious",
-      "hash": "b86e97be575e",
+    "MfDT3coYRS45": {
+      "name": "No Retreat Buff",
+      "hash": "50443b7f",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "EYbEdB0ST9lf": {
-      "name": "Enhanced Ferocious Aura",
-      "hash": "eb2a5be4ba8a",
+    "FDI5sLTtr3gC": {
+      "name": "Precision Shooter Buff",
+      "hash": "930ba860",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "cygZBh3MtWs1": {
-      "name": "Ferocious",
-      "hash": "bea68ce56c69",
+    "xs0-u9qrV0xt": {
+      "name": "Rapid Advance Buff",
+      "hash": "18891f73",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
+        "z65fgu0l29i4lnlu"
       ]
     },
-    "sngB_5QsJLaW": {
-      "name": "Precision Charge",
-      "hash": "d5e6c469ff7d",
+    "dXr70idM6Vjk": {
+      "name": "Enhanced Targeting Visor",
+      "hash": "48429b44",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
+        "z8205ez2boggzs22"
       ]
     },
-    "DETPYoIhE98G": {
-      "name": "Precision Charge Aura",
-      "hash": "999a5f05cf7a",
+    "R4q13TqqwTPC": {
+      "name": "Enhanced Targeting Visor Aura",
+      "hash": "b287f713",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
+        "z8205ez2boggzs22"
       ]
     },
-    "u2KyOrsBaOdU": {
-      "name": "Speed Feat",
-      "hash": "a785848ce31e",
+    "lOJdfdPgbhdT": {
+      "name": "Precision Spotter",
+      "hash": "5ce1e8ef",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
+        "z8205ez2boggzs22"
       ]
     },
-    "UEYz0htkjsxv": {
-      "name": "Speed Feat Aura",
-      "hash": "5a116bf0b31c",
+    "hjaNnUHsY3f5": {
+      "name": "Targeting Visor",
+      "hash": "76acbd2c",
       "sources": [
-        "1wj1ysgxpuuz9bc7"
-      ]
-    },
-    "CrwJ8yvfjSc6": {
-      "name": "Primeborn",
-      "hash": "408f9465314a",
-      "sources": [
-        "oqnnu0gk8q6hyyny"
-      ]
-    },
-    "VRSD2Brj6vAZ": {
-      "name": "Bane Mark",
-      "hash": "ea6bd8581163",
-      "sources": [
-        "8P8zHTe_MQtawcCN"
-      ]
-    },
-    "W2-YAUebkXqF": {
-      "name": "Enhanced Psychotic",
-      "hash": "266985213479",
-      "sources": [
-        "8P8zHTe_MQtawcCN"
-      ]
-    },
-    "9GgsgTE6NcOg": {
-      "name": "Enhanced Psychotic Aura",
-      "hash": "a15f6c7a914b",
-      "sources": [
-        "8P8zHTe_MQtawcCN"
-      ]
-    },
-    "TU7fkKrcAvop": {
-      "name": "Protection Feat",
-      "hash": "fba9f80a50e7",
-      "sources": [
-        "8P8zHTe_MQtawcCN",
-        "4k5amkxoybdiqotm",
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "CdIKErxgOpl3": {
-      "name": "Protection Feat Aura",
-      "hash": "82297ee17982",
-      "sources": [
-        "8P8zHTe_MQtawcCN",
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "SqhSkyNcexeN": {
-      "name": "Psychotic",
-      "hash": "a0b38cc4799d",
-      "sources": [
-        "8P8zHTe_MQtawcCN"
-      ]
-    },
-    "o2l7F3ugQNly": {
-      "name": "Enhanced Scurry",
-      "hash": "7165eaefeb46",
-      "sources": [
-        "hk70l4d471plza00"
-      ]
-    },
-    "QhQL5YYoO3jJ": {
-      "name": "Enhanced Scurry Aura",
-      "hash": "0ff060270433",
-      "sources": [
-        "hk70l4d471plza00"
-      ]
-    },
-    "OOowoGdbpTCn": {
-      "name": "Evasive Aura",
-      "hash": "5f193d0cf3ef",
-      "sources": [
-        "hk70l4d471plza00"
-      ]
-    },
-    "UlH7N0knz4eN": {
-      "name": "Predator Shooter",
-      "hash": "ee92ee747511",
-      "sources": [
-        "hk70l4d471plza00"
-      ]
-    },
-    "zlKV_VK3wONR": {
-      "name": "Predator Shooter Aura",
-      "hash": "7dbfec6b3e60",
-      "sources": [
-        "hk70l4d471plza00"
-      ]
-    },
-    "e0u4Znq4Z82Q": {
-      "name": "Reinforcement",
-      "hash": "eea0ebc1f286",
-      "sources": [
-        "hk70l4d471plza00"
-      ]
-    },
-    "NEYp25CGvZl3": {
-      "name": "Scurry",
-      "hash": "54d6c3c32d26",
-      "sources": [
-        "hk70l4d471plza00"
-      ]
-    },
-    "g2ceRIgNr-GI": {
-      "name": "Enhanced Guerrilla",
-      "hash": "68c351d38517",
-      "sources": [
-        "5wbcv465hacdwvkb"
-      ]
-    },
-    "m4BLeFXB-kOb": {
-      "name": "Enhanced Guerrilla Aura",
-      "hash": "1504cd963809",
-      "sources": [
-        "5wbcv465hacdwvkb"
-      ]
-    },
-    "SHjROxMxvQFd": {
-      "name": "Guerrilla",
-      "hash": "24aadf3d43a3",
-      "sources": [
-        "5wbcv465hacdwvkb"
-      ]
-    },
-    "rtRapnaM86LH": {
-      "name": "Reap",
-      "hash": "b7da7faaae71",
-      "sources": [
-        "5wbcv465hacdwvkb",
-        "zz3kp5ry7ks6mxcx"
-      ]
-    },
-    "ZqewrI-hqAYi": {
-      "name": "Enhanced Self-Repair",
-      "hash": "ffd8c6547abc",
-      "sources": [
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "xfXomZDK5SVX": {
-      "name": "Reanimation",
-      "hash": "edd1919cf52e",
-      "sources": [
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "l_KzjNPv-_5H": {
-      "name": "Reanimation Aura",
-      "hash": "e79a4f66f83c",
-      "sources": [
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "nstknew-_RL_": {
-      "name": "Rending in Melee",
-      "hash": "71d6048a4601",
-      "sources": [
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "Y_WeXWwLtX6z": {
-      "name": "Self-Repair",
-      "hash": "f99b22382ca9",
-      "sources": [
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "ZK3FxxpOGNMR": {
-      "name": "Unstoppable when Shooting",
-      "hash": "3da7e16ee818",
-      "sources": [
-        "4k5amkxoybdiqotm"
-      ]
-    },
-    "7QCXafSRhLAS": {
-      "name": "Enhanced Primal",
-      "hash": "3f472dee77f0",
-      "sources": [
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "0B7GlGWBl7FF": {
-      "name": "Enhanced Primal Buff",
-      "hash": "b385974e569a",
-      "sources": [
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "zVconc6Qb-g9": {
-      "name": "Heavy Impact",
-      "hash": "cada6e829f49",
-      "sources": [
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "PBP94ujaST4y": {
-      "name": "Primal",
-      "hash": "a0b38cc4799d",
-      "sources": [
-        "U6hwlur14RpnInZr"
-      ]
-    },
-    "jyVvnNyAKS-8": {
-      "name": "Ballistic Vest",
-      "hash": "408f9465314a",
-      "sources": [
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "7YG0M5UVIx2Y": {
-      "name": "Enhanced Ballistic Vest",
-      "hash": "5c614bff39cf",
-      "sources": [
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "r-B_Hmp8ksSB": {
-      "name": "Enhanced Ballistic Vest Aura",
-      "hash": "98055dba066b",
-      "sources": [
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "4ya_HznrredO": {
-      "name": "Flying Aura",
-      "hash": "5102355f51f3",
-      "sources": [
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "VrsRCvbVMmNX": {
-      "name": "Surge Mark",
-      "hash": "7ca7920687fb",
-      "sources": [
-        "ukrBO4ITaKUpUFeO"
-      ]
-    },
-    "DkFg1ochRDYR": {
-      "name": "Enhanced Shadow Operative",
-      "hash": "83723f15f103",
-      "sources": [
-        "o4D-c-28lvmybgc5"
-      ]
-    },
-    "DXab0T1mtWak": {
-      "name": "Enhanced Shadow Operative Aura",
-      "hash": "ef7d40765ddf",
-      "sources": [
-        "o4D-c-28lvmybgc5"
-      ]
-    },
-    "xgtq7JJUEwfA": {
-      "name": "Shadow Operative",
-      "hash": "a32f5c2c3965",
-      "sources": [
-        "o4D-c-28lvmybgc5"
-      ]
-    },
-    "-aKAI5i_wXbf": {
-      "name": "Enhanced Safety Gear",
-      "hash": "c1ecb99a7a7f",
-      "sources": [
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "h7dMwwRg46QD": {
-      "name": "Enhanced Safety Gear Aura",
-      "hash": "622107cb225d",
-      "sources": [
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "2naIlnOv22Ls": {
-      "name": "Safety Gear",
-      "hash": "45c063012cae",
-      "sources": [
-        "G5uvPlnfxPg3EcYG"
-      ]
-    },
-    "gzKDP8xc6MCQ": {
-      "name": "Fanatic",
-      "hash": "9ffb56174ddf",
-      "sources": [
-        "zz3kp5ry7ks6mxcx"
-      ]
-    },
-    "5L4WYDhAN6bU": {
-      "name": "Grounded Defense",
-      "hash": "50b80bb5faeb",
-      "sources": [
-        "zz3kp5ry7ks6mxcx",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "KT62C0Y4SbKS": {
-      "name": "Grounded Defense Aura",
-      "hash": "3cfe94f8ac24",
-      "sources": [
-        "zz3kp5ry7ks6mxcx",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "ZjmJUR3enJGu": {
-      "name": "Grounded Precision",
-      "hash": "f84d20e19950",
-      "sources": [
-        "zz3kp5ry7ks6mxcx",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "E-2e-rVm1WAz": {
-      "name": "Grounded Precision Aura",
-      "hash": "46b476d2f5d5",
-      "sources": [
-        "zz3kp5ry7ks6mxcx",
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "OzqjA_sxgVd5": {
-      "name": "Melee Slayer Aura",
-      "hash": "5d55349826be",
-      "sources": [
-        "zz3kp5ry7ks6mxcx"
+        "z8205ez2boggzs22"
       ]
     },
     "a1ewN99UxVcB": {
       "name": "Counter in Melee Buff",
-      "hash": "f577af94e1a6",
+      "hash": "e481dd75",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "ZGxUXLWSGkCv": {
       "name": "Enhanced Shadowborn",
-      "hash": "38e55d9c8cb2",
+      "hash": "86ba826b",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "3oGVnDhS1udb": {
       "name": "Enhanced Shadowborn Aura",
-      "hash": "c12d236573b4",
+      "hash": "d9747cf0",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "s97hkNZ91jnd": {
       "name": "Enhanced Shadowborn Buff",
-      "hash": "078eed105e83",
+      "hash": "a71a7278",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "kS5WWHuH6qVe": {
       "name": "Increased Shooting Range Buff",
-      "hash": "e13bb839e62d",
+      "hash": "39231462",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "XWsun1sjt2ql": {
       "name": "Rapid Rush Buff",
-      "hash": "0eb5831c8479",
+      "hash": "e4e1be43",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "df-9jrAw7ytM": {
       "name": "Shadowborn",
-      "hash": "a32f5c2c3965",
+      "hash": "ef20e9bd",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "j_GcHkWDO1HP": {
       "name": "Thrust in Melee",
-      "hash": "b04de388057f",
+      "hash": "014f9af2",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
     "trV7P42DyQGH": {
       "name": "Thrust in Melee Buff",
-      "hash": "92dc9e35ed40",
+      "hash": "afdf0c44",
       "sources": [
         "zpaY1LFqVk-ZJdvW"
       ]
     },
-    "asZsQqR_73or": {
-      "name": "Enhanced Versatile Warrior",
-      "hash": "4691b710ad4f",
+    "gzKDP8xc6MCQ": {
+      "name": "Fanatic",
+      "hash": "f7d5c829",
       "sources": [
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38"
+        "zz3kp5ry7ks6mxcx"
       ]
     },
-    "rIgfEKIxk1CA": {
-      "name": "Enhanced Watchborn",
-      "hash": "4691b710ad4f",
+    "OzqjA_sxgVd5": {
+      "name": "Melee Slayer Aura",
+      "hash": "153ab823",
       "sources": [
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38"
-      ]
-    },
-    "QteJvh1g5fgV": {
-      "name": "Enhanced Watchborn Aura",
-      "hash": "c2c3e966fcd5",
-      "sources": [
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38"
-      ]
-    },
-    "iZkU-vhbjhbb": {
-      "name": "Watchborn",
-      "hash": "d0d6f54fd1aa",
-      "sources": [
-        "rvvb3kdn2x2pqkki",
-        "rl7ympklz4r0ls38"
-      ]
-    },
-    "MmLijhHpEF37": {
-      "name": "Enhanced Wolfborn",
-      "hash": "7387a5cfb935",
-      "sources": [
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "qlZWvJpEDLeD": {
-      "name": "Enhanced Wolfborn Aura",
-      "hash": "d0ea50775e8a",
-      "sources": [
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "vfW0pVMUrKQr": {
-      "name": "Wolfborn",
-      "hash": "eb1f0c7fc5e7",
-      "sources": [
-        "yxjboa8oma9bbdck",
-        "e8mflytiz51kc4n6"
-      ]
-    },
-    "KTetx0KIX3i-": {
-      "name": "Slayer Mark",
-      "hash": "6eacb36edaa3",
-      "sources": [
-        "tH3gqRwsigE87z5H"
-      ]
-    },
-    "58bWJyFqRsC3": {
-      "name": "Union Assault",
-      "hash": "9ffb56174ddf",
-      "sources": [
-        "tH3gqRwsigE87z5H"
+        "zz3kp5ry7ks6mxcx"
       ]
     }
   }

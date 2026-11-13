@@ -1,0 +1,1662 @@
+{
+  "3FeiOe3krHMa": {
+    "name": "Aircraft",
+    "alias": null
+  },
+  "6mJw5IdqSqNC": {
+    "name": "Ambush",
+    "alias": null
+  },
+  "17crjK7P6_w6": {
+    "name": "AP",
+    "alias": null
+  },
+  "GRuFoZiyjY5f": {
+    "name": "Artillery",
+    "alias": null
+  },
+  "FF5ddXgx75lI": {
+    "name": "Assault",
+    "alias": null
+  },
+  "Naqc5mga9Uha": {
+    "name": "Bane",
+    "alias": null
+  },
+  "ywXKQKPOLjTF": {
+    "name": "Banner",
+    "alias": null
+  },
+  "w_vX0mi58KKt": {
+    "name": "Blast",
+    "alias": null
+  },
+  "0bcGY4Xr4NE0": {
+    "name": "Brace",
+    "alias": null
+  },
+  "47CAqf7ySlfc": {
+    "name": "Caster",
+    "alias": null
+  },
+  "c45Fw0D2oGOk": {
+    "name": "Counter",
+    "alias": null
+  },
+  "_mrPya5SXSqW": {
+    "name": "Deadly",
+    "alias": null
+  },
+  "KdgwlPb8LuD2": {
+    "name": "Fast",
+    "alias": null
+  },
+  "dIQ3SGl2J2Ew": {
+    "name": "Fear",
+    "alias": null
+  },
+  "2atvlmICQSCV": {
+    "name": "Fearless",
+    "alias": null
+  },
+  "-QJdqJEKjIpE": {
+    "name": "Flying",
+    "alias": null
+  },
+  "JoOCVPx1xT1G": {
+    "name": "Furious",
+    "alias": null
+  },
+  "T08VkBuVmNZ_": {
+    "name": "Hero",
+    "alias": null
+  },
+  "HWtnPV9LQF1D": {
+    "name": "Immobile",
+    "alias": null
+  },
+  "62-mYKVM9MLd": {
+    "name": "Impact",
+    "alias": null
+  },
+  "8Ck9GAwUK824": {
+    "name": "Indirect",
+    "alias": null
+  },
+  "9042COVrLCsI": {
+    "name": "Limited",
+    "alias": null
+  },
+  "qrG_DXJez5Dg": {
+    "name": "Musician",
+    "alias": null
+  },
+  "_T07iXWo4VwJ": {
+    "name": "Parry",
+    "alias": null
+  },
+  "8KujvrTG8k9p": {
+    "name": "Regeneration",
+    "alias": null
+  },
+  "H9E9PIWpGRdw": {
+    "name": "Relentless",
+    "alias": null
+  },
+  "Zx4mWN0SbmK8": {
+    "name": "Reliable",
+    "alias": null
+  },
+  "cavWDboL4ubs": {
+    "name": "Rending",
+    "alias": null
+  },
+  "FAMbscK5vhSu": {
+    "name": "Scout",
+    "alias": null
+  },
+  "IEJp3a4vE0CB": {
+    "name": "Shred",
+    "alias": null
+  },
+  "Ldhtmr4H8b6G": {
+    "name": "Slow",
+    "alias": null
+  },
+  "4Q1owB6yNFz1": {
+    "name": "Spell Amplifier",
+    "alias": null
+  },
+  "9jyvRoBODD-O": {
+    "name": "Stealth",
+    "alias": null
+  },
+  "JSKVyurtWIyW": {
+    "name": "Strider",
+    "alias": null
+  },
+  "5v6oaGfrdf29": {
+    "name": "Surge",
+    "alias": null
+  },
+  "8Hjy54TYtwb7": {
+    "name": "Takedown",
+    "alias": null
+  },
+  "umbiz4tnEyF8": {
+    "name": "Thrust",
+    "alias": null
+  },
+  "a0YtInGiUDd6": {
+    "name": "Tough",
+    "alias": null
+  },
+  "aogQZcOOQrDI": {
+    "name": "Transport",
+    "alias": null
+  },
+  "gOFh4u_LGrwP": {
+    "name": "Ambush Aura",
+    "alias": null
+  },
+  "0TfnG5G4JEv0": {
+    "name": "Anti-Regen",
+    "alias": null
+  },
+  "CQes0mDvF4bV": {
+    "name": "AP",
+    "alias": null
+  },
+  "uHus35IJKri2": {
+    "name": "Bane when Shooting",
+    "alias": null
+  },
+  "h9JsgD38BRjI": {
+    "name": "Bounding",
+    "alias": null
+  },
+  "fWjDp-LZmYln": {
+    "name": "Bounding Aura",
+    "alias": null
+  },
+  "4mB0rwGnMVgJ": {
+    "name": "Changebound",
+    "alias": "_tP0jExjizvc"
+  },
+  "s6MgSfmgylXU": {
+    "name": "Defense",
+    "alias": null
+  },
+  "COaU7nmOC6VG": {
+    "name": "Enhanced Changebound",
+    "alias": "95k3zdp_EzoN"
+  },
+  "nU2aNk56ZJ8H": {
+    "name": "Enhanced Changebound Aura",
+    "alias": null
+  },
+  "95k3zdp_EzoN": {
+    "name": "Enhanced Screened",
+    "alias": null
+  },
+  "C0UHMLhvoXXj": {
+    "name": "Fearless Aura",
+    "alias": null
+  },
+  "3RJ8ZvQphXk5": {
+    "name": "Indirect when Shooting Aura",
+    "alias": null
+  },
+  "WcOMD7QgPYXZ": {
+    "name": "Lacerate",
+    "alias": null
+  },
+  "AlIZbh-afBYi": {
+    "name": "Protected",
+    "alias": null
+  },
+  "fHq_KESyO1cU": {
+    "name": "Protected Aura",
+    "alias": null
+  },
+  "_tP0jExjizvc": {
+    "name": "Screened",
+    "alias": null
+  },
+  "8HWdOwMYcI0p": {
+    "name": "Sergeant",
+    "alias": null
+  },
+  "sHIDSc5b37Jm": {
+    "name": "Spell Accumulator",
+    "alias": null
+  },
+  "h-Cj1XrX00JE": {
+    "name": "Spell Resistance",
+    "alias": null
+  },
+  "b7V48Z1W-EfP": {
+    "name": "Spell Resistance Aura",
+    "alias": null
+  },
+  "jaDijWTHmVNU": {
+    "name": "Split",
+    "alias": null
+  },
+  "LtPyHi_-DHf4": {
+    "name": "Teleport",
+    "alias": null
+  },
+  "nr0R125ptwEZ": {
+    "name": "Teleport Aura",
+    "alias": null
+  },
+  "rqBYj1yANC3J": {
+    "name": "Unique Hero",
+    "alias": null
+  },
+  "QXyt-zV_bjpg": {
+    "name": "Unstoppable",
+    "alias": null
+  },
+  "AB3FAl-SEUYP": {
+    "name": "Unstoppable in Melee Aura",
+    "alias": null
+  },
+  "r8OBuam8nRXP": {
+    "name": "Vanguard",
+    "alias": null
+  },
+  "efmjJPTe0Yzd": {
+    "name": "Anti-Cover",
+    "alias": null
+  },
+  "74RjQ1k41DoO": {
+    "name": "Armor",
+    "alias": null
+  },
+  "qNNjE6aa9YQ2": {
+    "name": "Bad Shot",
+    "alias": null
+  },
+  "cU3RtuBXHyq4": {
+    "name": "Blast",
+    "alias": null
+  },
+  "MEAjk171GPmF": {
+    "name": "Brutal",
+    "alias": null
+  },
+  "Hdm9ry6kJvzb": {
+    "name": "Crossing Strike",
+    "alias": null
+  },
+  "Nbo5DTQufMoB": {
+    "name": "Enhanced Brutal",
+    "alias": null
+  },
+  "vhXg_2pMyAzi": {
+    "name": "Enhanced Brutal Aura",
+    "alias": null
+  },
+  "B1i8BBWNU3L0": {
+    "name": "Enhanced Ferocious",
+    "alias": "Nbo5DTQufMoB"
+  },
+  "EYbEdB0ST9lf": {
+    "name": "Enhanced Ferocious Aura",
+    "alias": "vhXg_2pMyAzi"
+  },
+  "cygZBh3MtWs1": {
+    "name": "Ferocious",
+    "alias": "MEAjk171GPmF"
+  },
+  "ozCLWcof36wD": {
+    "name": "Hit & Run",
+    "alias": null
+  },
+  "anyZ2FHtdAVO": {
+    "name": "Hit & Run Fighter",
+    "alias": null
+  },
+  "uwrXuhqYepEd": {
+    "name": "Hit & Run Fighter Aura",
+    "alias": null
+  },
+  "mETdyZ__yMVj": {
+    "name": "Mend",
+    "alias": null
+  },
+  "ad6BHtI2eeX0": {
+    "name": "Pierce",
+    "alias": null
+  },
+  "wnrz_-SUmR8_": {
+    "name": "Piercing Fighter Aura",
+    "alias": null
+  },
+  "sngB_5QsJLaW": {
+    "name": "Precision Charge",
+    "alias": null
+  },
+  "DETPYoIhE98G": {
+    "name": "Precision Charge Aura",
+    "alias": null
+  },
+  "okU8qW-h2rau": {
+    "name": "Ranged Shrouding",
+    "alias": null
+  },
+  "oZewV0wGuebE": {
+    "name": "Ranged Shrouding Aura",
+    "alias": null
+  },
+  "V3YzPPkZm8at": {
+    "name": "Regeneration Aura",
+    "alias": null
+  },
+  "C6MzEy1CnxTs": {
+    "name": "Repel Ambushers",
+    "alias": null
+  },
+  "u2KyOrsBaOdU": {
+    "name": "Speed Feat",
+    "alias": null
+  },
+  "UEYz0htkjsxv": {
+    "name": "Speed Feat Aura",
+    "alias": null
+  },
+  "i40cKJoXJ7zm": {
+    "name": "Unpredictable",
+    "alias": null
+  },
+  "eOGs64JpVsP3": {
+    "name": "Unpredictable Shooter",
+    "alias": null
+  },
+  "Ql2vwvAiWaor": {
+    "name": "Unpredictable Shooter Aura",
+    "alias": null
+  },
+  "FRVSAjasmFSF": {
+    "name": "Bravery Aura",
+    "alias": null
+  },
+  "5NeMSSj7-Pp5": {
+    "name": "Enhanced Violent",
+    "alias": null
+  },
+  "5G44ZDmQG-N5": {
+    "name": "Enhanced Warbound",
+    "alias": "5NeMSSj7-Pp5"
+  },
+  "dNOZEOSJ-DyX": {
+    "name": "Enhanced Warbound Aura",
+    "alias": null
+  },
+  "CK9TIa7vdehO": {
+    "name": "Furious Aura",
+    "alias": null
+  },
+  "EgdF_3MSddXR": {
+    "name": "Melee Evasion",
+    "alias": null
+  },
+  "DhLjIDRrWz6-": {
+    "name": "Piercing Charge",
+    "alias": null
+  },
+  "97aE8SunQBTq": {
+    "name": "Purge",
+    "alias": null
+  },
+  "zGew9XZT2rUm": {
+    "name": "Relentless Aura",
+    "alias": null
+  },
+  "Ww4ehASqnek0": {
+    "name": "Scourge",
+    "alias": null
+  },
+  "Tdyu4Tn-rFN6": {
+    "name": "Scout Aura",
+    "alias": null
+  },
+  "j93FkLXMCk8v": {
+    "name": "Steadfast",
+    "alias": null
+  },
+  "ePlgVfji1dy6": {
+    "name": "Steadfast Aura",
+    "alias": null
+  },
+  "DEeVIJcfNfS6": {
+    "name": "Unpredictable Fighter",
+    "alias": null
+  },
+  "eXtrmDIR9dEp": {
+    "name": "Versatile Defense",
+    "alias": null
+  },
+  "UQ7FtljwqNvy": {
+    "name": "Versatile Defense Aura",
+    "alias": null
+  },
+  "z4QuSO_AxqDr": {
+    "name": "Versatile Expert",
+    "alias": null
+  },
+  "WHJ8A7LzHUR6": {
+    "name": "Violent",
+    "alias": null
+  },
+  "jbhpErfecvEY": {
+    "name": "Warbound",
+    "alias": "WHJ8A7LzHUR6"
+  },
+  "CCShas9-9K4N": {
+    "name": "Ambushing Piercing Shot",
+    "alias": null
+  },
+  "2Cxml82Ma_3Y": {
+    "name": "Enhanced Protected",
+    "alias": null
+  },
+  "ZqewrI-hqAYi": {
+    "name": "Enhanced Self-Repair",
+    "alias": "2Cxml82Ma_3Y"
+  },
+  "BOqSaZoY3ewJ": {
+    "name": "Imprecise",
+    "alias": null
+  },
+  "djJahpu0Ciut": {
+    "name": "Infiltrate",
+    "alias": null
+  },
+  "O2Cd7OibBBA5": {
+    "name": "No Retreat",
+    "alias": null
+  },
+  "QMU04E_1bAVC": {
+    "name": "No Retreat Aura",
+    "alias": null
+  },
+  "L--qMjlm2g4Q": {
+    "name": "Piercing Charge Aura",
+    "alias": null
+  },
+  "TU7fkKrcAvop": {
+    "name": "Protection Feat",
+    "alias": null
+  },
+  "CdIKErxgOpl3": {
+    "name": "Protection Feat Aura",
+    "alias": null
+  },
+  "HmxkJq_My-Ub": {
+    "name": "Rapid Advance",
+    "alias": null
+  },
+  "hnsVQyx3ylMf": {
+    "name": "Ravage",
+    "alias": null
+  },
+  "xfXomZDK5SVX": {
+    "name": "Reanimation",
+    "alias": null
+  },
+  "l_KzjNPv-_5H": {
+    "name": "Reanimation Aura",
+    "alias": null
+  },
+  "nstknew-_RL_": {
+    "name": "Rending in Melee",
+    "alias": null
+  },
+  "Y_WeXWwLtX6z": {
+    "name": "Self-Repair",
+    "alias": "AlIZbh-afBYi"
+  },
+  "VI54cszY2BuG": {
+    "name": "Shatter",
+    "alias": null
+  },
+  "8haZ36fXvnzn": {
+    "name": "Stealth Aura",
+    "alias": null
+  },
+  "cnKvLv8ErzIc": {
+    "name": "Stealth Buff",
+    "alias": null
+  },
+  "leFm23MTiJxO": {
+    "name": "Swift",
+    "alias": null
+  },
+  "ZK3FxxpOGNMR": {
+    "name": "Unstoppable when Shooting",
+    "alias": null
+  },
+  "KTixuuQ9H7tU": {
+    "name": "Unstoppable when Shooting Aura",
+    "alias": null
+  },
+  "ba6LlbpoLkSu": {
+    "name": "Bane when Shooting Aura",
+    "alias": null
+  },
+  "-6osYnOq7DGV": {
+    "name": "Counter in Melee",
+    "alias": null
+  },
+  "g2ceRIgNr-GI": {
+    "name": "Enhanced Guerrilla",
+    "alias": "M8KFBuLeTrck"
+  },
+  "m4BLeFXB-kOb": {
+    "name": "Enhanced Guerrilla Aura",
+    "alias": null
+  },
+  "SHjROxMxvQFd": {
+    "name": "Guerrilla",
+    "alias": "ozCLWcof36wD"
+  },
+  "B9OEkYUQsxvt": {
+    "name": "Piercing Tag",
+    "alias": null
+  },
+  "09SoiR1HuW7u": {
+    "name": "Precise",
+    "alias": null
+  },
+  "rtRapnaM86LH": {
+    "name": "Reap",
+    "alias": null
+  },
+  "-05w6vRgH2k9": {
+    "name": "Rending in Melee Aura",
+    "alias": null
+  },
+  "wsqfB0fq69eG": {
+    "name": "Shielded",
+    "alias": null
+  },
+  "ZW_Zv-kkBt2q": {
+    "name": "Shielded Aura",
+    "alias": null
+  },
+  "VfLmwEDxxLao": {
+    "name": "Strider Aura",
+    "alias": null
+  },
+  "eyMkgYDVrP7C": {
+    "name": "Takedown Strike",
+    "alias": null
+  },
+  "XoDRL2xVEnVf": {
+    "name": "Bane in Melee Aura",
+    "alias": null
+  },
+  "741uN_Qma5mL": {
+    "name": "Battleborn",
+    "alias": "j93FkLXMCk8v"
+  },
+  "O_sf2rsHA7rD": {
+    "name": "Evasive",
+    "alias": null
+  },
+  "1TMBPe40kx2b": {
+    "name": "Melee Shrouding",
+    "alias": null
+  },
+  "0dZak5jae8F0": {
+    "name": "Melee Shrouding Aura",
+    "alias": null
+  },
+  "qsx__9Cz3au_": {
+    "name": "Rapid Rush",
+    "alias": null
+  },
+  "RDFhn43ktRx8": {
+    "name": "Rapid Rush Aura",
+    "alias": null
+  },
+  "zjzB46LX-QDg": {
+    "name": "Re-Deployment",
+    "alias": null
+  },
+  "9o03izVMZ-Xl": {
+    "name": "Smash",
+    "alias": null
+  },
+  "y47PXwakTSji": {
+    "name": "Versatile Reach",
+    "alias": null
+  },
+  "ayuikxkmDOmq": {
+    "name": "Versatile Reach Aura",
+    "alias": null
+  },
+  "kQVze0GRY3R9": {
+    "name": "Agile",
+    "alias": null
+  },
+  "paOPFddMOffa": {
+    "name": "Crossing Attack",
+    "alias": null
+  },
+  "8cqDBbHGSA4m": {
+    "name": "Demolish",
+    "alias": null
+  },
+  "eYZyOr9wu0jr": {
+    "name": "Enhanced Machine-Fog",
+    "alias": "95k3zdp_EzoN"
+  },
+  "engi9zFdRht9": {
+    "name": "Enhanced Machine-Fog Aura",
+    "alias": null
+  },
+  "0Z-OGtDpajc3": {
+    "name": "Grounded Evasion",
+    "alias": null
+  },
+  "rkGri9GAybaZ": {
+    "name": "Hit & Run Shooter",
+    "alias": null
+  },
+  "S8IZt-d0Sgwk": {
+    "name": "Machine-Fog",
+    "alias": "_tP0jExjizvc"
+  },
+  "TTL5RNmwotoh": {
+    "name": "Melee Slayer",
+    "alias": null
+  },
+  "AfGDQgn8r8O1": {
+    "name": "Rending when Shooting Aura",
+    "alias": null
+  },
+  "8zBpM3Wjey08": {
+    "name": "Unpredictable Fighter Aura",
+    "alias": null
+  },
+  "9Te72f48wJyw": {
+    "name": "Versatile Warrior",
+    "alias": null
+  },
+  "ypbYeykEKH3C": {
+    "name": "Bloodborn",
+    "alias": "aiYEmCuDPUcM"
+  },
+  "Hzn5j1NxKI8h": {
+    "name": "Enhanced Bloodborn",
+    "alias": "ql-dzbuQgTT4"
+  },
+  "DHH5wUzR-hlM": {
+    "name": "Enhanced Bloodborn Aura",
+    "alias": null
+  },
+  "ql-dzbuQgTT4": {
+    "name": "Enhanced Predator",
+    "alias": null
+  },
+  "aiYEmCuDPUcM": {
+    "name": "Predator",
+    "alias": null
+  },
+  "zCjAFXut7Gsg": {
+    "name": "Retaliate",
+    "alias": null
+  },
+  "nLQCr5OiSlYz": {
+    "name": "Caster Group",
+    "alias": null
+  },
+  "NX1-Y1zS-oUD": {
+    "name": "Enhanced Extra Reach",
+    "alias": null
+  },
+  "6Nn0oPQN3TZc": {
+    "name": "Enhanced Highborn",
+    "alias": "NX1-Y1zS-oUD"
+  },
+  "UVyi54SgbOoz": {
+    "name": "Enhanced Highborn Aura",
+    "alias": null
+  },
+  "CJ2mI46Tp-al": {
+    "name": "Extra Reach",
+    "alias": null
+  },
+  "JSnFcm3SCiMD": {
+    "name": "Fracture",
+    "alias": null
+  },
+  "5bc5xNmd5M14": {
+    "name": "Highborn",
+    "alias": "CJ2mI46Tp-al"
+  },
+  "rVZfbTlIyt7L": {
+    "name": "Hit & Run Shooter Aura",
+    "alias": null
+  },
+  "vbYCQfF82BLa": {
+    "name": "Piercing Spotter",
+    "alias": null
+  },
+  "muH3OhuC6eK4": {
+    "name": "Shred in Melee Aura",
+    "alias": null
+  },
+  "lEFjh4V7XGVV": {
+    "name": "Shred when Shooting Aura",
+    "alias": null
+  },
+  "WNMH1ZiQXSz-": {
+    "name": "Spell Conduit",
+    "alias": null
+  },
+  "GgPKQ4tKFRIC": {
+    "name": "Unwieldy",
+    "alias": null
+  },
+  "ZqYITWnZUc45": {
+    "name": "Enhanced Havocbound",
+    "alias": "mJiexOF2tUvD"
+  },
+  "Zi1Zgge5ptMw": {
+    "name": "Enhanced Havocbound Aura",
+    "alias": null
+  },
+  "mJiexOF2tUvD": {
+    "name": "Enhanced Piercing Warrior",
+    "alias": null
+  },
+  "wjTOj41tskFD": {
+    "name": "Havocbound",
+    "alias": "5grD2FDFdNSn"
+  },
+  "5grD2FDFdNSn": {
+    "name": "Piercing Warrior",
+    "alias": null
+  },
+  "gnpURIvLqjw9": {
+    "name": "Devout",
+    "alias": "MEAjk171GPmF"
+  },
+  "w7sENXkksVpG": {
+    "name": "Enhanced Devout",
+    "alias": "Nbo5DTQufMoB"
+  },
+  "j1_UP3V8iBI_": {
+    "name": "Enhanced Devout Aura",
+    "alias": null
+  },
+  "Q9DOQswzCth8": {
+    "name": "Fast Aura",
+    "alias": null
+  },
+  "IyLY1212wacW": {
+    "name": "Fortified",
+    "alias": null
+  },
+  "B-9jnnFp54f9": {
+    "name": "Fortified Aura",
+    "alias": null
+  },
+  "BSztwuL4jI1R": {
+    "name": "Increased Shooting Range",
+    "alias": null
+  },
+  "QWzGAg9RpE2D": {
+    "name": "Increased Shooting Range Aura",
+    "alias": null
+  },
+  "dlk9Q7howUDr": {
+    "name": "Piercing Marksman",
+    "alias": null
+  },
+  "1m7a9ADI-D_g": {
+    "name": "Piercing Marksman Aura",
+    "alias": null
+  },
+  "O_ZtH22AAORQ": {
+    "name": "Precision Target",
+    "alias": null
+  },
+  "VRSD2Brj6vAZ": {
+    "name": "Bane Mark",
+    "alias": null
+  },
+  "W2-YAUebkXqF": {
+    "name": "Enhanced Psychotic",
+    "alias": "ql-dzbuQgTT4"
+  },
+  "9GgsgTE6NcOg": {
+    "name": "Enhanced Psychotic Aura",
+    "alias": null
+  },
+  "SqhSkyNcexeN": {
+    "name": "Psychotic",
+    "alias": "aiYEmCuDPUcM"
+  },
+  "1qiGNqpxKb24": {
+    "name": "Puncture",
+    "alias": null
+  },
+  "F_1wfmpAyYwT": {
+    "name": "Self-Destruct",
+    "alias": null
+  },
+  "Aw2kbPkBywee": {
+    "name": "Counter in Melee Aura",
+    "alias": null
+  },
+  "8Ai6vFN7Ut6E": {
+    "name": "Enhanced Agile",
+    "alias": null
+  },
+  "1PSCVoS08kVx": {
+    "name": "Enhanced Lustbound",
+    "alias": "8Ai6vFN7Ut6E"
+  },
+  "o7GHhVCO4LB1": {
+    "name": "Enhanced Lustbound Aura",
+    "alias": null
+  },
+  "yis0utoPMclv": {
+    "name": "Lustbound",
+    "alias": "kQVze0GRY3R9"
+  },
+  "7F4391rzKx2g": {
+    "name": "Obliterate",
+    "alias": null
+  },
+  "ykPufsAeq8Kw": {
+    "name": "Quick Shot",
+    "alias": null
+  },
+  "ZHykLbU6nUWl": {
+    "name": "Spawn",
+    "alias": null
+  },
+  "xeJDKejG4QZN": {
+    "name": "Disintegrate",
+    "alias": null
+  },
+  "-eXDDTCrrQ6n": {
+    "name": "Dodge",
+    "alias": null
+  },
+  "1BZ5wsWUjYCd": {
+    "name": "Enhanced Scrapper",
+    "alias": "kFdn5NTc4iCO"
+  },
+  "sJXpQUJFLbVh": {
+    "name": "Enhanced Scrapper Aura",
+    "alias": null
+  },
+  "kFdn5NTc4iCO": {
+    "name": "Enhanced Vicious",
+    "alias": null
+  },
+  "a6Ze2uaBlNHX": {
+    "name": "Mind Control",
+    "alias": null
+  },
+  "B5RGOPajK6Lr": {
+    "name": "Precision Fighter Aura",
+    "alias": null
+  },
+  "L_61KYvup31T": {
+    "name": "Precision Tag",
+    "alias": null
+  },
+  "tidpe1mTXb9W": {
+    "name": "Scrapper",
+    "alias": "Lqk7bzR6k3xe"
+  },
+  "Lqk7bzR6k3xe": {
+    "name": "Vicious",
+    "alias": null
+  },
+  "jdxaM66DHbMQ": {
+    "name": "Destructive",
+    "alias": null
+  },
+  "UBOoMTJY8qfD": {
+    "name": "Enhanced Guarded",
+    "alias": null
+  },
+  "-aKAI5i_wXbf": {
+    "name": "Enhanced Safety Gear",
+    "alias": "UBOoMTJY8qfD"
+  },
+  "h7dMwwRg46QD": {
+    "name": "Enhanced Safety Gear Aura",
+    "alias": null
+  },
+  "zTfg9msVpfJ0": {
+    "name": "Guarded",
+    "alias": null
+  },
+  "nFo2BlBRhMcH": {
+    "name": "Morale Debuff",
+    "alias": null
+  },
+  "p3ql9lJcL-vw": {
+    "name": "Precision Frenzy",
+    "alias": null
+  },
+  "2naIlnOv22Ls": {
+    "name": "Safety Gear",
+    "alias": "zTfg9msVpfJ0"
+  },
+  "mxQ1fCGgPccn": {
+    "name": "Berserker",
+    "alias": "MEAjk171GPmF"
+  },
+  "2W8l0OXSjju6": {
+    "name": "Enhanced Berserker",
+    "alias": "Nbo5DTQufMoB"
+  },
+  "D-XBYhhRyp_N": {
+    "name": "Enhanced Berserker Aura",
+    "alias": null
+  },
+  "r0MEI7V18zNs": {
+    "name": "Instinctive",
+    "alias": null
+  },
+  "fOIa9S1t0q7S": {
+    "name": "Melee Evasion Aura",
+    "alias": null
+  },
+  "n3CNLjq67GHI": {
+    "name": "Piercing Fighting Mark",
+    "alias": null
+  },
+  "lJx5NP1KA3KU": {
+    "name": "Quick",
+    "alias": null
+  },
+  "a9j1Pje6TLBi": {
+    "name": "Quick Shot Aura",
+    "alias": null
+  },
+  "7QCXafSRhLAS": {
+    "name": "Enhanced Primal",
+    "alias": "ql-dzbuQgTT4"
+  },
+  "0B7GlGWBl7FF": {
+    "name": "Enhanced Primal Buff",
+    "alias": null
+  },
+  "bjt7_iCtmOK7": {
+    "name": "Good Shot",
+    "alias": null
+  },
+  "zVconc6Qb-g9": {
+    "name": "Heavy Impact",
+    "alias": null
+  },
+  "PBP94ujaST4y": {
+    "name": "Primal",
+    "alias": "aiYEmCuDPUcM"
+  },
+  "1cykqbg4xn6o": {
+    "name": "Rapid Charge Aura",
+    "alias": null
+  },
+  "SKzm-kqi1h2Q": {
+    "name": "Delayed Action",
+    "alias": null
+  },
+  "Pa5Mr2ioVZIf": {
+    "name": "Enhanced Runner",
+    "alias": "8Ai6vFN7Ut6E"
+  },
+  "Tmfov9Aj0X2h": {
+    "name": "Enhanced Runner Aura",
+    "alias": null
+  },
+  "UlIf59PuvI53": {
+    "name": "Rapid Charge",
+    "alias": null
+  },
+  "8uW_NrYuSWW0": {
+    "name": "Rapid Charge Mark",
+    "alias": null
+  },
+  "Ywz0UdkamH-k": {
+    "name": "Runner",
+    "alias": "kQVze0GRY3R9"
+  },
+  "haWppj0rUxS8": {
+    "name": "Badlands Hunter",
+    "alias": "WHJ8A7LzHUR6"
+  },
+  "jQ4CmTsoXEnt": {
+    "name": "Defense Debuff",
+    "alias": null
+  },
+  "8UUSt1RIIyEa": {
+    "name": "Enhanced Badlands Hunter",
+    "alias": "5NeMSSj7-Pp5"
+  },
+  "LhOp-HCop4GL": {
+    "name": "Enhanced Badlands Hunter Aura",
+    "alias": null
+  },
+  "C5t3oLnEpNtX": {
+    "name": "Vengeance",
+    "alias": null
+  },
+  "x0gFQEwammM_": {
+    "name": "Battle-Hardened",
+    "alias": "LbpquFUyGSZ7"
+  },
+  "LbpquFUyGSZ7": {
+    "name": "Valiant",
+    "alias": null
+  },
+  "N0JRcI01vSBT": {
+    "name": "Deathstrike",
+    "alias": null
+  },
+  "pXs3r4mbwgGj": {
+    "name": "Decimate",
+    "alias": null
+  },
+  "JQmfgK02rJLK": {
+    "name": "Enhanced Infected",
+    "alias": "5NeMSSj7-Pp5"
+  },
+  "FPA1mew5j78v": {
+    "name": "Enhanced Infected Aura",
+    "alias": null
+  },
+  "jgyVEAzjbDDh": {
+    "name": "Infected",
+    "alias": "WHJ8A7LzHUR6"
+  },
+  "W3hSISDGStUH": {
+    "name": "Precision Growth",
+    "alias": null
+  },
+  "38s_V6mXkYX-": {
+    "name": "Thrust in Melee Aura",
+    "alias": null
+  },
+  "X4RKFj6JEjzm": {
+    "name": "Enhanced Nimble",
+    "alias": null
+  },
+  "MmLijhHpEF37": {
+    "name": "Enhanced Wolfborn",
+    "alias": "X4RKFj6JEjzm"
+  },
+  "qlZWvJpEDLeD": {
+    "name": "Enhanced Wolfborn Aura",
+    "alias": null
+  },
+  "D7SpkY7mQLAe": {
+    "name": "Nimble",
+    "alias": null
+  },
+  "vfW0pVMUrKQr": {
+    "name": "Wolfborn",
+    "alias": "D7SpkY7mQLAe"
+  },
+  "noS8F0WwHtHA": {
+    "name": "Dash",
+    "alias": null
+  },
+  "JKjtSSAto56J": {
+    "name": "Dash Aura",
+    "alias": null
+  },
+  "YfecqBW3YoNG": {
+    "name": "Enhanced Fortified",
+    "alias": null
+  },
+  "7-nw0-TRmYAv": {
+    "name": "Enhanced Guardian",
+    "alias": "YfecqBW3YoNG"
+  },
+  "pxBAv9DNteCA": {
+    "name": "Enhanced Guardian Aura",
+    "alias": null
+  },
+  "D7ChSWl5R2We": {
+    "name": "Guardian",
+    "alias": "IyLY1212wacW"
+  },
+  "HMiVg3VVLQv3": {
+    "name": "Piercing Target",
+    "alias": null
+  },
+  "d1E7eizUnPoz": {
+    "name": "Anti-Cover when Shooting",
+    "alias": null
+  },
+  "HJtyt929ob_Q": {
+    "name": "Anti-Cover when Shooting Aura",
+    "alias": null
+  },
+  "rMKm6JKLIxgn": {
+    "name": "Enhanced Sturdy",
+    "alias": "UBOoMTJY8qfD"
+  },
+  "BOSZqK98Ncka": {
+    "name": "Enhanced Sturdy Aura",
+    "alias": null
+  },
+  "E5F5-E62wIqI": {
+    "name": "Infiltrate Aura",
+    "alias": null
+  },
+  "gD2_znglqhNw": {
+    "name": "Sturdy",
+    "alias": "zTfg9msVpfJ0"
+  },
+  "amQphBHWOeJs": {
+    "name": "Swift Aura",
+    "alias": null
+  },
+  "Bd9ny4MxTiHn": {
+    "name": "Enhanced Plaguebound",
+    "alias": "2Cxml82Ma_3Y"
+  },
+  "U9p9FtWR84GU": {
+    "name": "Enhanced Plaguebound Aura",
+    "alias": null
+  },
+  "hGd-1A2fPuyh": {
+    "name": "Fortified Growth",
+    "alias": null
+  },
+  "O_wrvW7FiJWX": {
+    "name": "Plaguebound",
+    "alias": "AlIZbh-afBYi"
+  },
+  "kwB4FVytZQXE": {
+    "name": "Precision Attacks Buff",
+    "alias": null
+  },
+  "NrzX1LhdJpGR": {
+    "name": "Ravage Aura",
+    "alias": null
+  },
+  "5_4ZsH9_q-tE": {
+    "name": "Screened Aura",
+    "alias": null
+  },
+  "QjUvdTBYv0Nd": {
+    "name": "Darkborn",
+    "alias": "YMQxz2ssYCBj"
+  },
+  "yaEXlHySt7no": {
+    "name": "Enhanced Darkborn",
+    "alias": "2hXA8X1Xlrmc"
+  },
+  "wC-cYJcNqGqv": {
+    "name": "Enhanced Darkborn Aura",
+    "alias": null
+  },
+  "2hXA8X1Xlrmc": {
+    "name": "Enhanced Shrouded",
+    "alias": null
+  },
+  "0Za4ptEWX5hx": {
+    "name": "Rapid Ambush",
+    "alias": null
+  },
+  "YMQxz2ssYCBj": {
+    "name": "Shrouded",
+    "alias": null
+  },
+  "o2l7F3ugQNly": {
+    "name": "Enhanced Scurry",
+    "alias": "8Ai6vFN7Ut6E"
+  },
+  "QhQL5YYoO3jJ": {
+    "name": "Enhanced Scurry Aura",
+    "alias": null
+  },
+  "OOowoGdbpTCn": {
+    "name": "Evasive Aura",
+    "alias": null
+  },
+  "gVRt_wk8DktW": {
+    "name": "Hazardous",
+    "alias": null
+  },
+  "ovMK8gJ26T0s": {
+    "name": "Precision Shooter Aura",
+    "alias": null
+  },
+  "UlH7N0knz4eN": {
+    "name": "Predator Shooter",
+    "alias": null
+  },
+  "zlKV_VK3wONR": {
+    "name": "Predator Shooter Aura",
+    "alias": null
+  },
+  "x7chGZmjk8Os": {
+    "name": "Quick Throw",
+    "alias": null
+  },
+  "e0u4Znq4Z82Q": {
+    "name": "Reinforcement",
+    "alias": null
+  },
+  "NEYp25CGvZl3": {
+    "name": "Scurry",
+    "alias": "kQVze0GRY3R9"
+  },
+  "rH1nxpq0qLmE": {
+    "name": "Takedown Shot",
+    "alias": null
+  },
+  "i8mWlZpqtiNO": {
+    "name": "Defensive Growth",
+    "alias": null
+  },
+  "IJvzf5jxvuP8": {
+    "name": "Defensive Growth Aura",
+    "alias": null
+  },
+  "sGmLaPbLpSvT": {
+    "name": "Inquisitorial Agent",
+    "alias": "FZLk0-3ci6jI"
+  },
+  "FZLk0-3ci6jI": {
+    "name": "Martial Prowess",
+    "alias": null
+  },
+  "oQeo-g4E0-SK": {
+    "name": "Spell Drain",
+    "alias": null
+  },
+  "99DXMN96LnI8": {
+    "name": "Surprise Attack",
+    "alias": null
+  },
+  "MK_o4HpuB-pL": {
+    "name": "Dangerous Terrain Debuff",
+    "alias": null
+  },
+  "pUt7fqbSTNWP": {
+    "name": "Enhanced Mischievous",
+    "alias": "kFdn5NTc4iCO"
+  },
+  "sQQhss7F6nCs": {
+    "name": "Enhanced Mischievous Aura",
+    "alias": null
+  },
+  "rblJ2IkYaFon": {
+    "name": "Mischievous",
+    "alias": "Lqk7bzR6k3xe"
+  },
+  "YidAUK2jOH-4": {
+    "name": "Brute Courage",
+    "alias": "j93FkLXMCk8v"
+  },
+  "arJNSXC8F_Oa": {
+    "name": "Unwieldy Debuff",
+    "alias": null
+  },
+  "kpuEyaul7J3Z": {
+    "name": "Ambush Re-Deployment",
+    "alias": null
+  },
+  "fMa1N3Y3t1uj": {
+    "name": "Enhanced Rapid Blink",
+    "alias": "X4RKFj6JEjzm"
+  },
+  "zDNFCyPhKKOf": {
+    "name": "Enhanced Rapid Blink Aura",
+    "alias": null
+  },
+  "LGezlmOLMTfl": {
+    "name": "Infiltrating Precision Strike",
+    "alias": null
+  },
+  "UJ6frPcu1X9m": {
+    "name": "Rapid Blink",
+    "alias": "D7SpkY7mQLAe"
+  },
+  "27DHOeVHMwrj": {
+    "name": "Slayer",
+    "alias": null
+  },
+  "DkFg1ochRDYR": {
+    "name": "Enhanced Shadow Operative",
+    "alias": "2hXA8X1Xlrmc"
+  },
+  "DXab0T1mtWak": {
+    "name": "Enhanced Shadow Operative Aura",
+    "alias": null
+  },
+  "1elLRhGK7ETb": {
+    "name": "Precision Debuff",
+    "alias": null
+  },
+  "xgtq7JJUEwfA": {
+    "name": "Shadow Operative",
+    "alias": "YMQxz2ssYCBj"
+  },
+  "CrwJ8yvfjSc6": {
+    "name": "Primeborn",
+    "alias": "IyLY1212wacW"
+  },
+  "n8vjv0oBZDAL": {
+    "name": "Defensive Frenzy",
+    "alias": null
+  },
+  "GOPD6AVdvbFf": {
+    "name": "Piercing Shooter Aura",
+    "alias": null
+  },
+  "UrbEF2kpIjYH": {
+    "name": "Enhanced Harassing",
+    "alias": "M8KFBuLeTrck"
+  },
+  "RUS7R0SwaBUj": {
+    "name": "Enhanced Harassing Aura",
+    "alias": null
+  },
+  "M8KFBuLeTrck": {
+    "name": "Enhanced Hit & Run",
+    "alias": null
+  },
+  "2xUH_d7T_Zfv": {
+    "name": "Harassing",
+    "alias": "ozCLWcof36wD"
+  },
+  "R6Y4QHBq6wxZ": {
+    "name": "Piercing Frenzy",
+    "alias": null
+  },
+  "s5A-Pvdby0wT": {
+    "name": "Cyber-Eyes",
+    "alias": "lwWYwB3HRTPi"
+  },
+  "zNOav_FqYQie": {
+    "name": "Enhanced Cyber-Eyes",
+    "alias": "ySpZadCu08yk"
+  },
+  "z3oY0tV1Ado8": {
+    "name": "Enhanced Cyber-Eyes Aura",
+    "alias": null
+  },
+  "ySpZadCu08yk": {
+    "name": "Enhanced Precision Marksman",
+    "alias": null
+  },
+  "SzljHEX27s-v": {
+    "name": "Increased Shooting Range Mark",
+    "alias": null
+  },
+  "lwWYwB3HRTPi": {
+    "name": "Precision Marksman",
+    "alias": null
+  },
+  "fB2hm0la8zl1": {
+    "name": "Ranged Slayer",
+    "alias": null
+  },
+  "sScPMcGqrk5Q": {
+    "name": "Ranged Slayer Aura",
+    "alias": null
+  },
+  "Y37_ydVGvRqL": {
+    "name": "Rapid Advance Aura",
+    "alias": null
+  },
+  "asZsQqR_73or": {
+    "name": "Enhanced Versatile Warrior",
+    "alias": null
+  },
+  "rIgfEKIxk1CA": {
+    "name": "Enhanced Watchborn",
+    "alias": "asZsQqR_73or"
+  },
+  "QteJvh1g5fgV": {
+    "name": "Enhanced Watchborn Aura",
+    "alias": null
+  },
+  "iZkU-vhbjhbb": {
+    "name": "Watchborn",
+    "alias": "9Te72f48wJyw"
+  },
+  "5L4WYDhAN6bU": {
+    "name": "Grounded Defense",
+    "alias": null
+  },
+  "KT62C0Y4SbKS": {
+    "name": "Grounded Defense Aura",
+    "alias": null
+  },
+  "ZjmJUR3enJGu": {
+    "name": "Grounded Precision",
+    "alias": null
+  },
+  "E-2e-rVm1WAz": {
+    "name": "Grounded Precision Aura",
+    "alias": null
+  },
+  "KTetx0KIX3i-": {
+    "name": "Slayer Mark",
+    "alias": null
+  },
+  "58bWJyFqRsC3": {
+    "name": "Union Assault",
+    "alias": "r8OBuam8nRXP"
+  },
+  "jyVvnNyAKS-8": {
+    "name": "Ballistic Vest",
+    "alias": "IyLY1212wacW"
+  },
+  "7YG0M5UVIx2Y": {
+    "name": "Enhanced Ballistic Vest",
+    "alias": "YfecqBW3YoNG"
+  },
+  "r-B_Hmp8ksSB": {
+    "name": "Enhanced Ballistic Vest Aura",
+    "alias": null
+  },
+  "4ya_HznrredO": {
+    "name": "Flying Aura",
+    "alias": null
+  },
+  "VrsRCvbVMmNX": {
+    "name": "Surge Mark",
+    "alias": null
+  },
+  "rJSSHbaRMID4": {
+    "name": "Ambush Beacon",
+    "alias": null
+  },
+  "4NiNnvh-brLp": {
+    "name": "Anti-Cover Aura",
+    "alias": null
+  },
+  "nNh98rpX_sZv": {
+    "name": "Casting Buff",
+    "alias": null
+  },
+  "21dbpSjSDeOY": {
+    "name": "Clan Warrior",
+    "alias": "aiYEmCuDPUcM"
+  },
+  "TYEJ10EP0Xq9": {
+    "name": "Enhanced Clan Warrior",
+    "alias": "ql-dzbuQgTT4"
+  },
+  "WdkGC1Q6_nHY": {
+    "name": "Enhanced Clan Warrior Aura",
+    "alias": null
+  },
+  "Dpclj8rsDSRd": {
+    "name": "Precision Fighter",
+    "alias": null
+  },
+  "rUzMGpacephz": {
+    "name": "Enhanced Knightborn",
+    "alias": "Anx9Iim2k-Ws"
+  },
+  "wnEVftbtVtw5": {
+    "name": "Enhanced Knightborn Aura",
+    "alias": null
+  },
+  "Anx9Iim2k-Ws": {
+    "name": "Enhanced Warding",
+    "alias": null
+  },
+  "Lz_ncVgCX5R8": {
+    "name": "Knightborn",
+    "alias": "zu6H7MyN3f8U"
+  },
+  "zu6H7MyN3f8U": {
+    "name": "Warding",
+    "alias": null
+  },
+  "kiXI7plPE_mK": {
+    "name": "Enhanced Hive Bond",
+    "alias": "TbjUdR-OJZPw"
+  },
+  "Yt2R4sh8SXM0": {
+    "name": "Enhanced Hive Bond Aura",
+    "alias": null
+  },
+  "TbjUdR-OJZPw": {
+    "name": "Enhanced Valiant",
+    "alias": null
+  },
+  "RHkw66BqDjUp": {
+    "name": "Fragment",
+    "alias": null
+  },
+  "cgCroTrOmiv-": {
+    "name": "Hive Bond",
+    "alias": "LbpquFUyGSZ7"
+  },
+  "s4lagBUlnsUE": {
+    "name": "Piercing Growth",
+    "alias": null
+  },
+  "3sXTViTVdDhn": {
+    "name": "Predator Aura",
+    "alias": null
+  },
+  "iWuTcXAw2-5s": {
+    "name": "Bane in Melee Buff",
+    "alias": null
+  },
+  "FPlO2MymiMc0": {
+    "name": "Coordinate",
+    "alias": null
+  },
+  "4NMqPbqMvE4C": {
+    "name": "Enhanced Hold the Line",
+    "alias": "TbjUdR-OJZPw"
+  },
+  "ozw_t3SA8IDu": {
+    "name": "Enhanced Hold the Line Aura",
+    "alias": null
+  },
+  "wHfLIdlnEQ1a": {
+    "name": "Entrenched",
+    "alias": null
+  },
+  "55Si47u6jTtb": {
+    "name": "Entrenched Buff",
+    "alias": null
+  },
+  "eU6uz90H82Sw": {
+    "name": "Extended Buff Range",
+    "alias": null
+  },
+  "Sdcb8VAeTxji": {
+    "name": "Hold the Line",
+    "alias": "LbpquFUyGSZ7"
+  },
+  "MfDT3coYRS45": {
+    "name": "No Retreat Buff",
+    "alias": null
+  },
+  "FDI5sLTtr3gC": {
+    "name": "Precision Shooter Buff",
+    "alias": null
+  },
+  "xs0-u9qrV0xt": {
+    "name": "Rapid Advance Buff",
+    "alias": null
+  },
+  "dXr70idM6Vjk": {
+    "name": "Enhanced Targeting Visor",
+    "alias": "ySpZadCu08yk"
+  },
+  "R4q13TqqwTPC": {
+    "name": "Enhanced Targeting Visor Aura",
+    "alias": null
+  },
+  "lOJdfdPgbhdT": {
+    "name": "Precision Spotter",
+    "alias": null
+  },
+  "hjaNnUHsY3f5": {
+    "name": "Targeting Visor",
+    "alias": "lwWYwB3HRTPi"
+  },
+  "a1ewN99UxVcB": {
+    "name": "Counter in Melee Buff",
+    "alias": null
+  },
+  "ZGxUXLWSGkCv": {
+    "name": "Enhanced Shadowborn",
+    "alias": "2hXA8X1Xlrmc"
+  },
+  "3oGVnDhS1udb": {
+    "name": "Enhanced Shadowborn Aura",
+    "alias": null
+  },
+  "s97hkNZ91jnd": {
+    "name": "Enhanced Shadowborn Buff",
+    "alias": null
+  },
+  "kS5WWHuH6qVe": {
+    "name": "Increased Shooting Range Buff",
+    "alias": null
+  },
+  "XWsun1sjt2ql": {
+    "name": "Rapid Rush Buff",
+    "alias": null
+  },
+  "df-9jrAw7ytM": {
+    "name": "Shadowborn",
+    "alias": "YMQxz2ssYCBj"
+  },
+  "j_GcHkWDO1HP": {
+    "name": "Thrust in Melee",
+    "alias": null
+  },
+  "trV7P42DyQGH": {
+    "name": "Thrust in Melee Buff",
+    "alias": null
+  },
+  "gzKDP8xc6MCQ": {
+    "name": "Fanatic",
+    "alias": "r8OBuam8nRXP"
+  },
+  "OzqjA_sxgVd5": {
+    "name": "Melee Slayer Aura",
+    "alias": null
+  }
+}

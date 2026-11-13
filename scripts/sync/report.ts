@@ -1,24 +1,62 @@
+import { RULE_MAPPINGS } from '../../src/lib/rules/mapping.ts'
+import { aliasLookup, resolveRule } from '../../src/lib/rules/resolve.ts'
 import type { ArmyBook, BookRule, CoreRules, SyncManifest } from '../../src/types/army-book.ts'
-import { CORE_SOURCE, looksStatChanging, type ManifestDiff, type RuleChange } from './manifest.ts'
+import type { RuleIndex } from '../../src/types/rules.ts'
+import { CORE_SOURCE, hashText, looksStatChanging, type ManifestDiff, type RuleChange } from './manifest.ts'
 
 export interface ReportInput {
   core: CoreRules
   books: ArmyBook[]
   manifest: SyncManifest
-  diff: ManifestDiff
-  firstSync: boolean
+  /** Null when there's nothing to compare against, e.g. an offline rebuild or the first sync. */
+  diff: ManifestDiff | null
 }
 
-export function formatReport({ core, books, manifest, diff, firstSync }: ReportInput): string {
+export function buildRuleIndex(core: CoreRules, books: ArmyBook[]): RuleIndex {
+  const index: RuleIndex = {}
+  for (const rule of [...core.rules, ...books.flatMap((b) => b.rules)]) {
+    index[rule.id] ??= { name: rule.name, alias: rule.aliasedRuleId }
+  }
+  return index
+}
+
+export interface MappingStatus {
+  /** Mapped by name, but this text hasn't been reviewed. */
+  needsReview: BookRule[]
+  /** Not reachable through a mapping, alias or wrapper, and the text mentions attack numbers. */
+  unmappedStat: BookRule[]
+  unmappedOther: BookRule[]
+  direct: number
+  indirect: number
+}
+
+export function mappingStatus(rules: BookRule[], index: RuleIndex): MappingStatus {
+  const context = { mappings: RULE_MAPPINGS, aliasOf: aliasLookup(index) }
+  const status: MappingStatus = { needsReview: [], unmappedStat: [], unmappedOther: [], direct: 0, indirect: 0 }
+  for (const rule of rules) {
+    const direct = RULE_MAPPINGS.get(rule.name)
+    if (direct) {
+      status.direct++
+      if (!direct.reviewed.includes(hashText(rule.description))) status.needsReview.push(rule)
+      continue
+    }
+    if (resolveRule(rule.name, null, context).kind !== 'unmapped') status.indirect++
+    else if (looksStatChanging(rule)) status.unmappedStat.push(rule)
+    else status.unmappedOther.push(rule)
+  }
+  return status
+}
+
+export function formatReport({ core, books, manifest, diff }: ReportInput): string {
   const bookName = (uid: string) => (uid === CORE_SOURCE ? 'Core' : (manifest.books[uid]?.name ?? uid))
   const sources = (r: RuleChange) => r.sources.map(bookName).join(', ')
+  const sourcesOf = (rule: BookRule) => manifest.rules[rule.id]?.sources.map(bookName).join(', ') ?? ''
 
   const rules = new Map<string, BookRule>()
   core.rules.forEach((r) => rules.set(r.id, r))
   books.forEach((b) => b.rules.forEach((r) => rules.has(r.id) || rules.set(r.id, r)))
-  const all = [...rules.values()]
-  const aliased = all.filter((r) => r.aliasedRuleId)
-  const statLike = all.filter((r) => !r.aliasedRuleId && looksStatChanging(r))
+  const all = [...rules.values()].sort((a, b) => a.name.localeCompare(b.name))
+  const status = mappingStatus(all, buildRuleIndex(core, books))
 
   const lines: string[] = [
     '# Army Forge sync report',
@@ -27,29 +65,42 @@ export function formatReport({ core, books, manifest, diff, firstSync }: ReportI
     '',
     `- Books: ${books.length}`,
     `- Core rules: ${core.rules.length}`,
-    `- Unique rules: ${all.length} (${aliased.length} aliased)`,
+    `- Unique rules: ${all.length}`,
     `- Spells: ${books.reduce((n, b) => n + b.spells.length, 0)}`,
-    `- Rules that look stat-changing (excluding aliases): ${statLike.length}`,
+    `- Mapped by name: ${status.direct}`,
+    `- Mapped through an alias or wrapper: ${status.indirect}`,
+    `- Unmapped, look stat-changing: ${status.unmappedStat.length}`,
+    `- Unmapped, look text-only: ${status.unmappedOther.length}`,
     '',
   ]
+  const section = (title: string, items: string[]) => {
+    lines.push(`## ${title} (${items.length})`, '')
+    lines.push(...(items.length ? items.map((i) => `- ${i}`) : ['None.']), '')
+  }
 
-  if (firstSync) {
-    lines.push('First sync: no previous manifest to compare against.', '')
-  } else {
-    const section = (title: string, items: string[]) => {
-      lines.push(`## ${title} (${items.length})`, '')
-      lines.push(...(items.length ? items.map((i) => `- ${i}`) : ['None.']), '')
-    }
+  section(
+    'Mapped rules with unreviewed text',
+    status.needsReview.map((r) => `**${r.name}** \`${hashText(r.description)}\` (${sourcesOf(r)}): ${r.description}`),
+  )
+
+  if (diff) {
     section('New books', diff.newBooks.map(bookName))
     section('Removed books', diff.removedBooks)
     section('Updated books', diff.updatedBooks.map((b) => `${bookName(b.uid)}: ${b.from} → ${b.to}`))
     section('New rules', diff.newRules.map((r) => `${r.name} (${sources(r)})`))
     section(
-      'Changed rule text — review mappings',
+      'Changed rule text',
       diff.changedRules.map((r) => `${r.name} (${sources(r)}): ${rules.get(r.id)?.description ?? ''}`),
     )
     section('Removed rules', diff.removedRules.map((r) => `${r.name} (${sources(r)})`))
+  } else {
+    lines.push('No previous manifest to compare against.', '')
   }
+
+  section(
+    'Unmapped rules that look stat-changing',
+    status.unmappedStat.map((r) => `**${r.name}** (${sourcesOf(r)}): ${r.description}`),
+  )
 
   return lines.join('\n')
 }

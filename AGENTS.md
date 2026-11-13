@@ -33,8 +33,10 @@ change without notice:
 
 - `core-rules.json`, `books/{uid}.json` — trimmed to rules and spells.
 - `manifest.json` — book versions and a hash of every rule description.
-- `sync-report.md` — what changed since the last sync. Review "Changed rule text" entries against
-  the rule mapping before trusting them.
+- `rule-index.json` — rule id to name and alias, used to resolve aliases.
+- `sync-report.md` — mapped rules with unreviewed text, what changed since the last sync, and
+  unmapped rules that look stat-changing. `mapping.test.ts` fails when a core rule's text
+  changes or a reviewed hash no longer matches any text.
 
 Rule ids are global across books (one id per rule name), so mappings key on id.
 
@@ -60,6 +62,34 @@ src/
     ListSlot.tsx       # import by link or export file, list preview
     UnitSummary.tsx    # one unit's stats, weapons and rules
 ```
+
+### Rules engine
+
+All game logic lives in `src/lib/rules`, with no UI imports. Files there use `.ts` import
+extensions because the sync script imports them under Node.
+
+- `types/rules.ts` — `RuleMapping` = one or more `RulePart`s, each held by the attacker or the
+  defender, with conditions (mode, situation toggles, target Defense range) and effects. Effects
+  are from the attack's point of view: Stealth is a negative `hitModifier` on the defender side.
+- `mapping.ts` — every reviewed rule, keyed by **name** (the same rule has different ids in
+  different books). Rules that change no numbers are `textOnly`, so they count as reviewed.
+  `reviewed` holds hashes (`hash.ts`, FNV-1a) of the texts the mapping was checked against.
+- `resolve.ts` — mapping by name, then the declared alias (`rule-index.json`), then wrappers:
+  `X in Melee` / `X when Shooting` add a mode, `X Aura` applies X to its holder, and
+  `X Buff` / `Debuff` / `Mark` do nothing for the holder (they're given to other units).
+- `engine.ts` — `resolveAttack(input)` returns the final roll numbers, a report of every rule's
+  status, and expected hits and wounds. A rule counts once per side however many sources give it.
+  `enhances` makes an Enhanced rule replace its base rule. A mapped rule whose text in the list
+  hasn't been reviewed is reported as `unreviewed` and kept out of the maths.
+
+Adding a rule: add it to `mapping.ts` with the hash from `sync-report.md`, and a test in
+`engine.test.ts` if it introduces a new effect or condition.
+
+Hazards:
+- Bane, Rending and Unstoppable ignore **Regeneration** only. Self-Repair and Protected are
+  different rules and still apply.
+- Fatigued melee hits only on unmodified 6s, and those 6s trigger no special rules.
+- Blast is capped at the models in the target using the full hit distribution, not the mean.
 
 ### List import
 
@@ -91,3 +121,5 @@ src/
 - `npm run build` — type-check and production build
 - `npm test` — run tests once
 - `npm run sync` — refresh `src/data` from Army Forge (56 requests, 0.5s apart)
+- `npm run sync -- --offline` — rebuild the index, manifest and report from `src/data`, e.g.
+  after changing `mapping.ts`

@@ -1,11 +1,9 @@
-import { createHash } from 'node:crypto'
+import { hashText } from '../../src/lib/rules/hash.ts'
 import type { ArmyBook, BookRule, CoreRules, SyncManifest } from '../../src/types/army-book.ts'
 
-export const CORE_SOURCE = 'core'
+export { hashText }
 
-export function hashText(text: string): string {
-  return createHash('sha256').update(text).digest('hex').slice(0, 12)
-}
+export const CORE_SOURCE = 'core'
 
 export function buildManifest(core: CoreRules, books: ArmyBook[], syncedAt: string): SyncManifest {
   const manifest: SyncManifest = { gameSystem: core.gameSystem, syncedAt, books: {}, rules: {} }
