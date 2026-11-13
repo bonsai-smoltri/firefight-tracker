@@ -5,6 +5,7 @@ import type {
   LogEntry,
   PendingMorale,
   Player,
+  SpellCast,
   UnitKey,
   UnitState,
 } from '../types/battle'
@@ -100,7 +101,7 @@ export function startActivation(state: BattleState, key: UnitKey, action: Activa
   const moved = action === 'advance' || action === 'rush' || action === 'charge'
   return {
     ...update(state, key, { moved: unit.moved || moved }),
-    activation: { unit: key, action, woundsTaken: {}, melee: null },
+    activation: { unit: key, action, woundsTaken: {}, melee: null, spellsTried: [], attacked: false },
     log: log(state, { type: 'activation', round: state.round, unit: key, action }),
   }
 }
@@ -134,6 +135,7 @@ export function recordAttack(state: BattleState, attack: AttackRecord): BattleSt
       ...next,
       activation: {
         ...activation,
+        attacked: activation.attacked || (activation.unit === attack.attacker && !attack.strikeBack),
         woundsTaken: { ...activation.woundsTaken, [attack.target]: (activation.woundsTaken[attack.target] ?? 0) + wounds },
         melee: isCharge
           ? (activation.melee ?? { charger: attack.attacker, target: attack.target, struckBack: false })
@@ -234,9 +236,59 @@ function finishActivation(state: BattleState): BattleState {
   return { ...next, finishedFirst, turn }
 }
 
+/** Net casting modifier: friendly helpers add, enemy ones subtract, plus Spell Amplifier on the caster. */
+export function castingModifier(state: BattleState, cast: Pick<SpellCast, 'caster' | 'helpers'>, amplified: boolean): number {
+  const player = state.units[cast.caster].player
+  const help = Object.entries(cast.helpers).reduce(
+    (total, [key, tokens]) => total + (state.units[key]?.player === player ? tokens : -tokens),
+    0,
+  )
+  return help + (amplified ? 1 : 0)
+}
+
+/** Casts succeed on 4+ after modifiers; 6s always succeed and 1s always fail. */
+export const castSucceeds = (face: number, modifier: number) => face === 6 || (face !== 1 && face + modifier >= 4)
+
+/** Why a caster can't try this spell now, or null if it can. */
+export function castBlocked(state: BattleState, caster: UnitKey, spell: string, cost: number): string | null {
+  const activation = state.activation
+  const unit = state.units[caster]
+  if (!activation || activation.unit !== caster) return 'Only during this unit’s activation'
+  if (activation.action === 'idle') return 'Shaken units stay idle'
+  if (activation.attacked) return 'Spells are cast before attacking'
+  if (activation.spellsTried?.includes(spell)) return 'Already tried this activation'
+  if (unit.spellTokens < cost) return `Needs ${cost} token${cost === 1 ? '' : 's'}`
+  return null
+}
+
+export function castSpell(state: BattleState, cast: SpellCast, amplified = false): BattleState {
+  if (castBlocked(state, cast.caster, cast.spell, cast.cost)) return state
+  let next = update(state, cast.caster, { spellTokens: state.units[cast.caster].spellTokens - cast.cost })
+  for (const [key, tokens] of Object.entries(cast.helpers)) {
+    const helper = next.units[key]
+    if (helper && tokens > 0) next = update(next, key, { spellTokens: Math.max(0, helper.spellTokens - tokens) })
+  }
+  const activation = next.activation!
+  return {
+    ...next,
+    activation: { ...activation, spellsTried: [...(activation.spellsTried ?? []), cast.spell] },
+    log: log(next, {
+      type: 'spell',
+      round: state.round,
+      caster: cast.caster,
+      spell: cast.spell,
+      cost: cast.cost,
+      modifier: castingModifier(state, cast, amplified),
+      succeeded: cast.succeeded,
+    }),
+  }
+}
+
 export function cancelActivation(state: BattleState): BattleState {
   // Only before anything was recorded, so there is nothing to undo.
-  if (!state.activation || Object.keys(state.activation.woundsTaken).length > 0) return state
+  if (!state.activation || Object.keys(state.activation.woundsTaken).length > 0 || state.activation.spellsTried?.length) {
+    return state
+  }
   return { ...state, activation: null, log: state.log.slice(0, -1) }
 }
 

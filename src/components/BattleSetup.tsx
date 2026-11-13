@@ -12,6 +12,10 @@ interface Props {
 
 const MAX_AURA_RECIPIENTS = 2
 
+/** Rules that cover their own unit plus up to two picked units, named Aura or not. */
+const AURA_LIKE = ['Musician', 'Banner']
+const isAura = (name: string) => name.endsWith(' Aura') || AURA_LIKE.includes(name)
+
 export function BattleSetup({ lists, onStart, onCancel }: Props) {
   const [firstPlayer, setFirstPlayer] = useState<Player>('A')
   const [objectiveCount, setObjectiveCount] = useState(4)
@@ -19,7 +23,7 @@ export function BattleSetup({ lists, onStart, onCancel }: Props) {
     PLAYERS.flatMap((player) =>
       lists[player].units.flatMap((u) =>
         u.rules
-          .filter((r) => r.name.endsWith(' Aura'))
+          .filter((r) => isAura(r.name))
           .map((r) => ({ holder: unitKey(player, u.id), rule: r.name, rating: r.rating, recipients: [unitKey(player, u.id)] })),
       ),
     ),
@@ -77,9 +81,9 @@ export function BattleSetup({ lists, onStart, onCancel }: Props) {
       {auras.length > 0 && (
         <section class="card bg-base-200">
           <div class="card-body p-4 gap-3">
-            <h2 class="font-semibold">Auras</h2>
+            <h2 class="font-semibold">Auras, Banners and Musicians</h2>
             <p class="text-xs opacity-70">
-              Each Aura covers its own unit plus up to {MAX_AURA_RECIPIENTS} friendly units picked now.
+              Each one covers its own unit plus up to {MAX_AURA_RECIPIENTS} friendly units picked now.
             </p>
             {auras.map((aura, index) => {
               const player = aura.holder.split(':')[0] as Player

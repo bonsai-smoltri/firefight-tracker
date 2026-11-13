@@ -26,17 +26,23 @@ export function AttackReadout({ attack, targetModels, targetTough }: Props) {
 
   return (
     <div class="flex flex-col gap-1.5 font-mono text-sm" aria-label="Attack summary">
-      <Line main={plural(attack.dice, 'attack')} />
-      <Line
-        main={attack.onlySixes ? 'Hit on 6s only' : `Hit on ${attack.hitOn}+`}
-        extra={[attack.onlySixes ? 'Fatigued, 6s trigger no rules' : null, ...hitExtras].filter(Boolean).join(', ')}
-      />
-      {attack.blast > 1 && <Line main={`Blast: hits ×${attack.blast}`} extra={`max ${plural(targetModels, 'hit')}`} />}
-      {attack.parry > 0 && <Line main={`Parry: ${attack.parry} per model`} extra="each 6 ignores a hit" />}
-      <Line
-        main={`Block on ${attack.blockOn}+`}
-        extra={[`Defense ${attack.defense}+${attack.ap ? `, AP ${attack.ap}` : ''}`, ...blockExtras].join(', ')}
-      />
+      <Line main={plural(attack.dice, attack.autoWound ? 'die' : 'attack').replace(/dies$/, 'dice')} />
+      {attack.autoWound ? (
+        <Line main={`Wound on ${attack.hitOn}+`} extra="no Defense roll" />
+      ) : (
+        <>
+          <Line
+            main={attack.onlySixes ? 'Hit on 6s only' : `Hit on ${attack.hitOn}+`}
+            extra={[attack.onlySixes ? 'Fatigued, 6s trigger no rules' : null, ...hitExtras].filter(Boolean).join(', ')}
+          />
+          {attack.blast > 1 && <Line main={`Blast: hits ×${attack.blast}`} extra={`max ${plural(targetModels, 'hit')}`} />}
+          {attack.parry > 0 && <Line main={`Parry: ${attack.parry} per model`} extra="each 6 ignores a hit" />}
+          <Line
+            main={`Block on ${attack.blockOn}+`}
+            extra={[`Defense ${attack.defense}+${attack.ap ? `, AP ${attack.ap}` : ''}`, ...blockExtras].join(', ')}
+          />
+        </>
+      )}
       {deadly > 1 && <Line main={`Each wound ×${deadly}`} extra={`Deadly(${attack.woundMultiplier})`} />}
       {attack.ignoreWoundsOn !== null && <Line main={`Ignore wounds on ${attack.ignoreWoundsOn}+`} />}
       <div class="border-t border-base-content/10 pt-2 mt-1 flex items-baseline justify-between">

@@ -73,6 +73,8 @@ src/
     HistoryList.tsx    # past battles on the home screen
   lib/
     battle.ts          # battle state transitions
+    movement.ts        # move distances and terrain notes from movement rules
+    rules/special.ts   # attacks made by unit rules (Impact, Ravage, Takedown)
 ```
 
 Screens are switched by a `view` state in `app.tsx`; there is no router: home, calculator, battle
@@ -98,6 +100,21 @@ All battle rules live in `lib/battle.ts` as pure `BattleState -> BattleState` fu
 - Auras are assigned at setup (`AuraAssignment`) and reach the engine through `grantedByAuras`
   while the holder is on the table. Buffs and Marks are per-attack toggles on the attack screen
   (`grantOptions`). Debuffs aren't offered, because their base rule reads the opposite way.
+- Musician and Banner are picked at setup like Auras (`AURA_LIKE` in `BattleSetup.tsx`), since they
+  also cover their unit plus two others.
+- The battle screen shows one army at a time in tabs that follow the turn. Activation controls sit
+  in the active unit's card, and finished units show the action they took (`lastAction`). The log
+  is its own page, opened from the ☰ menu.
+- Movement (`lib/movement.ts`) turns movement rules (Slow, Fast, Swift, Agile and reskins, Rapid
+  Advance/Rush/Charge, Musician, Aircraft, Immobile, Quick Shot) into the distances shown on the
+  action buttons, plus terrain notes (Flying, Strider, the 6" Difficult terrain cap). Movement
+  Buffs and Marks are toggled in the unit card before choosing an action.
+- Spells: Casters get a Cast spell button in their activation card (`CastPanel.tsx`). Spells load
+  per army book on demand (`lib/spells.ts`; each book is its own chunk, all precached for
+  offline). `castSpell` enforces one try per spell, casting before attacking and token costs.
+  Other casters' tokens add +1 (friendly) or -1 (enemy) each. A cast succeeds on 4+, with 6s
+  always passing and 1s always failing. Spell effects are shown as text only.
+- Firefight has no joined Heroes (that's Grimdark Future), so `joinedTo` is parsed but unused.
 - `archiveBattle` in `app.tsx` is the only place a battle leaves the active slot. Changing a list
   ends the battle, since it refers to the lists' units. The attack screen only
 shows situation toggles that some rule in play cares about (`attackControls`), plus Cover for
@@ -126,8 +143,16 @@ extensions because the sync script imports them under Node.
 
 Adding a rule: add it to `mapping.ts` with the hash from `sync-report.md`, and a test in
 `engine.test.ts` if it introduces a new effect or condition. Every Firefight rule is currently
-mapped (stat or text-only) except Precision Debuff, so anything new in the report has just
-appeared in a sync.
+mapped (stat or text-only), so anything new in the report has just appeared in a sync.
+
+Rules that make their own attack (Impact, Heavy Impact, Ravage, Takedown Shot/Strike) are turned
+into extra entries in the weapon list by `special.ts`. Impact and Ravage set `special.fixedRoll`:
+their dice aren't hit rolls, so the unit's rules and hit modifiers are skipped. Ravage also sets
+`autoWound`, so there is no Defense roll.
+
+Debuffs are mapped directly with `armyWide` + `onEnemy`, because a wrapper's base rule reads the
+wrong way round. On the attack screen, `grantOptions` offers each unit its own army's Buffs and
+Marks plus the other army's Debuffs, filtered to effects that change that side of the attack.
 
 Mapping shapes beyond a plain part:
 - `atRange(side, effects)` covers "shooting/charging from over 9"/6" away" as two parts.

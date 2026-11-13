@@ -140,7 +140,7 @@ const MAPPINGS: RuleMapping[] = [
   textOnly('Flying', ['c77360ae']),
   textOnly('Hero', ['4ec43b22']),
   textOnly('Immobile', ['29746877']),
-  textOnly('Impact', ['ed8a2309'], 'Separate attack, not part of this weapon'),
+  textOnly('Impact', ['ed8a2309'], 'Listed as its own attack'),
   textOnly('Indirect', ['6f2a11e1'], 'Ignores cover from sight blockers only: turn Cover off if that is the only cover'),
   textOnly('Limited', ['c029c210']),
   textOnly('Musician', ['d9cf9f6d']),
@@ -497,6 +497,22 @@ const MAPPINGS: RuleMapping[] = [
     parts: choice('defender', { '1 token': { defenseModifier: 1 }, '2 tokens': { defenseModifier: 2 } }),
   },
 
+  // Debuffs: the holder's army puts these on enemy units.
+  {
+    name: 'Defense Debuff',
+    reviewed: ['12c41792'],
+    armyWide: true,
+    onEnemy: true,
+    parts: [defender({ defenseModifier: -1 })],
+  },
+  {
+    name: 'Precision Debuff',
+    reviewed: ['152a2afd'],
+    armyWide: true,
+    onEnemy: true,
+    parts: [attacker({ hitModifier: -1 })],
+  },
+
   // Markers on enemy units that any friendly unit can use.
   { name: 'Precision Target', reviewed: ['93f2af24'], armyWide: true, parts: [attacker({ hitModifier: 1 })] },
   { name: 'Piercing Target', reviewed: ['34355952'], armyWide: true, parts: [attacker({ ap: 1 })] },
@@ -526,10 +542,10 @@ const MAPPINGS: RuleMapping[] = [
 
   // Separate attacks and non-attack effects.
   textOnly('Crossing Strike', ['b0281fbb'], 'Separate attack when moving through enemies'),
-  textOnly('Heavy Impact', ['e5fdd6c3'], 'Separate attack, like Impact'),
+  textOnly('Heavy Impact', ['e5fdd6c3'], 'Listed as its own attack'),
   textOnly('Surprise Attack', ['05562925'], 'Separate attack on first activation'),
-  textOnly('Takedown Shot', ['ca0c733e'], 'Separate once-per-game attack'),
-  textOnly('Takedown Strike', ['797635c1'], 'Separate once-per-game attack'),
+  textOnly('Takedown Shot', ['ca0c733e'], 'Listed as its own attack'),
+  textOnly('Takedown Strike', ['797635c1'], 'Listed as its own attack'),
   textOnly('Retaliate', ['0342b33a'], 'The attacker takes hits back per wound'),
   textOnly('Scourge', ['9e9b5a7c'], 'Affects melee results and morale, not wounds'),
 
@@ -624,7 +640,7 @@ const MAPPINGS: RuleMapping[] = [
   textOnly('Infiltrate', ['7d6c3ced']),
   textOnly('No Retreat', ['cbd9c360']),
   textOnly('Rapid Advance', ['2916d00c']),
-  textOnly('Ravage', ['98cd7188'], 'Separate attack, not part of this weapon'),
+  textOnly('Ravage', ['98cd7188'], 'Listed as its own attack'),
   textOnly('Reanimation', ['900e67d4']),
   textOnly('Repel Ambushers', ['9d3951a5']),
   textOnly('Swift', ['6f43ff1b']),

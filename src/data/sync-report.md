@@ -6,9 +6,9 @@ Synced 2026-11-13T01:02:03.677Z. Game system 3.
 - Core rules: 39
 - Unique rules: 415
 - Spells: 324
-- Mapped by name: 230
-- Mapped through an alias or wrapper: 184
-- Unmapped, look stat-changing: 1
+- Mapped by name: 232
+- Mapped through an alias or wrapper: 183
+- Unmapped, look stat-changing: 0
 - Unmapped, look text-only: 0
 
 ## Mapped rules with unreviewed text (1)
@@ -17,7 +17,7 @@ Synced 2026-11-13T01:02:03.677Z. Game system 3.
 
 No previous manifest to compare against.
 
-## Unmapped rules that look stat-changing (1)
+## Unmapped rules that look stat-changing (0)
 
-- **Precision Debuff** (Shadow Leagues, Alien Hives): Once per activation, before attacking, pick up to 3 enemy units within 18" in line of sight, which gets -1 to hit rolls when attacking once (next time the effect would apply).
+None.
 

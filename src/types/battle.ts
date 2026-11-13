@@ -47,6 +47,19 @@ export interface Activation {
   woundsTaken: Record<UnitKey, number>
   /** Set by a Charge: the melee this activation resolves. */
   melee: { charger: UnitKey; target: UnitKey; struckBack: boolean } | null
+  /** Spells tried this activation, as only one try per spell is allowed. Missing in older saves. */
+  spellsTried?: string[]
+  /** The unit has attacked, so it can no longer cast ("before attacking"). Missing in older saves. */
+  attacked?: boolean
+}
+
+export interface SpellCast {
+  caster: UnitKey
+  spell: string
+  cost: number
+  /** Tokens other casters spend to help (friendly, +1 each) or hinder (enemy, -1 each). */
+  helpers: Record<UnitKey, number>
+  succeeded: boolean
 }
 
 export type MoraleReason = 'wounds' | 'melee'
@@ -74,6 +87,7 @@ export type LogEntry =
   | { type: 'wounds'; round: number; unit: UnitKey; from: number; to: number }
   | { type: 'morale'; round: number; unit: UnitKey; reason: MoraleReason; result: 'passed' | 'shaken' | 'routed' }
   | { type: 'round'; round: number; objectives: (Player | null)[] }
+  | { type: 'spell'; round: number; caster: UnitKey; spell: string; cost: number; modifier: number; succeeded: boolean }
 
 export interface BattleState {
   id: string

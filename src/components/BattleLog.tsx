@@ -13,6 +13,10 @@ export function describeEntry(state: BattleState, entry: LogEntry): string {
       return `${name(entry.unit)} wounds set ${entry.from} → ${entry.to}`
     case 'morale':
       return `${name(entry.unit)} ${entry.reason === 'melee' ? 'lost the melee' : 'morale test'}: ${entry.result}`
+    case 'spell': {
+      const mod = entry.modifier === 0 ? '' : `, ${entry.modifier > 0 ? '+' : ''}${entry.modifier} to cast`
+      return `${name(entry.caster)} casts ${entry.spell} (${entry.cost} token${entry.cost === 1 ? '' : 's'}${mod}): ${entry.succeeded ? 'succeeded' : 'failed'}`
+    }
     case 'round': {
       const held = (p: 'A' | 'B') => entry.objectives.filter((o) => o === p).length
       return `End of round ${entry.round}: ${state.listNames.A} ${held('A')}, ${state.listNames.B} ${held('B')} objectives`

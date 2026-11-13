@@ -62,7 +62,12 @@ export function rollAttack(attack: ResolvedAttack, target: TargetInfo, roll: Rol
   const first = rollHits(attack.dice, true)
   let normal = first.normal
   let six = first.six
-  steps.push({ label: `Hit on ${attack.hitOn}+`, dice: first.dice, result: plural(first.dice.filter((d) => d.success).length, 'hit') })
+  const word = attack.autoWound ? 'wound' : 'hit'
+  steps.push({
+    label: `${attack.autoWound ? 'Wound' : 'Hit'} on ${attack.hitOn}+`,
+    dice: first.dice,
+    result: plural(first.dice.filter((d) => d.success).length, word),
+  })
   if (first.spawned > 0) {
     const extra = rollHits(first.spawned, false)
     normal += extra.normal
@@ -126,11 +131,13 @@ export function rollAttack(attack: ResolvedAttack, target: TargetInfo, roll: Rol
     }
     return dice
   }
-  if (normal > 0) {
+  if (attack.autoWound) {
+    unblocked = hits
+  } else if (normal > 0) {
     const dice = block(normal, attack.blockOn)
     steps.push({ label: `Block on ${attack.blockOn}+`, dice, result: `${plural(dice.filter((d) => !d.success).length, 'hit')} through` })
   }
-  if (six > 0 && attack.blockOnSix !== null) {
+  if (!attack.autoWound && six > 0 && attack.blockOnSix !== null) {
     const dice = block(six, attack.blockOnSix)
     steps.push({ label: `Block 6s on ${attack.blockOnSix}+`, dice, result: `${plural(dice.filter((d) => !d.success).length, 'hit')} through` })
   }

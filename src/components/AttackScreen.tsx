@@ -4,6 +4,7 @@ import { atHalfOrLess, grantedByAuras, isOut, modelsLeft, unitKey, type AttackRe
 import { rollAttack, type AttackRoll } from '../lib/rules/dice'
 import { attackControls, resolveAttack, weaponModes, type ResolvedAttack } from '../lib/rules/engine'
 import { defaultContext, grantOptions, type GrantOption } from '../lib/rules/resolve'
+import { specialAttacks } from '../lib/rules/special'
 import type { Side } from '../lib/storage'
 import type { BattleState, UnitKey } from '../types/battle'
 import type { ParsedList, ParsedUnit, RuleRef } from '../types/list'
@@ -90,7 +91,15 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
   const attackerState = battle?.state.units[attackerKey]
   const targetState = battle?.state.units[targetKey]
 
-  const weapon = attacker.weapons[weaponIndex] ?? attacker.weapons[0]
+  const weapons = useMemo(
+    () => [
+      ...attacker.weapons,
+      // Impact only happens when charging, so it's never part of a strike back.
+      ...specialAttacks(attacker).filter((w) => !(battle?.strikeBack && w.special?.fixedRoll === 2)),
+    ],
+    [attacker, battle?.strikeBack],
+  )
+  const weapon = weapons[weaponIndex] ?? weapons[0]
   const modes = weapon ? weaponModes(weapon) : []
   const mode = modeChoice && modes.includes(modeChoice) ? modeChoice : modes[0]
   const ruleTexts = useMemo(() => ({ ...lists.A.rules, ...lists.B.rules }), [lists])
@@ -101,13 +110,17 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
   const scaledCopies = weapon ? Math.max(1, Math.round((weapon.count * attackerLeft) / attacker.size)) : 0
   const copies = weaponCount ?? scaledCopies
 
-  const grantChoices = useMemo(
-    () => ({
-      attacker: grantOptions(attackerList.units.flatMap((u) => u.rules), context),
-      target: grantOptions(targetList.units.flatMap((u) => u.rules), context).filter((g) => g.scope === 'buff'),
-    }),
-    [attackerList, targetList],
-  )
+  const grantChoices = useMemo(() => {
+    const own = grantOptions(attackerList.units.flatMap((u) => u.rules), context)
+    const theirs = grantOptions(targetList.units.flatMap((u) => u.rules), context)
+    // Friendly effects come from the unit's own army, Debuffs from the other one.
+    const pick = (options: GrantOption[], onEnemy: boolean, side: GrantOption['sides'][number]) =>
+      options.filter((o) => o.onEnemy === onEnemy && o.sides.includes(side))
+    return {
+      attacker: [...pick(own, false, 'attacker'), ...pick(theirs, true, 'attacker')],
+      target: [...pick(theirs, false, 'defender'), ...pick(own, true, 'defender')],
+    }
+  }, [attackerList, targetList])
   const granted = useMemo(() => {
     const pick = (options: GrantOption[], key: string): RuleRef[] =>
       options.filter((o) => grants.includes(`${key}:${o.label}`)).map((o) => o.rule)
@@ -246,11 +259,11 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
           />
         </div>
 
-        {attacker.weapons.length === 0 ? (
+        {weapons.length === 0 ? (
           <p class="text-sm opacity-70">{unitName(attacker)} has no weapons.</p>
         ) : (
           <div class="flex flex-col gap-1" role="radiogroup" aria-label="Weapon">
-            {attacker.weapons.map((w, i) => (
+            {weapons.map((w, i) => (
               <button
                 key={`${w.label}-${i}`}
                 type="button"
@@ -264,8 +277,13 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
                   clearResult()
                 }}
               >
-                {w.count > 1 && `${w.count}× `}
-                {w.label}
+                <span class="flex flex-col items-start">
+                  <span>
+                    {w.count > 1 && `${w.count}× `}
+                    {w.label}
+                  </span>
+                  {w.special && <span class="text-xs opacity-70">{w.special.when}</span>}
+                </span>
               </button>
             ))}
           </div>
@@ -319,7 +337,7 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
         {(grantChoices.attacker.length > 0 || grantChoices.target.length > 0) && (
           <details class="collapse collapse-arrow bg-base-200">
             <summary class="collapse-title min-h-11 text-sm font-medium">
-              Buffs and Marks{grants.length > 0 && <span class="font-normal opacity-70"> · {grants.length} on</span>}
+              Buffs, Marks and Debuffs{grants.length > 0 && <span class="font-normal opacity-70"> · {grants.length} on</span>}
             </summary>
             <div class="collapse-content flex flex-col gap-2">
               <GrantToggles title={`On ${unitName(attacker)}`} options={grantChoices.attacker} prefix="attacker" grants={grants} onToggle={toggleGrant} />

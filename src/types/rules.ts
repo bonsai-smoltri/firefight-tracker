@@ -139,6 +139,8 @@ export interface RuleMapping {
    * The holder gets nothing by itself; it's offered as a toggle for the whole army.
    */
   armyWide?: boolean
+  /** An army-wide effect put on an enemy unit (Debuffs), so it's toggled on the other army's units. */
+  onEnemy?: boolean
   /**
    * Set when no rule of this name exists, only wrappers around it (Piercing Fighter Aura). Lists
    * those wrappers; `reviewed` then holds their text hashes.

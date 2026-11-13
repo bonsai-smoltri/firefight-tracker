@@ -4,6 +4,10 @@ import type { ParsedList } from '../types/list'
 import {
   atHalfOrLess,
   cancelActivation,
+  castBlocked,
+  castingModifier,
+  castSpell,
+  castSucceeds,
   createBattle,
   endActivation,
   endRound,
@@ -197,7 +201,59 @@ describe('rounds', () => {
   })
 })
 
+describe('spells', () => {
+  const casters = {
+    A: list('Robots', unit({ id: 'lord', caster: 2 }), unit({ id: 'adept', caster: 1 })),
+    B: list('Korps', unit({ id: 'witch', caster: 2 })),
+  }
+  const begin = () =>
+    startActivation(createBattle({ lists: casters, firstPlayer: 'A', objectiveCount: 3, auras: [], now: 1 }), 'A:lord', 'hold')
+  const cast = (state: BattleState, overrides: Partial<Parameters<typeof castSpell>[1]> = {}) =>
+    castSpell(state, { caster: 'A:lord', spell: 'Gauss Bots', cost: 1, helpers: {}, succeeded: true, ...overrides })
+
+  it('spends tokens, records the try and logs the result', () => {
+    const state = cast(begin(), { succeeded: false })
+    expect(state.units['A:lord'].spellTokens).toBe(1)
+    expect(state.activation?.spellsTried).toEqual(['Gauss Bots'])
+    expect(state.log.at(-1)).toMatchObject({ type: 'spell', spell: 'Gauss Bots', cost: 1, succeeded: false })
+  })
+
+  it('allows one try per spell, only before attacking and with enough tokens', () => {
+    const state = cast(begin())
+    expect(castBlocked(state, 'A:lord', 'Gauss Bots', 1)).toMatch(/Already tried/)
+    expect(castBlocked(state, 'A:lord', 'Flame Bots', 2)).toMatch(/Needs 2 tokens/)
+    const attacked = shoot(begin(), 'A:lord', 'B:witch', 0)
+    expect(castBlocked(attacked, 'A:lord', 'Gauss Bots', 1)).toMatch(/before attacking/)
+    expect(castBlocked(begin(), 'A:adept', 'Gauss Bots', 1)).toMatch(/this unit’s activation/)
+  })
+
+  it('takes helper tokens and nets friendly against enemy help', () => {
+    const helpers = { 'A:adept': 1, 'B:witch': 2 }
+    const state = cast(begin(), { helpers })
+    expect(state.units['A:adept'].spellTokens).toBe(0)
+    expect(state.units['B:witch'].spellTokens).toBe(0)
+    expect(castingModifier(begin(), { caster: 'A:lord', helpers }, true)).toBe(0)
+    expect(state.log.at(-1)).toMatchObject({ modifier: -1 })
+  })
+
+  it('succeeds on 4+ after modifiers, with 6 always passing and 1 always failing', () => {
+    expect(castSucceeds(3, 1)).toBe(true)
+    expect(castSucceeds(3, 0)).toBe(false)
+    expect(castSucceeds(6, -3)).toBe(true)
+    expect(castSucceeds(1, 5)).toBe(false)
+  })
+
+  it('cannot cancel an activation once a spell was tried', () => {
+    expect(cancelActivation(cast(begin())).activation).not.toBeNull()
+  })
+})
+
 describe('auras', () => {
+  it('passes rules without an Aura suffix through as named, e.g. Musician', () => {
+    const auras = [{ holder: 'A:lord', rule: 'Musician', rating: null, recipients: ['A:lord', 'A:squad'] }]
+    expect(grantedByAuras(start({ auras }), 'A:squad').map((r) => r.name)).toEqual(['Musician'])
+  })
+
   it('gives the base rule to picked units while the holder is alive', () => {
     const auras = [{ holder: 'A:lord', rule: 'Stealth Aura', rating: null, recipients: ['A:squad'] }]
     const state = start({ auras })

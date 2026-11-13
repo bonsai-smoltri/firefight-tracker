@@ -67,6 +67,8 @@ export interface ResolvedAttack {
   woundMultiplier: number
   ignoreWoundsOn: number | null
   parry: number
+  /** Each success is a wound with no Defense roll (Ravage). */
+  autoWound: boolean
   rules: RuleReport[]
   estimate: { hits: number; wounds: number }
 }
@@ -161,7 +163,7 @@ function collect(
       continue
     }
     if (mapping.armyWide && !granted) {
-      if (ownSide) report('grant', resolvedAs, 'Toggle it under Buffs and Marks when attacking a marked unit')
+      if (ownSide) report('grant', resolvedAs, 'Toggle it under Buffs, Marks and Debuffs on the affected unit')
       continue
     }
     const parts = mapping.parts.filter((p) => p.side === side)
@@ -217,9 +219,12 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
   const { attacker, weapon, target, mode, situation, context } = input
   const reports: RuleReport[] = []
 
+  // Impact and Ravage dice aren't hit rolls, so the unit's rules and hit modifiers don't touch them.
+  const fixedRoll = weapon.special?.fixedRoll ?? null
+  const autoWound = weapon.special?.autoWound === true
   const attackerRules = [
-    ...resolveAll(attacker.rules, 'attacker', context),
-    ...resolveAll(input.granted?.attacker ?? [], 'attacker', context, true),
+    ...(fixedRoll === null ? resolveAll(attacker.rules, 'attacker', context) : []),
+    ...(fixedRoll === null ? resolveAll(input.granted?.attacker ?? [], 'attacker', context, true) : []),
     ...resolveAll(weapon.rules, 'weapon', context),
   ]
   const targetRules = [
@@ -243,8 +248,8 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
   const defenderHitModifier = sum(def, (e) => e.hitModifier)
   const hitModifier =
     sum(att, (e) => e.hitModifier) + (ignoresNegative ? Math.max(0, defenderHitModifier) : defenderHitModifier)
-  const onlySixes = mode === 'melee' && situation.attackerFatigued
-  const hitOn = onlySixes ? 6 : clampRoll(quality - hitModifier)
+  const onlySixes = fixedRoll === null && mode === 'melee' && situation.attackerFatigued
+  const hitOn = fixedRoll ?? (onlySixes ? 6 : clampRoll(quality - hitModifier))
 
   const apReduction = ignoresNegative ? 0 : sum(def, (e) => e.apReduction)
   const ap = Math.max(0, sum(att, (e) => e.ap) - apReduction)
@@ -280,7 +285,8 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
     extraWoundsOnOne: sum(att, (e) => e.extraWoundsOnOne),
     woundMultiplier: Math.max(1, ...values(att, (e) => e.woundMultiplier)),
     ignoreWoundsOn,
-    parry: mode === 'melee' ? sum(def, (e) => e.parry) : 0,
+    parry: mode === 'melee' && !autoWound ? sum(def, (e) => e.parry) : 0,
+    autoWound,
     rules: reports,
   }
   return { ...resolved, estimate: estimate(resolved, target, input.targetModels ?? target.size) }
@@ -298,6 +304,7 @@ export function defenseFaces(blockOn: number, rerollFrom: number | null): number
 }
 
 function woundsPerHit(blockOn: number, attack: Omit<ResolvedAttack, 'estimate'>): number {
+  if (attack.autoWound) return 1
   const faces = defenseFaces(blockOn, attack.rerollDefenseFrom)
   const blocked = faces.reduce((total, p, face) => (face >= blockOn ? total + p : total), 0)
   return 1 - blocked + faces[1] * attack.extraWoundsOnOne

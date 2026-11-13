@@ -108,12 +108,18 @@ export interface GrantOption {
   scope: Exclude<GrantScope, 'aura'>
   /** The rule the receiving unit gets, e.g. Stealth. */
   rule: { id: string; name: string; rating: number | null; label: string }
+  /** Given to an enemy unit (Debuffs) rather than a friendly one. */
+  onEnemy: boolean
+  /** Sides of an attack the rule changes numbers for; empty when it changes none. */
+  sides: ('attacker' | 'defender')[]
 }
 
+const sidesOf = (mapping: RuleMapping) => [...new Set(mapping.parts.map((p) => p.side))]
+
 /**
- * Buffs, Marks and army-wide target markers an army can hand out, deduplicated by rule. Debuffs are left out: their base
- * rule usually reads the opposite way (Defense Debuff is -1 Defense), so applying the base rule
- * would get the sign wrong.
+ * Buffs, Marks, Debuffs and army-wide target markers an army can hand out, deduplicated by rule.
+ * Debuffs only count when mapped directly: a wrapper's base rule usually reads the opposite way
+ * (Defense Debuff is -1 Defense), so applying the base rule would get the sign wrong.
  */
 export function grantOptions(
   refs: { name: string; rating: number | null; label: string }[],
@@ -124,13 +130,25 @@ export function grantOptions(
     const resolved = resolveRule(ref.name, ref.rating, context, ref.label)
     if (options.has(ref.name)) continue
     if (resolved.kind === 'mapped' && resolved.mapping.armyWide) {
-      // Marks on the enemy that any friendly unit cashes in, e.g. Precision Target.
-      options.set(ref.name, { label: ref.name, scope: 'mark', rule: { id: '', name: ref.name, rating: ref.rating, label: ref.name } })
+      const { mapping } = resolved
+      options.set(ref.name, {
+        label: ref.name,
+        scope: mapping.onEnemy ? 'debuff' : 'mark',
+        rule: { id: '', name: ref.name, rating: ref.rating, label: ref.name },
+        onEnemy: mapping.onEnemy === true,
+        sides: sidesOf(mapping),
+      })
       continue
     }
     if (resolved.kind !== 'grant' || resolved.scope === 'debuff') continue
     const name = ref.name.replace(/ (Buff|Mark)$/, '')
-    options.set(ref.name, { label: ref.name, scope: resolved.scope, rule: { id: '', name, rating: ref.rating, label: ref.name } })
+    options.set(ref.name, {
+      label: ref.name,
+      scope: resolved.scope,
+      rule: { id: '', name, rating: ref.rating, label: ref.name },
+      onEnemy: false,
+      sides: resolved.base.kind === 'mapped' ? sidesOf(resolved.base.mapping) : [],
+    })
   }
   return [...options.values()]
 }

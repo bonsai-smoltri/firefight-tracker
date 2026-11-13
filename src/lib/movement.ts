@@ -1,6 +1,6 @@
 import type { ActivationAction } from '../types/battle'
 import type { RuleRef } from '../types/list'
-import type { ResolveContext } from './rules/resolve'
+import { grantOptions, type GrantOption, type ResolveContext } from './rules/resolve'
 
 export const BASE_MOVE: Record<ActivationAction, number> = { hold: 0, advance: 6, rush: 12, charge: 12, idle: 0 }
 
@@ -87,4 +87,9 @@ export function movement(rules: RuleRef[], context: ResolveContext): Movement {
     charge: Math.max(0, BASE_MOVE.charge + total.charge),
   }
   return { moves, blocked, canShootAfterRush: names.has('Quick Shot'), notes, sources }
+}
+
+/** Buffs and Marks an army can give that change move distances, e.g. Rapid Advance Buff. */
+export function movementGrants(refs: RuleRef[], context: ResolveContext): GrantOption[] {
+  return grantOptions(refs, context).filter((o) => !o.onEnemy && BONUSES[baseName(o.rule.name, context)])
 }

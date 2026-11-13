@@ -16,6 +16,22 @@ export interface ParsedWeapon {
   /** Total copies across the unit, so attacks are multiplied by this, not by model count. */
   count: number
   rules: RuleRef[]
+  /** Set for attacks made by a unit rule rather than a weapon, e.g. Impact. */
+  special?: SpecialAttack
+}
+
+export interface SpecialAttack {
+  /** Rule that makes the attack, e.g. Impact. */
+  rule: string
+  /** When it can be used, shown with the attack. */
+  when: string
+  /**
+   * Unmodified roll each die needs. Set for rolls that aren't hit rolls (Impact, Ravage), which
+   * ignore hit modifiers and the unit's own rules.
+   */
+  fixedRoll?: number
+  /** Each success is a wound with no Defense roll (Ravage). */
+  autoWound?: boolean
 }
 
 export interface ParsedUnit {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { movement } from './movement'
+import { movement, movementGrants } from './movement'
 import { rule, testContext } from './rules/fixtures'
 
 const move = (...labels: string[]) => movement(labels.map(rule), {
@@ -48,6 +48,12 @@ describe('movement', () => {
     const aircraft = move('Aircraft')
     expect(aircraft.blocked).toEqual(['hold', 'rush', 'charge'])
     expect(aircraft.moves.advance).toBe(36)
+  })
+
+  it('offers the army’s movement Buffs and Marks only', () => {
+    const refs = ['Rapid Advance Buff', 'Rapid Charge Mark', 'Stealth Buff', 'Defense Debuff'].map(rule)
+    expect(movementGrants(refs, testContext).map((o) => o.rule.name)).toEqual(['Rapid Advance', 'Rapid Charge'])
+    expect(move('Rapid Advance').moves.advance).toBe(10)
   })
 
   it('notes Quick Shot', () => {

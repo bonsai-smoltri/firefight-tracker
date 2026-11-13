@@ -5,6 +5,7 @@ import {
   MAX_SPELL_TOKENS,
   PLAYERS,
   cancelActivation,
+  castSpell,
   endActivation,
   endRound,
   grantedByAuras,
@@ -20,11 +21,12 @@ import {
   winner,
 } from '../lib/battle'
 import type { ActivationAction, BattleState, Player, UnitKey, UnitState } from '../types/battle'
-import type { ParsedList } from '../types/list'
+import type { ParsedList, RuleRef } from '../types/list'
 import ruleIndex from '../data/rule-index.json'
-import { movement, type Movement } from '../lib/movement'
-import { defaultContext } from '../lib/rules/resolve'
+import { movement, movementGrants, type Movement } from '../lib/movement'
+import { defaultContext, type GrantOption } from '../lib/rules/resolve'
 import type { RuleIndex } from '../types/rules'
+import { CastPanel } from './CastPanel'
 import { MoraleDialog } from './MoraleDialog'
 import { Stepper } from './Stepper'
 
@@ -74,6 +76,8 @@ const DONE_LABEL: Record<ActivationAction, string> = {
 
 export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShowLog, onFinish, onAbandon }: Props) {
   const [choosing, setChoosing] = useState<UnitKey | null>(null)
+  const [casting, setCasting] = useState(false)
+  useEffect(() => setCasting(false), [state.activation?.unit])
   const activation = state.activation
   const activeUnit = activation ? state.units[activation.unit] : null
   const morale = state.pendingMorale[0]
@@ -83,8 +87,12 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShow
   useEffect(() => setTab(state.turn), [state.turn, state.round])
 
   const parsedUnit = (u: UnitState) => lists[u.player].units.find((x) => x.id === u.unitId)
-  const moraleReminders = (u: UnitState) =>
-    (parsedUnit(u)?.rules ?? []).filter((r) => /Morale/i.test(lists[u.player].rules[r.id]?.description ?? ''))
+  const moraleReminders = (u: UnitState) => {
+    const texts = Object.values(lists[u.player].rules)
+    const text = (r: RuleRef) => lists[u.player].rules[r.id]?.description ?? texts.find((t) => t.name === r.name)?.description ?? ''
+    // Granted rules (e.g. a Banner) carry no id, so their text is found by name.
+    return [...(parsedUnit(u)?.rules ?? []), ...grantedByAuras(state, u.key)].filter((r) => /Morale/i.test(text(r)))
+  }
 
   const activate = (key: UnitKey, action: ActivationAction) => {
     setChoosing(null)
@@ -166,7 +174,8 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShow
                 <UnitRow
                   key={u.key}
                   unit={u}
-                  move={movement([...(parsedUnit(u)?.rules ?? []), ...grantedByAuras(state, u.key)], context)}
+                  rules={[...(parsedUnit(u)?.rules ?? []), ...grantedByAuras(state, u.key)]}
+                  boostOptions={movementGrants(lists[u.player].units.flatMap((x) => x.rules), context)}
                   canActivate={!activation && !u.activated && !isOut(u) && !state.complete}
                   isActive={activation?.unit === u.key}
                   choosing={choosing === u.key}
@@ -179,7 +188,30 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShow
                   {activation && activeUnit?.key === u.key && (
                       <div class="flex flex-col gap-2" aria-label="Current activation">
                         <p class="text-sm opacity-70">{ACTIONS.find((a) => a.action === activation.action)?.label ?? 'Idle'}</p>
+                        {casting && activeUnit.caster !== null && (
+                          <CastPanel
+                            state={state}
+                            caster={activeUnit.key}
+                            armyId={parsedUnit(activeUnit)?.armyId ?? ''}
+                            amplified={(parsedUnit(activeUnit)?.rules ?? []).some((r) => r.name === 'Spell Amplifier')}
+                            onCast={(cast) =>
+                              onChange(
+                                castSpell(
+                                  state,
+                                  cast,
+                                  (parsedUnit(activeUnit)?.rules ?? []).some((r) => r.name === 'Spell Amplifier'),
+                                ),
+                              )
+                            }
+                            onClose={() => setCasting(false)}
+                          />
+                        )}
                         <div class="grid grid-cols-2 gap-2">
+                          {activeUnit.caster !== null && !casting && activation.action !== 'idle' && !activation.attacked && (
+                            <button type="button" class="btn btn-secondary h-11" onClick={() => setCasting(true)}>
+                              Cast spell ({activeUnit.spellTokens})
+                            </button>
+                          )}
                           {activation.action !== 'idle' &&
                             (activation.action !== 'rush' ||
                               movement(parsedUnit(activeUnit)?.rules ?? [], context).canShootAfterRush) && (
@@ -228,7 +260,8 @@ export function BattleScreen({ state, lists, onChange, onAttack, onLeave, onShow
 
 function UnitRow({
   unit,
-  move,
+  rules,
+  boostOptions,
   canActivate,
   isActive,
   choosing,
@@ -242,7 +275,10 @@ function UnitRow({
   /** Activation controls, shown where the action buttons were. */
   children?: ComponentChildren
   unit: UnitState
-  move: Movement
+  /** Held rules plus Aura grants. */
+  rules: RuleRef[]
+  /** Movement Buffs and Marks the army can give this activation. */
+  boostOptions: GrantOption[]
   canActivate: boolean
   isActive: boolean
   choosing: boolean
@@ -252,6 +288,12 @@ function UnitRow({
   onShaken: (shaken: boolean) => void
   onTokens: (tokens: number) => void
 }) {
+  const [boosts, setBoosts] = useState<string[]>([])
+  // Buffs only last for the next move, so they're cleared once the activation is done.
+  useEffect(() => {
+    if (unit.activated) setBoosts([])
+  }, [unit.activated])
+  const move = movement([...rules, ...boostOptions.filter((o) => boosts.includes(o.label)).map((o) => o.rule)], context)
   const out = isOut(unit)
   const total = unit.size * unit.tough
   return (
@@ -296,6 +338,26 @@ function UnitRow({
                 </button>
               ))
             )}
+          </div>
+        )}
+
+        {choosing && !unit.shaken && boostOptions.length > 0 && (
+          <div class="flex flex-wrap gap-2" aria-label="Movement Buffs">
+            {boostOptions.map((o) => {
+              const on = boosts.includes(o.label)
+              return (
+                <button
+                  key={o.label}
+                  type="button"
+                  aria-pressed={on}
+                  title={`Given by ${o.label}`}
+                  class={`btn btn-sm h-9 min-h-9 ${on ? 'btn-primary' : 'btn-ghost border border-base-content/20'}`}
+                  onClick={() => setBoosts(on ? boosts.filter((b) => b !== o.label) : [...boosts, o.label])}
+                >
+                  {o.label}
+                </button>
+              )
+            })}
           </div>
         )}
 

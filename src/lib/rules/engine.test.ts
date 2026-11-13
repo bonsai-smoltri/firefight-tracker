@@ -229,12 +229,20 @@ describe('resolution', () => {
     expect(statusOf(result, 'Blast(3)')).toBe('unreviewed')
   })
 
-  it('lists the Buffs and Marks an army can give, without Debuffs or duplicates', () => {
-    const refs = ['Stealth Buff', 'Stealth Buff', 'Defense Debuff', 'Rending in Melee Buff', 'Hero', 'Mystery Buff'].map(rule)
-    expect(grantOptions(refs, testContext).map((o) => [o.label, o.rule.name])).toEqual([
-      ['Stealth Buff', 'Stealth'],
-      ['Rending in Melee Buff', 'Rending in Melee'],
+  it('lists the Buffs, Marks and mapped Debuffs an army can give, without duplicates', () => {
+    const refs = ['Stealth Buff', 'Stealth Buff', 'Defense Debuff', 'Rending in Melee Buff', 'Hero', 'Mystery Buff', 'Unwieldy Debuff'].map(rule)
+    expect(grantOptions(refs, testContext).map((o) => [o.label, o.rule.name, o.onEnemy, o.sides])).toEqual([
+      ['Stealth Buff', 'Stealth', false, ['defender']],
+      ['Defense Debuff', 'Defense Debuff', true, ['defender']],
+      ['Rending in Melee Buff', 'Rending in Melee', false, ['attacker']],
     ])
+  })
+
+  it('applies Debuffs to the unit they are put on, never to the holder', () => {
+    const holder = resolveAttack(attack({ attacker: unit({ rules: [rule('Precision Debuff')] }) }))
+    expect(holder.hitOn).toBe(4)
+    expect(resolveAttack(attack({ granted: { attacker: [rule('Precision Debuff')] } })).hitOn).toBe(5)
+    expect(resolveAttack(attack({ granted: { target: [rule('Defense Debuff')] } })).blockOn).toBe(5)
   })
 
   it('reports text-only and unmapped rules without changing the maths', () => {
