@@ -245,6 +245,72 @@ describe('resolution', () => {
   })
 })
 
+describe('faction rules', () => {
+  it('applies range-or-charge rules both ways', () => {
+    const target = unit({ rules: [rule('Guarded')] })
+    expect(resolveAttack(attack({ target, situation: { overNine: true } })).blockOn).toBe(3)
+    expect(resolveAttack(attack({ target, mode: 'melee', situation: { charging: true } })).blockOn).toBe(4)
+    expect(resolveAttack(attack({ target, mode: 'melee', situation: { charging: true, chargeOverSix: true } })).blockOn).toBe(3)
+  })
+
+  it('checks the target’s Tough for Slayer-style rules', () => {
+    const weaponRules = gun(1, 'Disintegrate')
+    expect(resolveAttack(attack({ weapon: weaponRules, target: unit({ tough: 6 }) })).ap).toBe(0)
+    expect(resolveAttack(attack({ weapon: weaponRules, target: unit({ tough: 9 }) })).ap).toBe(2)
+  })
+
+  it('needs any one of the listed situations for Purge', () => {
+    expect(resolveAttack(attack({ weapon: gun(1, 'Purge') })).ap).toBe(0)
+    expect(resolveAttack(attack({ weapon: gun(1, 'Purge'), situation: { targetFatigued: true } })).ap).toBe(2)
+  })
+
+  it('switches Dodge off while the target is Fatigued', () => {
+    const target = unit({ rules: [rule('Dodge')] })
+    expect(resolveAttack(attack({ target, mode: 'melee' })).hitOn).toBe(5)
+    expect(resolveAttack(attack({ target, mode: 'melee', situation: { targetFatigued: true } })).hitOn).toBe(4)
+  })
+
+  it('assumes the target is above half until told otherwise', () => {
+    expect(resolveAttack(attack({ weapon: gun(1, 'Destructive') })).ap).toBe(1)
+    expect(resolveAttack(attack({ weapon: gun(1, 'Destructive'), situation: { targetAboveHalf: false } })).ap).toBe(0)
+  })
+
+  it('lets Pierce ignore cover and Defense bonuses but not penalties', () => {
+    const pierce = gun(1, 'Pierce')
+    const target = unit({ rules: [rule('Defense(1)')] })
+    expect(resolveAttack(attack({ weapon: pierce, target, situation: { targetInCover: true } })).blockOn).toBe(4)
+    expect(resolveAttack(attack({ weapon: pierce, situation: { overHalfRange: true } })).blockOn).toBe(5)
+  })
+
+  it('offers each option of a choice rule as its own toggle', () => {
+    const attacker = unit({ rules: [rule('Unpredictable')] })
+    expect(resolveAttack(attack({ attacker })).hitOn).toBe(4)
+    expect(resolveAttack(attack({ attacker, manual: ['Unpredictable: rolled 4–6: +1 to hit'] })).hitOn).toBe(3)
+    expect(resolveAttack(attack({ attacker, manual: ['Unpredictable: rolled 1–3: AP(+1)'] })).ap).toBe(1)
+  })
+
+  it('keeps army-wide markers out of the holder’s own maths until toggled', () => {
+    const attacker = unit({ rules: [rule('Precision Target')] })
+    const held = resolveAttack(attack({ attacker }))
+    expect(held.hitOn).toBe(4)
+    expect(statusOf(held, 'Precision Target')).toBe('grant')
+    expect(resolveAttack(attack({ granted: { attacker: [rule('Precision Target')] } })).hitOn).toBe(3)
+  })
+
+  it('resolves Buffs and Auras of rules that only exist as wrappers', () => {
+    expect(resolveAttack(attack({ attacker: unit({ rules: [rule('Piercing Fighter Aura')] }), mode: 'melee' })).ap).toBe(1)
+    const options = grantOptions([rule('Precision Shooter Buff')], testContext)
+    expect(options.map((o) => o.rule.name)).toEqual(['Precision Shooter'])
+    expect(resolveAttack(attack({ granted: { attacker: options.map((o) => o.rule) } })).hitOn).toBe(3)
+  })
+
+  it('lists army-wide markers among the options', () => {
+    expect(grantOptions([rule('Precision Target'), rule('Hero')], testContext).map((o) => [o.label, o.scope])).toEqual([
+      ['Precision Target', 'mark'],
+    ])
+  })
+})
+
 describe('attackControls', () => {
   const controls = (overrides: Parameters<typeof attack>[0]) => {
     const { attacker, weapon: w, target, mode, context, granted } = attack(overrides)
@@ -267,8 +333,21 @@ describe('attackControls', () => {
     ])
   })
 
-  it('lists manual rules', () => {
+  it('lists manual rules, with an entry per option for choices', () => {
     expect(controls({ target: unit({ rules: [rule('Protection Feat')] }) }).manual).toEqual(['Protection Feat'])
+    expect(controls({ attacker: unit({ rules: [rule('Versatile Expert')] }) }).manual).toEqual([
+      'Versatile Expert: AP(+1)',
+      'Versatile Expert: +1 to hit',
+    ])
+  })
+
+  it('includes situations from "any" and "not" conditions', () => {
+    expect(controls({ weapon: weapon({ rules: [rule('Purge')] }) }).situations).toEqual(['targetInCover', 'targetShaken', 'targetFatigued'])
+    expect(controls({ mode: 'melee', target: unit({ rules: [rule('Dodge')] }) }).situations).toEqual([
+      'charging',
+      'attackerFatigued',
+      'targetFatigued',
+    ])
   })
 })
 

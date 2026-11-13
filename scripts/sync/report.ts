@@ -40,7 +40,12 @@ export function mappingStatus(rules: BookRule[], index: RuleIndex): MappingStatu
       if (!direct.reviewed.includes(hashText(rule.description))) status.needsReview.push(rule)
       continue
     }
-    if (resolveRule(rule.name, null, context).kind !== 'unmapped') status.indirect++
+    const resolved = resolveRule(rule.name, null, context)
+    const synthetic = resolved.kind === 'mapped' ? resolved.mapping : resolved.kind === 'grant' && resolved.base.kind === 'mapped' ? resolved.base.mapping : null
+    if (synthetic?.synthetic?.includes(rule.name) && !synthetic.reviewed.includes(hashText(rule.description))) {
+      status.needsReview.push(rule)
+    }
+    if (resolved.kind !== 'unmapped') status.indirect++
     else if (looksStatChanging(rule)) status.unmappedStat.push(rule)
     else status.unmappedOther.push(rule)
   }

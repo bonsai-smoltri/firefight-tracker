@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'preact/hooks'
 import ruleIndex from '../data/rule-index.json'
-import { grantedByAuras, isOut, modelsLeft, unitKey, type AttackRecord } from '../lib/battle'
+import { atHalfOrLess, grantedByAuras, isOut, modelsLeft, unitKey, type AttackRecord } from '../lib/battle'
 import { rollAttack, type AttackRoll } from '../lib/rules/dice'
 import { attackControls, resolveAttack, weaponModes, type ResolvedAttack } from '../lib/rules/engine'
 import { defaultContext, grantOptions, type GrantOption } from '../lib/rules/resolve'
@@ -57,6 +57,9 @@ function initialState(lists: Record<Side, ParsedList>, battle?: BattleAttack) {
       charging,
       attackerFatigued: attacker.fatigued || (battle.strikeBack === true && attacker.shaken),
       targetStationary: target ? !target.moved : false,
+      targetShaken: target?.shaken ?? false,
+      targetFatigued: target?.fatigued ?? false,
+      targetAboveHalf: target ? !atHalfOrLess(target) : true,
     },
   }
 }
@@ -154,6 +157,16 @@ export function AttackScreen({ lists, onBack, backLabel = '← Lists', battle }:
     setTargetId(id)
     setTargetModels(null)
     clearResult()
+    const picked = battle?.state.units[unitKey(targetSide, id)]
+    if (picked) {
+      setSituation((s) => ({
+        ...s,
+        targetStationary: !picked.moved,
+        targetShaken: picked.shaken,
+        targetFatigued: picked.fatigued,
+        targetAboveHalf: !atHalfOrLess(picked),
+      }))
+    }
   }
   const swap = () => {
     setAttackerSide(other(attackerSide))

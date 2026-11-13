@@ -1,9 +1,11 @@
 import type { ParsedUnit, ParsedWeapon, RuleRef, RuleText } from '../../types/list.ts'
 import {
   SITUATION_KEYS,
+  manualKey,
   type AttackMode,
   type RuleConditions,
   type RuleEffects,
+  type RuleMapping,
   type RulePart,
   type Situation,
   type SituationKey,
@@ -77,14 +79,22 @@ interface Collected {
 
 const clampRoll = (n: number) => Math.min(6, Math.max(2, n))
 
-function conditionsMet(conditions: RuleConditions | undefined, mode: AttackMode, situation: Situation, targetDefense: number) {
+function conditionsMet(
+  conditions: RuleConditions | undefined,
+  mode: AttackMode,
+  situation: Situation,
+  target: { defense: number; tough: number },
+) {
   if (!conditions) return true
   if (conditions.mode && conditions.mode !== mode) return false
   if (conditions.situation?.some((key) => !situation[key])) return false
+  if (conditions.anySituation && !conditions.anySituation.some((key) => situation[key])) return false
+  if (conditions.notSituation?.some((key) => situation[key])) return false
   if (conditions.targetDefense) {
     const [from, to] = conditions.targetDefense
-    if (targetDefense < from || targetDefense > to) return false
+    if (target.defense < from || target.defense > to) return false
   }
+  if (conditions.targetToughAtLeast !== undefined && target.tough < conditions.targetToughAtLeast) return false
   return true
 }
 
@@ -92,10 +102,19 @@ interface Owned {
   ref: RuleRef
   owner: RuleReport['owner']
   resolved: ResolvedRule
+  /** Given by another unit (Aura, Buff, Mark) rather than held. */
+  granted: boolean
 }
 
-function resolveAll(refs: RuleRef[], owner: RuleReport['owner'], context: ResolveContext): Owned[] {
-  return refs.map((ref) => ({ ref, owner, resolved: resolveRule(ref.name, ref.rating, context, ref.label) }))
+function resolveAll(refs: RuleRef[], owner: RuleReport['owner'], context: ResolveContext, granted = false): Owned[] {
+  return refs.map((ref) => ({ ref, owner, granted, resolved: resolveRule(ref.name, ref.rating, context, ref.label) }))
+}
+
+/** Text check: a mapping only counts for the texts it was reviewed against. */
+function isReviewed(mapping: RuleMapping, ref: RuleRef, input: AttackInput): boolean {
+  const checksThisName = mapping.name === ref.name || mapping.synthetic?.includes(ref.name)
+  const text = checksThisName && ref.id ? input.ruleTexts?.[ref.id]?.description : undefined
+  return text === undefined || mapping.reviewed.includes(hashText(text))
 }
 
 /**
@@ -120,7 +139,7 @@ function collect(
   const applied = new Set<string>()
   const out: Collected[] = []
 
-  for (const { ref, owner, resolved } of owned) {
+  for (const { ref, owner, resolved, granted } of owned) {
     const report = (status: RuleStatus, resolvedAs: string | null = null, note?: string) =>
       reports.push({ id: ref.id, label: ref.label, resolvedAs, owner, status, note })
 
@@ -135,12 +154,14 @@ function collect(
 
     const { mapping } = resolved
     const resolvedAs = mapping.name === ref.name ? null : mapping.name
-    const text = resolvedAs === null && ref.id ? input.ruleTexts?.[ref.id]?.description : undefined
-    if (text !== undefined && !mapping.reviewed.includes(hashText(text))) {
+    const ownSide = mapping.parts.length === 0 || mapping.parts.some((p) => p.side === side)
+    if (!isReviewed(mapping, ref, input)) {
       // Reported once, by whichever side the rule has parts for.
-      if (mapping.parts.length === 0 || mapping.parts.some((p) => p.side === side)) {
-        report('unreviewed', null, 'This version of the rule has different text, so it isn’t in the maths')
-      }
+      if (ownSide) report('unreviewed', null, 'This version of the rule has different text, so it isn’t in the maths')
+      continue
+    }
+    if (mapping.armyWide && !granted) {
+      if (ownSide) report('grant', resolvedAs, 'Toggle it under Buffs and Marks when attacking a marked unit')
       continue
     }
     const parts = mapping.parts.filter((p) => p.side === side)
@@ -162,9 +183,12 @@ function collect(
     const active = parts.filter(
       (p) =>
         (!resolved.mode || resolved.mode === input.mode) &&
-        conditionsMet(p.conditions, input.mode, input.situation, targetDefense),
+        conditionsMet(p.conditions, input.mode, input.situation, { defense: targetDefense, tough: input.target.tough }),
     )
-    const switchedOn = active.filter((p) => !p.manual || input.manual?.includes(mapping.name))
+    const switchedOn = active.filter((p) => {
+      const key = manualKey(mapping, p)
+      return key === null || input.manual?.includes(key)
+    })
     if (switchedOn.length === 0) {
       report(active.length > 0 ? 'manual' : 'inactive', resolvedAs, mapping.note)
       continue
@@ -195,12 +219,12 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
 
   const attackerRules = [
     ...resolveAll(attacker.rules, 'attacker', context),
-    ...resolveAll(input.granted?.attacker ?? [], 'attacker', context),
+    ...resolveAll(input.granted?.attacker ?? [], 'attacker', context, true),
     ...resolveAll(weapon.rules, 'weapon', context),
   ]
   const targetRules = [
     ...resolveAll(target.rules, 'target', context),
-    ...resolveAll(input.granted?.target ?? [], 'target', context),
+    ...resolveAll(input.granted?.target ?? [], 'target', context, true),
   ]
 
   // Defender first: Armor changes the Defense value that attacker conditions check.
@@ -226,7 +250,8 @@ export function resolveAttack(input: AttackInput): ResolvedAttack {
   const ap = Math.max(0, sum(att, (e) => e.ap) - apReduction)
   const apOnSix = onlySixes ? 0 : Math.max(0, ...values(att, (e) => e.apOnSix))
   const cover = mode === 'shooting' && situation.targetInCover && !ignoresCover ? 1 : 0
-  const defenseModifier = sum(def, (e) => e.defenseModifier) + cover
+  const rawDefenseModifier = sum(def, (e) => e.defenseModifier) + cover
+  const defenseModifier = any(att, (e) => e.ignoresDefenseBonuses) ? Math.min(0, rawDefenseModifier) : rawDefenseModifier
   const blockOn = clampRoll(defense - defenseModifier + ap)
   const blockOnSix = apOnSix > 0 ? clampRoll(defense - defenseModifier + ap + apOnSix) : null
 
@@ -353,18 +378,23 @@ export function attackControls(
 ): { situations: SituationKey[]; manual: string[] } {
   const keys = new Set<SituationKey>(BASE_SITUATIONS[input.mode])
   const manual = new Set<string>()
-  const sides: [RuleRef[], RulePart['side']][] = [
-    [[...input.attacker.rules, ...input.weapon.rules, ...(input.granted?.attacker ?? [])], 'attacker'],
-    [[...input.target.rules, ...(input.granted?.target ?? [])], 'defender'],
+  const held = (refs: RuleRef[]) => refs.map((ref) => ({ ref, granted: false }))
+  const given = (refs: RuleRef[] = []) => refs.map((ref) => ({ ref, granted: true }))
+  const sides: [{ ref: RuleRef; granted: boolean }[], RulePart['side']][] = [
+    [[...held([...input.attacker.rules, ...input.weapon.rules]), ...given(input.granted?.attacker)], 'attacker'],
+    [[...held(input.target.rules), ...given(input.granted?.target)], 'defender'],
   ]
   for (const [refs, side] of sides) {
-    for (const ref of refs) {
+    for (const { ref, granted } of refs) {
       const resolved = resolveRule(ref.name, ref.rating, input.context, ref.label)
       if (resolved.kind !== 'mapped' || (resolved.mode && resolved.mode !== input.mode)) continue
+      if (resolved.mapping.armyWide && !granted) continue
       for (const part of resolved.mapping.parts) {
         if (part.side !== side || (part.conditions?.mode && part.conditions.mode !== input.mode)) continue
-        part.conditions?.situation?.forEach((key) => keys.add(key))
-        if (part.manual) manual.add(resolved.mapping.name)
+        const c = part.conditions
+        ;[...(c?.situation ?? []), ...(c?.anySituation ?? []), ...(c?.notSituation ?? [])].forEach((key) => keys.add(key))
+        const key = manualKey(resolved.mapping, part)
+        if (key) manual.add(key)
       }
     }
   }

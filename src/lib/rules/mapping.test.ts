@@ -24,8 +24,10 @@ describe('rule mapping', () => {
     expect(missing).toEqual([])
   })
 
-  it('names rules that exist in the bundled data', () => {
-    const unknown = [...RULE_MAPPINGS.keys()].filter((name) => !textsByName.has(name))
+  it('names rules that exist in the bundled data, or only wrappers that do', () => {
+    const unknown = [...RULE_MAPPINGS.values()]
+      .filter((m) => (m.synthetic ? m.synthetic.some((name) => !textsByName.has(name)) || textsByName.has(m.name) : !textsByName.has(m.name)))
+      .map((m) => m.name)
     expect(unknown).toEqual([])
   })
 
@@ -37,10 +39,21 @@ describe('rule mapping', () => {
   })
 
   it('has no reviewed hash that no longer matches any text, so old reviews get cleaned up', () => {
-    const orphaned = [...RULE_MAPPINGS.values()].flatMap((m) =>
-      m.reviewed.filter((h) => !textsByName.get(m.name)?.has(h)).map((h) => `${m.name} ${h}`),
-    )
+    const orphaned = [...RULE_MAPPINGS.values()].flatMap((m) => {
+      const names = m.synthetic ?? [m.name]
+      return m.reviewed.filter((h) => !names.some((n) => textsByName.get(n)?.has(h))).map((h) => `${m.name} ${h}`)
+    })
     expect(orphaned).toEqual([])
+  })
+
+  it('was reviewed against the current text of every mapped faction rule', () => {
+    const stale = [...RULE_MAPPINGS.values()].flatMap((m) =>
+      (m.synthetic ?? [m.name]).flatMap((name) =>
+        [...(textsByName.get(name) ?? [])].filter((h) => !m.reviewed.includes(h)).map((h) => `${name} ${h}`),
+      ),
+    )
+    // The odd Blast text sits in eleven books' rule tables but no unit uses it.
+    expect(stale).toEqual(['Blast 567e8d36'])
   })
 
   it('only enhances rules that are mapped', () => {

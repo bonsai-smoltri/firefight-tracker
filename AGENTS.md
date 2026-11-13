@@ -125,7 +125,25 @@ extensions because the sync script imports them under Node.
   hasn't been reviewed is reported as `unreviewed` and kept out of the maths.
 
 Adding a rule: add it to `mapping.ts` with the hash from `sync-report.md`, and a test in
-`engine.test.ts` if it introduces a new effect or condition.
+`engine.test.ts` if it introduces a new effect or condition. Every Firefight rule is currently
+mapped (stat or text-only) except Precision Debuff, so anything new in the report has just
+appeared in a sync.
+
+Mapping shapes beyond a plain part:
+- `atRange(side, effects)` covers "shooting/charging from over 9"/6" away" as two parts.
+- `manual: 'label'` makes a part a named toggle (`Rule: label`). `choice()` uses it for rules
+  where the player picks or rolls an effect (Unpredictable, Versatile Expert) and for token counts
+  (Piercing Growth).
+- `armyWide` is for markers any friendly unit uses against a marked enemy (Precision Target, Tags,
+  Spotters, Vengeance). They only apply when toggled under Buffs and Marks, never just because the
+  attacker holds the rule.
+- `synthetic` names a base rule that doesn't exist on its own, only through wrappers
+  (`Precision Shooter` for Precision Shooter Aura and Buff). `reviewed` then holds the wrappers'
+  text hashes.
+- Situations that are usually true start on (`targetAboveHalf`). In a battle, the attack screen
+  fills target situations in from battle state.
+- Attacks in this app are never spells, so "not from spells" rules (Shielded, Spell Resistance)
+  always apply.
 
 Hazards:
 - Bane, Rending and Unstoppable ignore **Regeneration** only. Self-Repair and Protected are

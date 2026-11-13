@@ -111,7 +111,7 @@ export interface GrantOption {
 }
 
 /**
- * Buffs and Marks an army can hand out, deduplicated by rule. Debuffs are left out: their base
+ * Buffs, Marks and army-wide target markers an army can hand out, deduplicated by rule. Debuffs are left out: their base
  * rule usually reads the opposite way (Defense Debuff is -1 Defense), so applying the base rule
  * would get the sign wrong.
  */
@@ -122,7 +122,13 @@ export function grantOptions(
   const options = new Map<string, GrantOption>()
   for (const ref of refs) {
     const resolved = resolveRule(ref.name, ref.rating, context, ref.label)
-    if (resolved.kind !== 'grant' || resolved.scope === 'debuff' || options.has(ref.name)) continue
+    if (options.has(ref.name)) continue
+    if (resolved.kind === 'mapped' && resolved.mapping.armyWide) {
+      // Marks on the enemy that any friendly unit cashes in, e.g. Precision Target.
+      options.set(ref.name, { label: ref.name, scope: 'mark', rule: { id: '', name: ref.name, rating: ref.rating, label: ref.name } })
+      continue
+    }
+    if (resolved.kind !== 'grant' || resolved.scope === 'debuff') continue
     const name = ref.name.replace(/ (Buff|Mark)$/, '')
     options.set(ref.name, { label: ref.name, scope: resolved.scope, rule: { id: '', name, rating: ref.rating, label: ref.name } })
   }
