@@ -1,0 +1,339 @@
+{
+  "uid": "4k5amkxoybdiqotm",
+  "name": "Robot Legions",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "gOFh4u_LGrwP",
+      "name": "Ambush Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ambush. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "CCShas9-9K4N",
+      "name": "Ambushing Piercing Shot",
+      "aliasedRuleId": null,
+      "description": "Counts as having Ambush, and its weapons get AP(+1) when shooting on the round in which it deploys via this rule.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "0TfnG5G4JEv0",
+      "name": "Anti-Regen",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "2Cxml82Ma_3Y",
+      "name": "Enhanced Protected",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have Protected, they ignore wounds on rolls of 5-6 from Protected (instead of only on 6+).",
+      "hasRating": false
+    },
+    {
+      "id": "ZqewrI-hqAYi",
+      "name": "Enhanced Self-Repair",
+      "aliasedRuleId": "2Cxml82Ma_3Y",
+      "description": "If most models in this unit have Self-Repair, they ignore wounds on rolls of 5-6 from Self-Repair (instead of only on 6+).",
+      "hasRating": false
+    },
+    {
+      "id": "T08VkBuVmNZ_",
+      "name": "Hero",
+      "aliasedRuleId": null,
+      "description": "Units within 6” of friendly Heroes may use the Hero’s Quality for Morale Tests as long as the Hero isn’t Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "BOqSaZoY3ewJ",
+      "name": "Imprecise",
+      "aliasedRuleId": null,
+      "description": "Gets -1 to hit when attacking.",
+      "hasRating": false
+    },
+    {
+      "id": "8Ck9GAwUK824",
+      "name": "Indirect",
+      "aliasedRuleId": null,
+      "description": "When using Hold actions and shooting, may target enemies that are not in line of sight as if in line of sight, and ignores Cover from Sight Blockers.",
+      "hasRating": false
+    },
+    {
+      "id": "djJahpu0Ciut",
+      "name": "Infiltrate",
+      "aliasedRuleId": null,
+      "description": "Counts as having Ambush, but may be deployed anywhere over 3\" away from enemy unit.",
+      "hasRating": false
+    },
+    {
+      "id": "O2Cd7OibBBA5",
+      "name": "No Retreat",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule fails a Morale Test that causes it to be Shaken or Routed, the test counts as passed instead. Then, roll as many dice as the number of wounds it would take to fully destroy it, and for each result of 1-3 the unit takes one wound, which can't be ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "QMU04E_1bAVC",
+      "name": "No Retreat Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get No Retreat. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "DhLjIDRrWz6-",
+      "name": "Piercing Charge",
+      "aliasedRuleId": null,
+      "description": "This model gets AP(+1) on its weapons when charging.",
+      "hasRating": false
+    },
+    {
+      "id": "L--qMjlm2g4Q",
+      "name": "Piercing Charge Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Piercing Charge. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "AlIZbh-afBYi",
+      "name": "Protected",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 6+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "TU7fkKrcAvop",
+      "name": "Protection Feat",
+      "aliasedRuleId": null,
+      "description": "Once per game, when this unit takes wounds and most of its models have this rule, you may use this rule and roll one die per wound, and on a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "CdIKErxgOpl3",
+      "name": "Protection Feat Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Protection Feat. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "HmxkJq_My-Ub",
+      "name": "Rapid Advance",
+      "aliasedRuleId": null,
+      "description": "This model moves +4\" when using Advance actions.",
+      "hasRating": false
+    },
+    {
+      "id": "hnsVQyx3ylMf",
+      "name": "Ravage",
+      "aliasedRuleId": null,
+      "description": "Once per round, when it’s this model’s turn to strike in melee, roll X dice before attacking, unless this unit is Fatigued. For each 6+ the target takes one wound.",
+      "hasRating": true
+    },
+    {
+      "id": "xfXomZDK5SVX",
+      "name": "Reanimation",
+      "aliasedRuleId": null,
+      "description": "When a unit where all models have this rule is activated, roll as many dice as the max. number of models/wounds it could restore. For each 5+ you may restore one model/wound. Note that new models may only be restored if they can be placed in coherency with non-restored models.",
+      "hasRating": false
+    },
+    {
+      "id": "l_KzjNPv-_5H",
+      "name": "Reanimation Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Reanimation. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "H9E9PIWpGRdw",
+      "name": "Relentless",
+      "aliasedRuleId": null,
+      "description": "When this model shoots at enemies over 9” away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "zGew9XZT2rUm",
+      "name": "Relentless Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Relentless. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "cavWDboL4ubs",
+      "name": "Rending",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and for each unmodified result of 6 to hit, those hits get AP(+4).",
+      "hasRating": false
+    },
+    {
+      "id": "nstknew-_RL_",
+      "name": "Rending in Melee",
+      "aliasedRuleId": null,
+      "description": "This model gets Rending on its weapons in melee.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "Y_WeXWwLtX6z",
+      "name": "Self-Repair",
+      "aliasedRuleId": "AlIZbh-afBYi",
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 6+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "VI54cszY2BuG",
+      "name": "Shatter",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 6 to hit, those hits get AP(+3).",
+      "hasRating": false
+    },
+    {
+      "id": "Ldhtmr4H8b6G",
+      "name": "Slow",
+      "aliasedRuleId": null,
+      "description": "Moves -2” when using Advance, and -4” when using Rush/Charge.",
+      "hasRating": false
+    },
+    {
+      "id": "9jyvRoBODD-O",
+      "name": "Stealth",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule are shot from over 9\" away, enemy units get -1 to hit rolls.",
+      "hasRating": false
+    },
+    {
+      "id": "8haZ36fXvnzn",
+      "name": "Stealth Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Stealth. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "cnKvLv8ErzIc",
+      "name": "Stealth Buff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets Stealth once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "leFm23MTiJxO",
+      "name": "Swift",
+      "aliasedRuleId": null,
+      "description": "This model may ignore the Slow rule.",
+      "hasRating": false
+    },
+    {
+      "id": "rqBYj1yANC3J",
+      "name": "Unique Hero",
+      "aliasedRuleId": null,
+      "description": "Counts as having Hero, and this model may only be taken once per army.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    },
+    {
+      "id": "ZK3FxxpOGNMR",
+      "name": "Unstoppable when Shooting",
+      "aliasedRuleId": null,
+      "description": "This model gets Unstoppable on its weapons when shooting.",
+      "hasRating": false
+    },
+    {
+      "id": "KTixuuQ9H7tU",
+      "name": "Unstoppable when Shooting Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Unstoppable on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "F9cK8",
+      "name": "Flame Bots",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 9\", which take 4 hits each."
+    },
+    {
+      "id": "0XFYv",
+      "name": "Gauss Bots",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 6\", which takes 3 hits with AP(1) and Shatter. Roll as many dice as hits to see if \"on rolls of 6\" effects trigger."
+    },
+    {
+      "id": "kdAps",
+      "name": "Inspiring Bots",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Rapid Advance once (next time the effect would apply)."
+    },
+    {
+      "id": "aiS6M",
+      "name": "Mending Bots",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Self-Repair once (next time the effect would apply)."
+    },
+    {
+      "id": "rFGa0",
+      "name": "Piercing Bots",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 6 hits with AP(2)."
+    },
+    {
+      "id": "waUF_",
+      "name": "Triangulation Bots",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which friendly units gets Indirect on their weapons against once (next time the effect would apply)."
+    }
+  ]
+}

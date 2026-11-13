@@ -1,0 +1,234 @@
+{
+  "uid": "o4D-c-28lvmybgc5",
+  "name": "Shadow Leagues",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "kpuEyaul7J3Z",
+      "name": "Ambush Re-Deployment",
+      "aliasedRuleId": null,
+      "description": "Once per game, when a unit where all models have this rule ends its activation, you may immediately remove it from the table (dropping any objectives it might hold within 1\"), and deploy it as if it had Ambush at the beginning of the next round.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "Naqc5mga9Uha",
+      "name": "Bane",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking, the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "XoDRL2xVEnVf",
+      "name": "Bane in Melee Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Bane on its weapons in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "_mrPya5SXSqW",
+      "name": "Deadly",
+      "aliasedRuleId": null,
+      "description": "Assign each wound to one model, and multiply it by X. Hits from Deadly must be resolved first, and these wounds don’t carry over to other models if the original target is killed.",
+      "hasRating": true
+    },
+    {
+      "id": "DkFg1ochRDYR",
+      "name": "Enhanced Shadow Operative",
+      "aliasedRuleId": "2hXA8X1Xlrmc",
+      "description": "If most models in this unit have Shadow Operative, enemy units shooting/charging it get -8\"/-4\" range to a min. of 6\" from Shadow Operative (instead of only -4\"/-2\").",
+      "hasRating": false
+    },
+    {
+      "id": "DXab0T1mtWak",
+      "name": "Enhanced Shadow Operative Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Shadow Operative. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "2hXA8X1Xlrmc",
+      "name": "Enhanced Shrouded",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have Shrouded, enemy units shooting/charging it get -8\"/-4\" range to a min. of 6\" from Shrouded (instead of only -4\"/-2\").",
+      "hasRating": false
+    },
+    {
+      "id": "dIQ3SGl2J2Ew",
+      "name": "Fear",
+      "aliasedRuleId": null,
+      "description": "When in melee with this model, enemies count as having taken +X wounds when checking who won.",
+      "hasRating": true
+    },
+    {
+      "id": "2atvlmICQSCV",
+      "name": "Fearless",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule fails a Morale Test, roll one die. On a 4+ it counts as passed instead.",
+      "hasRating": false
+    },
+    {
+      "id": "C0UHMLhvoXXj",
+      "name": "Fearless Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Fearless. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "1elLRhGK7ETb",
+      "name": "Precision Debuff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which gets -1 to hit rolls when attacking once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "97aE8SunQBTq",
+      "name": "Purge",
+      "aliasedRuleId": null,
+      "description": "When attacking units that are Shaken or Fatigued, this weapon gets AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "xgtq7JJUEwfA",
+      "name": "Shadow Operative",
+      "aliasedRuleId": "YMQxz2ssYCBj",
+      "description": "When a unit where most models have this rule is targeted by an enemy unit for shooting/charging, that enemy unit gets -4\"/-2\" range to a min. of 6\".",
+      "hasRating": false
+    },
+    {
+      "id": "IEJp3a4vE0CB",
+      "name": "Shred",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 1 to block hits, this weapon deals 1 extra wound.",
+      "hasRating": false
+    },
+    {
+      "id": "lEFjh4V7XGVV",
+      "name": "Shred when Shooting Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Shred on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "YMQxz2ssYCBj",
+      "name": "Shrouded",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule is targeted by an enemy unit for shooting/charging, that enemy unit gets -4\"/-2\" range to a min. of 6\".",
+      "hasRating": false
+    },
+    {
+      "id": "9jyvRoBODD-O",
+      "name": "Stealth",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule are shot from over 9\" away, enemy units get -1 to hit rolls.",
+      "hasRating": false
+    },
+    {
+      "id": "8haZ36fXvnzn",
+      "name": "Stealth Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Stealth. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "8Hjy54TYtwb7",
+      "name": "Takedown",
+      "aliasedRuleId": null,
+      "description": "This model may pick any model in the target unit as its individual target for this weapon's attacks, which is resolved as if it was a unit of [1]. Takedown attacks must be resolved before other weapons.",
+      "hasRating": false
+    },
+    {
+      "id": "eyMkgYDVrP7C",
+      "name": "Takedown Strike",
+      "aliasedRuleId": null,
+      "description": "Once per game, when it's this model's turn to strike in melee, it may make X attacks at Quality 2+ with AP(2), Deadly(3), and Takedown.",
+      "hasRating": true
+    },
+    {
+      "id": "LtPyHi_-DHf4",
+      "name": "Teleport",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, you may place this model anywhere fully within 3\" of its position when using Advance/Charge actions, or fully within 6\" of its position when using Rush actions.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "djSzF",
+      "name": "Dark Mist",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which gets -1 to hit rolls when attacking once (next time the effect would apply)."
+    },
+    {
+      "id": "_dWTK",
+      "name": "Nightmare Vision",
+      "threshold": 3,
+      "effect": "Pick one enemy model within 24\" in line of sight, which takes 3 hits with AP(4). This effect is resolved as if the target was a unit of [1]."
+    },
+    {
+      "id": "mNU5w",
+      "name": "Obscuring Energy",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Enhanced Shadow Operative once (next time the effect would apply)."
+    },
+    {
+      "id": "RM692",
+      "name": "Psy-Emowerment",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get AP(1) on its weapons when attacking once (next time the effect would apply)."
+    },
+    {
+      "id": "TmuOs",
+      "name": "Psychic Overload",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 3 hits with Purge."
+    },
+    {
+      "id": "91lMM",
+      "name": "Shadow Blast",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 6\", which take 4 hits with AP(2) each."
+    }
+  ]
+}

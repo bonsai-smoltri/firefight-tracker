@@ -1,0 +1,1556 @@
+{
+ "id": "fBzDsM9BH6kk",
+ "name": "Trench Goons",
+ "isCloud": false,
+ "forceOrg": true,
+ "modified": "2026-11-13T01:06:27.192Z",
+ "gameSystem": "gff",
+ "modelCount": 16,
+ "description": "Trenchfoot enjoyers. All infantry, no mounties please. If the suns out, they're not, it's only clouds and downpours for these goons. They certainly don't mind getting their toes muddy & their socks wet. Come in, the foxhole is lovely!",
+ "pointsLimit": 300,
+ "campaignMode": false,
+ "cloudModified": "2024-09-12T15:46:36.509Z",
+ "communityList": true,
+ "narrativeMode": false,
+ "activationCount": 8,
+ "listPoints": 785,
+ "units": [
+  {
+   "id": "3Tk4911",
+   "cost": 100,
+   "name": "Company Leader",
+   "size": 1,
+   "items": [],
+   "rules": [
+    {
+     "id": "T08VkBuVmNZ_",
+     "name": "Hero",
+     "label": "Hero"
+    },
+    {
+     "id": "a0YtInGiUDd6",
+     "name": "Tough",
+     "rating": 9,
+     "label": "Tough(9)"
+    },
+    {
+     "id": "Sdcb8VAeTxji",
+     "name": "Hold the Line",
+     "label": "Hold the Line"
+    }
+   ],
+   "valid": true,
+   "defense": 5,
+   "quality": 4,
+   "weapons": [
+    {
+     "id": "h6yKj6RX",
+     "name": "Pistol",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 12,
+     "attacks": 2,
+     "weaponId": "oiMKk5vY",
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "id": "FF5ddXgx75lI",
+       "name": "Assault",
+       "label": "Assault"
+      }
+     ],
+     "attacksMultiplier": 1,
+     "label": "Pistol (12\", A2, Assault)",
+     "originalCount": 1
+    },
+    {
+     "id": "DsmOuxNt",
+     "name": "Hand Weapon",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 0,
+     "attacks": 6,
+     "weaponId": "eF__M0-n",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Hand Weapon (A6)",
+     "originalCount": 1
+    }
+   ],
+   "upgrades": [
+    "A1",
+    "C1"
+   ],
+   "genericName": "Veteran Infantry Leader",
+   "sizeSkirmish": 1,
+   "hasCustomRule": false,
+   "disabledSections": [],
+   "hasBalanceInvalid": false,
+   "originalSize": 1,
+   "armyId": "z65fgu0l29i4lnlu",
+   "xp": 0,
+   "notes": null,
+   "traits": [],
+   "combined": false,
+   "joinToUnit": null,
+   "selectionId": "d5dPr",
+   "selectedUpgrades": [],
+   "loadout": [
+    {
+     "id": "h6yKj6RX",
+     "name": "Pistol",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 12,
+     "attacks": 2,
+     "weaponId": "oiMKk5vY",
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "id": "FF5ddXgx75lI",
+       "name": "Assault",
+       "label": "Assault"
+      }
+     ],
+     "attacksMultiplier": 1,
+     "label": "Pistol (12\", A2, Assault)",
+     "originalCount": 1
+    },
+    {
+     "id": "DsmOuxNt",
+     "name": "Hand Weapon",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 0,
+     "attacks": 6,
+     "weaponId": "eF__M0-n",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Hand Weapon (A6)",
+     "originalCount": 1
+    }
+   ]
+  },
+  {
+   "id": "_nbz3zj",
+   "cost": 85,
+   "name": "Infantry Squad",
+   "size": 3,
+   "items": [],
+   "rules": [
+    {
+     "id": "Sdcb8VAeTxji",
+     "name": "Hold the Line",
+     "label": "Hold the Line"
+    },
+    {
+     "name": "Tough",
+     "rating": 3,
+     "label": "Tough(3)"
+    }
+   ],
+   "valid": true,
+   "defense": 5,
+   "quality": 5,
+   "weapons": [
+    {
+     "id": "ar_e50-g",
+     "name": "Battle Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 24,
+     "attacks": 2,
+     "weaponId": "uk1WGCHU",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Battle Rifle (24\", A2)",
+     "originalCount": 3
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 3
+    }
+   ],
+   "upgrades": [
+    "E1",
+    "SmJiZ"
+   ],
+   "genericName": "Infantry",
+   "sizeSkirmish": 3,
+   "hasCustomRule": false,
+   "disabledSections": [],
+   "hasBalanceInvalid": false,
+   "originalSize": 10,
+   "armyId": "z65fgu0l29i4lnlu",
+   "xp": 0,
+   "notes": null,
+   "traits": [],
+   "combined": false,
+   "joinToUnit": null,
+   "selectionId": "4Bjsf",
+   "selectedUpgrades": [],
+   "loadout": [
+    {
+     "id": "ar_e50-g",
+     "name": "Battle Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 24,
+     "attacks": 2,
+     "weaponId": "uk1WGCHU",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Battle Rifle (24\", A2)",
+     "originalCount": 3
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 3
+    }
+   ]
+  },
+  {
+   "id": "_nbz3zj",
+   "cost": 85,
+   "name": "Infantry Squad",
+   "size": 3,
+   "items": [],
+   "rules": [
+    {
+     "id": "Sdcb8VAeTxji",
+     "name": "Hold the Line",
+     "label": "Hold the Line"
+    },
+    {
+     "name": "Tough",
+     "rating": 3,
+     "label": "Tough(3)"
+    }
+   ],
+   "valid": true,
+   "defense": 5,
+   "quality": 5,
+   "weapons": [
+    {
+     "id": "ar_e50-g",
+     "name": "Battle Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 24,
+     "attacks": 2,
+     "weaponId": "uk1WGCHU",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Battle Rifle (24\", A2)",
+     "originalCount": 3,
+     "dependencies": [
+      {
+       "upgradeInstanceId": "9mEZpW88M",
+       "count": 1,
+       "variant": "replace"
+      }
+     ]
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 3
+    }
+   ],
+   "upgrades": [
+    "E1",
+    "SmJiZ"
+   ],
+   "genericName": "Infantry",
+   "sizeSkirmish": 3,
+   "hasCustomRule": false,
+   "disabledSections": [],
+   "hasBalanceInvalid": false,
+   "originalSize": 10,
+   "armyId": "z65fgu0l29i4lnlu",
+   "xp": 0,
+   "notes": null,
+   "traits": [],
+   "combined": false,
+   "joinToUnit": null,
+   "selectionId": "On-6J",
+   "selectedUpgrades": [
+    {
+     "instanceId": "9mEZpW88M",
+     "upgrade": {
+      "id": "p0B_NOS",
+      "uid": "sJKDuFd",
+      "label": "Replace one Battle Rifles",
+      "parentPackageUid": "E1",
+      "type": "ArmyBookUpgradeSection",
+      "variant": "replace",
+      "affects": {
+       "type": "exactly",
+       "value": 1
+      },
+      "targets": [
+       "Battle Rifles"
+      ]
+     },
+     "option": {
+      "uid": "yiQrzSL",
+      "cost": 5,
+      "type": "ArmyBookUpgradeOption",
+      "costs": [
+       {
+        "unitId": "_nbz3zj",
+        "cost": 20,
+        "exactCost": 21.98,
+        "questCost": 65
+       }
+      ],
+      "gains": [
+       {
+        "type": "ArmyBookWeapon",
+        "name": "Plasma Rifle",
+        "range": 24,
+        "attacks": 4,
+        "specialRules": [
+         {
+          "type": "ArmyBookRule",
+          "id": "17crjK7P6_w6",
+          "name": "AP",
+          "rating": 2
+         }
+        ],
+        "count": 1,
+        "weaponId": "gN1LAzCn",
+        "id": "gN1LAzCn",
+        "attacksMultiplier": 1,
+        "label": "Plasma Rifle (24\", A4, AP(2))",
+        "dependencies": []
+       }
+      ],
+      "label": "Plasma Rifle (24\", A4, AP(2))",
+      "parentPackageUid": "E1",
+      "parentSectionUid": "sJKDuFd",
+      "parentSectionId": "sJKDuFd",
+      "id": "yiQrzSL"
+     }
+    }
+   ],
+   "loadout": [
+    {
+     "id": "ar_e50-g",
+     "name": "Battle Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 2,
+     "range": 24,
+     "attacks": 2,
+     "weaponId": "uk1WGCHU",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Battle Rifle (24\", A2)",
+     "originalCount": 3,
+     "dependencies": [
+      {
+       "upgradeInstanceId": "9mEZpW88M",
+       "count": 1,
+       "variant": "replace"
+      }
+     ]
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 3
+    },
+    {
+     "type": "ArmyBookWeapon",
+     "name": "Plasma Rifle",
+     "range": 24,
+     "attacks": 4,
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "id": "17crjK7P6_w6",
+       "name": "AP",
+       "rating": 2
+      }
+     ],
+     "count": 1,
+     "weaponId": "gN1LAzCn",
+     "id": "gN1LAzCn",
+     "attacksMultiplier": 1,
+     "label": "Plasma Rifle (24\", A4, AP(2))",
+     "dependencies": []
+    }
+   ]
+  },
+  {
+   "id": "95wirM-",
+   "cost": 55,
+   "name": "Sniper",
+   "size": 1,
+   "items": [],
+   "rules": [
+    {
+     "id": "FAMbscK5vhSu",
+     "name": "Scout",
+     "label": "Scout"
+    },
+    {
+     "id": "9jyvRoBODD-O",
+     "name": "Stealth",
+     "label": "Stealth"
+    },
+    {
+     "id": "Sdcb8VAeTxji",
+     "name": "Hold the Line",
+     "label": "Hold the Line"
+    },
+    {
+     "name": "Tough",
+     "rating": 3,
+     "label": "Tough(3)"
+    }
+   ],
+   "valid": true,
+   "defense": 5,
+   "quality": 5,
+   "weapons": [
+    {
+     "id": "ZM6D0DpP",
+     "name": "Wrecker-Sniper Carbine",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 18,
+     "attacks": 2,
+     "weaponId": "P1O5IqPo",
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "name": "Deadly",
+       "rating": 2,
+       "label": "Deadly(2)"
+      },
+      {
+       "type": "ArmyBookRule",
+       "name": "Reliable",
+       "label": "Reliable"
+      },
+      {
+       "type": "ArmyBookRule",
+       "id": "efmjJPTe0Yzd",
+       "name": "Anti-Cover",
+       "label": "Anti-Cover"
+      },
+      {
+       "type": "ArmyBookRule",
+       "id": "JSnFcm3SCiMD",
+       "name": "Fracture",
+       "label": "Fracture"
+      }
+     ],
+     "attacksMultiplier": 1,
+     "label": "Wrecker-Sniper Carbine (18\", A2, Deadly(2), Reliable, Anti-Cover, Fracture)",
+     "originalCount": 1
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 1
+    }
+   ],
+   "upgrades": [
+    "lh1qR"
+   ],
+   "genericName": "Snipers",
+   "sizeSkirmish": 1,
+   "hasCustomRule": false,
+   "hasBalanceInvalid": false,
+   "originalSize": 3,
+   "armyId": "z65fgu0l29i4lnlu",
+   "xp": 0,
+   "notes": null,
+   "traits": [],
+   "combined": false,
+   "joinToUnit": null,
+   "selectionId": "sVayV",
+   "selectedUpgrades": [],
+   "loadout": [
+    {
+     "id": "ZM6D0DpP",
+     "name": "Wrecker-Sniper Carbine",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 18,
+     "attacks": 2,
+     "weaponId": "P1O5IqPo",
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "name": "Deadly",
+       "rating": 2,
+       "label": "Deadly(2)"
+      },
+      {
+       "type": "ArmyBookRule",
+       "name": "Reliable",
+       "label": "Reliable"
+      },
+      {
+       "type": "ArmyBookRule",
+       "id": "efmjJPTe0Yzd",
+       "name": "Anti-Cover",
+       "label": "Anti-Cover"
+      },
+      {
+       "type": "ArmyBookRule",
+       "id": "JSnFcm3SCiMD",
+       "name": "Fracture",
+       "label": "Fracture"
+      }
+     ],
+     "attacksMultiplier": 1,
+     "label": "Wrecker-Sniper Carbine (18\", A2, Deadly(2), Reliable, Anti-Cover, Fracture)",
+     "originalCount": 1
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 1
+    }
+   ]
+  },
+  {
+   "id": "8jb141s",
+   "cost": 95,
+   "name": "Weapon Team",
+   "size": 1,
+   "items": [],
+   "rules": [
+    {
+     "id": "a0YtInGiUDd6",
+     "name": "Tough",
+     "rating": 9,
+     "label": "Tough(9)"
+    },
+    {
+     "id": "Sdcb8VAeTxji",
+     "name": "Hold the Line",
+     "label": "Hold the Line"
+    }
+   ],
+   "valid": true,
+   "defense": 5,
+   "quality": 5,
+   "weapons": [
+    {
+     "id": "F8LCxVEQ",
+     "name": "Heavy Machinegun",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 30,
+     "attacks": 6,
+     "weaponId": "_OuuPXyd",
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "id": "17crjK7P6_w6",
+       "name": "AP",
+       "rating": 1,
+       "label": "AP(1)"
+      }
+     ],
+     "attacksMultiplier": 1,
+     "label": "Heavy Machinegun (30\", A6, AP(1))",
+     "originalCount": 1,
+     "dependencies": [
+      {
+       "upgradeInstanceId": "WZIeQwCt5",
+       "count": 1,
+       "variant": "replace"
+      }
+     ]
+    },
+    {
+     "id": "iPNVsjGB",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 1
+    }
+   ],
+   "upgrades": [
+    "F1"
+   ],
+   "genericName": "Weapon Teams",
+   "sizeSkirmish": 1,
+   "hasCustomRule": false,
+   "disabledSections": [],
+   "hasBalanceInvalid": false,
+   "originalSize": 3,
+   "armyId": "z65fgu0l29i4lnlu",
+   "xp": 0,
+   "notes": null,
+   "traits": [],
+   "combined": false,
+   "joinToUnit": null,
+   "selectionId": "-Qqmc",
+   "selectedUpgrades": [
+    {
+     "instanceId": "WZIeQwCt5",
+     "upgrade": {
+      "id": "JWBFIjN",
+      "uid": "j-1QADy",
+      "label": "Replace any Heavy Machinegun",
+      "parentPackageUid": "F1",
+      "type": "ArmyBookUpgradeSection",
+      "variant": "replace",
+      "affects": {
+       "type": "any"
+      },
+      "targets": [
+       "Heavy Machinegun"
+      ]
+     },
+     "option": {
+      "uid": "c84nE",
+      "cost": 5,
+      "type": "ArmyBookUpgradeOption",
+      "costs": [
+       {
+        "unitId": "8jb141s",
+        "cost": 10,
+        "exactCost": 11.12,
+        "questCost": 35
+       }
+      ],
+      "gains": [
+       {
+        "type": "ArmyBookWeapon",
+        "name": "Mortar",
+        "range": 30,
+        "attacks": 2,
+        "specialRules": [
+         {
+          "type": "ArmyBookRule",
+          "id": "17crjK7P6_w6",
+          "name": "AP",
+          "rating": 1
+         },
+         {
+          "type": "ArmyBookRule",
+          "id": "w_vX0mi58KKt",
+          "name": "Blast",
+          "rating": 3
+         },
+         {
+          "type": "ArmyBookRule",
+          "id": "8Ck9GAwUK824",
+          "name": "Indirect"
+         }
+        ],
+        "count": 1,
+        "weaponId": "u6fRnF3j",
+        "id": "_OuuPXyd",
+        "attacksMultiplier": 1,
+        "label": "Mortar (30\", A2, AP(1), Blast(3), Indirect)",
+        "dependencies": []
+       }
+      ],
+      "label": "Mortar (30\", A2, AP(1), Blast(3), Indirect)",
+      "parentPackageUid": "F1",
+      "parentSectionUid": "j-1QADy",
+      "parentSectionId": "j-1QADy",
+      "id": "c84nE"
+     }
+    }
+   ],
+   "loadout": [
+    {
+     "id": "iPNVsjGB",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 1
+    },
+    {
+     "type": "ArmyBookWeapon",
+     "name": "Mortar",
+     "range": 30,
+     "attacks": 2,
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "id": "17crjK7P6_w6",
+       "name": "AP",
+       "rating": 1
+      },
+      {
+       "type": "ArmyBookRule",
+       "id": "w_vX0mi58KKt",
+       "name": "Blast",
+       "rating": 3
+      },
+      {
+       "type": "ArmyBookRule",
+       "id": "8Ck9GAwUK824",
+       "name": "Indirect"
+      }
+     ],
+     "count": 1,
+     "weaponId": "u6fRnF3j",
+     "id": "_OuuPXyd",
+     "attacksMultiplier": 1,
+     "label": "Mortar (30\", A2, AP(1), Blast(3), Indirect)",
+     "dependencies": []
+    }
+   ]
+  },
+  {
+   "id": "_nbz3zj",
+   "cost": 85,
+   "name": "Infantry Squad",
+   "size": 3,
+   "items": [],
+   "rules": [
+    {
+     "id": "Sdcb8VAeTxji",
+     "name": "Hold the Line",
+     "label": "Hold the Line"
+    },
+    {
+     "name": "Tough",
+     "rating": 3,
+     "label": "Tough(3)"
+    }
+   ],
+   "valid": true,
+   "defense": 5,
+   "quality": 5,
+   "weapons": [
+    {
+     "id": "ar_e50-g",
+     "name": "Battle Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 24,
+     "attacks": 2,
+     "weaponId": "uk1WGCHU",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Battle Rifle (24\", A2)",
+     "originalCount": 3,
+     "dependencies": [
+      {
+       "upgradeInstanceId": "uzlLx5WMw",
+       "count": 1,
+       "variant": "replace"
+      }
+     ]
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 3
+    }
+   ],
+   "upgrades": [
+    "E1",
+    "SmJiZ"
+   ],
+   "genericName": "Infantry",
+   "sizeSkirmish": 3,
+   "hasCustomRule": false,
+   "disabledSections": [],
+   "hasBalanceInvalid": false,
+   "originalSize": 10,
+   "armyId": "z65fgu0l29i4lnlu",
+   "xp": 0,
+   "notes": null,
+   "traits": [],
+   "combined": false,
+   "joinToUnit": null,
+   "selectionId": "id4wV",
+   "selectedUpgrades": [
+    {
+     "instanceId": "uzlLx5WMw",
+     "upgrade": {
+      "id": "p0B_NOS",
+      "uid": "sJKDuFd",
+      "label": "Replace one Battle Rifles",
+      "parentPackageUid": "E1",
+      "type": "ArmyBookUpgradeSection",
+      "variant": "replace",
+      "affects": {
+       "type": "exactly",
+       "value": 1
+      },
+      "targets": [
+       "Battle Rifles"
+      ]
+     },
+     "option": {
+      "uid": "yiQrzSL",
+      "cost": 5,
+      "type": "ArmyBookUpgradeOption",
+      "costs": [
+       {
+        "unitId": "_nbz3zj",
+        "cost": 20,
+        "exactCost": 21.98,
+        "questCost": 65
+       }
+      ],
+      "gains": [
+       {
+        "type": "ArmyBookWeapon",
+        "name": "Plasma Rifle",
+        "range": 24,
+        "attacks": 4,
+        "specialRules": [
+         {
+          "type": "ArmyBookRule",
+          "id": "17crjK7P6_w6",
+          "name": "AP",
+          "rating": 2
+         }
+        ],
+        "count": 1,
+        "weaponId": "gN1LAzCn",
+        "id": "gN1LAzCn",
+        "attacksMultiplier": 1,
+        "label": "Plasma Rifle (24\", A4, AP(2))",
+        "dependencies": []
+       }
+      ],
+      "label": "Plasma Rifle (24\", A4, AP(2))",
+      "parentPackageUid": "E1",
+      "parentSectionUid": "sJKDuFd",
+      "parentSectionId": "sJKDuFd",
+      "id": "yiQrzSL"
+     }
+    }
+   ],
+   "loadout": [
+    {
+     "id": "ar_e50-g",
+     "name": "Battle Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 2,
+     "range": 24,
+     "attacks": 2,
+     "weaponId": "uk1WGCHU",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Battle Rifle (24\", A2)",
+     "originalCount": 3,
+     "dependencies": [
+      {
+       "upgradeInstanceId": "uzlLx5WMw",
+       "count": 1,
+       "variant": "replace"
+      }
+     ]
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 3
+    },
+    {
+     "type": "ArmyBookWeapon",
+     "name": "Plasma Rifle",
+     "range": 24,
+     "attacks": 4,
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "id": "17crjK7P6_w6",
+       "name": "AP",
+       "rating": 2
+      }
+     ],
+     "count": 1,
+     "weaponId": "gN1LAzCn",
+     "id": "gN1LAzCn",
+     "attacksMultiplier": 1,
+     "label": "Plasma Rifle (24\", A4, AP(2))",
+     "dependencies": []
+    }
+   ]
+  },
+  {
+   "id": "Xuu-drz",
+   "cost": 50,
+   "name": "Storm Trooper",
+   "size": 1,
+   "items": [],
+   "rules": [
+    {
+     "id": "JSKVyurtWIyW",
+     "name": "Strider",
+     "label": "Strider"
+    },
+    {
+     "id": "Sdcb8VAeTxji",
+     "name": "Hold the Line",
+     "label": "Hold the Line"
+    },
+    {
+     "name": "Tough",
+     "rating": 3,
+     "label": "Tough(3)"
+    }
+   ],
+   "valid": true,
+   "defense": 4,
+   "quality": 4,
+   "weapons": [
+    {
+     "id": "eBwGDrBv",
+     "name": "Heavy Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 18,
+     "attacks": 2,
+     "weaponId": "jDDBuADY",
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "id": "17crjK7P6_w6",
+       "name": "AP",
+       "rating": 1,
+       "label": "AP(1)"
+      }
+     ],
+     "attacksMultiplier": 1,
+     "label": "Heavy Rifle (18\", A2, AP(1))",
+     "originalCount": 1
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 1
+    }
+   ],
+   "upgrades": [
+    "I1",
+    "SmJiZ"
+   ],
+   "genericName": "Shock Troopers",
+   "sizeSkirmish": 1,
+   "hasCustomRule": false,
+   "disabledSections": [],
+   "hasBalanceInvalid": false,
+   "originalSize": 5,
+   "armyId": "z65fgu0l29i4lnlu",
+   "xp": 0,
+   "notes": null,
+   "traits": [],
+   "combined": false,
+   "joinToUnit": null,
+   "selectionId": "Zkm62",
+   "selectedUpgrades": [],
+   "loadout": [
+    {
+     "id": "eBwGDrBv",
+     "name": "Heavy Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 18,
+     "attacks": 2,
+     "weaponId": "jDDBuADY",
+     "specialRules": [
+      {
+       "type": "ArmyBookRule",
+       "id": "17crjK7P6_w6",
+       "name": "AP",
+       "rating": 1,
+       "label": "AP(1)"
+      }
+     ],
+     "attacksMultiplier": 1,
+     "label": "Heavy Rifle (18\", A2, AP(1))",
+     "originalCount": 1
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 1,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 1
+    }
+   ]
+  },
+  {
+   "id": "SScXOqX",
+   "cost": 110,
+   "name": "Veterans",
+   "size": 3,
+   "items": [],
+   "rules": [
+    {
+     "id": "Sdcb8VAeTxji",
+     "name": "Hold the Line",
+     "label": "Hold the Line"
+    },
+    {
+     "name": "Tough",
+     "rating": 3,
+     "label": "Tough(3)"
+    }
+   ],
+   "valid": true,
+   "defense": 5,
+   "quality": 4,
+   "weapons": [
+    {
+     "id": "ar_e50-g",
+     "name": "Battle Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 24,
+     "attacks": 2,
+     "weaponId": "uk1WGCHU",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Battle Rifle (24\", A2)",
+     "originalCount": 3
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 3
+    }
+   ],
+   "upgrades": [
+    "H1",
+    "SmJiZ"
+   ],
+   "genericName": "Veterans",
+   "sizeSkirmish": 1,
+   "hasCustomRule": false,
+   "disabledSections": [],
+   "hasBalanceInvalid": false,
+   "originalSize": 5,
+   "armyId": "z65fgu0l29i4lnlu",
+   "xp": 0,
+   "notes": null,
+   "traits": [],
+   "combined": false,
+   "joinToUnit": null,
+   "selectionId": "OPxho",
+   "selectedUpgrades": [
+    {
+     "instanceId": "zRocUT_1R",
+     "upgrade": {
+      "id": "DxEhBCH",
+      "uid": "znb1L",
+      "label": "Upgrade up to two models with one",
+      "isLowPrio": true,
+      "parentPackageUid": "SmJiZ",
+      "type": "ArmyBookUpgradeSection",
+      "variant": "upgrade",
+      "model": true,
+      "affects": {
+       "type": "up to",
+       "value": 2
+      },
+      "select": {
+       "type": "exactly",
+       "value": 1
+      }
+     },
+     "option": {
+      "uid": "vn9Q1",
+      "type": "ArmyBookUpgradeOption",
+      "costs": [
+       {
+        "unitId": "Xuu-drz",
+        "cost": 70,
+        "exactCost": 67.63,
+        "questCost": 205
+       },
+       {
+        "unitId": "_nbz3zj",
+        "cost": 70,
+        "exactCost": 67.63,
+        "questCost": 205
+       },
+       {
+        "unitId": "SScXOqX",
+        "cost": 70,
+        "exactCost": 67.63,
+        "questCost": 205
+       }
+      ],
+      "gains": [
+       {
+        "type": "ArmyBookItem",
+        "name": "Medical Training",
+        "content": [
+         {
+          "type": "ArmyBookRule",
+          "id": "V3YzPPkZm8at",
+          "name": "Regeneration Aura",
+          "dependencies": []
+         }
+        ],
+        "bases": null,
+        "label": "Medical Training (Regeneration Aura)",
+        "count": 1,
+        "dependencies": []
+       }
+      ],
+      "label": "Medical Training (Regeneration Aura)",
+      "parentSectionId": "znb1L",
+      "id": "vn9Q1"
+     }
+    }
+   ],
+   "loadout": [
+    {
+     "id": "ar_e50-g",
+     "name": "Battle Rifle",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 24,
+     "attacks": 2,
+     "weaponId": "uk1WGCHU",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Battle Rifle (24\", A2)",
+     "originalCount": 3
+    },
+    {
+     "id": "N6qHx_Da",
+     "name": "Strike",
+     "type": "ArmyBookWeapon",
+     "count": 3,
+     "range": 0,
+     "attacks": 2,
+     "weaponId": "FOuoX5BA",
+     "specialRules": [],
+     "attacksMultiplier": 1,
+     "label": "Strike (A2)",
+     "originalCount": 3
+    },
+    {
+     "type": "ArmyBookItem",
+     "name": "Medical Training",
+     "content": [
+      {
+       "type": "ArmyBookRule",
+       "id": "V3YzPPkZm8at",
+       "name": "Regeneration Aura",
+       "dependencies": [],
+       "count": 1
+      }
+     ],
+     "bases": null,
+     "label": "Medical Training (Regeneration Aura)",
+     "count": 1,
+     "dependencies": []
+    }
+   ]
+  }
+ ],
+ "specialRules": [
+  {
+   "id": "Sdcb8VAeTxji",
+   "name": "Hold the Line",
+   "aliasedRuleId": "LbpquFUyGSZ7",
+   "description": "If most models in this unit have this rule, they get +1 to Morale Test rolls when shot/charged from over 9\"/6\" away.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1,
+   "originalName": "Valiant"
+  },
+  {
+   "id": "C6MzEy1CnxTs",
+   "name": "Repel Ambushers",
+   "aliasedRuleId": null,
+   "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "FPlO2MymiMc0",
+   "name": "Coordinate",
+   "aliasedRuleId": null,
+   "description": "At the end of this unit's activation, another friendly unit within 12\" that hasn't activated yet may be activated immediately. May not be used if this unit was activated via Coordinate.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "eU6uz90H82Sw",
+   "name": "Extended Buff Range",
+   "aliasedRuleId": null,
+   "description": "If this unit is within 24\" of another friendly unit with this rule that is within 6\" of a friendly Hero, then that Hero may use special rules that allow it to pick friendly units within 12\" (except for spells) on this unit as if it was in range.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "74RjQ1k41DoO",
+   "name": "Armor",
+   "aliasedRuleId": null,
+   "description": "Counts as having Defense X+.",
+   "hasRating": true,
+   "coreType": 5,
+   "targetType": 1
+  },
+  {
+   "id": "IyLY1212wacW",
+   "name": "Fortified",
+   "aliasedRuleId": null,
+   "description": "When units where most models have this rule take hits, those hits count as having AP(-1), to a min. of AP(0).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "4NMqPbqMvE4C",
+   "name": "Enhanced Hold the Line",
+   "aliasedRuleId": "TbjUdR-OJZPw",
+   "description": "If most models in this unit have Hold the Line, they always get +1 to Morale Test rolls from Hold the Line (instead of only when shot/charged from over 9\"/6\" away).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1,
+   "originalName": "Enhanced Valiant"
+  },
+  {
+   "id": "V3YzPPkZm8at",
+   "name": "Regeneration Aura",
+   "aliasedRuleId": null,
+   "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "ozw_t3SA8IDu",
+   "name": "Enhanced Hold the Line Aura",
+   "aliasedRuleId": null,
+   "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Hold the Line. If this model is killed, picked models that are deployed lose the rule.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "55Si47u6jTtb",
+   "name": "Entrenched Buff",
+   "aliasedRuleId": null,
+   "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets Entrenched once (next time the effect would apply).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "xs0-u9qrV0xt",
+   "name": "Rapid Advance Buff",
+   "aliasedRuleId": null,
+   "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets Rapid Advance once (next time the effect would apply).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "FDI5sLTtr3gC",
+   "name": "Precision Shooter Buff",
+   "aliasedRuleId": null,
+   "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets +1 to hit rolls when shooting once (next time the effect would apply).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "rqBYj1yANC3J",
+   "name": "Unique Hero",
+   "aliasedRuleId": null,
+   "description": "Counts as having Hero, and this model may only be taken once per army.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "MfDT3coYRS45",
+   "name": "No Retreat Buff",
+   "aliasedRuleId": null,
+   "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets No Retreat once (next time the effect would apply).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "JSnFcm3SCiMD",
+   "name": "Fracture",
+   "aliasedRuleId": null,
+   "description": "For each unmodified result of 6 to hit, those hits get AP(+2).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 2
+  },
+  {
+   "id": "nFo2BlBRhMcH",
+   "name": "Morale Debuff",
+   "aliasedRuleId": null,
+   "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which gets -1 to Morale Test rolls once (next time the effect would apply).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "QXyt-zV_bjpg",
+   "name": "Unstoppable",
+   "aliasedRuleId": null,
+   "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 2
+  },
+  {
+   "id": "efmjJPTe0Yzd",
+   "name": "Anti-Cover",
+   "aliasedRuleId": null,
+   "description": "This weapon ignores Cover.",
+   "hasRating": false,
+   "coreType": 5,
+   "targetType": 2
+  },
+  {
+   "id": "bjt7_iCtmOK7",
+   "name": "Good Shot",
+   "aliasedRuleId": null,
+   "description": "This model gets +1 to hit rolls when shooting.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "iWuTcXAw2-5s",
+   "name": "Bane in Melee Buff",
+   "aliasedRuleId": null,
+   "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets Bane on its weapons in melee once (next time the effect would apply).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "LbpquFUyGSZ7",
+   "name": "Valiant",
+   "aliasedRuleId": null,
+   "description": "If most models in this unit have this rule, they get +1 to Morale Test rolls when shot/charged from over 9\"/6\" away.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "TbjUdR-OJZPw",
+   "name": "Enhanced Valiant",
+   "aliasedRuleId": null,
+   "description": "If most models in this unit have Valiant, they always get +1 to Morale Test rolls from Valiant (instead of only when shot/charged from over 9\"/6\" away).",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "6mJw5IdqSqNC",
+   "name": "Ambush",
+   "aliasedRuleId": null,
+   "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9\u201d away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can\u2019t seize or contest objectives on the round they deploy.",
+   "hasRating": false,
+   "coreType": 1,
+   "targetType": 1
+  },
+  {
+   "id": "T08VkBuVmNZ_",
+   "name": "Hero",
+   "aliasedRuleId": null,
+   "description": "Units within 6\u201d of friendly Heroes may use the Hero\u2019s Quality for Morale Tests as long as the Hero isn\u2019t Shaken.",
+   "hasRating": false,
+   "coreType": 1,
+   "targetType": 1
+  },
+  {
+   "id": "s6MgSfmgylXU",
+   "name": "Defense",
+   "aliasedRuleId": null,
+   "description": "This model gets +X to Defense rolls.",
+   "hasRating": true,
+   "coreType": 5,
+   "targetType": 1
+  },
+  {
+   "id": "CQes0mDvF4bV",
+   "name": "AP",
+   "aliasedRuleId": null,
+   "description": "AP",
+   "hasRating": true,
+   "coreType": 1,
+   "targetType": 2
+  },
+  {
+   "id": "8KujvrTG8k9p",
+   "name": "Regeneration",
+   "aliasedRuleId": null,
+   "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+   "hasRating": false,
+   "coreType": 1,
+   "targetType": 1
+  },
+  {
+   "id": "wHfLIdlnEQ1a",
+   "name": "Entrenched",
+   "aliasedRuleId": null,
+   "description": "If most models in this unit have this rule, as long as they haven't moved during this round, enemy units shooting at them from over 12\u201d away get -1 to hit rolls.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "HmxkJq_My-Ub",
+   "name": "Rapid Advance",
+   "aliasedRuleId": null,
+   "description": "This model moves +4\" when using Advance actions.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "O2Cd7OibBBA5",
+   "name": "No Retreat",
+   "aliasedRuleId": null,
+   "description": "When a unit where most models have this rule fails a Morale Test that causes it to be Shaken or Routed, the test counts as passed instead. Then, roll as many dice as the number of wounds it would take to fully destroy it, and for each result of 1-3 the unit takes one wound, which can't be ignored.",
+   "hasRating": false,
+   "coreType": null,
+   "targetType": 1
+  },
+  {
+   "id": "Naqc5mga9Uha",
+   "name": "Bane",
+   "aliasedRuleId": null,
+   "description": "Ignores Regeneration, and when attacking, the target must re-roll unmodified Defense results of 6.",
+   "hasRating": false,
+   "coreType": 1,
+   "targetType": 2
+  },
+  {
+   "id": "H9E9PIWpGRdw",
+   "name": "Relentless",
+   "aliasedRuleId": null,
+   "description": "When this model shoots at enemies over 9\u201d away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+   "hasRating": false,
+   "coreType": 1,
+   "targetType": 1
+  }
+ ],
+ "forceOrgErrors": [
+  "Points limit exceeded: 785/300",
+  "Max 1 Hero per full 400pts.",
+  "Max 1 unit per full 80pts.",
+  "Cannot have more than 1 copies of a particular unit (Infantry Squad).",
+  "May not bring any single unit worth more than 35% of total points (105pts).",
+  "Max Tough is 21, current total is 60."
+ ]
+}

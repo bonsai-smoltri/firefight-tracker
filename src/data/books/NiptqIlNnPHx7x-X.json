@@ -1,0 +1,234 @@
+{
+  "uid": "NiptqIlNnPHx7x-X",
+  "name": "Berserker Clans",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "mxQ1fCGgPccn",
+      "name": "Berserker",
+      "aliasedRuleId": "MEAjk171GPmF",
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "cU3RtuBXHyq4",
+      "name": "Blast",
+      "aliasedRuleId": null,
+      "description": "If the target is hit all models within 4“ of it are also hit by this weapon.",
+      "hasRating": false
+    },
+    {
+      "id": "MEAjk171GPmF",
+      "name": "Brutal",
+      "aliasedRuleId": null,
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "2W8l0OXSjju6",
+      "name": "Enhanced Berserker",
+      "aliasedRuleId": "Nbo5DTQufMoB",
+      "description": "If this model has Berserker, the target always takes hits on unmodified hit results of 6 from Berserker (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "D-XBYhhRyp_N",
+      "name": "Enhanced Berserker Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Berserker. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "Nbo5DTQufMoB",
+      "name": "Enhanced Brutal",
+      "aliasedRuleId": null,
+      "description": "If this model has Brutal, the target always takes hits on unmodified hit results of 6 from Brutal (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "r0MEI7V18zNs",
+      "name": "Instinctive",
+      "aliasedRuleId": null,
+      "description": "When this model is activated, if it is able to shoot/charge an enemy unit, then it must immediately attack the closest valid target and gets +1 to hit rolls for that attack.",
+      "hasRating": false
+    },
+    {
+      "id": "EgdF_3MSddXR",
+      "name": "Melee Evasion",
+      "aliasedRuleId": null,
+      "description": "Enemies get -1 to hit rolls in melee when attacking units where most models have this rule.",
+      "hasRating": false
+    },
+    {
+      "id": "fOIa9S1t0q7S",
+      "name": "Melee Evasion Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Melee Evasion. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "mETdyZ__yMVj",
+      "name": "Mend",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick one friendly model within 3\" with Tough, and remove D3 wounds from it.",
+      "hasRating": false
+    },
+    {
+      "id": "ad6BHtI2eeX0",
+      "name": "Pierce",
+      "aliasedRuleId": null,
+      "description": "Ignores all positive Defense modifiers on the target, and when attacking units over half of this weapon's range away, this weapon gets AP(+1).",
+      "hasRating": false
+    },
+    {
+      "id": "n3CNLjq67GHI",
+      "name": "Piercing Fighting Mark",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which friendly units gets AP(+1) on their weapons in melee against once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "B5RGOPajK6Lr",
+      "name": "Precision Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +1 to hit rolls in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "lJx5NP1KA3KU",
+      "name": "Quick",
+      "aliasedRuleId": null,
+      "description": "Moves +2\" when using Advance, and +2\" when using Rush/Charge.",
+      "hasRating": false
+    },
+    {
+      "id": "ykPufsAeq8Kw",
+      "name": "Quick Shot",
+      "aliasedRuleId": null,
+      "description": "This model may shoot after using Rush actions.",
+      "hasRating": false
+    },
+    {
+      "id": "a9j1Pje6TLBi",
+      "name": "Quick Shot Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Quick Shot. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "hnsVQyx3ylMf",
+      "name": "Ravage",
+      "aliasedRuleId": null,
+      "description": "Once per round, when it’s this model’s turn to strike in melee, roll X dice before attacking, unless this unit is Fatigued. For each 6+ the target takes one wound.",
+      "hasRating": true
+    },
+    {
+      "id": "zjzB46LX-QDg",
+      "name": "Re-Deployment",
+      "aliasedRuleId": null,
+      "description": "After all other units are deployed (excluding units that were set aside), you may remove up to two friendly units from the table and deploy them again. Players alternate in placing Re-Deployment units, starting with the player that activates next.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "5v6oaGfrdf29",
+      "name": "Surge",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 6 to hit, this weapon deals 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "a0YtInGiUDd6",
+      "name": "Tough",
+      "aliasedRuleId": null,
+      "description": "Once a model has taken as many wounds as its Tough value, it is killed (remove from play).",
+      "hasRating": true
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "mNU5w",
+      "name": "Berserker Frenzy",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which friendly units gets AP(+1) on their weapons in melee against once (next time the effect would apply)."
+    },
+    {
+      "id": "RM692",
+      "name": "Clan Power",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Berserker once (next time the effect would apply)."
+    },
+    {
+      "id": "91lMM",
+      "name": "Crush!",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 1 hit with Blast(3)."
+    },
+    {
+      "id": "TmuOs",
+      "name": "Destroy!",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 6 hits with AP(1) and Pierce."
+    },
+    {
+      "id": "djSzF",
+      "name": "Forge Protection",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which gets +1 to Defense rolls once (next time the effect would apply)."
+    },
+    {
+      "id": "_dWTK",
+      "name": "Smash!",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 4 hits with Surge. Roll as many dice as hits to see if \"on rolls of 6\" effects trigger."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "uid": "cV1jqgtZj8sf57ld",
+  "name": "Mercenaries",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "x0gFQEwammM_",
+      "name": "Battle-Hardened",
+      "aliasedRuleId": "LbpquFUyGSZ7",
+      "description": "If most models in this unit have this rule, they get +1 to Morale Test rolls when shot/charged from over 9\"/6\" away.",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "QWzGAg9RpE2D",
+      "name": "Increased Shooting Range Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +6\" range on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "DhLjIDRrWz6-",
+      "name": "Piercing Charge",
+      "aliasedRuleId": null,
+      "description": "This model gets AP(+1) on its weapons when charging.",
+      "hasRating": false
+    },
+    {
+      "id": "L--qMjlm2g4Q",
+      "name": "Piercing Charge Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Piercing Charge. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "dlk9Q7howUDr",
+      "name": "Piercing Marksman",
+      "aliasedRuleId": null,
+      "description": "When shooting at enemies over 9\" away, this model's weapons get AP(+1).",
+      "hasRating": false
+    },
+    {
+      "id": "1m7a9ADI-D_g",
+      "name": "Piercing Marksman Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Piercing Marksman. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "V3YzPPkZm8at",
+      "name": "Regeneration Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "H9E9PIWpGRdw",
+      "name": "Relentless",
+      "aliasedRuleId": null,
+      "description": "When this model shoots at enemies over 9” away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "5v6oaGfrdf29",
+      "name": "Surge",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 6 to hit, this weapon deals 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "LbpquFUyGSZ7",
+      "name": "Valiant",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have this rule, they get +1 to Morale Test rolls when shot/charged from over 9\"/6\" away.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "mNU5w",
+      "name": "Calculated Foresight",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which friendly units gets Relentless against once (next time the effect would apply)."
+    },
+    {
+      "id": "_dWTK",
+      "name": "Electric Tempest",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 4 hits with Surge. Roll as many dice as hits to see if \"on rolls of 6\" effects trigger."
+    },
+    {
+      "id": "TmuOs",
+      "name": "Expel Threat",
+      "threshold": 1,
+      "effect": "Pick one enemy model within 18\" in line of sight, which takes 2 hits with AP(1). This effect is resolved as if the target was a unit of [1]."
+    },
+    {
+      "id": "RM692",
+      "name": "Psy-Injected Courage",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get +1 to Morale Test rolls once (next time the effect would apply)."
+    },
+    {
+      "id": "91lMM",
+      "name": "Searing Burst",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 9 hits."
+    },
+    {
+      "id": "djSzF",
+      "name": "Shock Speed",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which moves +2\" when using Advance actions and +4\" when using Rush/Charge actions once (next time the effect would apply)."
+    }
+  ]
+}

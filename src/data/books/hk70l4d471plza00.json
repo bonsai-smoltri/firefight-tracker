@@ -1,0 +1,325 @@
+{
+  "uid": "hk70l4d471plza00",
+  "name": "Ratmen Clans",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "kQVze0GRY3R9",
+      "name": "Agile",
+      "aliasedRuleId": null,
+      "description": "Moves +1\" when using Advance, and +2\" when using Rush/Charge.",
+      "hasRating": false
+    },
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "gOFh4u_LGrwP",
+      "name": "Ambush Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ambush. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "cU3RtuBXHyq4",
+      "name": "Blast",
+      "aliasedRuleId": null,
+      "description": "If the target is hit all models within 4“ of it are also hit by this weapon.",
+      "hasRating": false
+    },
+    {
+      "id": "_mrPya5SXSqW",
+      "name": "Deadly",
+      "aliasedRuleId": null,
+      "description": "Assign each wound to one model, and multiply it by X. Hits from Deadly must be resolved first, and these wounds don’t carry over to other models if the original target is killed.",
+      "hasRating": true
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "8Ai6vFN7Ut6E",
+      "name": "Enhanced Agile",
+      "aliasedRuleId": null,
+      "description": "If this model has Agile, it moves +2\" on Advance and +4\" on Rush/Charge from Agile (instead of only +1\" and +2\").",
+      "hasRating": false
+    },
+    {
+      "id": "o2l7F3ugQNly",
+      "name": "Enhanced Scurry",
+      "aliasedRuleId": "8Ai6vFN7Ut6E",
+      "description": "If this model has Scurry, it moves +2\" on Advance and +4\" on Rush/Charge from Scurry (instead of only +1\" and +2\").",
+      "hasRating": false
+    },
+    {
+      "id": "QhQL5YYoO3jJ",
+      "name": "Enhanced Scurry Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Scurry. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "O_sf2rsHA7rD",
+      "name": "Evasive",
+      "aliasedRuleId": null,
+      "description": "Enemies get -1 to hit rolls when attacking units where most models have this rule.",
+      "hasRating": false
+    },
+    {
+      "id": "OOowoGdbpTCn",
+      "name": "Evasive Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Evasive. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "bjt7_iCtmOK7",
+      "name": "Good Shot",
+      "aliasedRuleId": null,
+      "description": "This model gets +1 to hit rolls when shooting.",
+      "hasRating": false
+    },
+    {
+      "id": "gVRt_wk8DktW",
+      "name": "Hazardous",
+      "aliasedRuleId": null,
+      "description": "Gets AP(4), but on unmodified results of 1 to hit this model takes one wound, or X wounds if this weapon has the Blast(X)/Deadly(X) rule.",
+      "hasRating": false
+    },
+    {
+      "id": "T08VkBuVmNZ_",
+      "name": "Hero",
+      "aliasedRuleId": null,
+      "description": "Units within 6” of friendly Heroes may use the Hero’s Quality for Morale Tests as long as the Hero isn’t Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "8Ck9GAwUK824",
+      "name": "Indirect",
+      "aliasedRuleId": null,
+      "description": "When using Hold actions and shooting, may target enemies that are not in line of sight as if in line of sight, and ignores Cover from Sight Blockers.",
+      "hasRating": false
+    },
+    {
+      "id": "EgdF_3MSddXR",
+      "name": "Melee Evasion",
+      "aliasedRuleId": null,
+      "description": "Enemies get -1 to hit rolls in melee when attacking units where most models have this rule.",
+      "hasRating": false
+    },
+    {
+      "id": "fOIa9S1t0q7S",
+      "name": "Melee Evasion Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Melee Evasion. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "O2Cd7OibBBA5",
+      "name": "No Retreat",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule fails a Morale Test that causes it to be Shaken or Routed, the test counts as passed instead. Then, roll as many dice as the number of wounds it would take to fully destroy it, and for each result of 1-3 the unit takes one wound, which can't be ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "DhLjIDRrWz6-",
+      "name": "Piercing Charge",
+      "aliasedRuleId": null,
+      "description": "This model gets AP(+1) on its weapons when charging.",
+      "hasRating": false
+    },
+    {
+      "id": "L--qMjlm2g4Q",
+      "name": "Piercing Charge Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Piercing Charge. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "ovMK8gJ26T0s",
+      "name": "Precision Shooter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +1 to hit rolls when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "aiYEmCuDPUcM",
+      "name": "Predator",
+      "aliasedRuleId": null,
+      "description": "For each unmodified roll of 6 to hit when attacking, this model may roll +1 attack with that weapon. This rule doesn’t apply to newly generated attacks.",
+      "hasRating": false
+    },
+    {
+      "id": "UlH7N0knz4eN",
+      "name": "Predator Shooter",
+      "aliasedRuleId": null,
+      "description": "For each unmodified roll of 6 to hit when shooting, this model may roll +1 attack with that weapon. This rule doesn’t apply to newly generated attacks.",
+      "hasRating": false
+    },
+    {
+      "id": "zlKV_VK3wONR",
+      "name": "Predator Shooter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Predator Shooter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "x7chGZmjk8Os",
+      "name": "Quick Throw",
+      "aliasedRuleId": null,
+      "description": "This model may always target enemies that are not in line of sight when shooting with Indirect weapons (instead of only when using Hold actions).",
+      "hasRating": false
+    },
+    {
+      "id": "hnsVQyx3ylMf",
+      "name": "Ravage",
+      "aliasedRuleId": null,
+      "description": "Once per round, when it’s this model’s turn to strike in melee, roll X dice before attacking, unless this unit is Fatigued. For each 6+ the target takes one wound.",
+      "hasRating": true
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "e0u4Znq4Z82Q",
+      "name": "Reinforcement",
+      "aliasedRuleId": null,
+      "description": "When a unit where all models have this rule is Shaken, you may remove it from the table as destroyed. At the beginning of the next round after a unit where all models have this rule is destroyed, after Ambushers have been deployed, you may place a new copy of it fully within 9\" of any table edge, over 9\" away from enemy units. Units that deploy via Reinforcement can’t seize or contest objectives on the round they deploy, and this rule doesn’t apply to the new copy of the unit.",
+      "hasRating": false
+    },
+    {
+      "id": "NEYp25CGvZl3",
+      "name": "Scurry",
+      "aliasedRuleId": "kQVze0GRY3R9",
+      "description": "Moves +1\" when using Advance, and +2\" when using Rush/Charge.",
+      "hasRating": false
+    },
+    {
+      "id": "F_1wfmpAyYwT",
+      "name": "Self-Destruct",
+      "aliasedRuleId": null,
+      "description": "If this model is killed in melee, the attacking unit takes X hits. If this model survives melee, after both sides have finished attacking, it is immediately killed, and the enemy unit takes X hits.",
+      "hasRating": true
+    },
+    {
+      "id": "IEJp3a4vE0CB",
+      "name": "Shred",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 1 to block hits, this weapon deals 1 extra wound.",
+      "hasRating": false
+    },
+    {
+      "id": "8Hjy54TYtwb7",
+      "name": "Takedown",
+      "aliasedRuleId": null,
+      "description": "This model may pick any model in the target unit as its individual target for this weapon's attacks, which is resolved as if it was a unit of [1]. Takedown attacks must be resolved before other weapons.",
+      "hasRating": false
+    },
+    {
+      "id": "rH1nxpq0qLmE",
+      "name": "Takedown Shot",
+      "aliasedRuleId": null,
+      "description": "Once per game, when this model shoots, it may make X extra attacks against the target at Quality 2+ with AP(2), Deadly(3), and Takedown.",
+      "hasRating": true
+    },
+    {
+      "id": "eyMkgYDVrP7C",
+      "name": "Takedown Strike",
+      "aliasedRuleId": null,
+      "description": "Once per game, when it's this model's turn to strike in melee, it may make X attacks at Quality 2+ with AP(2), Deadly(3), and Takedown.",
+      "hasRating": true
+    },
+    {
+      "id": "rqBYj1yANC3J",
+      "name": "Unique Hero",
+      "aliasedRuleId": null,
+      "description": "Counts as having Hero, and this model may only be taken once per army.",
+      "hasRating": false
+    },
+    {
+      "id": "DEeVIJcfNfS6",
+      "name": "Unpredictable Fighter",
+      "aliasedRuleId": null,
+      "description": "When in melee, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "r8OBuam8nRXP",
+      "name": "Vanguard",
+      "aliasedRuleId": null,
+      "description": "After this model is deployed, it may be placed anywhere fully within 9\" of its position, over 9\" away from non-Vanguard enemy units.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "j1paJ",
+      "name": "Adrenal Booster",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which gets Enhanced Scurry once (next time the effect would apply)."
+    },
+    {
+      "id": "MbwfE",
+      "name": "Enhanced Serum",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Regeneration once (next time the effect would apply)."
+    },
+    {
+      "id": "Y18p_",
+      "name": "Focused Shock",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 4 hits with Shred."
+    },
+    {
+      "id": "qBXWC",
+      "name": "Power Surge",
+      "threshold": 1,
+      "effect": "Pick one enemy model within 18\" in line of sight, which takes 2 hits with Hazardous. Roll as many dice as hits to see if \"on rolls of 1\" effects trigger. This effect is resolved as if the target was a unit of [1]."
+    },
+    {
+      "id": "Ho2jM",
+      "name": "System Takeover",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 9 hits."
+    },
+    {
+      "id": "dpjQe",
+      "name": "Tech-Sickness",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which get -1 to Defense rolls once (next time the effect would apply)."
+    }
+  ]
+}

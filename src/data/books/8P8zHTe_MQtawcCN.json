@@ -1,0 +1,262 @@
+{
+  "uid": "8P8zHTe_MQtawcCN",
+  "name": "Psycho Cults",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "Naqc5mga9Uha",
+      "name": "Bane",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking, the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "VRSD2Brj6vAZ",
+      "name": "Bane Mark",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which friendly units gets Bane on their weapons when attacking against once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "h9JsgD38BRjI",
+      "name": "Bounding",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, you may move all models with this rule in it by up to D3+1\".",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "ql-dzbuQgTT4",
+      "name": "Enhanced Predator",
+      "aliasedRuleId": null,
+      "description": "If this model has Predator, it gets extra attacks on successful unmodified hit results of 5-6 from Predator (instead of only on 6).",
+      "hasRating": false
+    },
+    {
+      "id": "W2-YAUebkXqF",
+      "name": "Enhanced Psychotic",
+      "aliasedRuleId": "ql-dzbuQgTT4",
+      "description": "If this model has Psychotic, it gets extra attacks on successful unmodified hit results of 5-6 from Psychotic (instead of only on 6).",
+      "hasRating": false
+    },
+    {
+      "id": "9GgsgTE6NcOg",
+      "name": "Enhanced Psychotic Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Psychotic. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "O2Cd7OibBBA5",
+      "name": "No Retreat",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule fails a Morale Test that causes it to be Shaken or Routed, the test counts as passed instead. Then, roll as many dice as the number of wounds it would take to fully destroy it, and for each result of 1-3 the unit takes one wound, which can't be ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "09SoiR1HuW7u",
+      "name": "Precise",
+      "aliasedRuleId": null,
+      "description": "Gets +1 to hit when attacking.",
+      "hasRating": false
+    },
+    {
+      "id": "aiYEmCuDPUcM",
+      "name": "Predator",
+      "aliasedRuleId": null,
+      "description": "For each unmodified roll of 6 to hit when attacking, this model may roll +1 attack with that weapon. This rule doesn’t apply to newly generated attacks.",
+      "hasRating": false
+    },
+    {
+      "id": "TU7fkKrcAvop",
+      "name": "Protection Feat",
+      "aliasedRuleId": null,
+      "description": "Once per game, when this unit takes wounds and most of its models have this rule, you may use this rule and roll one die per wound, and on a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "CdIKErxgOpl3",
+      "name": "Protection Feat Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Protection Feat. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "SqhSkyNcexeN",
+      "name": "Psychotic",
+      "aliasedRuleId": "aiYEmCuDPUcM",
+      "description": "For each unmodified roll of 6 to hit when attacking, this model may roll +1 attack with that weapon. This rule doesn’t apply to newly generated attacks.",
+      "hasRating": false
+    },
+    {
+      "id": "1qiGNqpxKb24",
+      "name": "Puncture",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking units where most models have Defense 2+ to Defense 3+, this weapon gets AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "H9E9PIWpGRdw",
+      "name": "Relentless",
+      "aliasedRuleId": null,
+      "description": "When this model shoots at enemies over 9” away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "zGew9XZT2rUm",
+      "name": "Relentless Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Relentless. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "FAMbscK5vhSu",
+      "name": "Scout",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. After all other units are deployed, may be deployed anywhere fully within 9” of their deployment zone, over 9” away from non-Scout enemy units. Players alternate in placing Scout units, starting with the player that activates next.",
+      "hasRating": false
+    },
+    {
+      "id": "Tdyu4Tn-rFN6",
+      "name": "Scout Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Scout. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "F_1wfmpAyYwT",
+      "name": "Self-Destruct",
+      "aliasedRuleId": null,
+      "description": "If this model is killed in melee, the attacking unit takes X hits. If this model survives melee, after both sides have finished attacking, it is immediately killed, and the enemy unit takes X hits.",
+      "hasRating": true
+    },
+    {
+      "id": "wsqfB0fq69eG",
+      "name": "Shielded",
+      "aliasedRuleId": null,
+      "description": "Units where most models have this rule get +1 to Defense rolls against hits that are not from spells.",
+      "hasRating": false
+    },
+    {
+      "id": "ZW_Zv-kkBt2q",
+      "name": "Shielded Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Shielded. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "5v6oaGfrdf29",
+      "name": "Surge",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 6 to hit, this weapon deals 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "i40cKJoXJ7zm",
+      "name": "Unpredictable",
+      "aliasedRuleId": null,
+      "description": "When attacking, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "DEeVIJcfNfS6",
+      "name": "Unpredictable Fighter",
+      "aliasedRuleId": null,
+      "description": "When in melee, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "8zBpM3Wjey08",
+      "name": "Unpredictable Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Unpredictable Fighter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "91lMM",
+      "name": "Psy-Cleansing",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 2 hits with Puncture."
+    },
+    {
+      "id": "_dWTK",
+      "name": "Psy-Flame",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 4 hits with Surge. Roll as many dice as hits to see if \"on rolls of 6\" effects trigger."
+    },
+    {
+      "id": "RM692",
+      "name": "Psy-Frenzy",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which gets Enhanced Psychotic once (next time the effect would apply)."
+    },
+    {
+      "id": "mNU5w",
+      "name": "Psy-Incense",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which friendly units gets Bane on their weapons when attacking against once (next time the effect would apply)."
+    },
+    {
+      "id": "TmuOs",
+      "name": "Psy-Rapture",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 24\" in line of sight, which takes 6 hits."
+    },
+    {
+      "id": "djSzF",
+      "name": "Psy-Strength",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get +1 to hit rolls in melee once (next time the effect would apply)."
+    }
+  ]
+}

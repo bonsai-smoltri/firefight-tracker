@@ -1,0 +1,304 @@
+{
+  "uid": "7i7blhft75q9zfdc",
+  "name": "High Elf Fleets",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "kQVze0GRY3R9",
+      "name": "Agile",
+      "aliasedRuleId": null,
+      "description": "Moves +1\" when using Advance, and +2\" when using Rush/Charge.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "cU3RtuBXHyq4",
+      "name": "Blast",
+      "aliasedRuleId": null,
+      "description": "If the target is hit all models within 4“ of it are also hit by this weapon.",
+      "hasRating": false
+    },
+    {
+      "id": "47CAqf7ySlfc",
+      "name": "Caster",
+      "aliasedRuleId": null,
+      "description": "Gets X spell tokens at the start of each round, but can’t have more than 6 at once. Once per activation, before attacking, spend as many tokens as the spell’s value to try casting one or more spells (only one try per spell). Pick a target and roll one die, and on 4+ resolve the spell’s effect. Models within 18” of the Caster may spend any number of spell tokens at the same time before rolling to give the Caster +1/-1 to the roll per token.",
+      "hasRating": true
+    },
+    {
+      "id": "nLQCr5OiSlYz",
+      "name": "Caster Group",
+      "aliasedRuleId": null,
+      "description": "This model counts as having Caster(1).",
+      "hasRating": false
+    },
+    {
+      "id": "paOPFddMOffa",
+      "name": "Crossing Attack",
+      "aliasedRuleId": null,
+      "description": "Once per activation, when this model moves through enemy units, pick one of them and roll X dice. For each 6+ the target takes one wound.",
+      "hasRating": true
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "NX1-Y1zS-oUD",
+      "name": "Enhanced Extra Reach",
+      "aliasedRuleId": null,
+      "description": "If this model has Extra Reach, it gets +8\"/+4\" range when shooting/charging from Extra Reach (instead of only +4\"/+2\").",
+      "hasRating": false
+    },
+    {
+      "id": "6Nn0oPQN3TZc",
+      "name": "Enhanced Highborn",
+      "aliasedRuleId": "NX1-Y1zS-oUD",
+      "description": "If this model has Highborn, it gets +8\"/+4\" range when shooting/charging from Highborn (instead of only +4\"/+2\").",
+      "hasRating": false
+    },
+    {
+      "id": "UVyi54SgbOoz",
+      "name": "Enhanced Highborn Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Highborn. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "CJ2mI46Tp-al",
+      "name": "Extra Reach",
+      "aliasedRuleId": null,
+      "description": "This model gets +4\"/+2\" range when shooting/charging.",
+      "hasRating": false
+    },
+    {
+      "id": "JSnFcm3SCiMD",
+      "name": "Fracture",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 6 to hit, those hits get AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "T08VkBuVmNZ_",
+      "name": "Hero",
+      "aliasedRuleId": null,
+      "description": "Units within 6” of friendly Heroes may use the Hero’s Quality for Morale Tests as long as the Hero isn’t Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "5bc5xNmd5M14",
+      "name": "Highborn",
+      "aliasedRuleId": "CJ2mI46Tp-al",
+      "description": "This model gets +4\"/+2\" range when shooting/charging.",
+      "hasRating": false
+    },
+    {
+      "id": "ozCLWcof36wD",
+      "name": "Hit & Run",
+      "aliasedRuleId": null,
+      "description": "Once per round, this model may move by up to 3\" after shooting or being in melee.",
+      "hasRating": false
+    },
+    {
+      "id": "rkGri9GAybaZ",
+      "name": "Hit & Run Shooter",
+      "aliasedRuleId": null,
+      "description": "Once per round, this model may move by up to 3\" after shooting.",
+      "hasRating": false
+    },
+    {
+      "id": "rVZfbTlIyt7L",
+      "name": "Hit & Run Shooter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Hit & Run Shooter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "vbYCQfF82BLa",
+      "name": "Piercing Spotter",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick one enemy unit within 30\" and in line of sight of this model and roll one die, on a 4+ place a token on it. When attacking, friendly units may remove tokens from their target before rolling to block to get +AP(X) on their weapons, where X is the number of removed tokens.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "V3YzPPkZm8at",
+      "name": "Regeneration Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "FAMbscK5vhSu",
+      "name": "Scout",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. After all other units are deployed, may be deployed anywhere fully within 9” of their deployment zone, over 9” away from non-Scout enemy units. Players alternate in placing Scout units, starting with the player that activates next.",
+      "hasRating": false
+    },
+    {
+      "id": "Tdyu4Tn-rFN6",
+      "name": "Scout Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Scout. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "IEJp3a4vE0CB",
+      "name": "Shred",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 1 to block hits, this weapon deals 1 extra wound.",
+      "hasRating": false
+    },
+    {
+      "id": "muH3OhuC6eK4",
+      "name": "Shred in Melee Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Shred on its weapons in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "lEFjh4V7XGVV",
+      "name": "Shred when Shooting Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Shred on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "WNMH1ZiQXSz-",
+      "name": "Spell Conduit",
+      "aliasedRuleId": null,
+      "description": "Casters within 12\" that are from other friendly units may cast spells as if they were in this model's position, and get +1 to casting rolls when doing so. Friendly casters may only use this rule if this unit isn't Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "h-Cj1XrX00JE",
+      "name": "Spell Resistance",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. If the wound was from a spell, then it is ignored on a 2+. If the wound was not from a spell, then it is ignored on a 6+ instead.",
+      "hasRating": false
+    },
+    {
+      "id": "b7V48Z1W-EfP",
+      "name": "Spell Resistance Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Spell Resistance. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "9jyvRoBODD-O",
+      "name": "Stealth",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule are shot from over 9\" away, enemy units get -1 to hit rolls.",
+      "hasRating": false
+    },
+    {
+      "id": "8haZ36fXvnzn",
+      "name": "Stealth Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Stealth. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "LtPyHi_-DHf4",
+      "name": "Teleport",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, you may place this model anywhere fully within 3\" of its position when using Advance/Charge actions, or fully within 6\" of its position when using Rush actions.",
+      "hasRating": false
+    },
+    {
+      "id": "rqBYj1yANC3J",
+      "name": "Unique Hero",
+      "aliasedRuleId": null,
+      "description": "Counts as having Hero, and this model may only be taken once per army.",
+      "hasRating": false
+    },
+    {
+      "id": "eOGs64JpVsP3",
+      "name": "Unpredictable Shooter",
+      "aliasedRuleId": null,
+      "description": "When shooting, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    },
+    {
+      "id": "GgPKQ4tKFRIC",
+      "name": "Unwieldy",
+      "aliasedRuleId": null,
+      "description": "Strikes last when charging.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "f-bwL",
+      "name": "Blessing of Souls",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Enhanced Highborn once (next time the effect would apply)."
+    },
+    {
+      "id": "UVq_l",
+      "name": "Creator of Illusions",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which gets Unwieldy on its weapons in melee once (next time the effect would apply)."
+    },
+    {
+      "id": "Hql50",
+      "name": "Elemental Seeker",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 1 hit with Blast(3)."
+    },
+    {
+      "id": "BWlZI",
+      "name": "Hidden Spirits",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Unpredictable Shooter once (next time the effect would apply)."
+    },
+    {
+      "id": "CvffV",
+      "name": "Psy-Destruction",
+      "threshold": 3,
+      "effect": "Pick one enemy model within 24\" in line of sight, which takes 3 hits with AP(4). This effect is resolved as if the target was a unit of [1]."
+    },
+    {
+      "id": "mtWSY",
+      "name": "Shattering Curse",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 4 hits with Fracture. Roll as many dice as hits to see if \"on rolls of 6\" effects trigger."
+    }
+  ]
+}

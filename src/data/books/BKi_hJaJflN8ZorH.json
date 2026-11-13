@@ -1,0 +1,297 @@
+{
+  "uid": "BKi_hJaJflN8ZorH",
+  "name": "Jackals",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "CCShas9-9K4N",
+      "name": "Ambushing Piercing Shot",
+      "aliasedRuleId": null,
+      "description": "Counts as having Ambush, and its weapons get AP(+1) when shooting on the round in which it deploys via this rule.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "h9JsgD38BRjI",
+      "name": "Bounding",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, you may move all models with this rule in it by up to D3+1\".",
+      "hasRating": false
+    },
+    {
+      "id": "paOPFddMOffa",
+      "name": "Crossing Attack",
+      "aliasedRuleId": null,
+      "description": "Once per activation, when this model moves through enemy units, pick one of them and roll X dice. For each 6+ the target takes one wound.",
+      "hasRating": true
+    },
+    {
+      "id": "_mrPya5SXSqW",
+      "name": "Deadly",
+      "aliasedRuleId": null,
+      "description": "Assign each wound to one model, and multiply it by X. Hits from Deadly must be resolved first, and these wounds don’t carry over to other models if the original target is killed.",
+      "hasRating": true
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "xeJDKejG4QZN",
+      "name": "Disintegrate",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking units where most models have Tough(9) or higher, this weapon gets AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "-eXDDTCrrQ6n",
+      "name": "Dodge",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have this rule, as long as they aren't Fatigued, enemy units get -1 to hit rolls in melee against them.",
+      "hasRating": false
+    },
+    {
+      "id": "1BZ5wsWUjYCd",
+      "name": "Enhanced Scrapper",
+      "aliasedRuleId": "kFdn5NTc4iCO",
+      "description": "If this model has Scrapper, enemies taking hits from it must re-roll successful unmodified Defense results of 5-6 from Scrapper (instead of only results of 6).",
+      "hasRating": false
+    },
+    {
+      "id": "sJXpQUJFLbVh",
+      "name": "Enhanced Scrapper Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Scrapper. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "kFdn5NTc4iCO",
+      "name": "Enhanced Vicious",
+      "aliasedRuleId": null,
+      "description": "If this model has Vicious, enemies taking hits from it must re-roll successful unmodified Defense results of 5-6 from Vicious (instead of only results of 6).",
+      "hasRating": false
+    },
+    {
+      "id": "T08VkBuVmNZ_",
+      "name": "Hero",
+      "aliasedRuleId": null,
+      "description": "Units within 6” of friendly Heroes may use the Hero’s Quality for Morale Tests as long as the Hero isn’t Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "a6Ze2uaBlNHX",
+      "name": "Mind Control",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which must take a Morale Test. If failed you may move it by up to 6\" in a straight line in any direction. Each unit may only be moved once per round in this way.",
+      "hasRating": false
+    },
+    {
+      "id": "09SoiR1HuW7u",
+      "name": "Precise",
+      "aliasedRuleId": null,
+      "description": "Gets +1 to hit when attacking.",
+      "hasRating": false
+    },
+    {
+      "id": "B5RGOPajK6Lr",
+      "name": "Precision Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +1 to hit rolls in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "L_61KYvup31T",
+      "name": "Precision Tag",
+      "aliasedRuleId": null,
+      "description": "Once per game, during this model's activation, before attacking, place X tokens on one enemy unit within 24\" and in line of sight, or one token on X enemy units within 24\" and in line of sight. When attacking, friendly units may remove one token from their target before rolling to hit to get +1 to hit rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "okU8qW-h2rau",
+      "name": "Ranged Shrouding",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule is targeted by an enemy unit for shooting, that enemy unit gets -4\" range to a min. of 6\".",
+      "hasRating": false
+    },
+    {
+      "id": "oZewV0wGuebE",
+      "name": "Ranged Shrouding Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ranged Shrouding. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "FAMbscK5vhSu",
+      "name": "Scout",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. After all other units are deployed, may be deployed anywhere fully within 9” of their deployment zone, over 9” away from non-Scout enemy units. Players alternate in placing Scout units, starting with the player that activates next.",
+      "hasRating": false
+    },
+    {
+      "id": "Tdyu4Tn-rFN6",
+      "name": "Scout Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Scout. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "tidpe1mTXb9W",
+      "name": "Scrapper",
+      "aliasedRuleId": "Lqk7bzR6k3xe",
+      "description": "When attacking, targets must re-roll unmodified Defense results of 6 when blocking hits from this model's weapons.",
+      "hasRating": false
+    },
+    {
+      "id": "VI54cszY2BuG",
+      "name": "Shatter",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 6 to hit, those hits get AP(+3).",
+      "hasRating": false
+    },
+    {
+      "id": "wsqfB0fq69eG",
+      "name": "Shielded",
+      "aliasedRuleId": null,
+      "description": "Units where most models have this rule get +1 to Defense rolls against hits that are not from spells.",
+      "hasRating": false
+    },
+    {
+      "id": "9jyvRoBODD-O",
+      "name": "Stealth",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule are shot from over 9\" away, enemy units get -1 to hit rolls.",
+      "hasRating": false
+    },
+    {
+      "id": "8haZ36fXvnzn",
+      "name": "Stealth Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Stealth. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "a0YtInGiUDd6",
+      "name": "Tough",
+      "aliasedRuleId": null,
+      "description": "Once a model has taken as many wounds as its Tough value, it is killed (remove from play).",
+      "hasRating": true
+    },
+    {
+      "id": "rqBYj1yANC3J",
+      "name": "Unique Hero",
+      "aliasedRuleId": null,
+      "description": "Counts as having Hero, and this model may only be taken once per army.",
+      "hasRating": false
+    },
+    {
+      "id": "i40cKJoXJ7zm",
+      "name": "Unpredictable",
+      "aliasedRuleId": null,
+      "description": "When attacking, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "eOGs64JpVsP3",
+      "name": "Unpredictable Shooter",
+      "aliasedRuleId": null,
+      "description": "When shooting, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "Ql2vwvAiWaor",
+      "name": "Unpredictable Shooter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Unpredictable Shooter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    },
+    {
+      "id": "Lqk7bzR6k3xe",
+      "name": "Vicious",
+      "aliasedRuleId": null,
+      "description": "When attacking, targets must re-roll unmodified Defense results of 6 when blocking hits from this model's weapons.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "-BUjo",
+      "name": "Feral Strike",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 6\", which takes 1 hit with AP(2) and Deadly(3)."
+    },
+    {
+      "id": "qmDvb",
+      "name": "Mind Shaper",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which gets -1 to Morale Test rolls once (next time the effect would apply)."
+    },
+    {
+      "id": "icwzh",
+      "name": "Power Field",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Shielded once (next time the effect would apply)."
+    },
+    {
+      "id": "lJ385",
+      "name": "Power Maw",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 6\", which take 4 hits with AP(2) each."
+    },
+    {
+      "id": "JA8IE",
+      "name": "Psy-Hunter",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Scrapper once (next time the effect would apply)."
+    },
+    {
+      "id": "u7epQ",
+      "name": "Quill Blast",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 6 hits with Disintegrate."
+    }
+  ]
+}

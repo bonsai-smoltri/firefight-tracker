@@ -1,0 +1,213 @@
+{
+  "uid": "bF00yJmGNJ7VxfkN",
+  "name": "Badland Nomads",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "gOFh4u_LGrwP",
+      "name": "Ambush Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ambush. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "haWppj0rUxS8",
+      "name": "Badlands Hunter",
+      "aliasedRuleId": "WHJ8A7LzHUR6",
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified results of 1 to block hits from weapons deal 1 extra wound.",
+      "hasRating": false
+    },
+    {
+      "id": "Naqc5mga9Uha",
+      "name": "Bane",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking, the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "ba6LlbpoLkSu",
+      "name": "Bane when Shooting Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Bane on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "h9JsgD38BRjI",
+      "name": "Bounding",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, you may move all models with this rule in it by up to D3+1\".",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "jQ4CmTsoXEnt",
+      "name": "Defense Debuff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which gets -1 to Defense rolls once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "xeJDKejG4QZN",
+      "name": "Disintegrate",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking units where most models have Tough(9) or higher, this weapon gets AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "8UUSt1RIIyEa",
+      "name": "Enhanced Badlands Hunter",
+      "aliasedRuleId": "5NeMSSj7-Pp5",
+      "description": "If this model has Badlands Hunter, enemies always take wounds on unmodified results of 1 to block from Badlands Hunter (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "LhOp-HCop4GL",
+      "name": "Enhanced Badlands Hunter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Badlands Hunter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "5NeMSSj7-Pp5",
+      "name": "Enhanced Violent",
+      "aliasedRuleId": null,
+      "description": "If this model has Violent, enemies always take wounds on unmodified results of 1 to block from Violent (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "TTL5RNmwotoh",
+      "name": "Melee Slayer",
+      "aliasedRuleId": null,
+      "description": "When charging, this model's weapons get AP(+2) if most models in the target have Tough(9) or higher.",
+      "hasRating": false
+    },
+    {
+      "id": "B5RGOPajK6Lr",
+      "name": "Precision Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +1 to hit rolls in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "9jyvRoBODD-O",
+      "name": "Stealth",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule are shot from over 9\" away, enemy units get -1 to hit rolls.",
+      "hasRating": false
+    },
+    {
+      "id": "8haZ36fXvnzn",
+      "name": "Stealth Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Stealth. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "a0YtInGiUDd6",
+      "name": "Tough",
+      "aliasedRuleId": null,
+      "description": "Once a model has taken as many wounds as its Tough value, it is killed (remove from play).",
+      "hasRating": true
+    },
+    {
+      "id": "DEeVIJcfNfS6",
+      "name": "Unpredictable Fighter",
+      "aliasedRuleId": null,
+      "description": "When in melee, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "C5t3oLnEpNtX",
+      "name": "Vengeance",
+      "aliasedRuleId": null,
+      "description": "When this unit is fully destroyed, place as many Vengeance tokens on the unit that destroyed it as models with this rule in this unit at the beginning of the game. Friendly units get +X to hit rolls when attacking that unit, where X is the number of tokens on it.",
+      "hasRating": false
+    },
+    {
+      "id": "WHJ8A7LzHUR6",
+      "name": "Violent",
+      "aliasedRuleId": null,
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified results of 1 to block hits from weapons deal 1 extra wound.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "RM692",
+      "name": "Badland Frenzy",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Badlands Hunter once (next time the effect would apply)."
+    },
+    {
+      "id": "91lMM",
+      "name": "Choking Waste-Fog",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 9 hits."
+    },
+    {
+      "id": "mNU5w",
+      "name": "Cracking Blast",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which get -1 to Defense rolls once (next time the effect would apply)."
+    },
+    {
+      "id": "_dWTK",
+      "name": "Nomad Strike",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 6\", which take 4 hits with AP(2) each."
+    },
+    {
+      "id": "djSzF",
+      "name": "Psychic Flurry",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which gets Melee Slayer once (next time the effect would apply)."
+    },
+    {
+      "id": "TmuOs",
+      "name": "Wasteland Storm",
+      "threshold": 1,
+      "effect": "Pick one enemy model within 24\" in line of sight, which takes 2 hits with AP(2) and Disintegrate. This effect is resolved as if the target was a unit of [1]."
+    }
+  ]
+}

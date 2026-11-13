@@ -1,0 +1,227 @@
+{
+  "uid": "_5ObRZWuPMwProbC",
+  "name": "City Runners",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "kQVze0GRY3R9",
+      "name": "Agile",
+      "aliasedRuleId": null,
+      "description": "Moves +1\" when using Advance, and +2\" when using Rush/Charge.",
+      "hasRating": false
+    },
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "gOFh4u_LGrwP",
+      "name": "Ambush Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ambush. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "cU3RtuBXHyq4",
+      "name": "Blast",
+      "aliasedRuleId": null,
+      "description": "If the target is hit all models within 4“ of it are also hit by this weapon.",
+      "hasRating": false
+    },
+    {
+      "id": "_mrPya5SXSqW",
+      "name": "Deadly",
+      "aliasedRuleId": null,
+      "description": "Assign each wound to one model, and multiply it by X. Hits from Deadly must be resolved first, and these wounds don’t carry over to other models if the original target is killed.",
+      "hasRating": true
+    },
+    {
+      "id": "SKzm-kqi1h2Q",
+      "name": "Delayed Action",
+      "aliasedRuleId": null,
+      "description": "Once per round, if your opponent has more units left to activate than you, then this model's unit may pass its turn instead of activating (may still be activated later).",
+      "hasRating": false
+    },
+    {
+      "id": "8Ai6vFN7Ut6E",
+      "name": "Enhanced Agile",
+      "aliasedRuleId": null,
+      "description": "If this model has Agile, it moves +2\" on Advance and +4\" on Rush/Charge from Agile (instead of only +1\" and +2\").",
+      "hasRating": false
+    },
+    {
+      "id": "Pa5Mr2ioVZIf",
+      "name": "Enhanced Runner",
+      "aliasedRuleId": "8Ai6vFN7Ut6E",
+      "description": "If this model has Runner, it moves +2\" on Advance and +4\" on Rush/Charge from Runner (instead of only +1\" and +2\").",
+      "hasRating": false
+    },
+    {
+      "id": "Tmfov9Aj0X2h",
+      "name": "Enhanced Runner Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Runner. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "JSnFcm3SCiMD",
+      "name": "Fracture",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 6 to hit, those hits get AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "ozCLWcof36wD",
+      "name": "Hit & Run",
+      "aliasedRuleId": null,
+      "description": "Once per round, this model may move by up to 3\" after shooting or being in melee.",
+      "hasRating": false
+    },
+    {
+      "id": "anyZ2FHtdAVO",
+      "name": "Hit & Run Fighter",
+      "aliasedRuleId": null,
+      "description": "Once per round, this model may move by up to 3\" after being in melee.",
+      "hasRating": false
+    },
+    {
+      "id": "uwrXuhqYepEd",
+      "name": "Hit & Run Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Hit & Run Fighter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "1TMBPe40kx2b",
+      "name": "Melee Shrouding",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule is targeted by an enemy unit for charging, that enemy unit gets -2\" range to a min. of 6\".",
+      "hasRating": false
+    },
+    {
+      "id": "0dZak5jae8F0",
+      "name": "Melee Shrouding Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Melee Shrouding. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "L_61KYvup31T",
+      "name": "Precision Tag",
+      "aliasedRuleId": null,
+      "description": "Once per game, during this model's activation, before attacking, place X tokens on one enemy unit within 24\" and in line of sight, or one token on X enemy units within 24\" and in line of sight. When attacking, friendly units may remove one token from their target before rolling to hit to get +1 to hit rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "lJx5NP1KA3KU",
+      "name": "Quick",
+      "aliasedRuleId": null,
+      "description": "Moves +2\" when using Advance, and +2\" when using Rush/Charge.",
+      "hasRating": false
+    },
+    {
+      "id": "ykPufsAeq8Kw",
+      "name": "Quick Shot",
+      "aliasedRuleId": null,
+      "description": "This model may shoot after using Rush actions.",
+      "hasRating": false
+    },
+    {
+      "id": "a9j1Pje6TLBi",
+      "name": "Quick Shot Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Quick Shot. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "UlIf59PuvI53",
+      "name": "Rapid Charge",
+      "aliasedRuleId": null,
+      "description": "This model moves +4\" when using Charge actions.",
+      "hasRating": false
+    },
+    {
+      "id": "8uW_NrYuSWW0",
+      "name": "Rapid Charge Mark",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which friendly units gets Rapid Charge against once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "Ywz0UdkamH-k",
+      "name": "Runner",
+      "aliasedRuleId": "kQVze0GRY3R9",
+      "description": "Moves +1\" when using Advance, and +2\" when using Rush/Charge.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "_dWTK",
+      "name": " Energy Storm",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 24\" in line of sight, which takes 6 hits with Fracture. Roll as many dice as hits to see if \"on rolls of 6\" effects trigger."
+    },
+    {
+      "id": "RM692",
+      "name": "Cyber-City Connection",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which gets Enhanced Runner once (next time the effect would apply)."
+    },
+    {
+      "id": "TmuOs",
+      "name": "Electric Bolt",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 6\", which takes 1 hit with AP(2) and Deadly(3)."
+    },
+    {
+      "id": "djSzF",
+      "name": "Resonance Wave",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Regeneration once (next time the effect would apply)."
+    },
+    {
+      "id": "mNU5w",
+      "name": "Running Shock",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which friendly units gets Rapid Charge against once (next time the effect would apply)."
+    },
+    {
+      "id": "91lMM",
+      "name": "Static Blast",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 2 hits with Blast(3)."
+    }
+  ]
+}

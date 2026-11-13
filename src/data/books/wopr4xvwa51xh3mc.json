@@ -1,0 +1,276 @@
+{
+  "uid": "wopr4xvwa51xh3mc",
+  "name": "Knight Prime Brothers",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "Naqc5mga9Uha",
+      "name": "Bane",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking, the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "XoDRL2xVEnVf",
+      "name": "Bane in Melee Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Bane on its weapons in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "ba6LlbpoLkSu",
+      "name": "Bane when Shooting Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Bane on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "FRVSAjasmFSF",
+      "name": "Bravery Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +1 to Morale Test rolls. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "_mrPya5SXSqW",
+      "name": "Deadly",
+      "aliasedRuleId": null,
+      "description": "Assign each wound to one model, and multiply it by X. Hits from Deadly must be resolved first, and these wounds don’t carry over to other models if the original target is killed.",
+      "hasRating": true
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "rUzMGpacephz",
+      "name": "Enhanced Knightborn",
+      "aliasedRuleId": "Anx9Iim2k-Ws",
+      "description": "If most models in this unit have Knightborn, they always ignore shooting/charging wounds on rolls of 6+ from Knightborn (instead of only when shot/charged from over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "wnEVftbtVtw5",
+      "name": "Enhanced Knightborn Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Knightborn. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "Anx9Iim2k-Ws",
+      "name": "Enhanced Warding",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have Warding, they always ignore shooting/charging wounds on rolls of 6+ from Warding (instead of only when shot/charged from over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "O_sf2rsHA7rD",
+      "name": "Evasive",
+      "aliasedRuleId": null,
+      "description": "Enemies get -1 to hit rolls when attacking units where most models have this rule.",
+      "hasRating": false
+    },
+    {
+      "id": "Lz_ncVgCX5R8",
+      "name": "Knightborn",
+      "aliasedRuleId": "zu6H7MyN3f8U",
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. If the wound was from a spell, then it is ignored on a 2+. If the wound was not from a spell, and the unit was shot/charged from over 9\"/6\" away, then it is ignored on a 6+ instead.",
+      "hasRating": false
+    },
+    {
+      "id": "1TMBPe40kx2b",
+      "name": "Melee Shrouding",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule is targeted by an enemy unit for charging, that enemy unit gets -2\" range to a min. of 6\".",
+      "hasRating": false
+    },
+    {
+      "id": "0dZak5jae8F0",
+      "name": "Melee Shrouding Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Melee Shrouding. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "TTL5RNmwotoh",
+      "name": "Melee Slayer",
+      "aliasedRuleId": null,
+      "description": "When charging, this model's weapons get AP(+2) if most models in the target have Tough(9) or higher.",
+      "hasRating": false
+    },
+    {
+      "id": "mETdyZ__yMVj",
+      "name": "Mend",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick one friendly model within 3\" with Tough, and remove D3 wounds from it.",
+      "hasRating": false
+    },
+    {
+      "id": "ad6BHtI2eeX0",
+      "name": "Pierce",
+      "aliasedRuleId": null,
+      "description": "Ignores all positive Defense modifiers on the target, and when attacking units over half of this weapon's range away, this weapon gets AP(+1).",
+      "hasRating": false
+    },
+    {
+      "id": "09SoiR1HuW7u",
+      "name": "Precise",
+      "aliasedRuleId": null,
+      "description": "Gets +1 to hit when attacking.",
+      "hasRating": false
+    },
+    {
+      "id": "qsx__9Cz3au_",
+      "name": "Rapid Rush",
+      "aliasedRuleId": null,
+      "description": "This model moves +6\" when using Rush actions.",
+      "hasRating": false
+    },
+    {
+      "id": "RDFhn43ktRx8",
+      "name": "Rapid Rush Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Rapid Rush. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "hnsVQyx3ylMf",
+      "name": "Ravage",
+      "aliasedRuleId": null,
+      "description": "Once per round, when it’s this model’s turn to strike in melee, roll X dice before attacking, unless this unit is Fatigued. For each 6+ the target takes one wound.",
+      "hasRating": true
+    },
+    {
+      "id": "zjzB46LX-QDg",
+      "name": "Re-Deployment",
+      "aliasedRuleId": null,
+      "description": "After all other units are deployed (excluding units that were set aside), you may remove up to two friendly units from the table and deploy them again. Players alternate in placing Re-Deployment units, starting with the player that activates next.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "V3YzPPkZm8at",
+      "name": "Regeneration Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "zCjAFXut7Gsg",
+      "name": "Retaliate",
+      "aliasedRuleId": null,
+      "description": "When this model takes wounds in melee, the attacker takes X hits per wound taken.",
+      "hasRating": true
+    },
+    {
+      "id": "a0YtInGiUDd6",
+      "name": "Tough",
+      "aliasedRuleId": null,
+      "description": "Once a model has taken as many wounds as its Tough value, it is killed (remove from play).",
+      "hasRating": true
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    },
+    {
+      "id": "z4QuSO_AxqDr",
+      "name": "Versatile Expert",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, pick one effect: until the end of the activation all models with this rule in this unit either get AP(+1) on their weapons, or get +1 to hit rolls.",
+      "hasRating": false
+    },
+    {
+      "id": "y47PXwakTSji",
+      "name": "Versatile Reach",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, pick one effect: until the end of the activation, all models with this rule in this unit either get +4\" range when shooting or move +2\" when charging.",
+      "hasRating": false
+    },
+    {
+      "id": "ayuikxkmDOmq",
+      "name": "Versatile Reach Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Versatile Reach. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "zu6H7MyN3f8U",
+      "name": "Warding",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. If the wound was from a spell, then it is ignored on a 2+. If the wound was not from a spell, and the unit was shot/charged from over 9\"/6\" away, then it is ignored on a 6+ instead.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "E2Hc6",
+      "name": "Banishing Sigil",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Knightborn once (next time the effect would apply)."
+    },
+    {
+      "id": "lpVma",
+      "name": "Doom Strike",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 6\", which takes 1 hit with AP(2) and Deadly(3)."
+    },
+    {
+      "id": "spwoE",
+      "name": "Knight Dome",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which gets Evasive once (next time the effect would apply)."
+    },
+    {
+      "id": "At3dW",
+      "name": "Knight Sight",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which friendly units gets Unstoppable on their weapons when shooting against once (next time the effect would apply)."
+    },
+    {
+      "id": "_TqtK",
+      "name": "Knight Wound",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 6 hits with AP(1) and Pierce."
+    },
+    {
+      "id": "q7FYs",
+      "name": "Purge the Impure",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 6\", which take 4 hits with AP(2) each."
+    }
+  ]
+}

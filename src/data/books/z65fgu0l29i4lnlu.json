@@ -1,0 +1,269 @@
+{
+  "uid": "z65fgu0l29i4lnlu",
+  "name": "Human Defense Force",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "Naqc5mga9Uha",
+      "name": "Bane",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking, the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "iWuTcXAw2-5s",
+      "name": "Bane in Melee Buff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets Bane on its weapons in melee once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "FPlO2MymiMc0",
+      "name": "Coordinate",
+      "aliasedRuleId": null,
+      "description": "At the end of this unit's activation, another friendly unit within 12\" that hasn't activated yet may be activated immediately. May not be used if this unit was activated via Coordinate.",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "4NMqPbqMvE4C",
+      "name": "Enhanced Hold the Line",
+      "aliasedRuleId": "TbjUdR-OJZPw",
+      "description": "If most models in this unit have Hold the Line, they always get +1 to Morale Test rolls from Hold the Line (instead of only when shot/charged from over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "ozw_t3SA8IDu",
+      "name": "Enhanced Hold the Line Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Hold the Line. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "TbjUdR-OJZPw",
+      "name": "Enhanced Valiant",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have Valiant, they always get +1 to Morale Test rolls from Valiant (instead of only when shot/charged from over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "wHfLIdlnEQ1a",
+      "name": "Entrenched",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have this rule, as long as they haven't moved during this round, enemy units shooting at them from over 12” away get -1 to hit rolls.",
+      "hasRating": false
+    },
+    {
+      "id": "55Si47u6jTtb",
+      "name": "Entrenched Buff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets Entrenched once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "eU6uz90H82Sw",
+      "name": "Extended Buff Range",
+      "aliasedRuleId": null,
+      "description": "If this unit is within 24\" of another friendly unit with this rule that is within 6\" of a friendly Hero, then that Hero may use special rules that allow it to pick friendly units within 12\" (except for spells) on this unit as if it was in range.",
+      "hasRating": false
+    },
+    {
+      "id": "IyLY1212wacW",
+      "name": "Fortified",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule take hits, those hits count as having AP(-1), to a min. of AP(0).",
+      "hasRating": false
+    },
+    {
+      "id": "JSnFcm3SCiMD",
+      "name": "Fracture",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 6 to hit, those hits get AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "bjt7_iCtmOK7",
+      "name": "Good Shot",
+      "aliasedRuleId": null,
+      "description": "This model gets +1 to hit rolls when shooting.",
+      "hasRating": false
+    },
+    {
+      "id": "T08VkBuVmNZ_",
+      "name": "Hero",
+      "aliasedRuleId": null,
+      "description": "Units within 6” of friendly Heroes may use the Hero’s Quality for Morale Tests as long as the Hero isn’t Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "Sdcb8VAeTxji",
+      "name": "Hold the Line",
+      "aliasedRuleId": "LbpquFUyGSZ7",
+      "description": "If most models in this unit have this rule, they get +1 to Morale Test rolls when shot/charged from over 9\"/6\" away.",
+      "hasRating": false
+    },
+    {
+      "id": "nFo2BlBRhMcH",
+      "name": "Morale Debuff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which gets -1 to Morale Test rolls once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "O2Cd7OibBBA5",
+      "name": "No Retreat",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule fails a Morale Test that causes it to be Shaken or Routed, the test counts as passed instead. Then, roll as many dice as the number of wounds it would take to fully destroy it, and for each result of 1-3 the unit takes one wound, which can't be ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "MfDT3coYRS45",
+      "name": "No Retreat Buff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets No Retreat once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "FDI5sLTtr3gC",
+      "name": "Precision Shooter Buff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets +1 to hit rolls when shooting once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "HmxkJq_My-Ub",
+      "name": "Rapid Advance",
+      "aliasedRuleId": null,
+      "description": "This model moves +4\" when using Advance actions.",
+      "hasRating": false
+    },
+    {
+      "id": "xs0-u9qrV0xt",
+      "name": "Rapid Advance Buff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 friendly units within 12\", which gets Rapid Advance once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "V3YzPPkZm8at",
+      "name": "Regeneration Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "H9E9PIWpGRdw",
+      "name": "Relentless",
+      "aliasedRuleId": null,
+      "description": "When this model shoots at enemies over 9” away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "rqBYj1yANC3J",
+      "name": "Unique Hero",
+      "aliasedRuleId": null,
+      "description": "Counts as having Hero, and this model may only be taken once per army.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    },
+    {
+      "id": "LbpquFUyGSZ7",
+      "name": "Valiant",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have this rule, they get +1 to Morale Test rolls when shot/charged from over 9\"/6\" away.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "TzMwj",
+      "name": "Calculated Foresight",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which friendly units gets Relentless against once (next time the effect would apply)."
+    },
+    {
+      "id": "i1uZl",
+      "name": "Electric Tempest",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 4 hits with Fracture. Roll as many dice as hits to see if \"on rolls of 6\" effects trigger."
+    },
+    {
+      "id": "CsJOp",
+      "name": "Expel Threat",
+      "threshold": 1,
+      "effect": "Pick one enemy model within 18\" in line of sight, which takes 2 hits with AP(1). This effect is resolved as if the target was a unit of [1]."
+    },
+    {
+      "id": "ya8QP",
+      "name": "Psy-Injected Courage",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Hold the Line once (next time the effect would apply)."
+    },
+    {
+      "id": "2u5gr",
+      "name": "Searing Burst",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 9 hits."
+    },
+    {
+      "id": "sC4Gz",
+      "name": "Shock Speed",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which moves +2\" when using Advance actions and +4\" when using Rush/Charge actions once (next time the effect would apply)."
+    }
+  ]
+}

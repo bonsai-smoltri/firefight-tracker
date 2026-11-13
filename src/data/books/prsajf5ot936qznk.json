@@ -1,0 +1,234 @@
+{
+  "uid": "prsajf5ot936qznk",
+  "name": "Daemons of War",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "gOFh4u_LGrwP",
+      "name": "Ambush Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ambush. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "0TfnG5G4JEv0",
+      "name": "Anti-Regen",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "cU3RtuBXHyq4",
+      "name": "Blast",
+      "aliasedRuleId": null,
+      "description": "If the target is hit all models within 4“ of it are also hit by this weapon.",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "n8vjv0oBZDAL",
+      "name": "Defensive Frenzy",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have this rule, place one token on this unit when it fully destroys an enemy unit, up to a max. of two tokens. For each token this unit gets +1 to Defense rolls until the end of the game.",
+      "hasRating": false
+    },
+    {
+      "id": "5NeMSSj7-Pp5",
+      "name": "Enhanced Violent",
+      "aliasedRuleId": null,
+      "description": "If this model has Violent, enemies always take wounds on unmodified results of 1 to block from Violent (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "5G44ZDmQG-N5",
+      "name": "Enhanced Warbound",
+      "aliasedRuleId": "5NeMSSj7-Pp5",
+      "description": "If this model has Warbound, enemies always take wounds on unmodified results of 1 to block from Warbound (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "dNOZEOSJ-DyX",
+      "name": "Enhanced Warbound Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Warbound. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "JoOCVPx1xT1G",
+      "name": "Furious",
+      "aliasedRuleId": null,
+      "description": "When charging, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "CK9TIa7vdehO",
+      "name": "Furious Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Furious. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "EgdF_3MSddXR",
+      "name": "Melee Evasion",
+      "aliasedRuleId": null,
+      "description": "Enemies get -1 to hit rolls in melee when attacking units where most models have this rule.",
+      "hasRating": false
+    },
+    {
+      "id": "wnrz_-SUmR8_",
+      "name": "Piercing Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get AP(+1) on its weapons in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "GOPD6AVdvbFf",
+      "name": "Piercing Shooter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get AP(+1) on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "97aE8SunQBTq",
+      "name": "Purge",
+      "aliasedRuleId": null,
+      "description": "When attacking units that are Shaken or Fatigued, this weapon gets AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "1cykqbg4xn6o",
+      "name": "Rapid Charge Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game moves +4\" when using Charge actions. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "hnsVQyx3ylMf",
+      "name": "Ravage",
+      "aliasedRuleId": null,
+      "description": "Once per round, when it’s this model’s turn to strike in melee, roll X dice before attacking, unless this unit is Fatigued. For each 6+ the target takes one wound.",
+      "hasRating": true
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "8HWdOwMYcI0p",
+      "name": "Sergeant",
+      "aliasedRuleId": null,
+      "description": "This model gets AP(+1) when attacking.",
+      "hasRating": false
+    },
+    {
+      "id": "wsqfB0fq69eG",
+      "name": "Shielded",
+      "aliasedRuleId": null,
+      "description": "Units where most models have this rule get +1 to Defense rolls against hits that are not from spells.",
+      "hasRating": false
+    },
+    {
+      "id": "ZW_Zv-kkBt2q",
+      "name": "Shielded Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Shielded. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "h-Cj1XrX00JE",
+      "name": "Spell Resistance",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. If the wound was from a spell, then it is ignored on a 2+. If the wound was not from a spell, then it is ignored on a 6+ instead.",
+      "hasRating": false
+    },
+    {
+      "id": "WHJ8A7LzHUR6",
+      "name": "Violent",
+      "aliasedRuleId": null,
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified results of 1 to block hits from weapons deal 1 extra wound.",
+      "hasRating": false
+    },
+    {
+      "id": "jbhpErfecvEY",
+      "name": "Warbound",
+      "aliasedRuleId": "WHJ8A7LzHUR6",
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified results of 1 to block hits from weapons deal 1 extra wound.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "IaJa-",
+      "name": "Brutal Massacre",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 6\", which takes 3 hits with AP(1) and Purge."
+    },
+    {
+      "id": "x63P6",
+      "name": "Fiery Protection",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Melee Evasion once (next time the effect would apply)."
+    },
+    {
+      "id": "RDJmq",
+      "name": "Flame of Destruction",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 24\" in line of sight, which takes 3 hits with Blast(3)."
+    },
+    {
+      "id": "cm7ec",
+      "name": "Headtaker Strike",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 6\", which take 4 hits with AP(2) each."
+    },
+    {
+      "id": "YsVNA",
+      "name": "Terrifying Fury",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which must take a morale test. If failed, it becomes Fatigued."
+    },
+    {
+      "id": "jLEBT",
+      "name": "War Boon",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Warbound once (next time the effect would apply)."
+    }
+  ]
+}

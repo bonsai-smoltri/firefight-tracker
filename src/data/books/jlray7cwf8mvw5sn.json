@@ -1,0 +1,262 @@
+{
+  "uid": "jlray7cwf8mvw5sn",
+  "name": "Plague Disciples",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "h9JsgD38BRjI",
+      "name": "Bounding",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, you may move all models with this rule in it by up to D3+1\".",
+      "hasRating": false
+    },
+    {
+      "id": "fWjDp-LZmYln",
+      "name": "Bounding Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Bounding. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "pXs3r4mbwgGj",
+      "name": "Decimate",
+      "aliasedRuleId": null,
+      "description": "When attacking units with more than half of their total size or Tough value (for single-model units), the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "Bd9ny4MxTiHn",
+      "name": "Enhanced Plaguebound",
+      "aliasedRuleId": "2Cxml82Ma_3Y",
+      "description": "If most models in this unit have Plaguebound, they ignore wounds on rolls of 5-6 from Plaguebound (instead of only on 6+).",
+      "hasRating": false
+    },
+    {
+      "id": "U9p9FtWR84GU",
+      "name": "Enhanced Plaguebound Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Plaguebound. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "2Cxml82Ma_3Y",
+      "name": "Enhanced Protected",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have Protected, they ignore wounds on rolls of 5-6 from Protected (instead of only on 6+).",
+      "hasRating": false
+    },
+    {
+      "id": "JoOCVPx1xT1G",
+      "name": "Furious",
+      "aliasedRuleId": null,
+      "description": "When charging, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "CK9TIa7vdehO",
+      "name": "Furious Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Furious. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "mETdyZ__yMVj",
+      "name": "Mend",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick one friendly model within 3\" with Tough, and remove D3 wounds from it.",
+      "hasRating": false
+    },
+    {
+      "id": "O_wrvW7FiJWX",
+      "name": "Plaguebound",
+      "aliasedRuleId": "AlIZbh-afBYi",
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 6+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "AlIZbh-afBYi",
+      "name": "Protected",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 6+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "qsx__9Cz3au_",
+      "name": "Rapid Rush",
+      "aliasedRuleId": null,
+      "description": "This model moves +6\" when using Rush actions.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "H9E9PIWpGRdw",
+      "name": "Relentless",
+      "aliasedRuleId": null,
+      "description": "When this model shoots at enemies over 9” away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "zGew9XZT2rUm",
+      "name": "Relentless Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Relentless. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "Ww4ehASqnek0",
+      "name": "Scourge",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 1 to block hits, enemies count as having taken 2 extra wounds when checking who won melee, or if shooting wounds would trigger Morale Tests.",
+      "hasRating": false
+    },
+    {
+      "id": "FAMbscK5vhSu",
+      "name": "Scout",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. After all other units are deployed, may be deployed anywhere fully within 9” of their deployment zone, over 9” away from non-Scout enemy units. Players alternate in placing Scout units, starting with the player that activates next.",
+      "hasRating": false
+    },
+    {
+      "id": "Tdyu4Tn-rFN6",
+      "name": "Scout Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Scout. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "h-Cj1XrX00JE",
+      "name": "Spell Resistance",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. If the wound was from a spell, then it is ignored on a 2+. If the wound was not from a spell, then it is ignored on a 6+ instead.",
+      "hasRating": false
+    },
+    {
+      "id": "b7V48Z1W-EfP",
+      "name": "Spell Resistance Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Spell Resistance. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "j93FkLXMCk8v",
+      "name": "Steadfast",
+      "aliasedRuleId": null,
+      "description": "If a unit where most models have this rule is Shaken at the beginning of the round, roll one die. On a 4+, it stops being Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "ePlgVfji1dy6",
+      "name": "Steadfast Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Steadfast. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "a0YtInGiUDd6",
+      "name": "Tough",
+      "aliasedRuleId": null,
+      "description": "Once a model has taken as many wounds as its Tough value, it is killed (remove from play).",
+      "hasRating": true
+    },
+    {
+      "id": "DEeVIJcfNfS6",
+      "name": "Unpredictable Fighter",
+      "aliasedRuleId": null,
+      "description": "When in melee, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    },
+    {
+      "id": "eXtrmDIR9dEp",
+      "name": "Versatile Defense",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule is shot/charged from over 9\"/6\" away, pick one effect: the unit either gets +1 to Defense rolls, or enemy units get -1 to hit rolls against it. Note that you may pick a different effect each time the unit is attacked.",
+      "hasRating": false
+    },
+    {
+      "id": "UQ7FtljwqNvy",
+      "name": "Versatile Defense Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Versatile Defense. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "z4QuSO_AxqDr",
+      "name": "Versatile Expert",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, pick one effect: until the end of the activation all models with this rule in this unit either get AP(+1) on their weapons, or get +1 to hit rolls.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "koM0N",
+      "name": "Aura of Pestilence",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which counts as being in Difficult Terrain once (next time the effect would apply)."
+    },
+    {
+      "id": "WqVYV",
+      "name": "Blessed Virus",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Rapid Rush once (next time the effect would apply)."
+    },
+    {
+      "id": "UD96W",
+      "name": "Plague Boon",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Plaguebound once (next time the effect would apply)."
+    },
+    {
+      "id": "EMMnm",
+      "name": "Plague Malediction",
+      "threshold": 3,
+      "effect": "Pick one enemy model within 24\" in line of sight, which takes 3 hits with AP(4). This effect is resolved as if the target was a unit of [1]."
+    },
+    {
+      "id": "2cJLM",
+      "name": "Rapid Putrefaction",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 2 hits with AP(1) and Decimate."
+    },
+    {
+      "id": "ETqFz",
+      "name": "Rot Wave",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 4 hits."
+    }
+  ]
+}

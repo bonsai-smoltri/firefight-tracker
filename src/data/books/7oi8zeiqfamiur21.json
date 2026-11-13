@@ -1,0 +1,248 @@
+{
+  "uid": "7oi8zeiqfamiur21",
+  "name": "Blessed Sisters",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "cU3RtuBXHyq4",
+      "name": "Blast",
+      "aliasedRuleId": null,
+      "description": "If the target is hit all models within 4“ of it are also hit by this weapon.",
+      "hasRating": false
+    },
+    {
+      "id": "FRVSAjasmFSF",
+      "name": "Bravery Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +1 to Morale Test rolls. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "MEAjk171GPmF",
+      "name": "Brutal",
+      "aliasedRuleId": null,
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "47CAqf7ySlfc",
+      "name": "Caster",
+      "aliasedRuleId": null,
+      "description": "Gets X spell tokens at the start of each round, but can’t have more than 6 at once. Once per activation, before attacking, spend as many tokens as the spell’s value to try casting one or more spells (only one try per spell). Pick a target and roll one die, and on 4+ resolve the spell’s effect. Models within 18” of the Caster may spend any number of spell tokens at the same time before rolling to give the Caster +1/-1 to the roll per token.",
+      "hasRating": true
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "gnpURIvLqjw9",
+      "name": "Devout",
+      "aliasedRuleId": "MEAjk171GPmF",
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "Nbo5DTQufMoB",
+      "name": "Enhanced Brutal",
+      "aliasedRuleId": null,
+      "description": "If this model has Brutal, the target always takes hits on unmodified hit results of 6 from Brutal (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "w7sENXkksVpG",
+      "name": "Enhanced Devout",
+      "aliasedRuleId": "Nbo5DTQufMoB",
+      "description": "If this model has Devout, the target always takes hits on unmodified hit results of 6 from Devout (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "j1_UP3V8iBI_",
+      "name": "Enhanced Devout Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Devout. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "Q9DOQswzCth8",
+      "name": "Fast Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game moves +2\" when using Advance actions and +4\" when using Rush/Charge actions. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "IyLY1212wacW",
+      "name": "Fortified",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule take hits, those hits count as having AP(-1), to a min. of AP(0).",
+      "hasRating": false
+    },
+    {
+      "id": "B-9jnnFp54f9",
+      "name": "Fortified Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Fortified. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "T08VkBuVmNZ_",
+      "name": "Hero",
+      "aliasedRuleId": null,
+      "description": "Units within 6” of friendly Heroes may use the Hero’s Quality for Morale Tests as long as the Hero isn’t Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "BSztwuL4jI1R",
+      "name": "Increased Shooting Range",
+      "aliasedRuleId": null,
+      "description": "This model gets +6\" range on its weapons when shooting.",
+      "hasRating": false
+    },
+    {
+      "id": "QWzGAg9RpE2D",
+      "name": "Increased Shooting Range Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +6\" range on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "DhLjIDRrWz6-",
+      "name": "Piercing Charge",
+      "aliasedRuleId": null,
+      "description": "This model gets AP(+1) on its weapons when charging.",
+      "hasRating": false
+    },
+    {
+      "id": "dlk9Q7howUDr",
+      "name": "Piercing Marksman",
+      "aliasedRuleId": null,
+      "description": "When shooting at enemies over 9\" away, this model's weapons get AP(+1).",
+      "hasRating": false
+    },
+    {
+      "id": "1m7a9ADI-D_g",
+      "name": "Piercing Marksman Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Piercing Marksman. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "O_ZtH22AAORQ",
+      "name": "Precision Target",
+      "aliasedRuleId": null,
+      "description": "Once per game, during this model's activation, before attacking, pick X enemy units within 18\" and in line of sight of it, and place one token on them. Friendly units get +1 to hit rolls when attacking them.",
+      "hasRating": true
+    },
+    {
+      "id": "97aE8SunQBTq",
+      "name": "Purge",
+      "aliasedRuleId": null,
+      "description": "When attacking units that are Shaken or Fatigued, this weapon gets AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "V3YzPPkZm8at",
+      "name": "Regeneration Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "IEJp3a4vE0CB",
+      "name": "Shred",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 1 to block hits, this weapon deals 1 extra wound.",
+      "hasRating": false
+    },
+    {
+      "id": "muH3OhuC6eK4",
+      "name": "Shred in Melee Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Shred on its weapons in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "WNMH1ZiQXSz-",
+      "name": "Spell Conduit",
+      "aliasedRuleId": null,
+      "description": "Casters within 12\" that are from other friendly units may cast spells as if they were in this model's position, and get +1 to casting rolls when doing so. Friendly casters may only use this rule if this unit isn't Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "rqBYj1yANC3J",
+      "name": "Unique Hero",
+      "aliasedRuleId": null,
+      "description": "Counts as having Hero, and this model may only be taken once per army.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "J0DHx",
+      "name": "Burn the Heretic",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which loses 2 spell tokens. Note that the target may not spend those spell tokens to prevent this effect."
+    },
+    {
+      "id": "e1cKU",
+      "name": "Eternal Flame",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 3 hits with Purge."
+    },
+    {
+      "id": "PXKkZ",
+      "name": "Holy Rage",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Piercing Marksman once (next time the effect would apply)."
+    },
+    {
+      "id": "FlokU",
+      "name": "Litanies of War",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Devout once (next time the effect would apply)."
+    },
+    {
+      "id": "WojQ5",
+      "name": "Righteous Wrath",
+      "threshold": 3,
+      "effect": "Pick one enemy model within 24\" in line of sight, which takes 3 hits with AP(4). This effect is resolved as if the target was a unit of [1]."
+    },
+    {
+      "id": "Ppwg0",
+      "name": "Searing Admonition",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 2 hits with Blast(3)."
+    }
+  ]
+}

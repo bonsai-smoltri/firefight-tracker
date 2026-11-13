@@ -1,0 +1,213 @@
+{
+  "uid": "G5uvPlnfxPg3EcYG",
+  "name": "Shortling Federations",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "_mrPya5SXSqW",
+      "name": "Deadly",
+      "aliasedRuleId": null,
+      "description": "Assign each wound to one model, and multiply it by X. Hits from Deadly must be resolved first, and these wounds don’t carry over to other models if the original target is killed.",
+      "hasRating": true
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "jdxaM66DHbMQ",
+      "name": "Destructive",
+      "aliasedRuleId": null,
+      "description": "When attacking units with more than half of their total size or Tough value (for single-model units), those hits get AP(+1).",
+      "hasRating": false
+    },
+    {
+      "id": "UBOoMTJY8qfD",
+      "name": "Enhanced Guarded",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have Guarded, they always get +1 to Defense rolls from Guarded (instead of only when shot/charged from over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "-aKAI5i_wXbf",
+      "name": "Enhanced Safety Gear",
+      "aliasedRuleId": "UBOoMTJY8qfD",
+      "description": "If most models in this unit have Safety Gear, they always get +1 to Defense rolls from Safety Gear (instead of only when shot/charged from over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "h7dMwwRg46QD",
+      "name": "Enhanced Safety Gear Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Safety Gear. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "2atvlmICQSCV",
+      "name": "Fearless",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule fails a Morale Test, roll one die. On a 4+ it counts as passed instead.",
+      "hasRating": false
+    },
+    {
+      "id": "zTfg9msVpfJ0",
+      "name": "Guarded",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have this rule, they get +1 to Defense rolls when shot/charged from over 9\"/6\" away.",
+      "hasRating": false
+    },
+    {
+      "id": "nFo2BlBRhMcH",
+      "name": "Morale Debuff",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick up to 3 enemy units within 18\" in line of sight, which gets -1 to Morale Test rolls once (next time the effect would apply).",
+      "hasRating": false
+    },
+    {
+      "id": "B5RGOPajK6Lr",
+      "name": "Precision Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +1 to hit rolls in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "p3ql9lJcL-vw",
+      "name": "Precision Frenzy",
+      "aliasedRuleId": null,
+      "description": "Place one token on this unit when it fully destroys an enemy unit, up to a max. of two tokens. For each token all models with this rule in this unit get +1 to hit rolls until the end of the game.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "V3YzPPkZm8at",
+      "name": "Regeneration Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "cavWDboL4ubs",
+      "name": "Rending",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and for each unmodified result of 6 to hit, those hits get AP(+4).",
+      "hasRating": false
+    },
+    {
+      "id": "AfGDQgn8r8O1",
+      "name": "Rending when Shooting Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Rending on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "2naIlnOv22Ls",
+      "name": "Safety Gear",
+      "aliasedRuleId": "zTfg9msVpfJ0",
+      "description": "If most models in this unit have this rule, they get +1 to Defense rolls when shot/charged from over 9\"/6\" away.",
+      "hasRating": false
+    },
+    {
+      "id": "LtPyHi_-DHf4",
+      "name": "Teleport",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, you may place this model anywhere fully within 3\" of its position when using Advance/Charge actions, or fully within 6\" of its position when using Rush actions.",
+      "hasRating": false
+    },
+    {
+      "id": "nr0R125ptwEZ",
+      "name": "Teleport Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Teleport. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "a0YtInGiUDd6",
+      "name": "Tough",
+      "aliasedRuleId": null,
+      "description": "Once a model has taken as many wounds as its Tough value, it is killed (remove from play).",
+      "hasRating": true
+    }
+  ],
+  "spells": [
+    {
+      "id": "_dWTK",
+      "name": "Apparition of Doom",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 3 hits with Destructive."
+    },
+    {
+      "id": "91lMM",
+      "name": "Dome of Doom",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 9 hits."
+    },
+    {
+      "id": "djSzF",
+      "name": "Lore of Bravery",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Fearless once (next time the effect would apply)."
+    },
+    {
+      "id": "RM692",
+      "name": "Lore of Protection",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Safety Gear once (next time the effect would apply)."
+    },
+    {
+      "id": "mNU5w",
+      "name": "Lore of Terror",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which gets -1 to Morale Test rolls once (next time the effect would apply)."
+    },
+    {
+      "id": "TmuOs",
+      "name": "Pike of Doom",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 6\", which takes 2 hits with AP(2) and Deadly(3)."
+    }
+  ]
+}

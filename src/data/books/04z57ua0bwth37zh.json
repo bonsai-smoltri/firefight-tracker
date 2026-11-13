@@ -1,0 +1,297 @@
+{
+  "uid": "04z57ua0bwth37zh",
+  "name": "Daemons of Change",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "gOFh4u_LGrwP",
+      "name": "Ambush Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ambush. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "0TfnG5G4JEv0",
+      "name": "Anti-Regen",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "Naqc5mga9Uha",
+      "name": "Bane",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking, the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "uHus35IJKri2",
+      "name": "Bane when Shooting",
+      "aliasedRuleId": null,
+      "description": "This model gets Bane on its weapons when shooting.",
+      "hasRating": false
+    },
+    {
+      "id": "h9JsgD38BRjI",
+      "name": "Bounding",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, you may move all models with this rule in it by up to D3+1\".",
+      "hasRating": false
+    },
+    {
+      "id": "fWjDp-LZmYln",
+      "name": "Bounding Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Bounding. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "47CAqf7ySlfc",
+      "name": "Caster",
+      "aliasedRuleId": null,
+      "description": "Gets X spell tokens at the start of each round, but can’t have more than 6 at once. Once per activation, before attacking, spend as many tokens as the spell’s value to try casting one or more spells (only one try per spell). Pick a target and roll one die, and on 4+ resolve the spell’s effect. Models within 18” of the Caster may spend any number of spell tokens at the same time before rolling to give the Caster +1/-1 to the roll per token.",
+      "hasRating": true
+    },
+    {
+      "id": "4mB0rwGnMVgJ",
+      "name": "Changebound",
+      "aliasedRuleId": "_tP0jExjizvc",
+      "description": "If most models in this unit have this rule, enemy units shooting/charging them from over 9\"/6\" away get -1 to hit rolls .",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "COaU7nmOC6VG",
+      "name": "Enhanced Changebound",
+      "aliasedRuleId": "95k3zdp_EzoN",
+      "description": "If most models in this unit have Changebound, enemies attacking them always get -1 to hit rolls from Changebound (instead of only when shooting/charging from over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "nU2aNk56ZJ8H",
+      "name": "Enhanced Changebound Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Changebound. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "95k3zdp_EzoN",
+      "name": "Enhanced Screened",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have Screened, enemies attacking them always get -1 to hit rolls from Screened (instead of only when shooting/charging from over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "dIQ3SGl2J2Ew",
+      "name": "Fear",
+      "aliasedRuleId": null,
+      "description": "When in melee with this model, enemies count as having taken +X wounds when checking who won.",
+      "hasRating": true
+    },
+    {
+      "id": "2atvlmICQSCV",
+      "name": "Fearless",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule fails a Morale Test, roll one die. On a 4+ it counts as passed instead.",
+      "hasRating": false
+    },
+    {
+      "id": "C0UHMLhvoXXj",
+      "name": "Fearless Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Fearless. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "T08VkBuVmNZ_",
+      "name": "Hero",
+      "aliasedRuleId": null,
+      "description": "Units within 6” of friendly Heroes may use the Hero’s Quality for Morale Tests as long as the Hero isn’t Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "8Ck9GAwUK824",
+      "name": "Indirect",
+      "aliasedRuleId": null,
+      "description": "When using Hold actions and shooting, may target enemies that are not in line of sight as if in line of sight, and ignores Cover from Sight Blockers.",
+      "hasRating": false
+    },
+    {
+      "id": "3RJ8ZvQphXk5",
+      "name": "Indirect when Shooting Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Indirect on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "WcOMD7QgPYXZ",
+      "name": "Lacerate",
+      "aliasedRuleId": null,
+      "description": "When attacking, the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "AlIZbh-afBYi",
+      "name": "Protected",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 6+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "fHq_KESyO1cU",
+      "name": "Protected Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Protected. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "_tP0jExjizvc",
+      "name": "Screened",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have this rule, enemy units shooting/charging them from over 9\"/6\" away get -1 to hit rolls .",
+      "hasRating": false
+    },
+    {
+      "id": "8HWdOwMYcI0p",
+      "name": "Sergeant",
+      "aliasedRuleId": null,
+      "description": "This model gets AP(+1) when attacking.",
+      "hasRating": false
+    },
+    {
+      "id": "sHIDSc5b37Jm",
+      "name": "Spell Accumulator",
+      "aliasedRuleId": null,
+      "description": "Gets X accumulator tokens at the start of each round, but can’t hold more than 6 tokens at once. Casters from other friendly units within 12\" may spend this model's accumulator tokens as if they were their own spell tokens. Friendly casters may only use this rule if this unit isn't Shaken.",
+      "hasRating": true
+    },
+    {
+      "id": "h-Cj1XrX00JE",
+      "name": "Spell Resistance",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. If the wound was from a spell, then it is ignored on a 2+. If the wound was not from a spell, then it is ignored on a 6+ instead.",
+      "hasRating": false
+    },
+    {
+      "id": "b7V48Z1W-EfP",
+      "name": "Spell Resistance Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Spell Resistance. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "jaDijWTHmVNU",
+      "name": "Split",
+      "aliasedRuleId": null,
+      "description": "When this unit is fully destroyed, you may place a new unit of X fully within 6\" of it before removing the last model. Units placed via Split can’t seize or contest objectives on the round they are placed.",
+      "hasRating": true
+    },
+    {
+      "id": "LtPyHi_-DHf4",
+      "name": "Teleport",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, you may place this model anywhere fully within 3\" of its position when using Advance/Charge actions, or fully within 6\" of its position when using Rush actions.",
+      "hasRating": false
+    },
+    {
+      "id": "nr0R125ptwEZ",
+      "name": "Teleport Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Teleport. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "rqBYj1yANC3J",
+      "name": "Unique Hero",
+      "aliasedRuleId": null,
+      "description": "Counts as having Hero, and this model may only be taken once per army.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    },
+    {
+      "id": "AB3FAl-SEUYP",
+      "name": "Unstoppable in Melee Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Unstoppable on its weapons in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "r8OBuam8nRXP",
+      "name": "Vanguard",
+      "aliasedRuleId": null,
+      "description": "After this model is deployed, it may be placed anywhere fully within 9\" of its position, over 9\" away from non-Vanguard enemy units.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "NoUXs",
+      "name": "Breath of Change",
+      "threshold": 2,
+      "effect": "Pick up to two friendly units within 12\", which get Bane when Shooting once (next time the effect would apply)."
+    },
+    {
+      "id": "3ajfB",
+      "name": "Change Boon",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Changebound once (next time the effect would apply)."
+    },
+    {
+      "id": "cu5MA",
+      "name": "Mutating Inferno",
+      "threshold": 3,
+      "effect": "Pick up to two enemy units within 24\" in line of sight, which take 3 hits each."
+    },
+    {
+      "id": "o5PK5",
+      "name": "Power Bolt",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 4 hits with AP(2)."
+    },
+    {
+      "id": "C7o9-",
+      "name": "Shifting Form",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which loses 2 spell tokens. Note that the target may not spend those spell tokens to prevent this effect."
+    },
+    {
+      "id": "o7wR7",
+      "name": "Sky Blaze",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 3 hits with Lacerate."
+    }
+  ]
+}

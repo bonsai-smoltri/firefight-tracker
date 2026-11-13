@@ -1,0 +1,269 @@
+{
+  "uid": "ewbra8nv3nq3k27p",
+  "name": "Custodian Brothers",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "noS8F0WwHtHA",
+      "name": "Dash",
+      "aliasedRuleId": null,
+      "description": "Once per round, at the end of this unit's activation, you may move all models with this rule in it by up to D3+1\".",
+      "hasRating": false
+    },
+    {
+      "id": "JKjtSSAto56J",
+      "name": "Dash Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Dash. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "xeJDKejG4QZN",
+      "name": "Disintegrate",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking units where most models have Tough(9) or higher, this weapon gets AP(+2).",
+      "hasRating": false
+    },
+    {
+      "id": "-eXDDTCrrQ6n",
+      "name": "Dodge",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have this rule, as long as they aren't Fatigued, enemy units get -1 to hit rolls in melee against them.",
+      "hasRating": false
+    },
+    {
+      "id": "YfecqBW3YoNG",
+      "name": "Enhanced Fortified",
+      "aliasedRuleId": null,
+      "description": "If most models in this unit have Fortified, hits they take count as having AP(-2) from Fortified (instead of only AP(-1)).",
+      "hasRating": false
+    },
+    {
+      "id": "7-nw0-TRmYAv",
+      "name": "Enhanced Guardian",
+      "aliasedRuleId": "YfecqBW3YoNG",
+      "description": "If most models in this unit have Guardian, hits they take count as having AP(-2) from Guardian (instead of only AP(-1)).",
+      "hasRating": false
+    },
+    {
+      "id": "pxBAv9DNteCA",
+      "name": "Enhanced Guardian Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Enhanced Guardian. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "IyLY1212wacW",
+      "name": "Fortified",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule take hits, those hits count as having AP(-1), to a min. of AP(0).",
+      "hasRating": false
+    },
+    {
+      "id": "D7ChSWl5R2We",
+      "name": "Guardian",
+      "aliasedRuleId": "IyLY1212wacW",
+      "description": "When units where most models have this rule take hits, those hits count as having AP(-1), to a min. of AP(0).",
+      "hasRating": false
+    },
+    {
+      "id": "ozCLWcof36wD",
+      "name": "Hit & Run",
+      "aliasedRuleId": null,
+      "description": "Once per round, this model may move by up to 3\" after shooting or being in melee.",
+      "hasRating": false
+    },
+    {
+      "id": "rkGri9GAybaZ",
+      "name": "Hit & Run Shooter",
+      "aliasedRuleId": null,
+      "description": "Once per round, this model may move by up to 3\" after shooting.",
+      "hasRating": false
+    },
+    {
+      "id": "rVZfbTlIyt7L",
+      "name": "Hit & Run Shooter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Hit & Run Shooter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "HMiVg3VVLQv3",
+      "name": "Piercing Target",
+      "aliasedRuleId": null,
+      "description": "Once per game, during this model's activation, before attacking, pick X enemy units within 18\" and in line of sight of it, and place one token on them. Friendly units get AP(+1) on their weapons when attacking them.",
+      "hasRating": true
+    },
+    {
+      "id": "okU8qW-h2rau",
+      "name": "Ranged Shrouding",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule is targeted by an enemy unit for shooting, that enemy unit gets -4\" range to a min. of 6\".",
+      "hasRating": false
+    },
+    {
+      "id": "oZewV0wGuebE",
+      "name": "Ranged Shrouding Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ranged Shrouding. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "V3YzPPkZm8at",
+      "name": "Regeneration Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "IEJp3a4vE0CB",
+      "name": "Shred",
+      "aliasedRuleId": null,
+      "description": "For each unmodified result of 1 to block hits, this weapon deals 1 extra wound.",
+      "hasRating": false
+    },
+    {
+      "id": "lEFjh4V7XGVV",
+      "name": "Shred when Shooting Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Shred on its weapons when shooting. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "j93FkLXMCk8v",
+      "name": "Steadfast",
+      "aliasedRuleId": null,
+      "description": "If a unit where most models have this rule is Shaken at the beginning of the round, roll one die. On a 4+, it stops being Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "ePlgVfji1dy6",
+      "name": "Steadfast Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Steadfast. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "9jyvRoBODD-O",
+      "name": "Stealth",
+      "aliasedRuleId": null,
+      "description": "When units where most models have this rule are shot from over 9\" away, enemy units get -1 to hit rolls.",
+      "hasRating": false
+    },
+    {
+      "id": "8haZ36fXvnzn",
+      "name": "Stealth Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Stealth. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "a0YtInGiUDd6",
+      "name": "Tough",
+      "aliasedRuleId": null,
+      "description": "Once a model has taken as many wounds as its Tough value, it is killed (remove from play).",
+      "hasRating": true
+    },
+    {
+      "id": "DEeVIJcfNfS6",
+      "name": "Unpredictable Fighter",
+      "aliasedRuleId": null,
+      "description": "When in melee, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    },
+    {
+      "id": "AB3FAl-SEUYP",
+      "name": "Unstoppable in Melee Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Unstoppable on its weapons in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "z4QuSO_AxqDr",
+      "name": "Versatile Expert",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, pick one effect: until the end of the activation all models with this rule in this unit either get AP(+1) on their weapons, or get +1 to hit rolls.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "YFdQT",
+      "name": "Dread Strike",
+      "threshold": 1,
+      "effect": "Pick one enemy model within 18\" in line of sight, which takes 1 hit with AP(2) and Disintegrate. This effect is resolved as if the target was a unit of [1]."
+    },
+    {
+      "id": "lQtJR",
+      "name": "Focused Defender",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Unpredictable Fighter once (next time the effect would apply)."
+    },
+    {
+      "id": "gwOV3",
+      "name": "Guardian Protection",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which gets Enhanced Guardian once (next time the effect would apply)."
+    },
+    {
+      "id": "pJ1_V",
+      "name": "Mind Gash",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 6 hits with Shred."
+    },
+    {
+      "id": "YexgZ",
+      "name": "The Founder's Curse",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which friendly units gets Shred on their weapons when attacking against once (next time the effect would apply)."
+    },
+    {
+      "id": "GZvZ5",
+      "name": "Thunderous Mist",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 4 hits."
+    }
+  ]
+}

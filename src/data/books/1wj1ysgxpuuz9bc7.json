@@ -1,0 +1,332 @@
+{
+  "uid": "1wj1ysgxpuuz9bc7",
+  "name": "Orc Marauders",
+  "version": "3.6.0",
+  "rules": [
+    {
+      "id": "6mJw5IdqSqNC",
+      "name": "Ambush",
+      "aliasedRuleId": null,
+      "description": "May be set aside before deployment. At the start of any round after the first, may be deployed anywhere over 9” away from enemy units. Players alternate in placing Ambush units, starting with the player that activates next. Units that deploy via Ambush can’t seize or contest objectives on the round they deploy.",
+      "hasRating": false
+    },
+    {
+      "id": "efmjJPTe0Yzd",
+      "name": "Anti-Cover",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Cover.",
+      "hasRating": false
+    },
+    {
+      "id": "CQes0mDvF4bV",
+      "name": "AP",
+      "aliasedRuleId": null,
+      "description": "AP",
+      "hasRating": true
+    },
+    {
+      "id": "74RjQ1k41DoO",
+      "name": "Armor",
+      "aliasedRuleId": null,
+      "description": "Counts as having Defense X+.",
+      "hasRating": true
+    },
+    {
+      "id": "qNNjE6aa9YQ2",
+      "name": "Bad Shot",
+      "aliasedRuleId": null,
+      "description": "This model gets -1 to hit rolls when shooting.",
+      "hasRating": false
+    },
+    {
+      "id": "Naqc5mga9Uha",
+      "name": "Bane",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and when attacking, the target must re-roll unmodified Defense results of 6.",
+      "hasRating": false
+    },
+    {
+      "id": "cU3RtuBXHyq4",
+      "name": "Blast",
+      "aliasedRuleId": null,
+      "description": "If the target is hit all models within 4“ of it are also hit by this weapon.",
+      "hasRating": false
+    },
+    {
+      "id": "h9JsgD38BRjI",
+      "name": "Bounding",
+      "aliasedRuleId": null,
+      "description": "When this unit is activated, you may move all models with this rule in it by up to D3+1\".",
+      "hasRating": false
+    },
+    {
+      "id": "MEAjk171GPmF",
+      "name": "Brutal",
+      "aliasedRuleId": null,
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "Hdm9ry6kJvzb",
+      "name": "Crossing Strike",
+      "aliasedRuleId": null,
+      "description": "Once per activation, when this model moves through enemy units, pick one of them and attack it with this weapon as if it was shooting. This weapon may only be used in this way.",
+      "hasRating": false
+    },
+    {
+      "id": "s6MgSfmgylXU",
+      "name": "Defense",
+      "aliasedRuleId": null,
+      "description": "This model gets +X to Defense rolls.",
+      "hasRating": true
+    },
+    {
+      "id": "Nbo5DTQufMoB",
+      "name": "Enhanced Brutal",
+      "aliasedRuleId": null,
+      "description": "If this model has Brutal, the target always takes hits on unmodified hit results of 6 from Brutal (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "vhXg_2pMyAzi",
+      "name": "Enhanced Brutal Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game Enhanced Brutal. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "B1i8BBWNU3L0",
+      "name": "Enhanced Ferocious",
+      "aliasedRuleId": "Nbo5DTQufMoB",
+      "description": "If this model has Ferocious, the target always takes hits on unmodified hit results of 6 from Ferocious (instead of only when shooting/charging enemies over 9\"/6\" away).",
+      "hasRating": false
+    },
+    {
+      "id": "EYbEdB0ST9lf",
+      "name": "Enhanced Ferocious Aura",
+      "aliasedRuleId": "vhXg_2pMyAzi",
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game Enhanced Ferocious. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "cygZBh3MtWs1",
+      "name": "Ferocious",
+      "aliasedRuleId": "MEAjk171GPmF",
+      "description": "When this model shoots/charges enemies over 9\"/6\" away, unmodified result of 6 to hit deal 1 extra hit (only the original hit counts as a 6 for special rules).",
+      "hasRating": false
+    },
+    {
+      "id": "T08VkBuVmNZ_",
+      "name": "Hero",
+      "aliasedRuleId": null,
+      "description": "Units within 6” of friendly Heroes may use the Hero’s Quality for Morale Tests as long as the Hero isn’t Shaken.",
+      "hasRating": false
+    },
+    {
+      "id": "ozCLWcof36wD",
+      "name": "Hit & Run",
+      "aliasedRuleId": null,
+      "description": "Once per round, this model may move by up to 3\" after shooting or being in melee.",
+      "hasRating": false
+    },
+    {
+      "id": "anyZ2FHtdAVO",
+      "name": "Hit & Run Fighter",
+      "aliasedRuleId": null,
+      "description": "Once per round, this model may move by up to 3\" after being in melee.",
+      "hasRating": false
+    },
+    {
+      "id": "uwrXuhqYepEd",
+      "name": "Hit & Run Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Hit & Run Fighter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "mETdyZ__yMVj",
+      "name": "Mend",
+      "aliasedRuleId": null,
+      "description": "Once per activation, before attacking, pick one friendly model within 3\" with Tough, and remove D3 wounds from it.",
+      "hasRating": false
+    },
+    {
+      "id": "ad6BHtI2eeX0",
+      "name": "Pierce",
+      "aliasedRuleId": null,
+      "description": "Ignores all positive Defense modifiers on the target, and when attacking units over half of this weapon's range away, this weapon gets AP(+1).",
+      "hasRating": false
+    },
+    {
+      "id": "wnrz_-SUmR8_",
+      "name": "Piercing Fighter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get AP(+1) on its weapons in melee. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "sngB_5QsJLaW",
+      "name": "Precision Charge",
+      "aliasedRuleId": null,
+      "description": "This model gets +1 to hit rolls when charging.",
+      "hasRating": false
+    },
+    {
+      "id": "DETPYoIhE98G",
+      "name": "Precision Charge Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get +1 to hit rolls when charging. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "AlIZbh-afBYi",
+      "name": "Protected",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 6+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "okU8qW-h2rau",
+      "name": "Ranged Shrouding",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule is targeted by an enemy unit for shooting, that enemy unit gets -4\" range to a min. of 6\".",
+      "hasRating": false
+    },
+    {
+      "id": "oZewV0wGuebE",
+      "name": "Ranged Shrouding Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Ranged Shrouding. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "8KujvrTG8k9p",
+      "name": "Regeneration",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. On a 5+ it is ignored.",
+      "hasRating": false
+    },
+    {
+      "id": "V3YzPPkZm8at",
+      "name": "Regeneration Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Regeneration. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "cavWDboL4ubs",
+      "name": "Rending",
+      "aliasedRuleId": null,
+      "description": "Ignores Regeneration, and for each unmodified result of 6 to hit, those hits get AP(+4).",
+      "hasRating": false
+    },
+    {
+      "id": "C6MzEy1CnxTs",
+      "name": "Repel Ambushers",
+      "aliasedRuleId": null,
+      "description": "Enemy units using Ambush must be set up over 12\" away from this model's unit.",
+      "hasRating": false
+    },
+    {
+      "id": "u2KyOrsBaOdU",
+      "name": "Speed Feat",
+      "aliasedRuleId": null,
+      "description": "Once per game, when this unit moves, you may use this rule so that all models with this rule in it move +2\" when using Advance actions and +4\" when using Rush/Charge actions.",
+      "hasRating": false
+    },
+    {
+      "id": "UEYz0htkjsxv",
+      "name": "Speed Feat Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Speed Feat. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "h-Cj1XrX00JE",
+      "name": "Spell Resistance",
+      "aliasedRuleId": null,
+      "description": "When a unit where most models have this rule takes wounds, roll one die for each. If the wound was from a spell, then it is ignored on a 2+. If the wound was not from a spell, then it is ignored on a 6+ instead.",
+      "hasRating": false
+    },
+    {
+      "id": "a0YtInGiUDd6",
+      "name": "Tough",
+      "aliasedRuleId": null,
+      "description": "Once a model has taken as many wounds as its Tough value, it is killed (remove from play).",
+      "hasRating": true
+    },
+    {
+      "id": "rqBYj1yANC3J",
+      "name": "Unique Hero",
+      "aliasedRuleId": null,
+      "description": "Counts as having Hero, and this model may only be taken once per army.",
+      "hasRating": false
+    },
+    {
+      "id": "i40cKJoXJ7zm",
+      "name": "Unpredictable",
+      "aliasedRuleId": null,
+      "description": "When attacking, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "eOGs64JpVsP3",
+      "name": "Unpredictable Shooter",
+      "aliasedRuleId": null,
+      "description": "When shooting, roll one die and apply one effect to all models with this rule: on a 1-3 they get AP(+1) on their weapons, and on a 4-6 they get +1 to hit rolls instead.",
+      "hasRating": false
+    },
+    {
+      "id": "Ql2vwvAiWaor",
+      "name": "Unpredictable Shooter Aura",
+      "aliasedRuleId": null,
+      "description": "This model's unit and up to 2 friendly units picked before the start of the game get Unpredictable Shooter. If this model is killed, picked models that are deployed lose the rule.",
+      "hasRating": false
+    },
+    {
+      "id": "QXyt-zV_bjpg",
+      "name": "Unstoppable",
+      "aliasedRuleId": null,
+      "description": "This weapon ignores Regeneration, and ignores all negative modifiers which are not from this model's special rules.",
+      "hasRating": false
+    }
+  ],
+  "spells": [
+    {
+      "id": "pMFQu",
+      "name": "Crackling Bolt",
+      "threshold": 1,
+      "effect": "Pick one enemy unit within 18\" in line of sight, which takes 1 hit with Blast(3)."
+    },
+    {
+      "id": "u5dTO",
+      "name": "Death Bolt",
+      "threshold": 2,
+      "effect": "Pick one enemy unit within 12\" in line of sight, which takes 4 hits with AP(1) and Pierce."
+    },
+    {
+      "id": "mfx9y",
+      "name": "Elder Protection",
+      "threshold": 1,
+      "effect": "Pick one friendly unit within 12\", which gets Spell Resistance once (next time the effect would apply)."
+    },
+    {
+      "id": "bBHHA",
+      "name": "Head Bang",
+      "threshold": 2,
+      "effect": "Pick up to two enemy units within 18\" in line of sight, which friendly units gets Rending on their weapons in melee against once (next time the effect would apply)."
+    },
+    {
+      "id": "dm709",
+      "name": "Path of War",
+      "threshold": 3,
+      "effect": "Pick up to three friendly units within 18\", which get Enhanced Ferocious once (next time the effect would apply)."
+    },
+    {
+      "id": "x4Szf",
+      "name": "Psychic Vomit",
+      "threshold": 3,
+      "effect": "Pick one enemy unit within 12\", which takes 9 hits with Bane."
+    }
+  ]
+}
